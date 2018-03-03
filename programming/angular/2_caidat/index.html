@@ -278,12 +278,81 @@
 
 <!-- Main navigation item with nested items -->
 
-  <li class="md-nav__item">
-    <a href="../../markdown/" title="Markdown"
-        class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+
+    <!-- Active checkbox expands items contained within nested section -->
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5"
+          type="checkbox" id="nav-2-5" />
+    
+
+    <!-- Expand active pages -->
+    <label class="md-nav__link" for="nav-2-5">
       Markdown
+    </label>
+    <nav class="md-nav" data-md-component="collapsible"
+        data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Markdown
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+
+        <!-- Render nested item list -->
+        
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/basics/" title="Basics"
+        class="md-nav__link">
+      Basics
     </a>
   </li>
+
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/advance/" title="Advance"
+        class="md-nav__link">
+      Advance
+    </a>
+  </li>
+
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/pymdown/" title="PyMdown"
+        class="md-nav__link">
+      PyMdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+<!-- Currently active page -->
 
         
           
@@ -791,14 +860,16 @@
 <p>B3: Vào thư mục chưa code, mở Command Windown lên và gõ lệnh (để tải các thư viện cần thiết về máy trong đó có Angular):</p>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span>npm install
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>npm install
 </pre></div>
+</td></tr></table>
 
 <ul>
 <li>B4: Ở cửa số Command Windown gõ tiếp lệnh (để khởi động webserver và chạy ứng dụng)</li>
 </ul>
-<div class="codehilite"><pre><span></span>ng server -o
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ng server -o
 </pre></div>
+</td></tr></table>
 
 <p>Lưu ý: thêm <code>[-o]</code> ở phía sau có nghĩa là tự động sẽ mở lên cửa sổ mới ứng dụng, nếu không thêm dòng lệnh trên thì phải vào Web Browser và gõ: <code>localhost:4200</code>. </p>
 <p>Muốn đổi cổng khác thì gõ lệnh sau: <code>ng server -o –port [ten_cong_muon_chay]</code></p>

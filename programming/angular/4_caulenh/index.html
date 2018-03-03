@@ -282,12 +282,81 @@
 
 <!-- Main navigation item with nested items -->
 
-  <li class="md-nav__item">
-    <a href="../../markdown/" title="Markdown"
-        class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+
+    <!-- Active checkbox expands items contained within nested section -->
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5"
+          type="checkbox" id="nav-2-5" />
+    
+
+    <!-- Expand active pages -->
+    <label class="md-nav__link" for="nav-2-5">
       Markdown
+    </label>
+    <nav class="md-nav" data-md-component="collapsible"
+        data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Markdown
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+
+        <!-- Render nested item list -->
+        
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/basics/" title="Basics"
+        class="md-nav__link">
+      Basics
     </a>
   </li>
+
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/advance/" title="Advance"
+        class="md-nav__link">
+      Advance
+    </a>
+  </li>
+
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/pymdown/" title="PyMdown"
+        class="md-nav__link">
+      PyMdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+<!-- Currently active page -->
 
         
           
@@ -982,30 +1051,38 @@
           <h1 style="margin-bottom: 17px;     border-bottom: 1px solid #D3D3D3;">Câu lệnh thường dùng</h1>
         
       <h2 id="chay-ung-dung">Chạy ứng dụng<a class="headerlink" href="#chay-ung-dung" title="Permanent link">#</a></h2>
-<div class="codehilite"><pre><span></span>ng server -o
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ng server -o
 </pre></div>
+</td></tr></table>
 
 <h2 id="build-ung-dung-ra-ban-product">Build ứng dụng ra bản product<a class="headerlink" href="#build-ung-dung-ra-ban-product" title="Permanent link">#</a></h2>
-<div class="codehilite"><pre><span></span>ng build –prod
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ng build –prod
 </pre></div>
+</td></tr></table>
 
 <h2 id="tao-module">Tạo module<a class="headerlink" href="#tao-module" title="Permanent link">#</a></h2>
-<div class="codehilite"><pre><span></span>ng g module [ten_module]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ng g module [ten_module]
 
 ng g module [ten_module] --routing    // Để tạo router trong module
 </pre></div>
+</td></tr></table>
 
 <h2 id="tao-component">Tạo component<a class="headerlink" href="#tao-component" title="Permanent link">#</a></h2>
-<div class="codehilite"><pre><span></span>ng g component [ten_component]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ng g component [ten_component]
 </pre></div>
+</td></tr></table>
 
 <h2 id="tao-service">Tạo service<a class="headerlink" href="#tao-service" title="Permanent link">#</a></h2>
-<div class="codehilite"><pre><span></span>ng g service [ten_service]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ng g service [ten_service]
 </pre></div>
+</td></tr></table>
 
 <h2 id="tao-class">Tạo class<a class="headerlink" href="#tao-class" title="Permanent link">#</a></h2>
-<div class="codehilite"><pre><span></span>ng g class [ten_class]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ng g class [ten_class]
 </pre></div>
+</td></tr></table>
        
       
   </article>

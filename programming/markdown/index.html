@@ -844,10 +844,12 @@
           <!-- Determine class according to level -->
 
 
+  
+
 
 <!-- Main navigation item with nested items -->
 
-  <li class="md-nav__item">
+  <li class="md-nav__item md-nav__item--active">
     
 
     <!-- Active checkbox expands items contained within nested section -->
@@ -1053,210 +1055,84 @@
           <!-- Determine class according to level -->
 
 
-  
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item md-nav__item--nested">
+
+    <!-- Active checkbox expands items contained within nested section -->
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5"
+          type="checkbox" id="nav-2-5" />
+    
+
+    <!-- Expand active pages -->
+    <label class="md-nav__link" for="nav-2-5">
+      Markdown
+    </label>
+    <nav class="md-nav" data-md-component="collapsible"
+        data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Markdown
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+
+        <!-- Render nested item list -->
+        
+        
+          
+          
+          <!-- Determine class according to level -->
+
 
 
 <!-- Main navigation item with nested items -->
 
-  <li class="md-nav__item md-nav__item--active">
-    
-
-    <!-- Active checkbox expands items contained within nested section -->
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc"
-        type="checkbox" id="toc" />
-
-    <!-- Hack: see partials/toc.html for more information -->
-    
-
-    <!-- Render table of contents, if not empty -->
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Markdown
-      </label>
-    
-    <a href="./" title="Markdown"
-        class="md-nav__link md-nav__link--active">
-      Markdown
+  <li class="md-nav__item">
+    <a href="basics/" title="Basics"
+        class="md-nav__link">
+      Basics
     </a>
-
-    <!-- Show table of contents -->
-    
-      <!-- Table of contents -->
-<nav class="md-nav md-nav--secondary">
-  
-
-  <!--
-    Hack: check whether the content contains a h1 headline. If it does, the
-    top-level anchor must be skipped, since it would be redundant to the link
-    to the current page that is located just above the anchor. Therefore we
-    directly continue with the children of the anchor.
-  -->
-  
-
-  <!-- Render item list -->
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#markdown-la-gi" title="Markdown là gì?"
-      class="md-nav__link">
-    Markdown là gì?
-  </a>
-
-  <!-- Render nested item list -->
-  
-</li>
-      
-        <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#cu-phap" title="Cú pháp"
-      class="md-nav__link">
-    Cú pháp
-  </a>
-
-  <!-- Render nested item list -->
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#tieu-e" title="Tiêu đề"
-      class="md-nav__link">
-    Tiêu đề
-  </a>
-
-  <!-- Render nested item list -->
-  
-</li>
-        
-          <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#boi-am-in-nghieng" title="Bôi đậm, in nghiêng"
-      class="md-nav__link">
-    Bôi đậm, in nghiêng
-  </a>
-
-  <!-- Render nested item list -->
-  
-</li>
-        
-          <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#danh-sach" title="Danh sách"
-      class="md-nav__link">
-    Danh sách
-  </a>
-
-  <!-- Render nested item list -->
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#khong-co-thu-tu" title="Không có thứ tự"
-      class="md-nav__link">
-    Không có thứ tự
-  </a>
-
-  <!-- Render nested item list -->
-  
-</li>
-        
-          <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#co-thu-tu" title="Có thứ tự"
-      class="md-nav__link">
-    Có thứ tự
-  </a>
-
-  <!-- Render nested item list -->
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#anh" title="Ảnh"
-      class="md-nav__link">
-    Ảnh
-  </a>
-
-  <!-- Render nested item list -->
-  
-</li>
-        
-          <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#uong-dan-lien-ket" title="Đường dẫn, liên kết"
-      class="md-nav__link">
-    Đường dẫn, liên kết
-  </a>
-
-  <!-- Render nested item list -->
-  
-</li>
-        
-          <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#tao-bang" title="Tạo bảng"
-      class="md-nav__link">
-    Tạo bảng
-  </a>
-
-  <!-- Render nested item list -->
-  
-</li>
-        
-          <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#chu-thich" title="Chú thích"
-      class="md-nav__link">
-    Chú thích
-  </a>
-
-  <!-- Render nested item list -->
-  
-</li>
-        
-          <!-- Table of contents item -->
-<li class="md-nav__item">
-  <a href="#khung-bao-code" title="Khung bao code"
-      class="md-nav__link">
-    Khung bao code
-  </a>
-
-  <!-- Render nested item list -->
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-
-      <!-- Source files -->
-      
-
-      <!-- Disqus integration -->
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
-<!-- Main navigation item -->
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="advance/" title="Advance"
+        class="md-nav__link">
+      Advance
+    </a>
+  </li>
+
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="pymdown/" title="PyMdown"
+        class="md-nav__link">
+      PyMdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+<!-- Currently active page -->
 
         
           
@@ -1905,67 +1781,94 @@
           </div>       
         
         
-          <h1 style="margin-bottom: 17px;     border-bottom: 1px solid #D3D3D3;">Markdown</h1>
+          <h1 style="margin-bottom: 17px;     border-bottom: 1px solid #D3D3D3;">Php</h1>
         
       <h2 id="markdown-la-gi">Markdown là gì?<a class="headerlink" href="#markdown-la-gi" title="Permanent link">#</a></h2>
 <p>Markdown cũng giống như HTML đều là những ngôn ngữ trình bày trên nền web, hiện nay ngôn ngữ này được sử dụng rất nhiều trong việc mô tả các tài liệu kỹ thuật, tài liệu hướng dẫn sử dụng. Rất nhiều công ty, trang web sử dụng markdown trong đó có cả google, github... và trang web này cũng vậy ^^.</p>
 <h2 id="cu-phap">Cú pháp<a class="headerlink" href="#cu-phap" title="Permanent link">#</a></h2>
 <h3 id="tieu-e">Tiêu đề<a class="headerlink" href="#tieu-e" title="Permanent link">#</a></h3>
 <p>Các thẻ h1,h2,h3...h6 trong HTML thì trong markdown sử dụng ký tự # để viết.</p>
-<div class="codehilite"><pre><span></span># đây là thẻ &lt;h1&gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span># đây là thẻ &lt;h1&gt;
 ## đây là thẻ &lt;h2&gt;
 ...
 ###### đây là thẻ &lt;h6&gt;
 </pre></div>
+</td></tr></table>
 
 <h3 id="boi-am-in-nghieng">Bôi đậm, in nghiêng<a class="headerlink" href="#boi-am-in-nghieng" title="Permanent link">#</a></h3>
 <p>Sử dụng 1 ký tự * sẽ in nghiêng, 2 ký tự * sẽ bôi đậm, 3 ký tự *  sẽ vừa in nghiêng vừa bôi đậm</p>
-<div class="codehilite"><pre><span></span>*Đoạn văn này sẽ được in nghiêng*
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>*Đoạn văn này sẽ được in nghiêng*
 
 **Đoạn văn này sẽ được bôi đậm**
 
 ***Đoạn văn này vừa được in nghiêng vừa được bôi đậm***
 </pre></div>
+</td></tr></table>
 
 <h3 id="danh-sach">Danh sách<a class="headerlink" href="#danh-sach" title="Permanent link">#</a></h3>
 <h4 id="khong-co-thu-tu">Không có thứ tự<a class="headerlink" href="#khong-co-thu-tu" title="Permanent link">#</a></h4>
-<div class="codehilite"><pre><span></span>* Item 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>* Item 1
 * Item 2
   * Item 2a
   * Item 2b
 </pre></div>
+</td></tr></table>
 
 <h4 id="co-thu-tu">Có thứ tự<a class="headerlink" href="#co-thu-tu" title="Permanent link">#</a></h4>
-<div class="codehilite"><pre><span></span>1. Item 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>1. Item 1
 1. Item 2
 1. Item 3
    1. Item 3a
    1. Item 3b
 </pre></div>
+</td></tr></table>
 
 <h3 id="anh">Ảnh<a class="headerlink" href="#anh" title="Permanent link">#</a></h3>
-<div class="codehilite"><pre><span></span>![python install](../../img/index/win-py-install.png)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>![python install](../../img/index/win-py-install.png)
 </pre></div>
+</td></tr></table>
 
 <h3 id="uong-dan-lien-ket">Đường dẫn, liên kết<a class="headerlink" href="#uong-dan-lien-ket" title="Permanent link">#</a></h3>
-<div class="codehilite"><pre><span></span>[Link](../project/document_tutorial/main/#huong-dan-cai-at)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[Link](../project/document_tutorial/main/#huong-dan-cai-at)
 </pre></div>
+</td></tr></table>
 
 <h3 id="tao-bang">Tạo bảng<a class="headerlink" href="#tao-bang" title="Permanent link">#</a></h3>
-<div class="codehilite"><pre><span></span>| Tiêu đề 1     | Tiêu đề 2     | Tiêu đề 3  |
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>| Tiêu đề 1     | Tiêu đề 2     | Tiêu đề 3  |
 | ------------- |:-------------:| ----------:|
 | Dòng 1.1      | Dòng 2.1      | Dòng 3.1   |
 | Dòng 1.2      | Dòng 2.2      | Dòng 3.2   |
 | Dòng 1.3      | Dòng 2.3      | Dòng 3.3   |
 </pre></div>
+</td></tr></table>
 
 <h3 id="chu-thich">Chú thích<a class="headerlink" href="#chu-thich" title="Permanent link">#</a></h3>
-<div class="codehilite"><pre><span></span>&gt; Ghi chú thích ở đây
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&gt; Ghi chú thích ở đây
 </pre></div>
+</td></tr></table>
 
 <h3 id="khung-bao-code">Khung bao code<a class="headerlink" href="#khung-bao-code" title="Permanent link">#</a></h3>
-<div class="codehilite"><pre><span></span>```&lt;Code sẽ viết ở đây&gt;``` .
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>```&lt;Code sẽ viết ở đây&gt;``` .
 </pre></div>
+</td></tr></table>
        
       
   </article>

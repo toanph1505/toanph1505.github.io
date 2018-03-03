@@ -282,12 +282,81 @@
 
 <!-- Main navigation item with nested items -->
 
-  <li class="md-nav__item">
-    <a href="../../markdown/" title="Markdown"
-        class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+
+    <!-- Active checkbox expands items contained within nested section -->
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5"
+          type="checkbox" id="nav-2-5" />
+    
+
+    <!-- Expand active pages -->
+    <label class="md-nav__link" for="nav-2-5">
       Markdown
+    </label>
+    <nav class="md-nav" data-md-component="collapsible"
+        data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Markdown
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+
+        <!-- Render nested item list -->
+        
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/basics/" title="Basics"
+        class="md-nav__link">
+      Basics
     </a>
   </li>
+
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/advance/" title="Advance"
+        class="md-nav__link">
+      Advance
+    </a>
+  </li>
+
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/pymdown/" title="PyMdown"
+        class="md-nav__link">
+      PyMdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+<!-- Currently active page -->
 
         
           
@@ -955,8 +1024,9 @@
 <ul>
 <li>Yêu cầu tối thiểu hệ thống</li>
 </ul>
-<div class="codehilite"><pre><span></span>PHP &gt;= 5.3.2
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>PHP &gt;= 5.3.2
 </pre></div>
+</td></tr></table>
 
 <h3 id="huong-dan-cai-at_1">Hướng dẫn cài đặt<a class="headerlink" href="#huong-dan-cai-at_1" title="Permanent link">#</a></h3>
 <ul>
@@ -971,8 +1041,9 @@
 <ul>
 <li>sau khi cài đặt xong, để kiểm tra xem composer đã cài đặt thành công chưa thì gõ lệnh</li>
 </ul>
-<div class="codehilite"><pre><span></span>composer -V
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>composer -V
 </pre></div>
+</td></tr></table>
 
 <p>Nếu kết quả trả về phiên bản của composer có nghĩa là đã cài đặt thành công</p>
 <h2 id="huong-dan-su-dung">Hướng dẫn sử dụng<a class="headerlink" href="#huong-dan-su-dung" title="Permanent link">#</a></h2>
@@ -980,20 +1051,23 @@
 <ul>
 <li>Sử dụng composer để cài đặt trong lần đầu khởi tạo một project.</li>
 </ul>
-<div class="codehilite"><pre><span></span>composer install
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>composer install
 </pre></div>
+</td></tr></table>
 
 <ul>
 <li>Sử dụng composer để thêm mới 1 thư viện vào project của mình:</li>
 </ul>
-<div class="codehilite"><pre><span></span>composer require [ten_thu_vien_can_add]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>composer require [ten_thu_vien_can_add]
 </pre></div>
+</td></tr></table>
 
 <ul>
 <li>Sử dụng composer để cập nhật phiên bản các thư viện cũ:</li>
 </ul>
-<div class="codehilite"><pre><span></span>composer update
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>composer update
 </pre></div>
+</td></tr></table>
 
 <p>Lưu ý:</p>
 <ul>

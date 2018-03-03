@@ -282,12 +282,81 @@
 
 <!-- Main navigation item with nested items -->
 
-  <li class="md-nav__item">
-    <a href="../../programming/markdown/" title="Markdown"
-        class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+
+    <!-- Active checkbox expands items contained within nested section -->
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5"
+          type="checkbox" id="nav-2-5" />
+    
+
+    <!-- Expand active pages -->
+    <label class="md-nav__link" for="nav-2-5">
       Markdown
+    </label>
+    <nav class="md-nav" data-md-component="collapsible"
+        data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Markdown
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+
+        <!-- Render nested item list -->
+        
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../programming/markdown/basics/" title="Basics"
+        class="md-nav__link">
+      Basics
     </a>
   </li>
+
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../programming/markdown/advance/" title="Advance"
+        class="md-nav__link">
+      Advance
+    </a>
+  </li>
+
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../programming/markdown/pymdown/" title="PyMdown"
+        class="md-nav__link">
+      PyMdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+<!-- Currently active page -->
 
         
           
@@ -1264,9 +1333,9 @@ Nhập tên công việc nhấn nút "Add"</p>
 <p><img alt="Không tìm thấy ảnh" src="../../../img/trello/Card.png" /></p>
 <h4 id="262-add-members">2.6.2 Add members<a class="headerlink" href="#262-add-members" title="Permanent link">#</a></h4>
 <p>Để Add member ta click vào nút Members và nhập địa chỉ Email đầy đủ của người cần tìm vào ô Search Members, nhấn Enter.</p>
-<div class="codehilite"><pre><span></span>     Chú ý: Members của card chỉ được lựa chọn trong danh sách members của Board phía trước
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>     Chú ý: Members của card chỉ được lựa chọn trong danh sách members của Board phía trước
 </pre></div>
-
+</td></tr></table>
 
 <h4 id="263-at-nhan-cho-card">2.6.3 Đặt nhãn cho Card<a class="headerlink" href="#263-at-nhan-cho-card" title="Permanent link">#</a></h4>
 <p>Mỗi card là 1 công việc cụ thể, người dùng có thể dùng các nhãn để phân

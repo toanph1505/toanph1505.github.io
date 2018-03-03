@@ -282,12 +282,81 @@
 
 <!-- Main navigation item with nested items -->
 
-  <li class="md-nav__item">
-    <a href="../../markdown/" title="Markdown"
-        class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+
+    <!-- Active checkbox expands items contained within nested section -->
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5"
+          type="checkbox" id="nav-2-5" />
+    
+
+    <!-- Expand active pages -->
+    <label class="md-nav__link" for="nav-2-5">
       Markdown
+    </label>
+    <nav class="md-nav" data-md-component="collapsible"
+        data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Markdown
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+
+        <!-- Render nested item list -->
+        
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/basics/" title="Basics"
+        class="md-nav__link">
+      Basics
     </a>
   </li>
+
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/advance/" title="Advance"
+        class="md-nav__link">
+      Advance
+    </a>
+  </li>
+
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../markdown/pymdown/" title="PyMdown"
+        class="md-nav__link">
+      PyMdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+<!-- Currently active page -->
 
         
           
@@ -919,27 +988,35 @@
 <p>Laravel là 1 framework PHP được thiết kế dành cho việc phát triển các ứng dụng web theo mô hình MVC, với sự đon giản nhưng vô cùng mạnh mẽ laravel đã trở thành framework được sự dụng rộng rãi nhất ở thời điểm hiện tại, loạt bài viết này sẽ hướng dẫn cách sử dụng laravel cho người mới bắt đầu.</p>
 <h2 id="yeu-cau-he-thong">Yêu cầu hệ thống<a class="headerlink" href="#yeu-cau-he-thong" title="Permanent link">#</a></h2>
 <p>Trước khi cài đặt lưu ý xem trước phiên bản laravel sử dụng vì mỗi phiên bản có thể có 1 yêu cầu tối thiểu khác nhau, như trong bài viết này đang sử dụng laravel 5.3 nên có yêu cầu hệ thống:</p>
-<div class="codehilite"><pre><span></span>PHP &gt;= 5.6.4
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>PHP &gt;= 5.6.4
 OpenSSL PHP Extension
 PDO PHP Extension
 Mbstring PHP Extension
 Tokenizer PHP Extension
 XML PHP Extension
 </pre></div>
+</td></tr></table>
 
 <h2 id="cai-at">Cài đặt<a class="headerlink" href="#cai-at" title="Permanent link">#</a></h2>
 <p>Có nhiều cách để có thể cài đặt laravel nhưng để đơn giản ta sẽ sử dụng composer (tham khảo loạt bài hướng dẫn về composer).</p>
 <ul>
 <li>B1: Mở cửa số cmd gõ lệnh</li>
 </ul>
-<div class="codehilite"><pre><span></span>composer create-project --prefer-dist laravel/laravel [ten_project_se_tao]
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>composer create-project --prefer-dist laravel/laravel [ten_project_se_tao]
 </pre></div>
+</td></tr></table>
 
 <ul>
 <li>B2: Sau khi đợi composer kéo project về là xong, lúc đó ta có thể chạy luôn được ứng dụng trên thanh địa chỉ ví dụ:</li>
 </ul>
-<div class="codehilite"><pre><span></span>localhost:8080/[ten_project_se_tao]/public/
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>localhost:8080/[ten_project_se_tao]/public/
 </pre></div>
+</td></tr></table>
        
       
   </article>
