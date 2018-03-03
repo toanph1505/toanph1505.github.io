@@ -3,7 +3,7 @@
         {
             "location": "/",
             "text": "L\u1eddi n\u00f3i \u0111\u1ea7u\n#\n\n\nTrang web s\u1ebd t\u1ed5ng h\u1ee3p nh\u1eefng ki\u1ebfn th\u1ee9c, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng \u0111\u1ec3 t\u1ea1o th\u00e0nh m\u1ed9t kho d\u1eef li\u1ec7u d\u00f9ng chung ph\u1ee5c v\u1ee5 cho c\u00f4ng vi\u1ec7c.\n\n\nD\u00e0nh cho ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u\n#\n\n\n\n\nC\u00e0i \u0111\u1eb7t m\u00f4i tr\u01b0\u1eddng\n\n\nC\u00e0i \u0111\u1eb7t m\u00f4i tr\u01b0\u1eddng kh\u1edfi t\u1ea1o \nLink\n\n\n\n\n\n\nH\u01b0\u1edbng d\u1eabn vi\u1ebft b\u00e0i\n\n\n\n\nH\u01b0\u1edbng d\u1eabn c\u1ea5u tr\u00fac th\u01b0 m\u1ee5c b\u00e0i vi\u1ebft \nLink\n\n\nS\u1eed d\u1ee5ng \nMarkdown\n \u0111\u1ec3 vi\u1ebft b\u00e0i",
-            "title": "Gi\u1edbi thi\u1ec7u"
+            "title": "About me"
         },
         {
             "location": "/#loi-noi-au",
@@ -14,6 +14,431 @@
             "location": "/#danh-cho-nguoi-moi-bat-au",
             "text": "C\u00e0i \u0111\u1eb7t m\u00f4i tr\u01b0\u1eddng  C\u00e0i \u0111\u1eb7t m\u00f4i tr\u01b0\u1eddng kh\u1edfi t\u1ea1o  Link    H\u01b0\u1edbng d\u1eabn vi\u1ebft b\u00e0i   H\u01b0\u1edbng d\u1eabn c\u1ea5u tr\u00fac th\u01b0 m\u1ee5c b\u00e0i vi\u1ebft  Link  S\u1eed d\u1ee5ng  Markdown  \u0111\u1ec3 vi\u1ebft b\u00e0i",
             "title": "D\u00e0nh cho ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u"
+        },
+        {
+            "location": "/programming/markdown/",
+            "text": "Markdown l\u00e0 g\u00ec?\n#\n\n\nMarkdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.\n\n\nC\u00fa ph\u00e1p\n#\n\n\nTi\u00eau \u0111\u1ec1\n#\n\n\nC\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.\n\n\n# \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>\n\n\n\n\nB\u00f4i \u0111\u1eadm, in nghi\u00eang\n#\n\n\nS\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm\n\n\n*\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***\n\n\n\n\nDanh s\u00e1ch\n#\n\n\nKh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\nC\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\u1ea2nh\n#\n\n\n![python install](../../img/index/win-py-install.png)\n\n\n\n\n\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft\n#\n\n\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\nT\u1ea1o b\u1ea3ng\n#\n\n\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\nCh\u00fa th\u00edch\n#\n\n\n> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y\n\n\n\n\nKhung bao code\n#\n\n\n```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
+            "title": "Html"
+        },
+        {
+            "location": "/programming/markdown/#markdown-la-gi",
+            "text": "Markdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.",
+            "title": "Markdown l\u00e0 g\u00ec?"
+        },
+        {
+            "location": "/programming/markdown/#cu-phap",
+            "text": "",
+            "title": "C\u00fa ph\u00e1p"
+        },
+        {
+            "location": "/programming/markdown/#tieu-e",
+            "text": "C\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.  # \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>",
+            "title": "Ti\u00eau \u0111\u1ec1"
+        },
+        {
+            "location": "/programming/markdown/#boi-am-in-nghieng",
+            "text": "S\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm  *\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***",
+            "title": "B\u00f4i \u0111\u1eadm, in nghi\u00eang"
+        },
+        {
+            "location": "/programming/markdown/#danh-sach",
+            "text": "",
+            "title": "Danh s\u00e1ch"
+        },
+        {
+            "location": "/programming/markdown/#khong-co-thu-tu",
+            "text": "* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b",
+            "title": "Kh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1"
+        },
+        {
+            "location": "/programming/markdown/#co-thu-tu",
+            "text": "1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b",
+            "title": "C\u00f3 th\u1ee9 t\u1ef1"
+        },
+        {
+            "location": "/programming/markdown/#anh",
+            "text": "![python install](../../img/index/win-py-install.png)",
+            "title": "\u1ea2nh"
+        },
+        {
+            "location": "/programming/markdown/#uong-dan-lien-ket",
+            "text": "[Link](../project/document_tutorial/main/#huong-dan-cai-at)",
+            "title": "\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft"
+        },
+        {
+            "location": "/programming/markdown/#tao-bang",
+            "text": "| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |",
+            "title": "T\u1ea1o b\u1ea3ng"
+        },
+        {
+            "location": "/programming/markdown/#chu-thich",
+            "text": "> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y",
+            "title": "Ch\u00fa th\u00edch"
+        },
+        {
+            "location": "/programming/markdown/#khung-bao-code",
+            "text": "```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
+            "title": "Khung bao code"
+        },
+        {
+            "location": "/programming/markdown/",
+            "text": "Markdown l\u00e0 g\u00ec?\n#\n\n\nMarkdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.\n\n\nC\u00fa ph\u00e1p\n#\n\n\nTi\u00eau \u0111\u1ec1\n#\n\n\nC\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.\n\n\n# \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>\n\n\n\n\nB\u00f4i \u0111\u1eadm, in nghi\u00eang\n#\n\n\nS\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm\n\n\n*\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***\n\n\n\n\nDanh s\u00e1ch\n#\n\n\nKh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\nC\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\u1ea2nh\n#\n\n\n![python install](../../img/index/win-py-install.png)\n\n\n\n\n\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft\n#\n\n\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\nT\u1ea1o b\u1ea3ng\n#\n\n\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\nCh\u00fa th\u00edch\n#\n\n\n> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y\n\n\n\n\nKhung bao code\n#\n\n\n```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
+            "title": "Css"
+        },
+        {
+            "location": "/programming/markdown/#markdown-la-gi",
+            "text": "Markdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.",
+            "title": "Markdown l\u00e0 g\u00ec?"
+        },
+        {
+            "location": "/programming/markdown/#cu-phap",
+            "text": "",
+            "title": "C\u00fa ph\u00e1p"
+        },
+        {
+            "location": "/programming/markdown/#tieu-e",
+            "text": "C\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.  # \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>",
+            "title": "Ti\u00eau \u0111\u1ec1"
+        },
+        {
+            "location": "/programming/markdown/#boi-am-in-nghieng",
+            "text": "S\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm  *\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***",
+            "title": "B\u00f4i \u0111\u1eadm, in nghi\u00eang"
+        },
+        {
+            "location": "/programming/markdown/#danh-sach",
+            "text": "",
+            "title": "Danh s\u00e1ch"
+        },
+        {
+            "location": "/programming/markdown/#khong-co-thu-tu",
+            "text": "* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b",
+            "title": "Kh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1"
+        },
+        {
+            "location": "/programming/markdown/#co-thu-tu",
+            "text": "1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b",
+            "title": "C\u00f3 th\u1ee9 t\u1ef1"
+        },
+        {
+            "location": "/programming/markdown/#anh",
+            "text": "![python install](../../img/index/win-py-install.png)",
+            "title": "\u1ea2nh"
+        },
+        {
+            "location": "/programming/markdown/#uong-dan-lien-ket",
+            "text": "[Link](../project/document_tutorial/main/#huong-dan-cai-at)",
+            "title": "\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft"
+        },
+        {
+            "location": "/programming/markdown/#tao-bang",
+            "text": "| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |",
+            "title": "T\u1ea1o b\u1ea3ng"
+        },
+        {
+            "location": "/programming/markdown/#chu-thich",
+            "text": "> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y",
+            "title": "Ch\u00fa th\u00edch"
+        },
+        {
+            "location": "/programming/markdown/#khung-bao-code",
+            "text": "```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
+            "title": "Khung bao code"
+        },
+        {
+            "location": "/programming/markdown/",
+            "text": "Markdown l\u00e0 g\u00ec?\n#\n\n\nMarkdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.\n\n\nC\u00fa ph\u00e1p\n#\n\n\nTi\u00eau \u0111\u1ec1\n#\n\n\nC\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.\n\n\n# \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>\n\n\n\n\nB\u00f4i \u0111\u1eadm, in nghi\u00eang\n#\n\n\nS\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm\n\n\n*\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***\n\n\n\n\nDanh s\u00e1ch\n#\n\n\nKh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\nC\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\u1ea2nh\n#\n\n\n![python install](../../img/index/win-py-install.png)\n\n\n\n\n\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft\n#\n\n\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\nT\u1ea1o b\u1ea3ng\n#\n\n\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\nCh\u00fa th\u00edch\n#\n\n\n> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y\n\n\n\n\nKhung bao code\n#\n\n\n```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
+            "title": "Javascript"
+        },
+        {
+            "location": "/programming/markdown/#markdown-la-gi",
+            "text": "Markdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.",
+            "title": "Markdown l\u00e0 g\u00ec?"
+        },
+        {
+            "location": "/programming/markdown/#cu-phap",
+            "text": "",
+            "title": "C\u00fa ph\u00e1p"
+        },
+        {
+            "location": "/programming/markdown/#tieu-e",
+            "text": "C\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.  # \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>",
+            "title": "Ti\u00eau \u0111\u1ec1"
+        },
+        {
+            "location": "/programming/markdown/#boi-am-in-nghieng",
+            "text": "S\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm  *\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***",
+            "title": "B\u00f4i \u0111\u1eadm, in nghi\u00eang"
+        },
+        {
+            "location": "/programming/markdown/#danh-sach",
+            "text": "",
+            "title": "Danh s\u00e1ch"
+        },
+        {
+            "location": "/programming/markdown/#khong-co-thu-tu",
+            "text": "* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b",
+            "title": "Kh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1"
+        },
+        {
+            "location": "/programming/markdown/#co-thu-tu",
+            "text": "1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b",
+            "title": "C\u00f3 th\u1ee9 t\u1ef1"
+        },
+        {
+            "location": "/programming/markdown/#anh",
+            "text": "![python install](../../img/index/win-py-install.png)",
+            "title": "\u1ea2nh"
+        },
+        {
+            "location": "/programming/markdown/#uong-dan-lien-ket",
+            "text": "[Link](../project/document_tutorial/main/#huong-dan-cai-at)",
+            "title": "\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft"
+        },
+        {
+            "location": "/programming/markdown/#tao-bang",
+            "text": "| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |",
+            "title": "T\u1ea1o b\u1ea3ng"
+        },
+        {
+            "location": "/programming/markdown/#chu-thich",
+            "text": "> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y",
+            "title": "Ch\u00fa th\u00edch"
+        },
+        {
+            "location": "/programming/markdown/#khung-bao-code",
+            "text": "```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
+            "title": "Khung bao code"
+        },
+        {
+            "location": "/programming/markdown/",
+            "text": "Markdown l\u00e0 g\u00ec?\n#\n\n\nMarkdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.\n\n\nC\u00fa ph\u00e1p\n#\n\n\nTi\u00eau \u0111\u1ec1\n#\n\n\nC\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.\n\n\n# \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>\n\n\n\n\nB\u00f4i \u0111\u1eadm, in nghi\u00eang\n#\n\n\nS\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm\n\n\n*\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***\n\n\n\n\nDanh s\u00e1ch\n#\n\n\nKh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\nC\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\u1ea2nh\n#\n\n\n![python install](../../img/index/win-py-install.png)\n\n\n\n\n\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft\n#\n\n\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\nT\u1ea1o b\u1ea3ng\n#\n\n\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\nCh\u00fa th\u00edch\n#\n\n\n> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y\n\n\n\n\nKhung bao code\n#\n\n\n```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
+            "title": "Php"
+        },
+        {
+            "location": "/programming/markdown/#markdown-la-gi",
+            "text": "Markdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.",
+            "title": "Markdown l\u00e0 g\u00ec?"
+        },
+        {
+            "location": "/programming/markdown/#cu-phap",
+            "text": "",
+            "title": "C\u00fa ph\u00e1p"
+        },
+        {
+            "location": "/programming/markdown/#tieu-e",
+            "text": "C\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.  # \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>",
+            "title": "Ti\u00eau \u0111\u1ec1"
+        },
+        {
+            "location": "/programming/markdown/#boi-am-in-nghieng",
+            "text": "S\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm  *\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***",
+            "title": "B\u00f4i \u0111\u1eadm, in nghi\u00eang"
+        },
+        {
+            "location": "/programming/markdown/#danh-sach",
+            "text": "",
+            "title": "Danh s\u00e1ch"
+        },
+        {
+            "location": "/programming/markdown/#khong-co-thu-tu",
+            "text": "* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b",
+            "title": "Kh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1"
+        },
+        {
+            "location": "/programming/markdown/#co-thu-tu",
+            "text": "1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b",
+            "title": "C\u00f3 th\u1ee9 t\u1ef1"
+        },
+        {
+            "location": "/programming/markdown/#anh",
+            "text": "![python install](../../img/index/win-py-install.png)",
+            "title": "\u1ea2nh"
+        },
+        {
+            "location": "/programming/markdown/#uong-dan-lien-ket",
+            "text": "[Link](../project/document_tutorial/main/#huong-dan-cai-at)",
+            "title": "\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft"
+        },
+        {
+            "location": "/programming/markdown/#tao-bang",
+            "text": "| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |",
+            "title": "T\u1ea1o b\u1ea3ng"
+        },
+        {
+            "location": "/programming/markdown/#chu-thich",
+            "text": "> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y",
+            "title": "Ch\u00fa th\u00edch"
+        },
+        {
+            "location": "/programming/markdown/#khung-bao-code",
+            "text": "```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
+            "title": "Khung bao code"
+        },
+        {
+            "location": "/programming/markdown/",
+            "text": "Markdown l\u00e0 g\u00ec?\n#\n\n\nMarkdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.\n\n\nC\u00fa ph\u00e1p\n#\n\n\nTi\u00eau \u0111\u1ec1\n#\n\n\nC\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.\n\n\n# \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>\n\n\n\n\nB\u00f4i \u0111\u1eadm, in nghi\u00eang\n#\n\n\nS\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm\n\n\n*\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***\n\n\n\n\nDanh s\u00e1ch\n#\n\n\nKh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\nC\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\u1ea2nh\n#\n\n\n![python install](../../img/index/win-py-install.png)\n\n\n\n\n\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft\n#\n\n\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\nT\u1ea1o b\u1ea3ng\n#\n\n\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\nCh\u00fa th\u00edch\n#\n\n\n> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y\n\n\n\n\nKhung bao code\n#\n\n\n```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
+            "title": "Markdown"
+        },
+        {
+            "location": "/programming/markdown/#markdown-la-gi",
+            "text": "Markdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.",
+            "title": "Markdown l\u00e0 g\u00ec?"
+        },
+        {
+            "location": "/programming/markdown/#cu-phap",
+            "text": "",
+            "title": "C\u00fa ph\u00e1p"
+        },
+        {
+            "location": "/programming/markdown/#tieu-e",
+            "text": "C\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.  # \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>",
+            "title": "Ti\u00eau \u0111\u1ec1"
+        },
+        {
+            "location": "/programming/markdown/#boi-am-in-nghieng",
+            "text": "S\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm  *\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***",
+            "title": "B\u00f4i \u0111\u1eadm, in nghi\u00eang"
+        },
+        {
+            "location": "/programming/markdown/#danh-sach",
+            "text": "",
+            "title": "Danh s\u00e1ch"
+        },
+        {
+            "location": "/programming/markdown/#khong-co-thu-tu",
+            "text": "* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b",
+            "title": "Kh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1"
+        },
+        {
+            "location": "/programming/markdown/#co-thu-tu",
+            "text": "1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b",
+            "title": "C\u00f3 th\u1ee9 t\u1ef1"
+        },
+        {
+            "location": "/programming/markdown/#anh",
+            "text": "![python install](../../img/index/win-py-install.png)",
+            "title": "\u1ea2nh"
+        },
+        {
+            "location": "/programming/markdown/#uong-dan-lien-ket",
+            "text": "[Link](../project/document_tutorial/main/#huong-dan-cai-at)",
+            "title": "\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft"
+        },
+        {
+            "location": "/programming/markdown/#tao-bang",
+            "text": "| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |",
+            "title": "T\u1ea1o b\u1ea3ng"
+        },
+        {
+            "location": "/programming/markdown/#chu-thich",
+            "text": "> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y",
+            "title": "Ch\u00fa th\u00edch"
+        },
+        {
+            "location": "/programming/markdown/#khung-bao-code",
+            "text": "```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
+            "title": "Khung bao code"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/",
+            "text": "Ti\u00eau chu\u1ea9n v\u1ec1 tr\u00ecnh b\u00e0y\n#\n\n\nEncoding\n#\n\n\n\n\nCh\u1ec9 s\u1eed d\u1ee5ng UTF-8 \u0111\u1ec3 Encode cho file ch\u1ee9a PHP\n\n\n\n\nTag Php\n#\n\n\n\n\nB\u1eaft \u0111\u1ea7u \u0111o\u1ea1n script PHP ch\u1ec9 d\u00f9ng th\u1ebb <?php kh\u00f4ng \u0111\u01b0\u1ee3c vi\u1ebft t\u1eaft <?\u2026 \n\n\n\n\nKho\u1ea3ng c\u00e1ch tr\u00ecnh b\u00e0y.\n#\n\n\n\n\nC\u00e1c namespace, class, function c\u00e1ch nhau b\u1eb1ng 1 l\u1ea7n enter xu\u1ed1ng d\u00f2ng.\n\n\n\n\nGhi ch\u00fa trong class:\n#\n\n\n\n\nB\u1eaft \u0111\u1ea7u 1 class ph\u1ea3i vi\u1ebft c\u00e1c ch\u00fa th\u00edch v\u1ec1 class \u0111\u00f3, t\u00ean v\u00e0 th\u00f4ng tin ng\u01b0\u1eddi th\u1ef1c hi\u1ec7n\n\n\nVi\u1ebft ghi ch\u00fa cho 1 class, 1 thu\u1ed9c t\u00ednh, 1 ph\u01b0\u01a1ng th\u1ee9c cho class \u0111\u00f3 s\u1eed d\u1ee5ng: \n/** */\n, ghi ch\u00fa cho 1 ph\u01b0\u01a1ng th\u1ee9c ph\u1ea3i note l\u1ea1i \u0111\u01b0\u1ee3c \u0111\u1ea7u v\u00e0o c\u1ee7a ph\u01b0\u01a1ng th\u1ee9c \u0111\u00f3 g\u1ed3m nh\u1eefng g\u00ec, \u0111\u1ea7u ra l\u00e0 g\u00ec (string, array, object, view\u2026)\n\n\nVi\u1ebft ghi ch\u00fa trong m\u1ed9t ph\u01b0\u01a1ng th\u1ee9c th\u00ec s\u1eed d\u1ee5ng \n//\n\n\n\n\nV\u00ed d\u1ee5 cho c\u00e1c quy \u01b0\u1edbc tr\u00ean:\n\n\n\n\nTi\u00eau chu\u1ea9n v\u1ec1 c\u00e1ch \u0111\u1eb7t t\u00ean\n#\n\n\nClass (l\u1edbp)\n#\n\n\n\n\nT\u00ean 1 class ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a ng\u1eafn g\u1ecdn c\u1ee7a class \u0111\u00f3, t\u00ean class s\u1eed d\u1ee5ng ch\u1eef c\u00e1i, ch\u1eef c\u00e1i \u0111\u1ea7u ti\u00ean ph\u1ea3i vi\u1ebft hoa. v\u00ed d\u1ee5 nh\u01b0 ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu th\u00ec s\u1ebd c\u1ea7n nh\u1eefng class sau :\n\n\n\n\nMenuControler: Class x\u1eed l\u00fd controler\n\nMenuModel: Class x\u1eed l\u00fd v\u1ec1Model\n\nMenuHelper: Class h\u1ed7 tr\u1ee3 x\u1eed l\u00fd c\u00e1c nghi\u1ec7p v\u1ee5 ph\u1ee9c t\u1ea1p\n\n\n\n\nMethod (ph\u01b0\u01a1ng th\u1ee9c)\n#\n\n\n\n\nT\u00ean 1 ph\u01b0\u01a1ng th\u1ee9c s\u1ebd th\u1ec3 hi\u1ec7n m\u1ed9t h\u00e0nh h\u00e0nh \u0111\u1ed9ng c\u1ee5 th\u1ec3 c\u1ee7a class, ph\u01b0\u01a1ng th\u1ee9c s\u1eed d\u1ee5ng ch\u1eef c\u00e1i th\u01b0\u1eddng \u0111\u1ec3 bi\u1ec3u di\u1ec5n. v\u00ed d\u1ee5 trong ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu s\u1ebd c\u1ea7n c\u00f3 nh\u1eefng ph\u01b0\u01a1ng th\u1ee9c sau:\n\n\n\n\nindex: Kh\u1edfi t\u1ea1o d\u1eef li\u1ec7u m\u1eabu, load c\u00e1c file js,css li\u00ean quan\n\nloadlist: Load m\u00e0n h\u00ecnh danh s\u00e1ch c\u00e1c menu\n\nadd: Th\u00eam m\u1edbi m\u1ed9t menu\n\nedit: S\u1eeda m\u1ed9t menu\n\ndelete: X\u00f3a m\u1ed9t menu\n\nupdate: C\u1eadp nh\u1eadt m\u1ed9t menu\n\n\n\n\nProperties (Thu\u1ed9c t\u00ednh)\n#\n\n\n\n\nH\u1eb1ng s\u1ed1: H\u1eb1ng s\u1ed1 s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft hoa \u0111\u1ec3 th\u1ec3 hi\u1ec7n. vd: const VERSION = '1.0';\n\n\nBi\u1ebfn: s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng \u0111\u1ec3 th\u1ec3 hi\u1ec7n, g\u1eafn gi\u00e1 tr\u1ecb cho bi\u1ebft s\u1eed d\u1ee5ng k\u00fd t\u1ef1 ngo\u1eb7c \u0111\u01a1n '', n\u1ebfu bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb c\u1ee7a m\u1ed9t array ho\u1eb7c 1 object th\u00ec th\u00eam ch\u1eef 's' \u1edf cu\u1ed1i, bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb 1 string th\u00ec kh\u00f4ng. v\u00ed d\u1ee5: \n\n\n\n\nuser = 'user1,uer2' // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb chu\u1ed7i vi\u1ebft th\u01b0\u1eddng\n\nusers = array( // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb m\u1ea3ng ho\u1eb7c object th\u00eam ch\u1eef s \u1edf cu\u1ed1i\n\n                 0 => array('name'=>'user1'),\n\n                1 => array('name'=>'user2')\n\n);\n\n\n\n\nJavascript\n#\n\n\n\n\nDo d\u1ef1 \u00e1n vi\u1ebft JS theo h\u01b0\u1edbng \u0111\u1ed1i t\u01b0\u1ee3ng n\u00ean \u00e1p d\u1ee5ng c\u00e1ch \u0111\u1eb7t t\u00ean tr\u00ean cho JS\n\n\n\n\nCSS\n#\n\n\n\n\nCss s\u1ebd vi\u1ebft theo chu\u1ea9n c\u1ee7a bootstrap: t\u00ean class, id vi\u1ebft th\u01b0\u1eddng, n\u1ebfu class id nhi\u1ec1u h\u01a1n 1 t\u1eeb th\u00ec ph\u00e2n c\u00e1ch v\u1edbi nhau b\u1eb1ng d\u1ea5u \"-\". v\u00ed d\u1ee5: content-wrapper, sidebar-menu, dropdown-menu ..vv\n\n\n\n\nSQL\n#\n\n\nTable (b\u1ea3ng):\n#\n\n\n\n\nT\u00ean b\u1ea3ng ph\u1ea3i ng\u1eafn g\u1ecdn th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a c\u1ee7a b\u1ea3ng \u0111\u00f3, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho b\u1ea3ng\n\n\n\u0110\u1eb7t t\u00ean theo quy t\u1eafc: [module-prefix]_[ten-bang]. (l\u01b0u \u00fd: ch\u1ec9 \u0111\u1eb7t module-prefix cho nh\u1eefng b\u1ea3ng thu\u1ed9c c\u00e1c lo\u1ea1i sau: b\u1ea3ng li\u00ean quan \u0111\u1ebfn h\u1ec7 th\u1ed1ng, b\u1ea3ng li\u00ean quan \u0111\u1ebfn d\u1ecbch v\u1ee5 ivan, ihoadon, cks) M\u1ed9t s\u1ed1 v\u00ed d\u1ee5\n\n\n\n\nv\u00ed d\u1ee5:\n\n\nuser : b\u1ea3ng ng\u01b0\u1eddi d\u00f9ng\n\ncompany : b\u1ea3ng l\u01b0u th\u00f4ng tin c\u00e1c c\u00f4ng ty\n\nsystem_list: b\u1ea3ng l\u01b0u danh m\u1ee5c (system l\u00e0 [module-prefix]; list l\u00e0 t\u00ean b\u1ea3ng) \n\nivan_customer: b\u1ea3ng l\u01b0u kh\u00e1ch h\u00e0ng trong d\u1ecbch v\u1ee5 ivan ( ivan l\u00e0 [module-prefix]; customer l\u00e0 t\u00ean b\u1ea3ng) \n\nL\u01b0u \u00fd: \u0111\u1eb7t t\u00ean b\u1ea3ng s\u1ebd kh\u1edfi t\u1ea1o trong migration c\u1ee7a laravel n\u00ean n\u00f3 s\u1ebd c\u1ed9ng v\u1edbi db_prefix m\u00ecnh khai  b\u00e1o do \u0111\u00f3 c\u00f3 th\u1ec3 trong database t\u00ean b\u1ea3ng s\u1ebd kh\u00e1c nh\u01b0: t_user, abc_user, xyz_user, abcxyz_user t\u00f9y thu\u1ed9c v\u00e0o ng\u01b0\u1eddi qu\u1ea3n tr\u1ecb \u0111\u1eb7t db-prefix\n\n\n\n\nColumn (c\u1ed9t)\n#\n\n\n\n\nT\u00ean c\u1ed9t ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c c\u00e1c thu\u1ed9c t\u00ednh c\u1ee7a \u0111\u1ed5i t\u01b0\u1ee3ng b\u1ea3ng, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho c\u1ed9t.\n\n\n\u0110\u1ed1i v\u1edbi kh\u00f3a ch\u00ednh (primary key) c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh ph\u1ea3i \u0111\u1eb7t l\u00e0 id \n\n\n\u0110\u1ed1i v\u1edbi kh\u00f3a ngo\u1ea1i (foreign key) th\u00ec \u0111\u1eb7t theo quy t\u1eafc sau: [ten-bang-lien-ket]_id\nV\u00ed d\u1ee5 v\u1ec1 c\u00e1c c\u1ed9t trong b\u1ea3ng user:\n\n\n\n\nid                                     // kh\u00f3a ch\u00ednh c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh \u0111\u1eb7t l\u00e0 id\n\ncompany_id                // l\u00e0 kh\u00f3a ngo\u1ea1i c\u1ee7a b\u1ea3ng company\n\nname                             // T\u00ean ng\u01b0\u1eddi dung\n\nage                                 // Tu\u1ed5i ng\u01b0\u1eddi d\u00f9ng\n\nsex                                // Gi\u1edbi t\u00ednh\n\n\n\n\nStoreprocedure:\n#\n\n\nT\u00ean store \u0111\u1eb7t theo quy t\u1eafc: [ten_module]_[ten_controller][hanh_dong]. v\u00ed d\u1ee5:\n\n\nCategory_ConfigGetAll (nh\u01b0 v\u1eady strore thu\u1ed9c module: Category, thu\u1ed9c controller: Config v\u1edbi h\u00e0nh \u0111\u1ed9ng l\u1ea5y t\u1ea5t c\u1ea3 chuy\u00ean m\u1ee5c getall)\n\n\n\n\nTi\u00eau chu\u1ea9n c\u00e1c c\u00e2u l\u1ec7nh \u0111i\u1ec1u khi\u1ec3n\n#\n\n\nForeach\n#\n\n\n// v\u00ed d\u1ee5 1 l\u1ec7nh foreach v\u1ec1 c\u00e1c \u0111\u1ed1i t\u01b0\u1ee3ng ng\u01b0\u1eddi d\u00f9ng\n\nforeach(users as user){\n\n       $name = user->name;\n\n       $age = user->age\n\n}\n\n\n\n\nIf else\n#\n\n\n1- L\u1ec7nh if 1 \u0111i\u1ec1u ki\u1ec7n\n\nif ($a != 2) {\n\n      $a = 2;\n\n}\n\n2- L\u1ec7nh if else\n\nif ($a != 2) {\n    $a = 2;\n} else {\n    $a = 7;\n}\n\n3- L\u1ec7nh if else if\n\nif ($a != 2) {\n    $a = 2;\n} elseif ($a == 3) {\n    $a = 4;\n} else {\n    $a = 7;\n}\n\n\n\n\nSwith\n#\n\n\nswitch ($numPeople) {\n    case 1:\n        break;\n\n    case 2:\n        break;\n\n    default:\n        break;\n}",
+            "title": "Ti\u00eau chu\u1ea9n code"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#tieu-chuan-ve-trinh-bay",
+            "text": "",
+            "title": "Ti\u00eau chu\u1ea9n v\u1ec1 tr\u00ecnh b\u00e0y"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#encoding",
+            "text": "Ch\u1ec9 s\u1eed d\u1ee5ng UTF-8 \u0111\u1ec3 Encode cho file ch\u1ee9a PHP",
+            "title": "Encoding"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#tag-php",
+            "text": "B\u1eaft \u0111\u1ea7u \u0111o\u1ea1n script PHP ch\u1ec9 d\u00f9ng th\u1ebb <?php kh\u00f4ng \u0111\u01b0\u1ee3c vi\u1ebft t\u1eaft <?\u2026",
+            "title": "Tag Php"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#khoang-cach-trinh-bay",
+            "text": "C\u00e1c namespace, class, function c\u00e1ch nhau b\u1eb1ng 1 l\u1ea7n enter xu\u1ed1ng d\u00f2ng.",
+            "title": "Kho\u1ea3ng c\u00e1ch tr\u00ecnh b\u00e0y."
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#ghi-chu-trong-class",
+            "text": "B\u1eaft \u0111\u1ea7u 1 class ph\u1ea3i vi\u1ebft c\u00e1c ch\u00fa th\u00edch v\u1ec1 class \u0111\u00f3, t\u00ean v\u00e0 th\u00f4ng tin ng\u01b0\u1eddi th\u1ef1c hi\u1ec7n  Vi\u1ebft ghi ch\u00fa cho 1 class, 1 thu\u1ed9c t\u00ednh, 1 ph\u01b0\u01a1ng th\u1ee9c cho class \u0111\u00f3 s\u1eed d\u1ee5ng:  /** */ , ghi ch\u00fa cho 1 ph\u01b0\u01a1ng th\u1ee9c ph\u1ea3i note l\u1ea1i \u0111\u01b0\u1ee3c \u0111\u1ea7u v\u00e0o c\u1ee7a ph\u01b0\u01a1ng th\u1ee9c \u0111\u00f3 g\u1ed3m nh\u1eefng g\u00ec, \u0111\u1ea7u ra l\u00e0 g\u00ec (string, array, object, view\u2026)  Vi\u1ebft ghi ch\u00fa trong m\u1ed9t ph\u01b0\u01a1ng th\u1ee9c th\u00ec s\u1eed d\u1ee5ng  //   V\u00ed d\u1ee5 cho c\u00e1c quy \u01b0\u1edbc tr\u00ean:",
+            "title": "Ghi ch\u00fa trong class:"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#tieu-chuan-ve-cach-at-ten",
+            "text": "",
+            "title": "Ti\u00eau chu\u1ea9n v\u1ec1 c\u00e1ch \u0111\u1eb7t t\u00ean"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#class-lop",
+            "text": "T\u00ean 1 class ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a ng\u1eafn g\u1ecdn c\u1ee7a class \u0111\u00f3, t\u00ean class s\u1eed d\u1ee5ng ch\u1eef c\u00e1i, ch\u1eef c\u00e1i \u0111\u1ea7u ti\u00ean ph\u1ea3i vi\u1ebft hoa. v\u00ed d\u1ee5 nh\u01b0 ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu th\u00ec s\u1ebd c\u1ea7n nh\u1eefng class sau :   MenuControler: Class x\u1eed l\u00fd controler\n\nMenuModel: Class x\u1eed l\u00fd v\u1ec1Model\n\nMenuHelper: Class h\u1ed7 tr\u1ee3 x\u1eed l\u00fd c\u00e1c nghi\u1ec7p v\u1ee5 ph\u1ee9c t\u1ea1p",
+            "title": "Class (l\u1edbp)"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#method-phuong-thuc",
+            "text": "T\u00ean 1 ph\u01b0\u01a1ng th\u1ee9c s\u1ebd th\u1ec3 hi\u1ec7n m\u1ed9t h\u00e0nh h\u00e0nh \u0111\u1ed9ng c\u1ee5 th\u1ec3 c\u1ee7a class, ph\u01b0\u01a1ng th\u1ee9c s\u1eed d\u1ee5ng ch\u1eef c\u00e1i th\u01b0\u1eddng \u0111\u1ec3 bi\u1ec3u di\u1ec5n. v\u00ed d\u1ee5 trong ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu s\u1ebd c\u1ea7n c\u00f3 nh\u1eefng ph\u01b0\u01a1ng th\u1ee9c sau:   index: Kh\u1edfi t\u1ea1o d\u1eef li\u1ec7u m\u1eabu, load c\u00e1c file js,css li\u00ean quan\n\nloadlist: Load m\u00e0n h\u00ecnh danh s\u00e1ch c\u00e1c menu\n\nadd: Th\u00eam m\u1edbi m\u1ed9t menu\n\nedit: S\u1eeda m\u1ed9t menu\n\ndelete: X\u00f3a m\u1ed9t menu\n\nupdate: C\u1eadp nh\u1eadt m\u1ed9t menu",
+            "title": "Method (ph\u01b0\u01a1ng th\u1ee9c)"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#properties-thuoc-tinh",
+            "text": "H\u1eb1ng s\u1ed1: H\u1eb1ng s\u1ed1 s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft hoa \u0111\u1ec3 th\u1ec3 hi\u1ec7n. vd: const VERSION = '1.0';  Bi\u1ebfn: s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng \u0111\u1ec3 th\u1ec3 hi\u1ec7n, g\u1eafn gi\u00e1 tr\u1ecb cho bi\u1ebft s\u1eed d\u1ee5ng k\u00fd t\u1ef1 ngo\u1eb7c \u0111\u01a1n '', n\u1ebfu bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb c\u1ee7a m\u1ed9t array ho\u1eb7c 1 object th\u00ec th\u00eam ch\u1eef 's' \u1edf cu\u1ed1i, bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb 1 string th\u00ec kh\u00f4ng. v\u00ed d\u1ee5:    user = 'user1,uer2' // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb chu\u1ed7i vi\u1ebft th\u01b0\u1eddng\n\nusers = array( // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb m\u1ea3ng ho\u1eb7c object th\u00eam ch\u1eef s \u1edf cu\u1ed1i\n\n                 0 => array('name'=>'user1'),\n\n                1 => array('name'=>'user2')\n\n);",
+            "title": "Properties (Thu\u1ed9c t\u00ednh)"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#javascript",
+            "text": "Do d\u1ef1 \u00e1n vi\u1ebft JS theo h\u01b0\u1edbng \u0111\u1ed1i t\u01b0\u1ee3ng n\u00ean \u00e1p d\u1ee5ng c\u00e1ch \u0111\u1eb7t t\u00ean tr\u00ean cho JS",
+            "title": "Javascript"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#css",
+            "text": "Css s\u1ebd vi\u1ebft theo chu\u1ea9n c\u1ee7a bootstrap: t\u00ean class, id vi\u1ebft th\u01b0\u1eddng, n\u1ebfu class id nhi\u1ec1u h\u01a1n 1 t\u1eeb th\u00ec ph\u00e2n c\u00e1ch v\u1edbi nhau b\u1eb1ng d\u1ea5u \"-\". v\u00ed d\u1ee5: content-wrapper, sidebar-menu, dropdown-menu ..vv",
+            "title": "CSS"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#sql",
+            "text": "",
+            "title": "SQL"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#table-bang",
+            "text": "T\u00ean b\u1ea3ng ph\u1ea3i ng\u1eafn g\u1ecdn th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a c\u1ee7a b\u1ea3ng \u0111\u00f3, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho b\u1ea3ng  \u0110\u1eb7t t\u00ean theo quy t\u1eafc: [module-prefix]_[ten-bang]. (l\u01b0u \u00fd: ch\u1ec9 \u0111\u1eb7t module-prefix cho nh\u1eefng b\u1ea3ng thu\u1ed9c c\u00e1c lo\u1ea1i sau: b\u1ea3ng li\u00ean quan \u0111\u1ebfn h\u1ec7 th\u1ed1ng, b\u1ea3ng li\u00ean quan \u0111\u1ebfn d\u1ecbch v\u1ee5 ivan, ihoadon, cks) M\u1ed9t s\u1ed1 v\u00ed d\u1ee5   v\u00ed d\u1ee5:  user : b\u1ea3ng ng\u01b0\u1eddi d\u00f9ng\n\ncompany : b\u1ea3ng l\u01b0u th\u00f4ng tin c\u00e1c c\u00f4ng ty\n\nsystem_list: b\u1ea3ng l\u01b0u danh m\u1ee5c (system l\u00e0 [module-prefix]; list l\u00e0 t\u00ean b\u1ea3ng) \n\nivan_customer: b\u1ea3ng l\u01b0u kh\u00e1ch h\u00e0ng trong d\u1ecbch v\u1ee5 ivan ( ivan l\u00e0 [module-prefix]; customer l\u00e0 t\u00ean b\u1ea3ng) \n\nL\u01b0u \u00fd: \u0111\u1eb7t t\u00ean b\u1ea3ng s\u1ebd kh\u1edfi t\u1ea1o trong migration c\u1ee7a laravel n\u00ean n\u00f3 s\u1ebd c\u1ed9ng v\u1edbi db_prefix m\u00ecnh khai  b\u00e1o do \u0111\u00f3 c\u00f3 th\u1ec3 trong database t\u00ean b\u1ea3ng s\u1ebd kh\u00e1c nh\u01b0: t_user, abc_user, xyz_user, abcxyz_user t\u00f9y thu\u1ed9c v\u00e0o ng\u01b0\u1eddi qu\u1ea3n tr\u1ecb \u0111\u1eb7t db-prefix",
+            "title": "Table (b\u1ea3ng):"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#column-cot",
+            "text": "T\u00ean c\u1ed9t ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c c\u00e1c thu\u1ed9c t\u00ednh c\u1ee7a \u0111\u1ed5i t\u01b0\u1ee3ng b\u1ea3ng, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho c\u1ed9t.  \u0110\u1ed1i v\u1edbi kh\u00f3a ch\u00ednh (primary key) c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh ph\u1ea3i \u0111\u1eb7t l\u00e0 id   \u0110\u1ed1i v\u1edbi kh\u00f3a ngo\u1ea1i (foreign key) th\u00ec \u0111\u1eb7t theo quy t\u1eafc sau: [ten-bang-lien-ket]_id\nV\u00ed d\u1ee5 v\u1ec1 c\u00e1c c\u1ed9t trong b\u1ea3ng user:   id                                     // kh\u00f3a ch\u00ednh c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh \u0111\u1eb7t l\u00e0 id\n\ncompany_id                // l\u00e0 kh\u00f3a ngo\u1ea1i c\u1ee7a b\u1ea3ng company\n\nname                             // T\u00ean ng\u01b0\u1eddi dung\n\nage                                 // Tu\u1ed5i ng\u01b0\u1eddi d\u00f9ng\n\nsex                                // Gi\u1edbi t\u00ednh",
+            "title": "Column (c\u1ed9t)"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#storeprocedure",
+            "text": "T\u00ean store \u0111\u1eb7t theo quy t\u1eafc: [ten_module]_[ten_controller][hanh_dong]. v\u00ed d\u1ee5:  Category_ConfigGetAll (nh\u01b0 v\u1eady strore thu\u1ed9c module: Category, thu\u1ed9c controller: Config v\u1edbi h\u00e0nh \u0111\u1ed9ng l\u1ea5y t\u1ea5t c\u1ea3 chuy\u00ean m\u1ee5c getall)",
+            "title": "Storeprocedure:"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#tieu-chuan-cac-cau-lenh-ieu-khien",
+            "text": "",
+            "title": "Ti\u00eau chu\u1ea9n c\u00e1c c\u00e2u l\u1ec7nh \u0111i\u1ec1u khi\u1ec3n"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#foreach",
+            "text": "// v\u00ed d\u1ee5 1 l\u1ec7nh foreach v\u1ec1 c\u00e1c \u0111\u1ed1i t\u01b0\u1ee3ng ng\u01b0\u1eddi d\u00f9ng\n\nforeach(users as user){\n\n       $name = user->name;\n\n       $age = user->age\n\n}",
+            "title": "Foreach"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#if-else",
+            "text": "1- L\u1ec7nh if 1 \u0111i\u1ec1u ki\u1ec7n\n\nif ($a != 2) {\n\n      $a = 2;\n\n}\n\n2- L\u1ec7nh if else\n\nif ($a != 2) {\n    $a = 2;\n} else {\n    $a = 7;\n}\n\n3- L\u1ec7nh if else if\n\nif ($a != 2) {\n    $a = 2;\n} elseif ($a == 3) {\n    $a = 4;\n} else {\n    $a = 7;\n}",
+            "title": "If else"
+        },
+        {
+            "location": "/programming/tieu_chuan_code/#swith",
+            "text": "switch ($numPeople) {\n    case 1:\n        break;\n\n    case 2:\n        break;\n\n    default:\n        break;\n}",
+            "title": "Swith"
         },
         {
             "location": "/programming/angular/1_gioithieu/",
@@ -201,171 +626,6 @@
             "title": "H\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng"
         },
         {
-            "location": "/programming/markdown/",
-            "text": "Markdown l\u00e0 g\u00ec?\n#\n\n\nMarkdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.\n\n\nC\u00fa ph\u00e1p\n#\n\n\nTi\u00eau \u0111\u1ec1\n#\n\n\nC\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.\n\n\n# \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>\n\n\n\n\nB\u00f4i \u0111\u1eadm, in nghi\u00eang\n#\n\n\nS\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm\n\n\n*\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***\n\n\n\n\nDanh s\u00e1ch\n#\n\n\nKh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\nC\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\u1ea2nh\n#\n\n\n![python install](../../img/index/win-py-install.png)\n\n\n\n\n\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft\n#\n\n\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\nT\u1ea1o b\u1ea3ng\n#\n\n\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\nCh\u00fa th\u00edch\n#\n\n\n> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y\n\n\n\n\nKhung bao code\n#\n\n\n```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
-            "title": "Markdown"
-        },
-        {
-            "location": "/programming/markdown/#markdown-la-gi",
-            "text": "Markdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.",
-            "title": "Markdown l\u00e0 g\u00ec?"
-        },
-        {
-            "location": "/programming/markdown/#cu-phap",
-            "text": "",
-            "title": "C\u00fa ph\u00e1p"
-        },
-        {
-            "location": "/programming/markdown/#tieu-e",
-            "text": "C\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.  # \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>",
-            "title": "Ti\u00eau \u0111\u1ec1"
-        },
-        {
-            "location": "/programming/markdown/#boi-am-in-nghieng",
-            "text": "S\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm  *\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***",
-            "title": "B\u00f4i \u0111\u1eadm, in nghi\u00eang"
-        },
-        {
-            "location": "/programming/markdown/#danh-sach",
-            "text": "",
-            "title": "Danh s\u00e1ch"
-        },
-        {
-            "location": "/programming/markdown/#khong-co-thu-tu",
-            "text": "* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b",
-            "title": "Kh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1"
-        },
-        {
-            "location": "/programming/markdown/#co-thu-tu",
-            "text": "1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b",
-            "title": "C\u00f3 th\u1ee9 t\u1ef1"
-        },
-        {
-            "location": "/programming/markdown/#anh",
-            "text": "![python install](../../img/index/win-py-install.png)",
-            "title": "\u1ea2nh"
-        },
-        {
-            "location": "/programming/markdown/#uong-dan-lien-ket",
-            "text": "[Link](../project/document_tutorial/main/#huong-dan-cai-at)",
-            "title": "\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft"
-        },
-        {
-            "location": "/programming/markdown/#tao-bang",
-            "text": "| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |",
-            "title": "T\u1ea1o b\u1ea3ng"
-        },
-        {
-            "location": "/programming/markdown/#chu-thich",
-            "text": "> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y",
-            "title": "Ch\u00fa th\u00edch"
-        },
-        {
-            "location": "/programming/markdown/#khung-bao-code",
-            "text": "```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
-            "title": "Khung bao code"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/",
-            "text": "Ti\u00eau chu\u1ea9n v\u1ec1 tr\u00ecnh b\u00e0y\n#\n\n\nEncoding\n#\n\n\n\n\nCh\u1ec9 s\u1eed d\u1ee5ng UTF-8 \u0111\u1ec3 Encode cho file ch\u1ee9a PHP\n\n\n\n\nTag Php\n#\n\n\n\n\nB\u1eaft \u0111\u1ea7u \u0111o\u1ea1n script PHP ch\u1ec9 d\u00f9ng th\u1ebb <?php kh\u00f4ng \u0111\u01b0\u1ee3c vi\u1ebft t\u1eaft <?\u2026 \n\n\n\n\nKho\u1ea3ng c\u00e1ch tr\u00ecnh b\u00e0y.\n#\n\n\n\n\nC\u00e1c namespace, class, function c\u00e1ch nhau b\u1eb1ng 1 l\u1ea7n enter xu\u1ed1ng d\u00f2ng.\n\n\n\n\nGhi ch\u00fa trong class:\n#\n\n\n\n\nB\u1eaft \u0111\u1ea7u 1 class ph\u1ea3i vi\u1ebft c\u00e1c ch\u00fa th\u00edch v\u1ec1 class \u0111\u00f3, t\u00ean v\u00e0 th\u00f4ng tin ng\u01b0\u1eddi th\u1ef1c hi\u1ec7n\n\n\nVi\u1ebft ghi ch\u00fa cho 1 class, 1 thu\u1ed9c t\u00ednh, 1 ph\u01b0\u01a1ng th\u1ee9c cho class \u0111\u00f3 s\u1eed d\u1ee5ng: \n/** */\n, ghi ch\u00fa cho 1 ph\u01b0\u01a1ng th\u1ee9c ph\u1ea3i note l\u1ea1i \u0111\u01b0\u1ee3c \u0111\u1ea7u v\u00e0o c\u1ee7a ph\u01b0\u01a1ng th\u1ee9c \u0111\u00f3 g\u1ed3m nh\u1eefng g\u00ec, \u0111\u1ea7u ra l\u00e0 g\u00ec (string, array, object, view\u2026)\n\n\nVi\u1ebft ghi ch\u00fa trong m\u1ed9t ph\u01b0\u01a1ng th\u1ee9c th\u00ec s\u1eed d\u1ee5ng \n//\n\n\n\n\nV\u00ed d\u1ee5 cho c\u00e1c quy \u01b0\u1edbc tr\u00ean:\n\n\n\n\nTi\u00eau chu\u1ea9n v\u1ec1 c\u00e1ch \u0111\u1eb7t t\u00ean\n#\n\n\nClass (l\u1edbp)\n#\n\n\n\n\nT\u00ean 1 class ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a ng\u1eafn g\u1ecdn c\u1ee7a class \u0111\u00f3, t\u00ean class s\u1eed d\u1ee5ng ch\u1eef c\u00e1i, ch\u1eef c\u00e1i \u0111\u1ea7u ti\u00ean ph\u1ea3i vi\u1ebft hoa. v\u00ed d\u1ee5 nh\u01b0 ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu th\u00ec s\u1ebd c\u1ea7n nh\u1eefng class sau :\n\n\n\n\nMenuControler: Class x\u1eed l\u00fd controler\n\nMenuModel: Class x\u1eed l\u00fd v\u1ec1Model\n\nMenuHelper: Class h\u1ed7 tr\u1ee3 x\u1eed l\u00fd c\u00e1c nghi\u1ec7p v\u1ee5 ph\u1ee9c t\u1ea1p\n\n\n\n\nMethod (ph\u01b0\u01a1ng th\u1ee9c)\n#\n\n\n\n\nT\u00ean 1 ph\u01b0\u01a1ng th\u1ee9c s\u1ebd th\u1ec3 hi\u1ec7n m\u1ed9t h\u00e0nh h\u00e0nh \u0111\u1ed9ng c\u1ee5 th\u1ec3 c\u1ee7a class, ph\u01b0\u01a1ng th\u1ee9c s\u1eed d\u1ee5ng ch\u1eef c\u00e1i th\u01b0\u1eddng \u0111\u1ec3 bi\u1ec3u di\u1ec5n. v\u00ed d\u1ee5 trong ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu s\u1ebd c\u1ea7n c\u00f3 nh\u1eefng ph\u01b0\u01a1ng th\u1ee9c sau:\n\n\n\n\nindex: Kh\u1edfi t\u1ea1o d\u1eef li\u1ec7u m\u1eabu, load c\u00e1c file js,css li\u00ean quan\n\nloadlist: Load m\u00e0n h\u00ecnh danh s\u00e1ch c\u00e1c menu\n\nadd: Th\u00eam m\u1edbi m\u1ed9t menu\n\nedit: S\u1eeda m\u1ed9t menu\n\ndelete: X\u00f3a m\u1ed9t menu\n\nupdate: C\u1eadp nh\u1eadt m\u1ed9t menu\n\n\n\n\nProperties (Thu\u1ed9c t\u00ednh)\n#\n\n\n\n\nH\u1eb1ng s\u1ed1: H\u1eb1ng s\u1ed1 s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft hoa \u0111\u1ec3 th\u1ec3 hi\u1ec7n. vd: const VERSION = '1.0';\n\n\nBi\u1ebfn: s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng \u0111\u1ec3 th\u1ec3 hi\u1ec7n, g\u1eafn gi\u00e1 tr\u1ecb cho bi\u1ebft s\u1eed d\u1ee5ng k\u00fd t\u1ef1 ngo\u1eb7c \u0111\u01a1n '', n\u1ebfu bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb c\u1ee7a m\u1ed9t array ho\u1eb7c 1 object th\u00ec th\u00eam ch\u1eef 's' \u1edf cu\u1ed1i, bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb 1 string th\u00ec kh\u00f4ng. v\u00ed d\u1ee5: \n\n\n\n\nuser = 'user1,uer2' // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb chu\u1ed7i vi\u1ebft th\u01b0\u1eddng\n\nusers = array( // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb m\u1ea3ng ho\u1eb7c object th\u00eam ch\u1eef s \u1edf cu\u1ed1i\n\n                 0 => array('name'=>'user1'),\n\n                1 => array('name'=>'user2')\n\n);\n\n\n\n\nJavascript\n#\n\n\n\n\nDo d\u1ef1 \u00e1n vi\u1ebft JS theo h\u01b0\u1edbng \u0111\u1ed1i t\u01b0\u1ee3ng n\u00ean \u00e1p d\u1ee5ng c\u00e1ch \u0111\u1eb7t t\u00ean tr\u00ean cho JS\n\n\n\n\nCSS\n#\n\n\n\n\nCss s\u1ebd vi\u1ebft theo chu\u1ea9n c\u1ee7a bootstrap: t\u00ean class, id vi\u1ebft th\u01b0\u1eddng, n\u1ebfu class id nhi\u1ec1u h\u01a1n 1 t\u1eeb th\u00ec ph\u00e2n c\u00e1ch v\u1edbi nhau b\u1eb1ng d\u1ea5u \"-\". v\u00ed d\u1ee5: content-wrapper, sidebar-menu, dropdown-menu ..vv\n\n\n\n\nSQL\n#\n\n\nTable (b\u1ea3ng):\n#\n\n\n\n\nT\u00ean b\u1ea3ng ph\u1ea3i ng\u1eafn g\u1ecdn th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a c\u1ee7a b\u1ea3ng \u0111\u00f3, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho b\u1ea3ng\n\n\n\u0110\u1eb7t t\u00ean theo quy t\u1eafc: [module-prefix]_[ten-bang]. (l\u01b0u \u00fd: ch\u1ec9 \u0111\u1eb7t module-prefix cho nh\u1eefng b\u1ea3ng thu\u1ed9c c\u00e1c lo\u1ea1i sau: b\u1ea3ng li\u00ean quan \u0111\u1ebfn h\u1ec7 th\u1ed1ng, b\u1ea3ng li\u00ean quan \u0111\u1ebfn d\u1ecbch v\u1ee5 ivan, ihoadon, cks) M\u1ed9t s\u1ed1 v\u00ed d\u1ee5\n\n\n\n\nv\u00ed d\u1ee5:\n\n\nuser : b\u1ea3ng ng\u01b0\u1eddi d\u00f9ng\n\ncompany : b\u1ea3ng l\u01b0u th\u00f4ng tin c\u00e1c c\u00f4ng ty\n\nsystem_list: b\u1ea3ng l\u01b0u danh m\u1ee5c (system l\u00e0 [module-prefix]; list l\u00e0 t\u00ean b\u1ea3ng) \n\nivan_customer: b\u1ea3ng l\u01b0u kh\u00e1ch h\u00e0ng trong d\u1ecbch v\u1ee5 ivan ( ivan l\u00e0 [module-prefix]; customer l\u00e0 t\u00ean b\u1ea3ng) \n\nL\u01b0u \u00fd: \u0111\u1eb7t t\u00ean b\u1ea3ng s\u1ebd kh\u1edfi t\u1ea1o trong migration c\u1ee7a laravel n\u00ean n\u00f3 s\u1ebd c\u1ed9ng v\u1edbi db_prefix m\u00ecnh khai  b\u00e1o do \u0111\u00f3 c\u00f3 th\u1ec3 trong database t\u00ean b\u1ea3ng s\u1ebd kh\u00e1c nh\u01b0: t_user, abc_user, xyz_user, abcxyz_user t\u00f9y thu\u1ed9c v\u00e0o ng\u01b0\u1eddi qu\u1ea3n tr\u1ecb \u0111\u1eb7t db-prefix\n\n\n\n\nColumn (c\u1ed9t)\n#\n\n\n\n\nT\u00ean c\u1ed9t ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c c\u00e1c thu\u1ed9c t\u00ednh c\u1ee7a \u0111\u1ed5i t\u01b0\u1ee3ng b\u1ea3ng, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho c\u1ed9t.\n\n\n\u0110\u1ed1i v\u1edbi kh\u00f3a ch\u00ednh (primary key) c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh ph\u1ea3i \u0111\u1eb7t l\u00e0 id \n\n\n\u0110\u1ed1i v\u1edbi kh\u00f3a ngo\u1ea1i (foreign key) th\u00ec \u0111\u1eb7t theo quy t\u1eafc sau: [ten-bang-lien-ket]_id\nV\u00ed d\u1ee5 v\u1ec1 c\u00e1c c\u1ed9t trong b\u1ea3ng user:\n\n\n\n\nid                                     // kh\u00f3a ch\u00ednh c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh \u0111\u1eb7t l\u00e0 id\n\ncompany_id                // l\u00e0 kh\u00f3a ngo\u1ea1i c\u1ee7a b\u1ea3ng company\n\nname                             // T\u00ean ng\u01b0\u1eddi dung\n\nage                                 // Tu\u1ed5i ng\u01b0\u1eddi d\u00f9ng\n\nsex                                // Gi\u1edbi t\u00ednh\n\n\n\n\nStoreprocedure:\n#\n\n\nT\u00ean store \u0111\u1eb7t theo quy t\u1eafc: [ten_module]_[ten_controller][hanh_dong]. v\u00ed d\u1ee5:\n\n\nCategory_ConfigGetAll (nh\u01b0 v\u1eady strore thu\u1ed9c module: Category, thu\u1ed9c controller: Config v\u1edbi h\u00e0nh \u0111\u1ed9ng l\u1ea5y t\u1ea5t c\u1ea3 chuy\u00ean m\u1ee5c getall)\n\n\n\n\nTi\u00eau chu\u1ea9n c\u00e1c c\u00e2u l\u1ec7nh \u0111i\u1ec1u khi\u1ec3n\n#\n\n\nForeach\n#\n\n\n// v\u00ed d\u1ee5 1 l\u1ec7nh foreach v\u1ec1 c\u00e1c \u0111\u1ed1i t\u01b0\u1ee3ng ng\u01b0\u1eddi d\u00f9ng\n\nforeach(users as user){\n\n       $name = user->name;\n\n       $age = user->age\n\n}\n\n\n\n\nIf else\n#\n\n\n1- L\u1ec7nh if 1 \u0111i\u1ec1u ki\u1ec7n\n\nif ($a != 2) {\n\n      $a = 2;\n\n}\n\n2- L\u1ec7nh if else\n\nif ($a != 2) {\n    $a = 2;\n} else {\n    $a = 7;\n}\n\n3- L\u1ec7nh if else if\n\nif ($a != 2) {\n    $a = 2;\n} elseif ($a == 3) {\n    $a = 4;\n} else {\n    $a = 7;\n}\n\n\n\n\nSwith\n#\n\n\nswitch ($numPeople) {\n    case 1:\n        break;\n\n    case 2:\n        break;\n\n    default:\n        break;\n}",
-            "title": "Ti\u00eau chu\u1ea9n code"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#tieu-chuan-ve-trinh-bay",
-            "text": "",
-            "title": "Ti\u00eau chu\u1ea9n v\u1ec1 tr\u00ecnh b\u00e0y"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#encoding",
-            "text": "Ch\u1ec9 s\u1eed d\u1ee5ng UTF-8 \u0111\u1ec3 Encode cho file ch\u1ee9a PHP",
-            "title": "Encoding"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#tag-php",
-            "text": "B\u1eaft \u0111\u1ea7u \u0111o\u1ea1n script PHP ch\u1ec9 d\u00f9ng th\u1ebb <?php kh\u00f4ng \u0111\u01b0\u1ee3c vi\u1ebft t\u1eaft <?\u2026",
-            "title": "Tag Php"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#khoang-cach-trinh-bay",
-            "text": "C\u00e1c namespace, class, function c\u00e1ch nhau b\u1eb1ng 1 l\u1ea7n enter xu\u1ed1ng d\u00f2ng.",
-            "title": "Kho\u1ea3ng c\u00e1ch tr\u00ecnh b\u00e0y."
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#ghi-chu-trong-class",
-            "text": "B\u1eaft \u0111\u1ea7u 1 class ph\u1ea3i vi\u1ebft c\u00e1c ch\u00fa th\u00edch v\u1ec1 class \u0111\u00f3, t\u00ean v\u00e0 th\u00f4ng tin ng\u01b0\u1eddi th\u1ef1c hi\u1ec7n  Vi\u1ebft ghi ch\u00fa cho 1 class, 1 thu\u1ed9c t\u00ednh, 1 ph\u01b0\u01a1ng th\u1ee9c cho class \u0111\u00f3 s\u1eed d\u1ee5ng:  /** */ , ghi ch\u00fa cho 1 ph\u01b0\u01a1ng th\u1ee9c ph\u1ea3i note l\u1ea1i \u0111\u01b0\u1ee3c \u0111\u1ea7u v\u00e0o c\u1ee7a ph\u01b0\u01a1ng th\u1ee9c \u0111\u00f3 g\u1ed3m nh\u1eefng g\u00ec, \u0111\u1ea7u ra l\u00e0 g\u00ec (string, array, object, view\u2026)  Vi\u1ebft ghi ch\u00fa trong m\u1ed9t ph\u01b0\u01a1ng th\u1ee9c th\u00ec s\u1eed d\u1ee5ng  //   V\u00ed d\u1ee5 cho c\u00e1c quy \u01b0\u1edbc tr\u00ean:",
-            "title": "Ghi ch\u00fa trong class:"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#tieu-chuan-ve-cach-at-ten",
-            "text": "",
-            "title": "Ti\u00eau chu\u1ea9n v\u1ec1 c\u00e1ch \u0111\u1eb7t t\u00ean"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#class-lop",
-            "text": "T\u00ean 1 class ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a ng\u1eafn g\u1ecdn c\u1ee7a class \u0111\u00f3, t\u00ean class s\u1eed d\u1ee5ng ch\u1eef c\u00e1i, ch\u1eef c\u00e1i \u0111\u1ea7u ti\u00ean ph\u1ea3i vi\u1ebft hoa. v\u00ed d\u1ee5 nh\u01b0 ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu th\u00ec s\u1ebd c\u1ea7n nh\u1eefng class sau :   MenuControler: Class x\u1eed l\u00fd controler\n\nMenuModel: Class x\u1eed l\u00fd v\u1ec1Model\n\nMenuHelper: Class h\u1ed7 tr\u1ee3 x\u1eed l\u00fd c\u00e1c nghi\u1ec7p v\u1ee5 ph\u1ee9c t\u1ea1p",
-            "title": "Class (l\u1edbp)"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#method-phuong-thuc",
-            "text": "T\u00ean 1 ph\u01b0\u01a1ng th\u1ee9c s\u1ebd th\u1ec3 hi\u1ec7n m\u1ed9t h\u00e0nh h\u00e0nh \u0111\u1ed9ng c\u1ee5 th\u1ec3 c\u1ee7a class, ph\u01b0\u01a1ng th\u1ee9c s\u1eed d\u1ee5ng ch\u1eef c\u00e1i th\u01b0\u1eddng \u0111\u1ec3 bi\u1ec3u di\u1ec5n. v\u00ed d\u1ee5 trong ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu s\u1ebd c\u1ea7n c\u00f3 nh\u1eefng ph\u01b0\u01a1ng th\u1ee9c sau:   index: Kh\u1edfi t\u1ea1o d\u1eef li\u1ec7u m\u1eabu, load c\u00e1c file js,css li\u00ean quan\n\nloadlist: Load m\u00e0n h\u00ecnh danh s\u00e1ch c\u00e1c menu\n\nadd: Th\u00eam m\u1edbi m\u1ed9t menu\n\nedit: S\u1eeda m\u1ed9t menu\n\ndelete: X\u00f3a m\u1ed9t menu\n\nupdate: C\u1eadp nh\u1eadt m\u1ed9t menu",
-            "title": "Method (ph\u01b0\u01a1ng th\u1ee9c)"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#properties-thuoc-tinh",
-            "text": "H\u1eb1ng s\u1ed1: H\u1eb1ng s\u1ed1 s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft hoa \u0111\u1ec3 th\u1ec3 hi\u1ec7n. vd: const VERSION = '1.0';  Bi\u1ebfn: s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng \u0111\u1ec3 th\u1ec3 hi\u1ec7n, g\u1eafn gi\u00e1 tr\u1ecb cho bi\u1ebft s\u1eed d\u1ee5ng k\u00fd t\u1ef1 ngo\u1eb7c \u0111\u01a1n '', n\u1ebfu bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb c\u1ee7a m\u1ed9t array ho\u1eb7c 1 object th\u00ec th\u00eam ch\u1eef 's' \u1edf cu\u1ed1i, bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb 1 string th\u00ec kh\u00f4ng. v\u00ed d\u1ee5:    user = 'user1,uer2' // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb chu\u1ed7i vi\u1ebft th\u01b0\u1eddng\n\nusers = array( // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb m\u1ea3ng ho\u1eb7c object th\u00eam ch\u1eef s \u1edf cu\u1ed1i\n\n                 0 => array('name'=>'user1'),\n\n                1 => array('name'=>'user2')\n\n);",
-            "title": "Properties (Thu\u1ed9c t\u00ednh)"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#javascript",
-            "text": "Do d\u1ef1 \u00e1n vi\u1ebft JS theo h\u01b0\u1edbng \u0111\u1ed1i t\u01b0\u1ee3ng n\u00ean \u00e1p d\u1ee5ng c\u00e1ch \u0111\u1eb7t t\u00ean tr\u00ean cho JS",
-            "title": "Javascript"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#css",
-            "text": "Css s\u1ebd vi\u1ebft theo chu\u1ea9n c\u1ee7a bootstrap: t\u00ean class, id vi\u1ebft th\u01b0\u1eddng, n\u1ebfu class id nhi\u1ec1u h\u01a1n 1 t\u1eeb th\u00ec ph\u00e2n c\u00e1ch v\u1edbi nhau b\u1eb1ng d\u1ea5u \"-\". v\u00ed d\u1ee5: content-wrapper, sidebar-menu, dropdown-menu ..vv",
-            "title": "CSS"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#sql",
-            "text": "",
-            "title": "SQL"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#table-bang",
-            "text": "T\u00ean b\u1ea3ng ph\u1ea3i ng\u1eafn g\u1ecdn th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a c\u1ee7a b\u1ea3ng \u0111\u00f3, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho b\u1ea3ng  \u0110\u1eb7t t\u00ean theo quy t\u1eafc: [module-prefix]_[ten-bang]. (l\u01b0u \u00fd: ch\u1ec9 \u0111\u1eb7t module-prefix cho nh\u1eefng b\u1ea3ng thu\u1ed9c c\u00e1c lo\u1ea1i sau: b\u1ea3ng li\u00ean quan \u0111\u1ebfn h\u1ec7 th\u1ed1ng, b\u1ea3ng li\u00ean quan \u0111\u1ebfn d\u1ecbch v\u1ee5 ivan, ihoadon, cks) M\u1ed9t s\u1ed1 v\u00ed d\u1ee5   v\u00ed d\u1ee5:  user : b\u1ea3ng ng\u01b0\u1eddi d\u00f9ng\n\ncompany : b\u1ea3ng l\u01b0u th\u00f4ng tin c\u00e1c c\u00f4ng ty\n\nsystem_list: b\u1ea3ng l\u01b0u danh m\u1ee5c (system l\u00e0 [module-prefix]; list l\u00e0 t\u00ean b\u1ea3ng) \n\nivan_customer: b\u1ea3ng l\u01b0u kh\u00e1ch h\u00e0ng trong d\u1ecbch v\u1ee5 ivan ( ivan l\u00e0 [module-prefix]; customer l\u00e0 t\u00ean b\u1ea3ng) \n\nL\u01b0u \u00fd: \u0111\u1eb7t t\u00ean b\u1ea3ng s\u1ebd kh\u1edfi t\u1ea1o trong migration c\u1ee7a laravel n\u00ean n\u00f3 s\u1ebd c\u1ed9ng v\u1edbi db_prefix m\u00ecnh khai  b\u00e1o do \u0111\u00f3 c\u00f3 th\u1ec3 trong database t\u00ean b\u1ea3ng s\u1ebd kh\u00e1c nh\u01b0: t_user, abc_user, xyz_user, abcxyz_user t\u00f9y thu\u1ed9c v\u00e0o ng\u01b0\u1eddi qu\u1ea3n tr\u1ecb \u0111\u1eb7t db-prefix",
-            "title": "Table (b\u1ea3ng):"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#column-cot",
-            "text": "T\u00ean c\u1ed9t ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c c\u00e1c thu\u1ed9c t\u00ednh c\u1ee7a \u0111\u1ed5i t\u01b0\u1ee3ng b\u1ea3ng, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho c\u1ed9t.  \u0110\u1ed1i v\u1edbi kh\u00f3a ch\u00ednh (primary key) c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh ph\u1ea3i \u0111\u1eb7t l\u00e0 id   \u0110\u1ed1i v\u1edbi kh\u00f3a ngo\u1ea1i (foreign key) th\u00ec \u0111\u1eb7t theo quy t\u1eafc sau: [ten-bang-lien-ket]_id\nV\u00ed d\u1ee5 v\u1ec1 c\u00e1c c\u1ed9t trong b\u1ea3ng user:   id                                     // kh\u00f3a ch\u00ednh c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh \u0111\u1eb7t l\u00e0 id\n\ncompany_id                // l\u00e0 kh\u00f3a ngo\u1ea1i c\u1ee7a b\u1ea3ng company\n\nname                             // T\u00ean ng\u01b0\u1eddi dung\n\nage                                 // Tu\u1ed5i ng\u01b0\u1eddi d\u00f9ng\n\nsex                                // Gi\u1edbi t\u00ednh",
-            "title": "Column (c\u1ed9t)"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#storeprocedure",
-            "text": "T\u00ean store \u0111\u1eb7t theo quy t\u1eafc: [ten_module]_[ten_controller][hanh_dong]. v\u00ed d\u1ee5:  Category_ConfigGetAll (nh\u01b0 v\u1eady strore thu\u1ed9c module: Category, thu\u1ed9c controller: Config v\u1edbi h\u00e0nh \u0111\u1ed9ng l\u1ea5y t\u1ea5t c\u1ea3 chuy\u00ean m\u1ee5c getall)",
-            "title": "Storeprocedure:"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#tieu-chuan-cac-cau-lenh-ieu-khien",
-            "text": "",
-            "title": "Ti\u00eau chu\u1ea9n c\u00e1c c\u00e2u l\u1ec7nh \u0111i\u1ec1u khi\u1ec3n"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#foreach",
-            "text": "// v\u00ed d\u1ee5 1 l\u1ec7nh foreach v\u1ec1 c\u00e1c \u0111\u1ed1i t\u01b0\u1ee3ng ng\u01b0\u1eddi d\u00f9ng\n\nforeach(users as user){\n\n       $name = user->name;\n\n       $age = user->age\n\n}",
-            "title": "Foreach"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#if-else",
-            "text": "1- L\u1ec7nh if 1 \u0111i\u1ec1u ki\u1ec7n\n\nif ($a != 2) {\n\n      $a = 2;\n\n}\n\n2- L\u1ec7nh if else\n\nif ($a != 2) {\n    $a = 2;\n} else {\n    $a = 7;\n}\n\n3- L\u1ec7nh if else if\n\nif ($a != 2) {\n    $a = 2;\n} elseif ($a == 3) {\n    $a = 4;\n} else {\n    $a = 7;\n}",
-            "title": "If else"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#swith",
-            "text": "switch ($numPeople) {\n    case 1:\n        break;\n\n    case 2:\n        break;\n\n    default:\n        break;\n}",
-            "title": "Swith"
-        },
-        {
             "location": "/software_dev/trello/",
             "text": "1. Gi\u1edbi thi\u1ec7u v\u1ec1 trello\n#\n\n\nTrello l\u00e0 c\u00f4ng c\u1ee5 qu\u1ea3n l\u00fd c\u00f4ng vi\u1ec7c r\u1ea5t hi\u1ec7u qu\u1ea3 m\u00e0 nhi\u1ec1u t\u1ed5 ch\u1ee9c c\u00e1 nh\u00e2n \u0111ang s\u1eed  d\u1ee5ng.\nTrello g\u1ed3m c\u00f3 phi\u00ean b\u1ea3n mi\u1ec5n ph\u00ed v\u00e0 tr\u1ea3 ph\u00ed.\n\n\nTrello g\u1ed3m c\u00e1c th\u00e0nh ph\u1ea7n c\u01a1 b\u1ea3n sau:\n\n\n\n\nCard:\n L\u00e0 th\u1ebb th\u00f4ng tin c\u00f3 Ti\u00eau \u0111\u1ec1, M\u00f4 t\u1ea3 d\u00f9ng \u0111\u1ec3 l\u01b0u tr\u1eef c\u00f4ng vi\u1ec7c. M\u1ed9t Card c\u00f3 th\u1ec3 d\u00f9ng \u0111\u1ec3 ghi c\u00f4ng vi\u1ec7c, t\u00ednh n\u0103ng s\u1ea3n ph\u1ea9m, c\u00e2u h\u1ecfi, ghi ch\u00fa,\u2026 t\u00f9y c\u00e1ch s\u1eed d\u1ee5ng. M\u1ed7i Card s\u1ebd c\u00f3 danh s\u00e1ch \u0111\u1ec3 b\u1ea1n chia nh\u1eefng th\u00f4ng tin \u0111\u1ea7u vi\u1ec7c nh\u1ecf h\u01a1n. M\u1ed7i Card c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c b\u00ecnh lu\u1eadn, \u0111\u00ednh k\u00e8m c\u00e1c t\u1ec7p,\nh\u00ecnh \u1ea3nh tr\u00ean \u0111\u00f3 \u0111\u1ec3 ph\u1ee5c v\u1ee5 cho vi\u1ec7c trao \u0111\u1ed5i gi\u1eefa c\u00e1c th\u00e0nh vi\u00ean.\n\n\nList:\n L\u00e0 m\u1ed9t danh s\u00e1ch t\u1ed5ng h\u1ee3p c\u00e1c Card thu\u1ed9c chung m\u1ed9t t\u00ecnh tr\u1ea1ng\nho\u1eb7c m\u1ed9t t\u00ednh ch\u1ea5t kh\u00e1c nhau. V\u00ed d\u1ee5: List Doing bao g\u1ed3m nh\u1eefng card\n\u0111ang \u0111\u01b0\u1ee3c th\u1ef1c hi\u1ec7n. List Done ch\u1ee9a nh\u1eefng card \u0111\u00e3 ho\u00e0n th\u00e0nh.\n\n\nBoard :\n  L\u00e0 m\u1ed9t b\u1ea3ng, th\u01b0\u1eddng t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi m\u1ed9t d\u1ef1 \u00e1n ho\u1eb7c m\u1ed9t m\u1ea3ng\nc\u00f4ng vi\u1ec7c. Trong m\u1ed9t Board c\u00f3 th\u1ec3 c\u00f3 nhi\u1ec1u List chia theo t\u00ecnh tr\u1ea1ng c\u1ee7a\nnh\u1eefng \u0111\u1ea7u vi\u1ec7c c\u1ee7a d\u1ef1 \u00e1n \u0111\u00f3 \u0111\u1ec3 ti\u1ec7n theo d\u00f5i.\n\n\nTeam:\n t\u1ed5ng h\u1ee3p nh\u1eefng Board v\u00e0 th\u00e0nh vi\u00ean c\u1ee7a m\u1ed9t nh\u00f3m.\n\n\n\n\n2. H\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng\n#\n\n\n2.1. T\u1ea1o m\u1ed9t nh\u00f3m l\u00e0m vi\u1ec7c (Team)\n#\n\n\nClick v\u00e0o m\u1ee5c Create a new team s\u1ebd hi\u1ec3n th\u1ecb ra h\u1ed9p tho\u1ea1i sau:\n\n\n\n\nNh\u1eadp th\u00f4ng tin c\u1ee7a Team t\u1ea1i m\u1ee5c Name v\u00e0 th\u00f4ng tin m\u00f4 t\u1ea3 c\u1ee7a Team t\u1ea1i m\u1ee5c Description v\u00e0 nh\u1ea5n n\u00fat Creat.\nKhi t\u1ea1o xong m\u1ed9t Team ta c\u00f3 th\u1ec3 ch\u1ec9nh s\u1eeda Profile, t\u1ea1o c\u00e1c Board trong team \u0111\u00f3, add members v\u00e0 setting.\n\n\nGhi ch\u00fa: Trello h\u1ed7 tr\u1ee3 add members b\u1eb1ng nhi\u1ec1u c\u00e1ch t\u00ecm: B\u1eb1ng Account, t\u00ean, \u0111\u1ecba\nch\u1ec9 Email\u2026, do Trello \u0111\u00e3 t\u00edch h\u1ee3p v\u1edbi h\u1ec7 th\u1ed1ng Email c\u1ee7a Google n\u00ean \u0111\u1ec3\nt\u00ecm ng\u01b0\u1eddi d\u00f9ng trong tr\u01b0\u1eddng c\u1ea7n t\u00ecm b\u1eb1ng \u0111\u1ecba ch\u1ec9 Email \u0111\u1ea7y \u0111\u1ee7 s\u1ebd ch\u00ednh\nx\u00e1c. \n\n\n2.2. T\u1ea1o m\u1ed9t Board\n#\n\n\nNh\u01b0 t\u00f4i \u0111\u00e3 tr\u00ecnh b\u00e0y \u1edf tr\u00ean, Board l\u00e0 m\u1ed9t b\u1ea3ng t\u01b0\u01a1ng \u0111\u01b0\u01a1ng v\u1edbi m\u1ed9t d\u1ef1 \u00e1n ho\u1eb7c m\u1ed9t m\u1ea3ng c\u00f4ng vi\u1ec7c v\u00e0 g\u1ed3m nhi\u1ec1u List.\n\n\n\u0110\u1ec3 t\u1ea1o m\u1ed9t Board trong m\u1ed9t team n\u00e0o \u0111\u00f3 ta click v\u00e0o \"Creat a new Board\" trong team \u0111\u00f3 v\u00e0 th\u1ef1c hi\u1ec7n c\u1ea5u h\u00ecnh c\u00e1c th\u00f4ng tin c\u1ee7a Board : \n\n\n\n\nT\u00ean c\u1ee7a Board\n\n\nAdd member cho Board. V\u1edbi nh\u1eefng member \u0111\u00e3 \u0111\u01b0\u1ee3c add l\u00e0 th\u00e0nh vi\u00ean c\u1ee7a Team ch\u1ee9a Board th\u00ec s\u1ebd m\u1eb7c \u0111\u1ecbnh l\u00e0 th\u00e0nh vi\u00ean trong Board.\n\n\n\n\n\u0110\u1ec3 add member ch\u1ecdn Invite -> Nh\u1eadp Email c\u1ee7a ng\u01b0\u1eddi c\u1ea7n t\u00ecm -> Ch\u1ecdn t\u00e0i kho\u1ea3n c\u1ea7n add.\n\n\n\n\n2.3. Close m\u1ed9t Board\n#\n\n\nKhi m\u1ed9t Board \u0111\u00e3 ho\u00e0n th\u00e0nh kh\u00f4ng d\u00f9ng \u0111\u1ebfn n\u1eefa th\u00ec ng\u01b0\u1eddi d\u00f9ng c\u00f3 th\u1ec3 \u0111\u00f3ng Board \u0111\u00f3 l\u1ea1i b\u1eb1ng c\u00e1ch ch\u1ecdn Close Board nh\u01b0 h\u00ecnh sau:\n\n\n\n2.4. M\u1edf l\u1ea1i m\u1ed9t Board \u0111\u00e3 \u0111\u00f3ng\n#\n\n\nClick chu\u1ed9t v\u00e0o n\u00fat Board \u1edf g\u00f3c tr\u00ean b\u00ean tr\u00e1i c\u1eeda s\u1ed5 Trello\n\n\n\n\nCh\u1ecdn m\u1ee5c See closed board -> Ch\u1ecdn Re-open t\u1ea1i Board c\u1ea7n m\u1edf l\u1ea1i\n\n\n\n\n2.5. T\u1ea1o m\u1ed9t danh s\u00e1ch c\u00e1c c\u00f4ng vi\u1ec7c (List)\n#\n\n\n\u0110\u1ec3 t\u1ea1o m\u1ed9t List ta click v\u00e0o Add List -> Nh\u1eadp t\u00ean c\u1ee7a List v\u00e0 nh\u1ea5n n\u00fat Save\n\n\n\n\nM\u1ed7i m\u1ed9t \u0111\u01a1n v\u1ecb, c\u00e1 nh\u00e2n c\u00f3 c\u00e1ch \u0111\u1eb7t t\u00ean kh\u00e1c nhau \u0111\u1ec3 qu\u1ea3n l\u00fd c\u00f4ng vi\u1ec7c t\u1ea1i c\u01a1 quan m\u00ecnh. Th\u00f4ng th\u01b0\u1eddng\nc\u00e1c list \u0111\u01b0\u1ee3c \u0111\u1eb7t t\u00ean nh\u01b0 sau:\n\n\n\n\nS\u1ebd th\u1ef1c hi\u1ec7n:\n L\u00e0 nh\u1eefng c\u00f4ng vi\u1ec7c c\u1ea7n th\u1ef1c hi\u1ec7n trong n\u0103m, kh\u00f4ng ph\u1ea3i trong th\u1eddi gian t\u1edbi.\n\n\nC\u00e2n th\u1ef1c hi\u1ec7n:\n L\u00e0 nh\u1eefng c\u00f4ng vi\u1ec7c c\u1ea7n th\u1ef1c hi\u1ec7n trong th\u1eddi gian t\u1edbi.\n\n\n\u0110ang th\u1ef1c hi\u1ec7n:\n L\u00e0 nh\u1eefng d\u1ef1 \u00e1n, c\u00f4ng vi\u1ec7c \u0111ang \u0111\u01b0\u1ee3c th\u1ef1c hi\u1ec7n v\u00e0 ch\u01b0a th\u1ef1c hi\u1ec7n xong.\n    Khi c\u00e1c c\u00f4ng vi\u1ec7c \u1edf ph\u1ea7n \u0111ang th\u1ef1c hi\u1ec7n \u0111\u00e3 th\u1ef1c hi\u1ec7n v\u00e0 test xong th\u00ec s\u1ebd \u0111\u01b0\u1ee3c k\u00e9o sang ph\u1ea7n \u0111\u00e3 th\u1ef1c hi\u1ec7n.\n\n\n\u0110\u00e3 th\u1ef1c hi\u1ec7n:\n L\u00e0 nh\u1eefng c\u00f4ng vi\u1ec7c \u0111\u00e3 ho\u00e0n th\u00e0nh v\u00e0 \u0111\u00e3 \u0111\u01b0\u1ee3c test.\n \n\n\n\n\nTrong m\u1ed9t List g\u1ed3m nhi\u1ec1u Card, m\u1ed7i Card l\u00e0 m\u1ed9t c\u00f4ng vi\u1ec7c ho\u1eb7c nh\u00f3m c\u00f4ng vi\u1ec7c c\u1ee5 th\u1ec3.\n\n\n2.6 T\u1ea1o vi\u1ec7c c\u1ee5 th\u1ec3 (Card)\n#\n\n\n\u0110\u1ec3 th\u00eam m\u1ed9t Card ch\u1ecdn Add Card\nNh\u1eadp t\u00ean c\u00f4ng vi\u1ec7c nh\u1ea5n n\u00fat \"Add\"\n\n\n2.6.1 Giao di\u1ec7n m\u1ed9t card nh\u01b0 sau\n#\n\n\n\n\n2.6.2 Add members\n#\n\n\n\u0110\u1ec3 Add member ta click v\u00e0o n\u00fat Members v\u00e0 nh\u1eadp \u0111\u1ecba ch\u1ec9 Email \u0111\u1ea7y \u0111\u1ee7 c\u1ee7a ng\u01b0\u1eddi c\u1ea7n t\u00ecm v\u00e0o \u00f4 Search Members, nh\u1ea5n Enter.\n\n\n     Ch\u00fa \u00fd: Members c\u1ee7a card ch\u1ec9 \u0111\u01b0\u1ee3c l\u1ef1a ch\u1ecdn trong danh s\u00e1ch members c\u1ee7a Board ph\u00eda tr\u01b0\u1edbc\n\n\n\n\n\n2.6.3 \u0110\u1eb7t nh\u00e3n cho Card\n#\n\n\nM\u1ed7i card l\u00e0 1 c\u00f4ng vi\u1ec7c c\u1ee5 th\u1ec3, ng\u01b0\u1eddi d\u00f9ng c\u00f3 th\u1ec3 d\u00f9ng c\u00e1c nh\u00e3n \u0111\u1ec3 ph\u00e2n\nlo\u1ea1i c\u00f4ng vi\u1ec7c theo \u00fd mu\u1ed1n\n    C\u00e1ch th\u1ef1c hi\u1ec7n: Trong c\u1eeda s\u1ed5 card, ch\u1ecdn Labels, ch\u1ecdn m\u00e0u ph\u00f9 h\u1ee3p\n\n\n2.6.4 T\u1ea1o CheckList\n#\n\n\nCheck list l\u00e0 t\u1eadp h\u1ee3p c\u00e1c vi\u1ec7c nh\u1ecf trong 1 c\u00f4ng vi\u1ec7c (card), m\u1ed7i vi\u1ec7c nh\u1ecf trong\ncheck list \u0111\u01b0\u1ee3c t\u1ea1o ra cho ph\u00e9p ng\u01b0\u1eddi d\u00f9ng \u0111\u00e1nh d\u1ea5u \u0111\u00e3 ho\u00e0n th\u00e0nh ho\u1eb7c ch\u01b0a ho\u00e0n th\u00e0nh.\n\n\nC\u00e1ch th\u1ef1c hi\u1ec7n:\n\n\n\n\nClick v\u00e0o n\u00fat Check list\n\n\n\u0110i\u1ec1n t\u00ean check list v\u00e0o \u00f4 Title\n\n\nClick Add\n\n\n\n\n \n\n\n2.6.5 T\u1ea1o c\u00f4ng vi\u1ec7c trong Checklist\n#\n\n\n\n\nNh\u1eadp t\u00ean c\u00f4ng vi\u1ec7c trong ph\u1ea7n Add Item ph\u00eda d\u01b0\u1edbi c\u1ee7a CheckList \u0111\u00e3 t\u1ea1o v\u00e0 nh\u1ea5n Add\n\n \n\n\nKhi c\u00f4ng vi\u1ec7c ho\u00e0n th\u00e0nh t\u00edch v\u00e0o \u00f4 vu\u00f4ng \u0111\u1ec3 \u0111\u00e1nh d\u1ea5u c\u00f4ng vi\u1ec7c \u0111\u00e3 ho\u00e0n th\u00e0nh.\n\n\n\n\n\n\n2.6.6 \u0110\u1eb7t deadline cho card\n#\n\n\n\n\nClick v\u00e0o Due date\n\n\nCh\u1ecdn ng\u00e0y deadline\n\n\nClick Save\n\n\n\n\n2.6.7 \u0110\u00ednh k\u00e8m t\u00e0i li\u1ec7u cho Card\n#\n\n\nNg\u01b0\u1eddi d\u00f9ng c\u00f3 th\u1ec3 \u0111\u00ednh k\u00e8m t\u00e0i li\u1ec7u l\u00e0 c\u00e1c file text, \u1ea3nh, pdf\u2026 cho card\nb\u1eb1ng c\u00e1ch click v\u00e0o n\u00fat Attachment",
             "title": "Trello"
@@ -538,7 +798,7 @@
         {
             "location": "/software_dev/git/",
             "text": "Gi\u1edbi thi\u1ec7u\n#\n\n\nH\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng\n#",
-            "title": "Git"
+            "title": "Getting Started"
         },
         {
             "location": "/software_dev/git/#gioi-thieu",
@@ -551,69 +811,44 @@
             "title": "H\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng"
         },
         {
-            "location": "/project/qlht/phan_tich_thiet_ke/",
-            "text": "Gi\u1edbi thi\u1ec7u\n#\n\n\nTrang web s\u1eed d\u1ee5ng \nmkdocs.org\n. \u0111\u1ec3 d\u1ef1ng layout v\u00e0 d\u00f9ng markdown l\u00e0m ng\u00f4n ng\u1eef m\u00f4 t\u1ea3.\n\n\nH\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t\n#\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n#\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Ph\u00e2n t\u00edch thi\u1ebft k\u1ebf h\u1ec7 th\u1ed1ng th\u00f4ng tin"
+            "location": "/software_dev/git/",
+            "text": "Gi\u1edbi thi\u1ec7u\n#\n\n\nH\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng\n#",
+            "title": "Git Basics"
         },
         {
-            "location": "/project/qlht/phan_tich_thiet_ke/#gioi-thieu",
-            "text": "Trang web s\u1eed d\u1ee5ng  mkdocs.org . \u0111\u1ec3 d\u1ef1ng layout v\u00e0 d\u00f9ng markdown l\u00e0m ng\u00f4n ng\u1eef m\u00f4 t\u1ea3.",
+            "location": "/software_dev/git/#gioi-thieu",
+            "text": "",
             "title": "Gi\u1edbi thi\u1ec7u"
         },
         {
-            "location": "/project/qlht/phan_tich_thiet_ke/#huong-dan-cai-at",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "H\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t"
-        },
-        {
-            "location": "/project/qlht/phan_tich_thiet_ke/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
-        },
-        {
-            "location": "/project/document_tutorial/main/",
-            "text": "Trang web s\u1eed d\u1ee5ng \nmkdocs.org\n \u0111\u1ec3 d\u1ef1ng layout v\u00e0 d\u00f9ng markdown l\u00e0m ng\u00f4n ng\u1eef m\u00f4 t\u1ea3.\n\n\nH\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t\n#\n\n\nC\u00e0i \u0111\u1eb7t Python\n#\n\n\n\n\nB1: Download \npython\n\n\nB2: C\u00e0i \u0111\u1eb7t python nh\u01b0 ph\u1ea7n m\u1ec1m b\u00ecnh th\u01b0\u1eddng\n\n\n\n\nL\u01b0u \u00fd: Khi c\u00e0i \u0111\u1eb7t python ph\u1ea3i ch\u1ecdn v\u00e0o \u00f4 \nAdd Python to Path\n nh\u01b0 h\u00ecnh v\u1ebd b\u00ean d\u01b0\u1edbi\n\n\n\n\n\n\nB3: Ki\u1ec3m tra xem c\u00e0i \u0111\u1eb7t \u0111\u00e3 th\u00e0nh c\u00f4ng ch\u01b0a b\u1eb1ng c\u00e2u l\u1ec7nh CMD\n\n\n\n\n$ python --version\nPython 2.7.2\n$ pip --version\npip 1.5.2\n\n\n\n\n\n\nB4: C\u00e0i \u0111\u1eb7t g\u00f3i b\u1ed5 tr\u1ee3\n\n\n\n\n$ pip install mkdocs\n$ pip install mkdocs-material\n\n\n\n\nCh\u1ea1y server\n#\n\n\nSau qu\u00e1 tr\u00ecnh c\u00e1i \u0111\u1eb7t c\u00e1c b\u01b0\u1edbc tr\u00ean ho\u00e0n t\u1ea5t, checkout code t\u1eeb SVN v\u1ec1 m\u00e1y.\n\u0110\u1ec3 ch\u1ea1y \u1ee9ng d\u1ee5ng m\u1edf CMD l\u00ean v\u00e0 g\u00f5 l\u1ec7nh sau:\n\n\n$ mkdocs serve\n\n\n\n\nBuild \u1ee9ng d\u1ee5ng\n#\n\n\n\u0110\u1ec3 build \u1ee9ng d\u1ee5ng l\u00ean b\u1ea3n online s\u1eed d\u1ee5ng c\u00e2u l\u1ec7nh CMD sau:\n\n\n$ mkdocs build\n\n\n\n\nL\u00fac \u0111\u00f3 d\u1eef li\u1ec7u s\u1ebd \u0111\u01b0\u1ee3c xu\u1ea5t v\u00e0o th\u01b0 m\u1ee5c \nsite\n trong th\u01b0 m\u1ee5c code\n\n\nH\u01b0\u1edbng d\u1eabn vi\u1ebft b\u00e0i\n#\n\n\nGet code t\u1eeb SVN v\u1ec1: \n\n\nhttps://192.168.1.240/svn/PHATTRIEN-TRIENKHAI/CQHC/Moi truong Phat trien/EFY-TUTORIAL/Code/efy-tutorial\n\n\n\n\nC\u1ea5u tr\u00fac th\u01b0 m\u1ee5c trang tin b\u00e0i \ndocs\n#\n\n\n\n\n\n\nimg\n: File l\u01b0u \u1ea3nh\n\n\nprogramming\n: th\u01b0 m\u1ee5c l\u01b0u c\u00e1c b\u00e0i vi\u1ebft v\u1ec1 l\u1eadp tr\u00ecnh\n\n\nproject\n: L\u01b0u c\u00e1c b\u00e0i vi\u1ebft h\u01b0\u1edbng d\u1eabn v\u1ec1 c\u00e1c d\u1ef1 \u00e1n\n\n\nsoftware_dev\n: C\u00e1c b\u00e0i vi\u1ebft v\u1ec1 c\u00f4ng c\u1ee5 l\u1eadp tr\u00ecnh, tool \n\n\n\n\nC\u00e1ch th\u00eam b\u00e0i vi\u1ebft m\u1edbi\n#\n\n\n\n\nX\u00e1c \u0111\u1ecbnh b\u00e0i vi\u1ebft thu\u1ed9c ch\u1ee7 \u0111\u1ec1 n\u00e0o\n\n\nT\u01b0\u01a1ng \u1ee9ng ch\u1ee7 \u0111\u1ec1 \u0111\u1ecbnh vi\u1ebft b\u00e0i t\u1ea1o file .md \u1edf th\u01b0 m\u1ee5c b\u00e0i vi\u1ebft \u0111\u00f3. VD: Vi\u1ebft h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng cho Outlook th\u00ec v\u00e0o th\u01b0 m\u1ee5c \nsoftware_dev\n t\u1ea1o file outlook.md.\n\n\nC\u1ea5u tr\u00fac vi\u1ebft h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng ng\u00f4n ng\u1eef \nMarkdown\n \u0111\u1ec3 vi\u1ebft b\u00e0i\n\n\n\n\nM\u1ed9t s\u1ed1 ch\u00fa \u00fd khi vi\u1ebft b\u00e0i\n#\n\n\n\n\n\n\nCh\u00fa \u00fd v\u1ec1 c\u00e1c th\u1ebb #:\n\nC\u00e1c \u0111\u1ec1 m\u1ee5c c\u1ee7a b\u00e0i vi\u1ebft n\u00ean b\u1eaft \u0111\u1ea7u t\u1eeb ##, ch\u1ec9 d\u00f9ng # l\u00e0m th\u1ebb ti\u00eau \u0111\u1ec1 b\u00e0i vi\u1ebft.\n\n\n\n\n\n\nCommit n\u1ed9i dung b\u00e0i vi\u1ebft l\u00ean m\u00e1y ch\u1ee7:\n\nSau khi vi\u1ebft b\u00e0i xong \u0111\u1ec3 commit b\u00e0i vi\u1ebft l\u00ean m\u00e1y ch\u1ee7 c\u1ea7n th\u1ef1c hi\u1ec7n c\u00e1c b\u01b0\u1edbc sau:\n\n\nB1: Built \u1ee9ng d\u1ee5ng (C\u00e2u l\u1ec7nh $ mkdocs build trong c\u1eeda s\u1ed5 command line)\n\n\nB2: Commit d\u1eef li\u1ec7u l\u00ean m\u00e1y ch\u1ee7.\n\n\nB3: Ch\u1ea1y l\u1ea1i th\u1eed \u0111\u01b0\u1eddng link online",
-            "title": "T\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn"
-        },
-        {
-            "location": "/project/document_tutorial/main/#huong-dan-cai-at",
+            "location": "/software_dev/git/#huong-dan-su-dung",
             "text": "",
-            "title": "H\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t"
+            "title": "H\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng"
         },
         {
-            "location": "/project/document_tutorial/main/#cai-at-python",
-            "text": "B1: Download  python  B2: C\u00e0i \u0111\u1eb7t python nh\u01b0 ph\u1ea7n m\u1ec1m b\u00ecnh th\u01b0\u1eddng   L\u01b0u \u00fd: Khi c\u00e0i \u0111\u1eb7t python ph\u1ea3i ch\u1ecdn v\u00e0o \u00f4  Add Python to Path  nh\u01b0 h\u00ecnh v\u1ebd b\u00ean d\u01b0\u1edbi    B3: Ki\u1ec3m tra xem c\u00e0i \u0111\u1eb7t \u0111\u00e3 th\u00e0nh c\u00f4ng ch\u01b0a b\u1eb1ng c\u00e2u l\u1ec7nh CMD   $ python --version\nPython 2.7.2\n$ pip --version\npip 1.5.2   B4: C\u00e0i \u0111\u1eb7t g\u00f3i b\u1ed5 tr\u1ee3   $ pip install mkdocs\n$ pip install mkdocs-material",
-            "title": "C\u00e0i \u0111\u1eb7t Python"
+            "location": "/software_dev/git/",
+            "text": "Gi\u1edbi thi\u1ec7u\n#\n\n\nH\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng\n#",
+            "title": "Git Branching"
         },
         {
-            "location": "/project/document_tutorial/main/#chay-server",
-            "text": "Sau qu\u00e1 tr\u00ecnh c\u00e1i \u0111\u1eb7t c\u00e1c b\u01b0\u1edbc tr\u00ean ho\u00e0n t\u1ea5t, checkout code t\u1eeb SVN v\u1ec1 m\u00e1y.\n\u0110\u1ec3 ch\u1ea1y \u1ee9ng d\u1ee5ng m\u1edf CMD l\u00ean v\u00e0 g\u00f5 l\u1ec7nh sau:  $ mkdocs serve",
-            "title": "Ch\u1ea1y server"
+            "location": "/software_dev/git/#gioi-thieu",
+            "text": "",
+            "title": "Gi\u1edbi thi\u1ec7u"
         },
         {
-            "location": "/project/document_tutorial/main/#build-ung-dung",
-            "text": "\u0110\u1ec3 build \u1ee9ng d\u1ee5ng l\u00ean b\u1ea3n online s\u1eed d\u1ee5ng c\u00e2u l\u1ec7nh CMD sau:  $ mkdocs build  L\u00fac \u0111\u00f3 d\u1eef li\u1ec7u s\u1ebd \u0111\u01b0\u1ee3c xu\u1ea5t v\u00e0o th\u01b0 m\u1ee5c  site  trong th\u01b0 m\u1ee5c code",
-            "title": "Build \u1ee9ng d\u1ee5ng"
+            "location": "/software_dev/git/#huong-dan-su-dung",
+            "text": "",
+            "title": "H\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng"
         },
         {
-            "location": "/project/document_tutorial/main/#huong-dan-viet-bai",
-            "text": "Get code t\u1eeb SVN v\u1ec1:   https://192.168.1.240/svn/PHATTRIEN-TRIENKHAI/CQHC/Moi truong Phat trien/EFY-TUTORIAL/Code/efy-tutorial",
-            "title": "H\u01b0\u1edbng d\u1eabn vi\u1ebft b\u00e0i"
+            "location": "/software_dev/git/command/",
+            "text": "Create a new repository on the command line\n#\n\n\ngit init\ngit add .\ngit commit -m \"first commit\"\ngit remote add origin https://github.com/toanph1505/test.git\ngit push -u origin master",
+            "title": "Git Command"
         },
         {
-            "location": "/project/document_tutorial/main/#cau-truc-thu-muc-trang-tin-bai-docs",
-            "text": "img : File l\u01b0u \u1ea3nh  programming : th\u01b0 m\u1ee5c l\u01b0u c\u00e1c b\u00e0i vi\u1ebft v\u1ec1 l\u1eadp tr\u00ecnh  project : L\u01b0u c\u00e1c b\u00e0i vi\u1ebft h\u01b0\u1edbng d\u1eabn v\u1ec1 c\u00e1c d\u1ef1 \u00e1n  software_dev : C\u00e1c b\u00e0i vi\u1ebft v\u1ec1 c\u00f4ng c\u1ee5 l\u1eadp tr\u00ecnh, tool",
-            "title": "C\u1ea5u tr\u00fac th\u01b0 m\u1ee5c trang tin b\u00e0i docs"
-        },
-        {
-            "location": "/project/document_tutorial/main/#cach-them-bai-viet-moi",
-            "text": "X\u00e1c \u0111\u1ecbnh b\u00e0i vi\u1ebft thu\u1ed9c ch\u1ee7 \u0111\u1ec1 n\u00e0o  T\u01b0\u01a1ng \u1ee9ng ch\u1ee7 \u0111\u1ec1 \u0111\u1ecbnh vi\u1ebft b\u00e0i t\u1ea1o file .md \u1edf th\u01b0 m\u1ee5c b\u00e0i vi\u1ebft \u0111\u00f3. VD: Vi\u1ebft h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng cho Outlook th\u00ec v\u00e0o th\u01b0 m\u1ee5c  software_dev  t\u1ea1o file outlook.md.  C\u1ea5u tr\u00fac vi\u1ebft h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng ng\u00f4n ng\u1eef  Markdown  \u0111\u1ec3 vi\u1ebft b\u00e0i",
-            "title": "C\u00e1ch th\u00eam b\u00e0i vi\u1ebft m\u1edbi"
-        },
-        {
-            "location": "/project/document_tutorial/main/#mot-so-chu-y-khi-viet-bai",
-            "text": "Ch\u00fa \u00fd v\u1ec1 c\u00e1c th\u1ebb #: \nC\u00e1c \u0111\u1ec1 m\u1ee5c c\u1ee7a b\u00e0i vi\u1ebft n\u00ean b\u1eaft \u0111\u1ea7u t\u1eeb ##, ch\u1ec9 d\u00f9ng # l\u00e0m th\u1ebb ti\u00eau \u0111\u1ec1 b\u00e0i vi\u1ebft.    Commit n\u1ed9i dung b\u00e0i vi\u1ebft l\u00ean m\u00e1y ch\u1ee7: \nSau khi vi\u1ebft b\u00e0i xong \u0111\u1ec3 commit b\u00e0i vi\u1ebft l\u00ean m\u00e1y ch\u1ee7 c\u1ea7n th\u1ef1c hi\u1ec7n c\u00e1c b\u01b0\u1edbc sau:  B1: Built \u1ee9ng d\u1ee5ng (C\u00e2u l\u1ec7nh $ mkdocs build trong c\u1eeda s\u1ed5 command line)  B2: Commit d\u1eef li\u1ec7u l\u00ean m\u00e1y ch\u1ee7.  B3: Ch\u1ea1y l\u1ea1i th\u1eed \u0111\u01b0\u1eddng link online",
-            "title": "M\u1ed9t s\u1ed1 ch\u00fa \u00fd khi vi\u1ebft b\u00e0i"
+            "location": "/software_dev/git/command/#create-a-new-repository-on-the-command-line",
+            "text": "git init\ngit add .\ngit commit -m \"first commit\"\ngit remote add origin https://github.com/toanph1505/test.git\ngit push -u origin master",
+            "title": "Create a new repository on the command line"
         }
     ]
 }
