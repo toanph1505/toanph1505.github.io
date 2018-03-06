@@ -1,3 +1,10 @@
 .admonition >p, .admonition > li {
 	font-size: 14px;
 }
+
+/* -- scrollbar -- */
+::-webkit-scrollbar{width:5px;height:2px;cursor:pointer;}
+::-webkit-scrollbar-button:start:decrement,#doc ::-webkit-scrollbar-button:end:increment{display:block;height:0;background-color:transparent;}
+::-webkit-scrollbar-track-piece{background-color:#FAFAFB;-webkit-border-radius:0;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;}
+::-webkit-scrollbar-thumb:vertical{height:5px;background-color:#c2c2c2;-webkit-border-radius:8px;-moz-border-radius: 8px;}
+::-webkit-scrollbar-thumb:horizontal{width:5px;background-color:#c2c2c2;-webkit-border-radius:8px;-moz-border-radius: 8px;}
