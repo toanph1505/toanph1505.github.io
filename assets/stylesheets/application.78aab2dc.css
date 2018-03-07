@@ -1,5 +1,8 @@
+.md-clipboard,.md-header {
+    -webkit-backface-visibility: hidden
+}
+
 .md-typeset code,.md-typeset mark {
-    word-break: break-word;
     -webkit-box-decoration-break: clone
 }
 
@@ -19,12 +22,12 @@
     text-overflow: ellipsis
 }
 
-html {
-    box-sizing: border-box
-}
-
 *,:after,:before {
     box-sizing: inherit
+}
+
+*,html {
+    box-sizing: border-box
 }
 
 body {
@@ -609,7 +612,6 @@ hr {
     font-size: 1.6rem;
     cursor: pointer;
     z-index: 1;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden
 }
 
@@ -708,7 +710,6 @@ hr {
     color: #fff;
     box-shadow: none;
     z-index: 2;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden
 }
 
@@ -848,7 +849,7 @@ hr {
 
 .md-footer-nav__inner {
     overflow: auto;
-    border-top: 1px solid #CFCFCF;
+    border-top: 1px solid #CFCFCF
 }
 
 .md-footer-nav__link {
@@ -907,7 +908,7 @@ hr {
 }
 
 .md-footer-meta {
-    background-color: #1976D2;
+    background-color: #1976D2
 }
 
 .md-footer-meta__inner {
@@ -2980,7 +2981,7 @@ html body .md-typeset .headerlink {
 @media only screen and (min-width: 960px) {
     .md-content {
         margin-right:20.2rem;
-        margin-left: 24.4rem
+        margin-left: 0
     }
 
     [dir=rtl] .md-content {
@@ -3174,7 +3175,7 @@ html body .md-typeset .headerlink {
     }
 
     .md-content {
-        margin-left: 285px;
+        margin-left: 285px
     }
 
     [dir=rtl] .md-content {
@@ -3362,8 +3363,7 @@ div.source-links>i {
 }
 
 .md-content {
-
-    box-shadow: -6px 0px 6px 1px rgba(0,0,0,.1);
+    box-shadow: -4px 0 6px 1px rgba(0,0,0,.1);
 }
 
 .md-typeset h2 {
@@ -3379,11 +3379,12 @@ div.source-links>i {
 }
 
 .md-nav--primary {
-	padding-left:5px;
+    padding-left: 5px;
     font-size: 16px;
-    width: 260px;
+    width: 280px;
     max-height: 450px;
-    overflow: auto
+    overflow: auto;
+    padding-right: 8px;
 }
 
 .md-nav--primary .md-nav__link {
@@ -3422,10 +3423,6 @@ div.source-links>i {
 
 .md-content__inner {
     padding: 15px 15px 15px 35px
-}
-
-* {
-    box-sizing: border-box
 }
 
 .timeline {
