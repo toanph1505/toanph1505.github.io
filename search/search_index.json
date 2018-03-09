@@ -3,7 +3,7 @@
         {
             "location": "/",
             "text": "Introductions\n#\n\n\nMy name is Matt Walker. I live in Hipperholme, Halifax, West Yorkshire, UK.\nI work at Farnell, Leeds as senior web designer in the digital marketing department.\nI have a beautiful wife, Claire and 3 boys Dylan, Finley and Marley. My passions are my family, HTML5 CSS3 and Javascript, football and music.\n\n\nTimeline Mylife\n#\n\n\n\n  \n\n    \n\n      \n2017\n\n      \nLorem ipsum\n\n    \n\n  \n\n  \n\n    \n\n      \n2016\n\n      \nLorem ipsum..\n\n    \n\n  \n\n  \n\n    \n\n      \n2017\n\n      \nLorem ipsum\n\n    \n\n  \n\n  \n\n    \n\n      \n2016\n\n      \nLorem ipsum..\n\n    \n\n  \n\n  \n\n    \n\n      \n2017\n\n      \nLorem ipsum\n\n    \n\n  \n\n  \n\n    \n\n      \n2016\n\n      \nLorem ipsum..",
-            "title": "About me"
+            "title": "ABOUT ME"
         },
         {
             "location": "/#introductions",
@@ -14,6 +14,71 @@
             "location": "/#timeline-mylife",
             "text": "",
             "title": "Timeline Mylife"
+        },
+        {
+            "location": "/background/tech_web/internet_work/",
+            "text": "This article discusses what the Internet is and how it works.\n\n\nSummary\n#\n\n\nThe Internet is the backbone of the Web, the technical infrastructure that makes the Web possible. At its most basic, the Internet is a large network of computers which communicate all together.\n\n\nThe history of the Internet is somewhat obscure. It began in the 1960s as a US-army-funded research project, then evolved into a public infrastructure in the 1980s with the support of many public universities and private companies. The various technologies that support the Internet have evolved over time, but the way it works hasn't changed that much: Internet is a way to connect computers all together and ensure that, whatever happens, they find a way to stay connected.\n\n\nDeeper dive\n#\n\n\nA simple network\n#\n\n\nWhen two computers need to communicate, you have to link them, either physically (usually with an Ethernet cable) or wirelessly (for example with WiFi or Bluetooth systems). All modern computers can sustain any of those connections.\n\n\n\n\nNote\n\n\nFor the rest of this article, we will only talk about physical cables, but wireless networks work the same.\n\n\n\n\n\n\nSuch a network is not limited to two computers. You can connect as many computers as you wish. But it gets complicated quickly. If you're trying to connect, say, ten computers, you need 45 cables, with nine plugs per computer!\n\n\n\n\nTo solve this problem, each computer on a network is connected to a special tiny computer called a router. This router has only one job: like a signaler at a railway station, it makes sure that a message sent from a given computer arrives at the right destination computer. To send a message to computer B, computer A must send the message to the router, which in turn forwards the message to computer B and makes sure the message is not delivered to computer C.\n\n\nOnce we add a router to the system, our network of 10 computers only requires 10 cables: a single plug for each computer and a router with 10 plugs.\n\n\n\n\nA network of networks\n#\n\n\nSo far so good. But what about connecting hundreds, thousands, billions of computers? Of course a single router can't scale that far, but, if you read carefully, we said that a router is a computer like any other, so what keeps us from connecting two routers together? Nothing, so let's do that.\n\n\n\n\nBy connecting computers to routers, then routers to routers, we are able to scale infinitely.\n\n\n\n\nSuch a network comes very close to what we call the Internet, but we're missing something. We built that network for our own purposes. There are other networks out there: your friends, your neighbors, anyone can have their own network of computers. But it's not really possible to set cables up between your house and the rest of the world, so how can you handle this? Well, there are already cables linked to your house, for example, electric power and telephone. The telephone infrastructure already connects your house with anyone in the world so it is the perfect wire we need. To connect our network to the telephone infrastructure, we need a special piece of equipment called a modem. This modem turns the information from our network into information manageable by the telephone infrastructure and vice versa.\n\n\n\n\nSo we are connected to the telephone infrastructure. The next step is to send the messages from our network to the network we want to reach. To do that, we will connect our network to an Internet Service Provider (ISP). An ISP is a company that manages some special routers that link all together and can also access other ISPs' routers. So the message from our network is carried through the network of ISP networks to the destination network. The Internet consists of this whole infrastructure of networks.\n\n\n\n\nFinding computers\n#\n\n\nIf you want to send a message to a computer, you have to specify which one. Thus any computer linked to a network has a unique address to identify it, called an \"IP address\" (where IP stands for Internet Protocol). It's an address made of a series of four numbers separated by dots, for example: \n192.168.2.10\n.\n\n\nThat's perfectly fine for computers, but we human beings have a hard time remembering that sort of address. To make things easier, we can alias an IP address with a human readable name called a domain name. For example, \ngoogle.com\n is the domain name used on top of the IP address \n173.194.121.32\n. So using the domain name is the easiest way for us to reach a computer over the Internet.\n\n\nInternet and the web\n#\n\n\nAs you might notice, when we browse the Web with a Web browser, we usually use the domain name to reach a website. Does that mean the Internet and the Web are the same thing? It's not that simple. As we saw, the Internet is a technical infrastructure which allows billions of computers to be connected all together. Among those computers, some computers (called Web servers) can send messages intelligible to web browsers. The Internet is an infrastructure, whereas the Web is a service built on top of the infrastructure. It is worth noting there are several other services built on top of the Internet, such as email and IRC.",
+            "title": "How the Internet work"
+        },
+        {
+            "location": "/background/tech_web/internet_work/#summary",
+            "text": "The Internet is the backbone of the Web, the technical infrastructure that makes the Web possible. At its most basic, the Internet is a large network of computers which communicate all together.  The history of the Internet is somewhat obscure. It began in the 1960s as a US-army-funded research project, then evolved into a public infrastructure in the 1980s with the support of many public universities and private companies. The various technologies that support the Internet have evolved over time, but the way it works hasn't changed that much: Internet is a way to connect computers all together and ensure that, whatever happens, they find a way to stay connected.",
+            "title": "Summary"
+        },
+        {
+            "location": "/background/tech_web/internet_work/#deeper-dive",
+            "text": "",
+            "title": "Deeper dive"
+        },
+        {
+            "location": "/background/tech_web/internet_work/#a-simple-network",
+            "text": "When two computers need to communicate, you have to link them, either physically (usually with an Ethernet cable) or wirelessly (for example with WiFi or Bluetooth systems). All modern computers can sustain any of those connections.   Note  For the rest of this article, we will only talk about physical cables, but wireless networks work the same.    Such a network is not limited to two computers. You can connect as many computers as you wish. But it gets complicated quickly. If you're trying to connect, say, ten computers, you need 45 cables, with nine plugs per computer!   To solve this problem, each computer on a network is connected to a special tiny computer called a router. This router has only one job: like a signaler at a railway station, it makes sure that a message sent from a given computer arrives at the right destination computer. To send a message to computer B, computer A must send the message to the router, which in turn forwards the message to computer B and makes sure the message is not delivered to computer C.  Once we add a router to the system, our network of 10 computers only requires 10 cables: a single plug for each computer and a router with 10 plugs.",
+            "title": "A simple network"
+        },
+        {
+            "location": "/background/tech_web/internet_work/#a-network-of-networks",
+            "text": "So far so good. But what about connecting hundreds, thousands, billions of computers? Of course a single router can't scale that far, but, if you read carefully, we said that a router is a computer like any other, so what keeps us from connecting two routers together? Nothing, so let's do that.   By connecting computers to routers, then routers to routers, we are able to scale infinitely.   Such a network comes very close to what we call the Internet, but we're missing something. We built that network for our own purposes. There are other networks out there: your friends, your neighbors, anyone can have their own network of computers. But it's not really possible to set cables up between your house and the rest of the world, so how can you handle this? Well, there are already cables linked to your house, for example, electric power and telephone. The telephone infrastructure already connects your house with anyone in the world so it is the perfect wire we need. To connect our network to the telephone infrastructure, we need a special piece of equipment called a modem. This modem turns the information from our network into information manageable by the telephone infrastructure and vice versa.   So we are connected to the telephone infrastructure. The next step is to send the messages from our network to the network we want to reach. To do that, we will connect our network to an Internet Service Provider (ISP). An ISP is a company that manages some special routers that link all together and can also access other ISPs' routers. So the message from our network is carried through the network of ISP networks to the destination network. The Internet consists of this whole infrastructure of networks.",
+            "title": "A network of networks"
+        },
+        {
+            "location": "/background/tech_web/internet_work/#finding-computers",
+            "text": "If you want to send a message to a computer, you have to specify which one. Thus any computer linked to a network has a unique address to identify it, called an \"IP address\" (where IP stands for Internet Protocol). It's an address made of a series of four numbers separated by dots, for example:  192.168.2.10 .  That's perfectly fine for computers, but we human beings have a hard time remembering that sort of address. To make things easier, we can alias an IP address with a human readable name called a domain name. For example,  google.com  is the domain name used on top of the IP address  173.194.121.32 . So using the domain name is the easiest way for us to reach a computer over the Internet.",
+            "title": "Finding computers"
+        },
+        {
+            "location": "/background/tech_web/internet_work/#internet-and-the-web",
+            "text": "As you might notice, when we browse the Web with a Web browser, we usually use the domain name to reach a website. Does that mean the Internet and the Web are the same thing? It's not that simple. As we saw, the Internet is a technical infrastructure which allows billions of computers to be connected all together. Among those computers, some computers (called Web servers) can send messages intelligible to web browsers. The Internet is an infrastructure, whereas the Web is a service built on top of the infrastructure. It is worth noting there are several other services built on top of the Internet, such as email and IRC.",
+            "title": "Internet and the web"
+        },
+        {
+            "location": "/background/tech_web/web_works/",
+            "text": "How the web works provides a simplified view of what happens when you view a webpage in a web browser on your computer or phone.\n\n\nClients and servers\n#\n\n\n\n\n\n\n\n\nClients are the typical web user's internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and web-accessing software available on those devices (usually a web browser like Firefox or Chrome).\n\n\n\n\n\n\nServers are computers that store webpages, sites, or apps. When a client device wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.\n\n\n\n\n\n\nThe other parts of the toolbox\n#\n\n\nThe client and server we've described above don't tell the whole story. There are many other parts involved, and we'll describe them below.\n\n\nFor now, let's imagine that the web is a road. On one end of the road is the client, which is like your house. On the other end of the road is the server, which is a shop you want to buy something from.\n\n\n\n\nIn addition to the client and the server, we also need to say hello to:\n\n\n\n\n\n\nYour internet connection:\n Allows you to send and receive data on the web. It's basically like the street between your house and the shop.\n\n\n\n\n\n\nTCP/IP:\n Transmission Control Protocol and Internet Protocol are communication protocols that define how data should travel across the web. This is like the transport mechanisms that let you place an order, go to the shop, and buy your goods. In our example, this is like a car or a bike (or however else you might get around).\n\n\n\n\n\n\nDNS:\n Domain Name Servers are like an address book for websites. When you type a web address in your browser, the browser looks at the DNS to find the web site's real address before it can retrieve the website. The browser needs to find out which server the website lives on, so it can send HTTP messages to the right place (see below). This is like looking up the address of the shop so you can access it.\n\n\n\n\n\n\nHTTP:\n Hypertext Transfer Protocol is an application protocol that defines a language for clients and servers to speak to each other. This is like the language you use to order your goods.\n\n\n\n\n\n\nComponent files:\n A website is made up of many different files, which are like the different parts of the goods you buy from the shop. These files come in two main types:\n\n\n\n\nCode files:\n Websites are built primarily from HTML, CSS, and JavaScript, though you'll meet other technologies a bit later.\n\n\nAssets:\n This is a collective name for all the other stuff that makes up a website, such as images, music, video, Word documents, and PDFs.\n\n\n\n\n\n\n\n\nSo what happens, exactly?\n#\n\n\nWhen you type a web address into your browser (for our analogy that's like walking to the shop):\n\n\n\n\n\n\nThe browser goes to the DNS server, and finds the real address of the server that the website lives on (you find the address of the shop).\n\n\n\n\n\n\nThe browser sends an HTTP request message to the server, asking it to send a copy of the website to the client (you go to the shop and order your goods). This message, and all other data sent between the client and the server, is sent across your internet connection using TCP/IP.\n\n\n\n\n\n\nProvided the server approves the client's request, the server sends the client a \"200 OK\" message, which means \"Of course you can look at that website! Here it is\", and then starts sending the website's files to the browser as a series of small chunks called data packets (the shop gives you your goods, and you bring them back to your house).\n\n\n\n\n\n\nThe browser assembles the small chunks into a complete website and displays it to you (the goods arrive at your door \u2014 new shiny stuff, awesome!).\n\n\n\n\n\n\nDNS explained\n#\n\n\nReal web addresses aren't the nice, memorable strings you type into your address bar to find your favorite websites. They are special numbers that look like this: 63.245.215.20.\n\n\nThis is called an \nIP address\n, and it represents a unique location on the Web. However, it's not very easy to remember, is it? That's why \nDomain Name Servers\n were invented. These are special servers that match up a web address you type into your browser (like \"mozilla.org\") to the website's real (IP) address.\n\n\nWebsites can be reached directly via their IP addresses. Try going to the Mozilla website by typing 63.245.215.20 into the address bar on a new browser tab.\n\n\n\n\nPackets explained\n#\n\n\nEarlier we used the term \"packets\" to describe the format in which the data is sent from server to client. What do we mean here? Basically, when data is sent across the web, it is sent as thousands of small chunks, so that many different web users can download the same website at the same time. If web sites were sent as single big chunks, only one user could download one at a time, which obviously would make the web very inefficient and not much fun to use.",
+            "title": "How the Web works"
+        },
+        {
+            "location": "/background/tech_web/web_works/#clients-and-servers",
+            "text": "Clients are the typical web user's internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and web-accessing software available on those devices (usually a web browser like Firefox or Chrome).    Servers are computers that store webpages, sites, or apps. When a client device wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.",
+            "title": "Clients and servers"
+        },
+        {
+            "location": "/background/tech_web/web_works/#the-other-parts-of-the-toolbox",
+            "text": "The client and server we've described above don't tell the whole story. There are many other parts involved, and we'll describe them below.  For now, let's imagine that the web is a road. On one end of the road is the client, which is like your house. On the other end of the road is the server, which is a shop you want to buy something from.   In addition to the client and the server, we also need to say hello to:    Your internet connection:  Allows you to send and receive data on the web. It's basically like the street between your house and the shop.    TCP/IP:  Transmission Control Protocol and Internet Protocol are communication protocols that define how data should travel across the web. This is like the transport mechanisms that let you place an order, go to the shop, and buy your goods. In our example, this is like a car or a bike (or however else you might get around).    DNS:  Domain Name Servers are like an address book for websites. When you type a web address in your browser, the browser looks at the DNS to find the web site's real address before it can retrieve the website. The browser needs to find out which server the website lives on, so it can send HTTP messages to the right place (see below). This is like looking up the address of the shop so you can access it.    HTTP:  Hypertext Transfer Protocol is an application protocol that defines a language for clients and servers to speak to each other. This is like the language you use to order your goods.    Component files:  A website is made up of many different files, which are like the different parts of the goods you buy from the shop. These files come in two main types:   Code files:  Websites are built primarily from HTML, CSS, and JavaScript, though you'll meet other technologies a bit later.  Assets:  This is a collective name for all the other stuff that makes up a website, such as images, music, video, Word documents, and PDFs.",
+            "title": "The other parts of the toolbox"
+        },
+        {
+            "location": "/background/tech_web/web_works/#so-what-happens-exactly",
+            "text": "When you type a web address into your browser (for our analogy that's like walking to the shop):    The browser goes to the DNS server, and finds the real address of the server that the website lives on (you find the address of the shop).    The browser sends an HTTP request message to the server, asking it to send a copy of the website to the client (you go to the shop and order your goods). This message, and all other data sent between the client and the server, is sent across your internet connection using TCP/IP.    Provided the server approves the client's request, the server sends the client a \"200 OK\" message, which means \"Of course you can look at that website! Here it is\", and then starts sending the website's files to the browser as a series of small chunks called data packets (the shop gives you your goods, and you bring them back to your house).    The browser assembles the small chunks into a complete website and displays it to you (the goods arrive at your door \u2014 new shiny stuff, awesome!).",
+            "title": "So what happens, exactly?"
+        },
+        {
+            "location": "/background/tech_web/web_works/#dns-explained",
+            "text": "Real web addresses aren't the nice, memorable strings you type into your address bar to find your favorite websites. They are special numbers that look like this: 63.245.215.20.  This is called an  IP address , and it represents a unique location on the Web. However, it's not very easy to remember, is it? That's why  Domain Name Servers  were invented. These are special servers that match up a web address you type into your browser (like \"mozilla.org\") to the website's real (IP) address.  Websites can be reached directly via their IP addresses. Try going to the Mozilla website by typing 63.245.215.20 into the address bar on a new browser tab.",
+            "title": "DNS explained"
+        },
+        {
+            "location": "/background/tech_web/web_works/#packets-explained",
+            "text": "Earlier we used the term \"packets\" to describe the format in which the data is sent from server to client. What do we mean here? Basically, when data is sent across the web, it is sent as thousands of small chunks, so that many different web users can download the same website at the same time. If web sites were sent as single big chunks, only one user could download one at a time, which obviously would make the web very inefficient and not much fun to use.",
+            "title": "Packets explained"
         },
         {
             "location": "/programming/markdown/",
@@ -276,6 +341,236 @@
             "title": "Khung bao code"
         },
         {
+            "location": "/programming/laravel/1_gioithieu/",
+            "text": "Gi\u1edbi thi\u1ec7u\n#\n\n\nLaravel l\u00e0 1 framework PHP \u0111\u01b0\u1ee3c thi\u1ebft k\u1ebf d\u00e0nh cho vi\u1ec7c ph\u00e1t tri\u1ec3n c\u00e1c \u1ee9ng d\u1ee5ng web theo m\u00f4 h\u00ecnh MVC, v\u1edbi s\u1ef1 \u0111on gi\u1ea3n nh\u01b0ng v\u00f4 c\u00f9ng m\u1ea1nh m\u1ebd laravel \u0111\u00e3 tr\u1edf th\u00e0nh framework \u0111\u01b0\u1ee3c s\u1ef1 d\u1ee5ng r\u1ed9ng r\u00e3i nh\u1ea5t \u1edf th\u1eddi \u0111i\u1ec3m hi\u1ec7n t\u1ea1i, lo\u1ea1t b\u00e0i vi\u1ebft n\u00e0y s\u1ebd h\u01b0\u1edbng d\u1eabn c\u00e1ch s\u1eed d\u1ee5ng laravel cho ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u.\n\n\nY\u00eau c\u1ea7u h\u1ec7 th\u1ed1ng\n#\n\n\nTr\u01b0\u1edbc khi c\u00e0i \u0111\u1eb7t l\u01b0u \u00fd xem tr\u01b0\u1edbc phi\u00ean b\u1ea3n laravel s\u1eed d\u1ee5ng v\u00ec m\u1ed7i phi\u00ean b\u1ea3n c\u00f3 th\u1ec3 c\u00f3 1 y\u00eau c\u1ea7u t\u1ed1i thi\u1ec3u kh\u00e1c nhau, nh\u01b0 trong b\u00e0i vi\u1ebft n\u00e0y \u0111ang s\u1eed d\u1ee5ng laravel 5.3 n\u00ean c\u00f3 y\u00eau c\u1ea7u h\u1ec7 th\u1ed1ng:\n\n\n1\n2\n3\n4\n5\n6\nPHP >= 5.6.4\nOpenSSL PHP Extension\nPDO PHP Extension\nMbstring PHP Extension\nTokenizer PHP Extension\nXML PHP Extension\n\n\n\n\n\n\nC\u00e0i \u0111\u1eb7t\n#\n\n\nC\u00f3 nhi\u1ec1u c\u00e1ch \u0111\u1ec3 c\u00f3 th\u1ec3 c\u00e0i \u0111\u1eb7t laravel nh\u01b0ng \u0111\u1ec3 \u0111\u01a1n gi\u1ea3n ta s\u1ebd s\u1eed d\u1ee5ng composer (tham kh\u1ea3o lo\u1ea1t b\u00e0i h\u01b0\u1edbng d\u1eabn v\u1ec1 composer).\n\n\n\n\nB1: M\u1edf c\u1eeda s\u1ed1 cmd g\u00f5 l\u1ec7nh\n\n\n\n\n1\ncomposer create-project --prefer-dist laravel/laravel [ten_project_se_tao]\n\n\n\n\n\n\n\n\nB2: Sau khi \u0111\u1ee3i composer k\u00e9o project v\u1ec1 l\u00e0 xong, l\u00fac \u0111\u00f3 ta c\u00f3 th\u1ec3 ch\u1ea1y lu\u00f4n \u0111\u01b0\u1ee3c \u1ee9ng d\u1ee5ng tr\u00ean thanh \u0111\u1ecba ch\u1ec9 v\u00ed d\u1ee5:\n\n\n\n\n1\nlocalhost:8080/[ten_project_se_tao]/public/",
+            "title": "Gi\u1edbi thi\u1ec7u, c\u00e0i \u0111\u1eb7t"
+        },
+        {
+            "location": "/programming/laravel/1_gioithieu/#gioi-thieu",
+            "text": "Laravel l\u00e0 1 framework PHP \u0111\u01b0\u1ee3c thi\u1ebft k\u1ebf d\u00e0nh cho vi\u1ec7c ph\u00e1t tri\u1ec3n c\u00e1c \u1ee9ng d\u1ee5ng web theo m\u00f4 h\u00ecnh MVC, v\u1edbi s\u1ef1 \u0111on gi\u1ea3n nh\u01b0ng v\u00f4 c\u00f9ng m\u1ea1nh m\u1ebd laravel \u0111\u00e3 tr\u1edf th\u00e0nh framework \u0111\u01b0\u1ee3c s\u1ef1 d\u1ee5ng r\u1ed9ng r\u00e3i nh\u1ea5t \u1edf th\u1eddi \u0111i\u1ec3m hi\u1ec7n t\u1ea1i, lo\u1ea1t b\u00e0i vi\u1ebft n\u00e0y s\u1ebd h\u01b0\u1edbng d\u1eabn c\u00e1ch s\u1eed d\u1ee5ng laravel cho ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u.",
+            "title": "Gi\u1edbi thi\u1ec7u"
+        },
+        {
+            "location": "/programming/laravel/1_gioithieu/#yeu-cau-he-thong",
+            "text": "Tr\u01b0\u1edbc khi c\u00e0i \u0111\u1eb7t l\u01b0u \u00fd xem tr\u01b0\u1edbc phi\u00ean b\u1ea3n laravel s\u1eed d\u1ee5ng v\u00ec m\u1ed7i phi\u00ean b\u1ea3n c\u00f3 th\u1ec3 c\u00f3 1 y\u00eau c\u1ea7u t\u1ed1i thi\u1ec3u kh\u00e1c nhau, nh\u01b0 trong b\u00e0i vi\u1ebft n\u00e0y \u0111ang s\u1eed d\u1ee5ng laravel 5.3 n\u00ean c\u00f3 y\u00eau c\u1ea7u h\u1ec7 th\u1ed1ng:  1\n2\n3\n4\n5\n6 PHP >= 5.6.4\nOpenSSL PHP Extension\nPDO PHP Extension\nMbstring PHP Extension\nTokenizer PHP Extension\nXML PHP Extension",
+            "title": "Y\u00eau c\u1ea7u h\u1ec7 th\u1ed1ng"
+        },
+        {
+            "location": "/programming/laravel/1_gioithieu/#cai-at",
+            "text": "C\u00f3 nhi\u1ec1u c\u00e1ch \u0111\u1ec3 c\u00f3 th\u1ec3 c\u00e0i \u0111\u1eb7t laravel nh\u01b0ng \u0111\u1ec3 \u0111\u01a1n gi\u1ea3n ta s\u1ebd s\u1eed d\u1ee5ng composer (tham kh\u1ea3o lo\u1ea1t b\u00e0i h\u01b0\u1edbng d\u1eabn v\u1ec1 composer).   B1: M\u1edf c\u1eeda s\u1ed1 cmd g\u00f5 l\u1ec7nh   1 composer create-project --prefer-dist laravel/laravel [ten_project_se_tao]    B2: Sau khi \u0111\u1ee3i composer k\u00e9o project v\u1ec1 l\u00e0 xong, l\u00fac \u0111\u00f3 ta c\u00f3 th\u1ec3 ch\u1ea1y lu\u00f4n \u0111\u01b0\u1ee3c \u1ee9ng d\u1ee5ng tr\u00ean thanh \u0111\u1ecba ch\u1ec9 v\u00ed d\u1ee5:   1 localhost:8080/[ten_project_se_tao]/public/",
+            "title": "C\u00e0i \u0111\u1eb7t"
+        },
+        {
+            "location": "/programming/laravel/2_batdau/",
+            "text": "Ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u n\u00ean chu\u1ea9n b\u1ecb nh\u1eefng ki\u1ebfn th\u1ee9c g\u00ec tr\u01b0\u1edbc khi h\u1ecdc laravel:\n#\n\n\n\n\nKi\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n Php\n\n\nL\u1eadp tr\u00ecnh h\u01b0\u1edbng \u0111\u1ed1i t\u01b0\u1ee3ng\n\n\nM\u00f4 h\u00ecnh MVC\n\n\nComposer: (tham kh\u1ea3o)\n\n\n\n\nH\u1ecdc laravel nh\u01b0 th\u1ebf n\u00e0o:\n#\n\n\n\n\nL\u00ean google th\u00ec c\u00f3 r\u1ea5t nhi\u1ec1u t\u00e0i li\u1ec7u \u0111\u1ec3 h\u1ecdc laravel nh\u01b0ng chu\u1ea9n nh\u1ea5t l\u00e0 v\u00e0o trang ch\u1ee7 c\u1ee7a laravel \u0111\u1ec3 h\u1ecdc \nhttps://laravel.com/docs/master\n\n\nNgo\u00e0i ra b\u00e0i vi\u1ebft n\u00e0y s\u1ebd cung c\u1ea5p tr\u00ecnh t\u1ef1 c\u00e1c ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n nh\u1ea5t c\u1ea7n c\u00f3 c\u1ee7a laravel \u0111\u1ec3 c\u00f3 th\u1ec3 l\u00e0m \u0111\u01b0\u1ee3c ngay trong d\u1ef1 \u00e1n\n\n\n\n\nC\u1ea5u tr\u00fac th\u01b0 m\u1ee5c c\u1ee7a m\u1ed9t project\n#\n\n\nProject s\u1eed d\u1ee5ng laravel s\u1ebd c\u1ea7n quan t\u00e2m \u0111\u1ebfn nh\u1eefng th\u01b0 m\u1ee5c sau \u0111\u00e2y:\n\n\n\n\nL\u01b0u \u00fd: c\u1ea5u tr\u00fac th\u01b0 m\u1ee5c h\u00ecnh tr\u00ean l\u00e0 m\u1eb7c \u0111\u1ecbnh c\u1ee7a laravel nh\u01b0ng do t\u00ednh ch\u1ea5t c\u1ee7a d\u1ef1 \u00e1n n\u00ean ta s\u1ebd s\u1eeda l\u1ea1i \u0111\u1ec3 vi\u1ec7c ph\u00e1t tri\u1ec3n m\u1ed9t modul tr\u1edf n\u00ean \u0111\u01a1n gi\u1ea3n h\u01a1n.\n\n\n\n\nChi ti\u1ebft c\u1ea5u tr\u00fac c\u1ee7a m\u1ed9t Modul \n\n\n\n\n\u1ede \u0111\u00e2y v\u00ed d\u1ee5 v\u1ec1 modul qu\u1ea3n tr\u1ecb \u0111\u1ed1i t\u01b0\u1ee3ng danh m\u1ee5c (list, listtype) l\u00e0m v\u00ed d\u1ee5\n\n\n\n\nmodul qu\u1ea3n tr\u1ecb danh m\u1ee5c (listtype) s\u1ebd n\u1eb1m trong ph\u1ea7n backend (ph\u00eda qu\u1ea3n tr\u1ecb ng\u01b0\u1eddi d\u00f9ng)\n\n\nTrong modul listtype s\u1ebd bao g\u1ed3m c\u00e1c th\u00e0nh ph\u1ea7n:\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n- Assets: th\u01b0 m\u1ee5c l\u01b0u ngu\u1ed3n js, css, xml c\u1ee7a \u1ee9ng d\u1ee5ng\n- Controllers\n- Middleware\n- Models\n- Requests\n- Views\nrouter.php: file \u0111i\u1ec1u h\u01b0\u1edbng t\u1eeb url \u0111\u1ebfn c\u00e1c Controllers\n\n// C\u00e1c ph\u1ea7n controllers, middleware...: tham kh\u1ea3o ph\u00eda tr\u00ean",
+            "title": "D\u00e0nh cho ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u"
+        },
+        {
+            "location": "/programming/laravel/2_batdau/#nguoi-moi-bat-au-nen-chuan-bi-nhung-kien-thuc-gi-truoc-khi-hoc-laravel",
+            "text": "Ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n Php  L\u1eadp tr\u00ecnh h\u01b0\u1edbng \u0111\u1ed1i t\u01b0\u1ee3ng  M\u00f4 h\u00ecnh MVC  Composer: (tham kh\u1ea3o)",
+            "title": "Ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u n\u00ean chu\u1ea9n b\u1ecb nh\u1eefng ki\u1ebfn th\u1ee9c g\u00ec tr\u01b0\u1edbc khi h\u1ecdc laravel:"
+        },
+        {
+            "location": "/programming/laravel/2_batdau/#hoc-laravel-nhu-the-nao",
+            "text": "L\u00ean google th\u00ec c\u00f3 r\u1ea5t nhi\u1ec1u t\u00e0i li\u1ec7u \u0111\u1ec3 h\u1ecdc laravel nh\u01b0ng chu\u1ea9n nh\u1ea5t l\u00e0 v\u00e0o trang ch\u1ee7 c\u1ee7a laravel \u0111\u1ec3 h\u1ecdc  https://laravel.com/docs/master  Ngo\u00e0i ra b\u00e0i vi\u1ebft n\u00e0y s\u1ebd cung c\u1ea5p tr\u00ecnh t\u1ef1 c\u00e1c ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n nh\u1ea5t c\u1ea7n c\u00f3 c\u1ee7a laravel \u0111\u1ec3 c\u00f3 th\u1ec3 l\u00e0m \u0111\u01b0\u1ee3c ngay trong d\u1ef1 \u00e1n",
+            "title": "H\u1ecdc laravel nh\u01b0 th\u1ebf n\u00e0o:"
+        },
+        {
+            "location": "/programming/laravel/2_batdau/#cau-truc-thu-muc-cua-mot-project",
+            "text": "Project s\u1eed d\u1ee5ng laravel s\u1ebd c\u1ea7n quan t\u00e2m \u0111\u1ebfn nh\u1eefng th\u01b0 m\u1ee5c sau \u0111\u00e2y:   L\u01b0u \u00fd: c\u1ea5u tr\u00fac th\u01b0 m\u1ee5c h\u00ecnh tr\u00ean l\u00e0 m\u1eb7c \u0111\u1ecbnh c\u1ee7a laravel nh\u01b0ng do t\u00ednh ch\u1ea5t c\u1ee7a d\u1ef1 \u00e1n n\u00ean ta s\u1ebd s\u1eeda l\u1ea1i \u0111\u1ec3 vi\u1ec7c ph\u00e1t tri\u1ec3n m\u1ed9t modul tr\u1edf n\u00ean \u0111\u01a1n gi\u1ea3n h\u01a1n.   Chi ti\u1ebft c\u1ea5u tr\u00fac c\u1ee7a m\u1ed9t Modul    \u1ede \u0111\u00e2y v\u00ed d\u1ee5 v\u1ec1 modul qu\u1ea3n tr\u1ecb \u0111\u1ed1i t\u01b0\u1ee3ng danh m\u1ee5c (list, listtype) l\u00e0m v\u00ed d\u1ee5   modul qu\u1ea3n tr\u1ecb danh m\u1ee5c (listtype) s\u1ebd n\u1eb1m trong ph\u1ea7n backend (ph\u00eda qu\u1ea3n tr\u1ecb ng\u01b0\u1eddi d\u00f9ng)  Trong modul listtype s\u1ebd bao g\u1ed3m c\u00e1c th\u00e0nh ph\u1ea7n:  1\n2\n3\n4\n5\n6\n7\n8\n9 - Assets: th\u01b0 m\u1ee5c l\u01b0u ngu\u1ed3n js, css, xml c\u1ee7a \u1ee9ng d\u1ee5ng\n- Controllers\n- Middleware\n- Models\n- Requests\n- Views\nrouter.php: file \u0111i\u1ec1u h\u01b0\u1edbng t\u1eeb url \u0111\u1ebfn c\u00e1c Controllers\n\n// C\u00e1c ph\u1ea7n controllers, middleware...: tham kh\u1ea3o ph\u00eda tr\u00ean",
+            "title": "C\u1ea5u tr\u00fac th\u01b0 m\u1ee5c c\u1ee7a m\u1ed9t project"
+        },
+        {
+            "location": "/programming/laravel/3_composer/",
+            "text": "H\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t\n#\n\n\nGi\u1edbi thi\u1ec7u\n#\n\n\nComposer l\u00e0 m\u1ed9t c\u00f4ng c\u1ee5 qu\u1ea3n l\u00fd c\u00e1c th\u01b0 vi\u1ec7n trong PHP (Dependency Management), c\u00f4ng c\u1ee5 n\u00e0y gi\u00fap ta qu\u1ea3n l\u00fd \u0111\u01b0\u1ee3c c\u00e1c th\u01b0 vi\u1ec7n, framework kh\u00e1c d\u00f9ng trong project c\u1ee7a m\u00ecnh nh\u01b0: laravel, phpdocx\u2026 khi ta mu\u1ed1n th\u00eam m\u1edbi m\u1ed9t th\u01b0 vi\u1ec7n hay c\u1eadp nh\u1eadt phi\u00ean b\u1ea3n cho th\u01b0 vi\u1ec7n c\u0169 th\u00ec vi\u1ec7c s\u1eed d\u1ee5ng Composer s\u1ebd r\u1ea5t thu\u1eadn ti\u1ec7n v\u00e0 \u0111\u01a1n gi\u1ea3n. tham kh\u1ea3o th\u00eam Composer\n\n\n\n\nY\u00eau c\u1ea7u t\u1ed1i thi\u1ec3u h\u1ec7 th\u1ed1ng\n\n\n\n\n1\nPHP >= 5.3.2\n\n\n\n\n\n\nH\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t\n#\n\n\n\n\n\n\nclick v\u00e0o link sau \u0111\u1ec3 t\u1ea3i: t\u1ea3i composer ho\u1eb7c v\u00e0o trang ch\u1ee7 Composer \u0111\u1ec3 download b\u1ed9 c\u00e0i\n\n\n\n\n\n\nM\u1edf file t\u1ea3i v\u1ec1 v\u00e0 c\u00e0i \u0111\u1eb7t nh\u01b0 1 ph\u1ea7n m\u1ec1m b\u00ecnh th\u01b0\u1eddng, l\u01b0u \u00fd: n\u1ebfu hi\u1ec3n th\u1ecb h\u00ecnh b\u00ean d\u01b0\u1edbi th\u00ec ch\u1ecdn v\u00e0o \u0111\u01b0\u1eddng d\u1eabn ch\u01b0a file php.exe trong folder PHP c\u1ee7a m\u00ecnh.\n\n\n\n\n\n\n\n\n\n\nsau khi c\u00e0i \u0111\u1eb7t xong, \u0111\u1ec3 ki\u1ec3m tra xem composer \u0111\u00e3 c\u00e0i \u0111\u1eb7t th\u00e0nh c\u00f4ng ch\u01b0a th\u00ec g\u00f5 l\u1ec7nh\n\n\n\n\n1\ncomposer -V\n\n\n\n\n\n\nN\u1ebfu k\u1ebft qu\u1ea3 tr\u1ea3 v\u1ec1 phi\u00ean b\u1ea3n c\u1ee7a composer c\u00f3 ngh\u0129a l\u00e0 \u0111\u00e3 c\u00e0i \u0111\u1eb7t th\u00e0nh c\u00f4ng\n\n\nH\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng\n#\n\n\nTrong ph\u1ea7n n\u00e0y s\u1ebd h\u01b0\u1edbng c\u00e1ch s\u1eed d\u1ee5ng composer theo t\u1eebng h\u00e0nh \u0111\u1ed9ng c\u1ee5 th\u1ec3:\n\n\n\n\nS\u1eed d\u1ee5ng composer \u0111\u1ec3 c\u00e0i \u0111\u1eb7t trong l\u1ea7n \u0111\u1ea7u kh\u1edfi t\u1ea1o m\u1ed9t project.\n\n\n\n\n1\ncomposer install\n\n\n\n\n\n\n\n\nS\u1eed d\u1ee5ng composer \u0111\u1ec3 th\u00eam m\u1edbi 1 th\u01b0 vi\u1ec7n v\u00e0o project c\u1ee7a m\u00ecnh:\n\n\n\n\n1\ncomposer require [ten_thu_vien_can_add]\n\n\n\n\n\n\n\n\nS\u1eed d\u1ee5ng composer \u0111\u1ec3 c\u1eadp nh\u1eadt phi\u00ean b\u1ea3n c\u00e1c th\u01b0 vi\u1ec7n c\u0169:\n\n\n\n\n1\ncomposer update\n\n\n\n\n\n\nL\u01b0u \u00fd:\n\n\n\n\n\n\nC\u00e1c l\u1ec7nh composer s\u1ebd \u0111\u01b0\u1ee3c th\u1ef1c thi b\u1eb1ng l\u1ec7nh cmd, v\u00e0 \u0111\u01b0\u1eddng d\u1eabn n\u1eb1m trong th\u01b0 m\u1ee5c project m\u00e0 m\u00ecnh mu\u1ed1n th\u1ef1c hi\u1ec7n\n\n\n\n\n\n\nTrong 1 project s\u1eed d\u1ee5ng composer s\u1ebd c\u00f3 2 file: \n\n\n\n\n\n\ncomposer.json: \u0110\u00e2y l\u00e0 file gi\u00fap composer bi\u1ebft \u0111\u01b0\u1ee3c h\u1ec7 th\u1ed1ng \u0111ang s\u1eed d\u1ee5ng c\u00e1c th\u01b0 vi\u1ec7n n\u00e0o \u0111\u1ec3 c\u00e0i \u0111\u1eb7t\n\n\ncomposer.lock: L\u00e0 file c\u1ed1 \u0111\u1ecbnh c\u00e1c phi\u00ean b\u1ea3n. gi\u00fap cho to\u00e0n b\u1ed9 team tr\u00e1nh \u0111\u01b0\u1ee3c tr\u01b0\u1eddng h\u1ee3p anh A s\u1eed d\u1ee5ng version 1 anh B l\u1ea1i s\u1eed d\u1ee5ng version 2 c\u1ee7a th\u01b0 vi\u1ec7n \u0111\u00f3.\n\n\n\n\nC\u00e1c th\u01b0 vi\u1ec7n \u0111\u01b0\u1ee3c compser qu\u1ea3n l\u00fd s\u1ebd \u0111\u01b0\u1ee3c n\u1eb1m trong th\u01b0 m\u1ee5c vendor",
+            "title": "Composer"
+        },
+        {
+            "location": "/programming/laravel/3_composer/#huong-dan-cai-at",
+            "text": "",
+            "title": "H\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t"
+        },
+        {
+            "location": "/programming/laravel/3_composer/#gioi-thieu",
+            "text": "Composer l\u00e0 m\u1ed9t c\u00f4ng c\u1ee5 qu\u1ea3n l\u00fd c\u00e1c th\u01b0 vi\u1ec7n trong PHP (Dependency Management), c\u00f4ng c\u1ee5 n\u00e0y gi\u00fap ta qu\u1ea3n l\u00fd \u0111\u01b0\u1ee3c c\u00e1c th\u01b0 vi\u1ec7n, framework kh\u00e1c d\u00f9ng trong project c\u1ee7a m\u00ecnh nh\u01b0: laravel, phpdocx\u2026 khi ta mu\u1ed1n th\u00eam m\u1edbi m\u1ed9t th\u01b0 vi\u1ec7n hay c\u1eadp nh\u1eadt phi\u00ean b\u1ea3n cho th\u01b0 vi\u1ec7n c\u0169 th\u00ec vi\u1ec7c s\u1eed d\u1ee5ng Composer s\u1ebd r\u1ea5t thu\u1eadn ti\u1ec7n v\u00e0 \u0111\u01a1n gi\u1ea3n. tham kh\u1ea3o th\u00eam Composer   Y\u00eau c\u1ea7u t\u1ed1i thi\u1ec3u h\u1ec7 th\u1ed1ng   1 PHP >= 5.3.2",
+            "title": "Gi\u1edbi thi\u1ec7u"
+        },
+        {
+            "location": "/programming/laravel/3_composer/#huong-dan-cai-at_1",
+            "text": "click v\u00e0o link sau \u0111\u1ec3 t\u1ea3i: t\u1ea3i composer ho\u1eb7c v\u00e0o trang ch\u1ee7 Composer \u0111\u1ec3 download b\u1ed9 c\u00e0i    M\u1edf file t\u1ea3i v\u1ec1 v\u00e0 c\u00e0i \u0111\u1eb7t nh\u01b0 1 ph\u1ea7n m\u1ec1m b\u00ecnh th\u01b0\u1eddng, l\u01b0u \u00fd: n\u1ebfu hi\u1ec3n th\u1ecb h\u00ecnh b\u00ean d\u01b0\u1edbi th\u00ec ch\u1ecdn v\u00e0o \u0111\u01b0\u1eddng d\u1eabn ch\u01b0a file php.exe trong folder PHP c\u1ee7a m\u00ecnh.      sau khi c\u00e0i \u0111\u1eb7t xong, \u0111\u1ec3 ki\u1ec3m tra xem composer \u0111\u00e3 c\u00e0i \u0111\u1eb7t th\u00e0nh c\u00f4ng ch\u01b0a th\u00ec g\u00f5 l\u1ec7nh   1 composer -V   N\u1ebfu k\u1ebft qu\u1ea3 tr\u1ea3 v\u1ec1 phi\u00ean b\u1ea3n c\u1ee7a composer c\u00f3 ngh\u0129a l\u00e0 \u0111\u00e3 c\u00e0i \u0111\u1eb7t th\u00e0nh c\u00f4ng",
+            "title": "H\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t"
+        },
+        {
+            "location": "/programming/laravel/3_composer/#huong-dan-su-dung",
+            "text": "Trong ph\u1ea7n n\u00e0y s\u1ebd h\u01b0\u1edbng c\u00e1ch s\u1eed d\u1ee5ng composer theo t\u1eebng h\u00e0nh \u0111\u1ed9ng c\u1ee5 th\u1ec3:   S\u1eed d\u1ee5ng composer \u0111\u1ec3 c\u00e0i \u0111\u1eb7t trong l\u1ea7n \u0111\u1ea7u kh\u1edfi t\u1ea1o m\u1ed9t project.   1 composer install    S\u1eed d\u1ee5ng composer \u0111\u1ec3 th\u00eam m\u1edbi 1 th\u01b0 vi\u1ec7n v\u00e0o project c\u1ee7a m\u00ecnh:   1 composer require [ten_thu_vien_can_add]    S\u1eed d\u1ee5ng composer \u0111\u1ec3 c\u1eadp nh\u1eadt phi\u00ean b\u1ea3n c\u00e1c th\u01b0 vi\u1ec7n c\u0169:   1 composer update   L\u01b0u \u00fd:    C\u00e1c l\u1ec7nh composer s\u1ebd \u0111\u01b0\u1ee3c th\u1ef1c thi b\u1eb1ng l\u1ec7nh cmd, v\u00e0 \u0111\u01b0\u1eddng d\u1eabn n\u1eb1m trong th\u01b0 m\u1ee5c project m\u00e0 m\u00ecnh mu\u1ed1n th\u1ef1c hi\u1ec7n    Trong 1 project s\u1eed d\u1ee5ng composer s\u1ebd c\u00f3 2 file:     composer.json: \u0110\u00e2y l\u00e0 file gi\u00fap composer bi\u1ebft \u0111\u01b0\u1ee3c h\u1ec7 th\u1ed1ng \u0111ang s\u1eed d\u1ee5ng c\u00e1c th\u01b0 vi\u1ec7n n\u00e0o \u0111\u1ec3 c\u00e0i \u0111\u1eb7t  composer.lock: L\u00e0 file c\u1ed1 \u0111\u1ecbnh c\u00e1c phi\u00ean b\u1ea3n. gi\u00fap cho to\u00e0n b\u1ed9 team tr\u00e1nh \u0111\u01b0\u1ee3c tr\u01b0\u1eddng h\u1ee3p anh A s\u1eed d\u1ee5ng version 1 anh B l\u1ea1i s\u1eed d\u1ee5ng version 2 c\u1ee7a th\u01b0 vi\u1ec7n \u0111\u00f3.   C\u00e1c th\u01b0 vi\u1ec7n \u0111\u01b0\u1ee3c compser qu\u1ea3n l\u00fd s\u1ebd \u0111\u01b0\u1ee3c n\u1eb1m trong th\u01b0 m\u1ee5c vendor",
+            "title": "H\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng"
+        },
+        {
+            "location": "/programming/angular/1_started/",
+            "text": "Set up the Development Environment\n#\n\n\nNodejs\n#\n\n\nInstall \nNode.js\u00ae and npm\n  if they are not already on your machine.\n\n\n\n\nWarning\n\n\nVerify that you are running at least node 6.9.x and npm 3.x.x by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine..\n\n\n\n\nAngular CLI\n#\n\n\nThe Angular CLI is a command line interface tool that can create a project, add files, and perform a variety of ongoing development tasks such as testing, bundling, and deployment.\n\n\nInstall:\n\n\n1\nnpm install -g @angular/cli\n\n\n\n\n\n\nCreate a new project\n#\n\n\n1\nng new my-app\n\n\n\n\n\n\nServe the application\n#\n\n\n1\n2\ncd my-app\nng serve --open\n\n\n\n\n\n\n\n\nNote\n\n\nUsing the \n--open\n (or just \n-o\n) option will automatically open your browser on \nhttp://localhost:4200/\n\n\n\n\nProject file review\n#\n\n\nThe src folder\n#\n\n\nYour app lives in the src folder. All Angular components, templates, styles, images, and anything else your app needs go here. Any files outside of this folder are meant to support building your app. \nLink\n\n\nThe root folder\n#\n\n\nThe \nsrc/\n folder is just one of the items inside the project's root folder. Other files help you build, test, maintain, document, and deploy the app. These files go in the root folder next to \nsrc/\n. \nLink",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/programming/angular/1_started/#set-up-the-development-environment",
+            "text": "",
+            "title": "Set up the Development Environment"
+        },
+        {
+            "location": "/programming/angular/1_started/#nodejs",
+            "text": "Install  Node.js\u00ae and npm   if they are not already on your machine.   Warning  Verify that you are running at least node 6.9.x and npm 3.x.x by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine..",
+            "title": "Nodejs"
+        },
+        {
+            "location": "/programming/angular/1_started/#angular-cli",
+            "text": "The Angular CLI is a command line interface tool that can create a project, add files, and perform a variety of ongoing development tasks such as testing, bundling, and deployment.  Install:  1 npm install -g @angular/cli",
+            "title": "Angular CLI"
+        },
+        {
+            "location": "/programming/angular/1_started/#create-a-new-project",
+            "text": "1 ng new my-app",
+            "title": "Create a new project"
+        },
+        {
+            "location": "/programming/angular/1_started/#serve-the-application",
+            "text": "1\n2 cd my-app\nng serve --open    Note  Using the  --open  (or just  -o ) option will automatically open your browser on  http://localhost:4200/",
+            "title": "Serve the application"
+        },
+        {
+            "location": "/programming/angular/1_started/#project-file-review",
+            "text": "",
+            "title": "Project file review"
+        },
+        {
+            "location": "/programming/angular/1_started/#the-src-folder",
+            "text": "Your app lives in the src folder. All Angular components, templates, styles, images, and anything else your app needs go here. Any files outside of this folder are meant to support building your app.  Link",
+            "title": "The src folder"
+        },
+        {
+            "location": "/programming/angular/1_started/#the-root-folder",
+            "text": "The  src/  folder is just one of the items inside the project's root folder. Other files help you build, test, maintain, document, and deploy the app. These files go in the root folder next to  src/ .  Link",
+            "title": "The root folder"
+        },
+        {
+            "location": "/programming/angular/2_architecture/",
+            "text": "Modules\n#\n\n\nAngular apps are modular and Angular has its own modularity system called NgModules\n\n\nComponents\n#\n\n\nA component controls a patch of screen called a view\n\n\nTemplates\n#\n\n\nYou define a component's view with its companion template. A template is a form of HTML that tells Angular how to render the component\n\n\nMetadata\n#\n\n\nMetadata tells Angular how to process a class.\n\n\nData binding\n#\n\n\nWithout a framework, you would be responsible for pushing data values into the HTML controls and turning user responses into actions and value updates. Writing such push/pull logic by hand is tedious, error-prone, and a nightmare to read as any experienced jQuery programmer can attest.",
+            "title": "Architecture"
+        },
+        {
+            "location": "/programming/angular/2_architecture/#modules",
+            "text": "Angular apps are modular and Angular has its own modularity system called NgModules",
+            "title": "Modules"
+        },
+        {
+            "location": "/programming/angular/2_architecture/#components",
+            "text": "A component controls a patch of screen called a view",
+            "title": "Components"
+        },
+        {
+            "location": "/programming/angular/2_architecture/#templates",
+            "text": "You define a component's view with its companion template. A template is a form of HTML that tells Angular how to render the component",
+            "title": "Templates"
+        },
+        {
+            "location": "/programming/angular/2_architecture/#metadata",
+            "text": "Metadata tells Angular how to process a class.",
+            "title": "Metadata"
+        },
+        {
+            "location": "/programming/angular/2_architecture/#data-binding",
+            "text": "Without a framework, you would be responsible for pushing data values into the HTML controls and turning user responses into actions and value updates. Writing such push/pull logic by hand is tedious, error-prone, and a nightmare to read as any experienced jQuery programmer can attest.",
+            "title": "Data binding"
+        },
+        {
+            "location": "/programming/angular/3_kientruc/",
+            "text": "Ki\u1ebfn tr\u00fac Angular\n#\n\n\nC\u00f9ng xem x\u00e9t h\u00ecnh sau:\n\n\n\n\nModule\n#\n\n\nHi\u1ec3u 1 c\u00e1ch \u0111\u01a1n gi\u1ea3n Module s\u1ebd nh\u00f3m nh\u1eefng c\u00f4ng vi\u1ec7c gi\u1ed1ng nhau v\u00e0o th\u00e0nh 1 kh\u1ed1i \u0111\u1ec3 qu\u1ea3n l\u00fd, khi g\u1ecdi ch\u1ee9c n\u0103ng n\u00e0o trong kh\u1ed1i \u0111\u00f3 th\u00ec ta Import Module ch\u1ee9a ch\u1ee9c n\u0103ng \u0111\u00f3, Th\u01b0 vi\u1ec7n trong Angular c\u0169ng chia th\u00e0nh c\u00e1c Module, c\u00e1c th\u01b0 vi\u1ec7n b\u00ean ngo\u00e0i nh\u01b0 Devexpress.. c\u0169ng \u0111\u01b0\u1ee3c g\u1ecdi l\u00e0 c\u00e1c kh\u1ed1i Module ri\u00eang l\u1ebb. Tham kh\u1ea3o c\u00e1ch d\u00f9ng: \nhttps://angular.io/guide/ngmodule\n \n\n\nComponent\n#\n\n\nTrong m\u00f4 h\u00ecnh MVC th\u00ec Component s\u1ebd g\u1ea7n gi\u1ed1ng nh\u01b0 Controler, gi\u00fap x\u1eed l\u00fd logic v\u00e0 \u0111i\u1ec1u khi\u1ec3n ph\u1ea7n view. Trong d\u1ef1 \u00e1n c\u1ee5 th\u1ec3 Component gi\u00fap chia \u1ee9ng d\u1ee5ng th\u00e0nh c\u00e1c ph\u1ea7n \u0111\u1ec3 hi\u1ec3n th\u1ecb giao di\u1ec7n. Tham kh\u1ea3o: \nhttps://angular.io/guide/displaying-data\n\n\n\n\nVD: 1 Website th\u01b0\u1eddng bao g\u1ed3m c\u00e1c Component sau:\n\n\n\n\n\n\n\n\nHeader Component\n: Gi\u00fap x\u1eed l\u00fd hi\u1ec3n th\u1ecb ph\u1ea7n Header\n\n\nRoot Component\n: Khung bao c\u00e1c ph\u1ea7n Sitebar,Content\n\n\nSideBar Component\n: Gi\u00fap x\u1eed l\u00fd hi\u1ec3n th\u1ecb ph\u1ea7n thanh b\u00ean\n\n\nItem Component\n: Hi\u1ec3n th\u1ecb ph\u1ea7n n\u1ed9i dung\n\n\n\n\nTemplate\n#\n\n\nGi\u00fap cho \u1ee9ng d\u1ee5ng hi\u1ec3n th\u1ecb ra m\u00e3 HTML, t\u1ee9c l\u00e0 \u1edf ph\u1ea7n hi\u1ec3n th\u1ecb View ta c\u00f3 th\u1ec3 vi\u1ebft c\u00e1c bi\u1ebfn, c\u00e1c x\u1eed l\u00fd logic Template s\u1ebd render nh\u1eefng c\u00e2u l\u1ec7nh \u0111\u00f3 ra m\u00e3 HTML \u0111\u1ec3 hi\u1ec3n th\u1ecb. Tham kh\u1ea3o: n\u1eb1m trong t\u00e0i li\u1ec7u c\u1ee7a Component\n\n\nMetadata\n#\n\n\nS\u1ebd gi\u00fap cho Angular bi\u1ebft v\u00e0 x\u1eed l\u00fd Component n\u00e0y x\u1eed l\u00fd th\u1ebf n\u00e0o, hi\u1ec3n tr\u1ecb ph\u1ea7n trong view\n\n\nData Biding\n#\n\n\nL\u00e0 m\u1ed9t t\u00ednh n\u0103ng gi\u00fap Anguar x\u1eed l\u00fd, \u0111\u1ed3ng b\u1ed9 d\u1eef li\u1ec7u, c\u00e1c s\u1ef1 ki\u1ec7n tr\u00ean form gi\u1eefa Template v\u00e0 Component. Tham kh\u1ea3o: \nhttps://angular.io/guide/template-syntax\n\n\nService\n#\n\n\nDirectives Gi\u00fap Angular x\u1eed l\u00fd d\u1eef li\u1ec7u, l\u1ea5y d\u1eef li\u1ec7u t\u1eeb c\u00e1c Api, Share d\u1eef li\u1ec7u gi\u1eefa c\u00e1c Component..vv. Tham kh\u1ea3o: \nhttps://angular.io/tutorial/toh-pt4\n\n\nDirectives\n#\n\n\nL\u00e0 m\u1ed9t ph\u1ea7n m\u1edf r\u1ed9ng trong teamplate, gi\u00fap cho ng\u01b0\u1eddi l\u1eadp tr\u00ecnh c\u00f3 th\u1ec3 t\u1ea1o th\u00e0nh c\u00e1c tag m\u00e0 trong HTML kh\u00f4ng c\u00f3 v\u00e0 \u0111\u1ecbnh ngh\u0129a giao di\u1ec7n cho tag \u0111\u00f3 nh\u01b0 n\u00e0o. vd \n\n\nN\u00f3i t\u00f3m l\u1ea1i: Ki\u1ebfm th\u1ee9c tr\u1ecdng Angular r\u1ea5t nhi\u1ec1u, v\u00e0 \u0111\u00e2y ch\u1ec9 li\u1ec7t k\u00ea nh\u1eefng g\u00ec quan tr\u1ecdng nh\u1ea5t. N\u00ean n\u1eafm ch\u1eafc ki\u1ebfn th\u1ee9c ph\u1ea7n b\u00f4i \u0111\u1ecf v\u00ec s\u1ebd s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong d\u1ef1 \u00e1n.\n\n\nC\u1ea5u tr\u00fac th\u01b0 m\u1ee5c trong Angular\n#\n\n\n\n\nM\u00f4 h\u00ecnh ph\u00e1t tri\u1ec3n d\u1ef1 \u00e1n s\u1eed d\u1ee5ng Angular\n#",
+            "title": "Ki\u1ebfn tr\u00fac"
+        },
+        {
+            "location": "/programming/angular/3_kientruc/#kien-truc-angular",
+            "text": "C\u00f9ng xem x\u00e9t h\u00ecnh sau:",
+            "title": "Ki\u1ebfn tr\u00fac Angular"
+        },
+        {
+            "location": "/programming/angular/3_kientruc/#module",
+            "text": "Hi\u1ec3u 1 c\u00e1ch \u0111\u01a1n gi\u1ea3n Module s\u1ebd nh\u00f3m nh\u1eefng c\u00f4ng vi\u1ec7c gi\u1ed1ng nhau v\u00e0o th\u00e0nh 1 kh\u1ed1i \u0111\u1ec3 qu\u1ea3n l\u00fd, khi g\u1ecdi ch\u1ee9c n\u0103ng n\u00e0o trong kh\u1ed1i \u0111\u00f3 th\u00ec ta Import Module ch\u1ee9a ch\u1ee9c n\u0103ng \u0111\u00f3, Th\u01b0 vi\u1ec7n trong Angular c\u0169ng chia th\u00e0nh c\u00e1c Module, c\u00e1c th\u01b0 vi\u1ec7n b\u00ean ngo\u00e0i nh\u01b0 Devexpress.. c\u0169ng \u0111\u01b0\u1ee3c g\u1ecdi l\u00e0 c\u00e1c kh\u1ed1i Module ri\u00eang l\u1ebb. Tham kh\u1ea3o c\u00e1ch d\u00f9ng:  https://angular.io/guide/ngmodule",
+            "title": "Module"
+        },
+        {
+            "location": "/programming/angular/3_kientruc/#component",
+            "text": "Trong m\u00f4 h\u00ecnh MVC th\u00ec Component s\u1ebd g\u1ea7n gi\u1ed1ng nh\u01b0 Controler, gi\u00fap x\u1eed l\u00fd logic v\u00e0 \u0111i\u1ec1u khi\u1ec3n ph\u1ea7n view. Trong d\u1ef1 \u00e1n c\u1ee5 th\u1ec3 Component gi\u00fap chia \u1ee9ng d\u1ee5ng th\u00e0nh c\u00e1c ph\u1ea7n \u0111\u1ec3 hi\u1ec3n th\u1ecb giao di\u1ec7n. Tham kh\u1ea3o:  https://angular.io/guide/displaying-data   VD: 1 Website th\u01b0\u1eddng bao g\u1ed3m c\u00e1c Component sau:     Header Component : Gi\u00fap x\u1eed l\u00fd hi\u1ec3n th\u1ecb ph\u1ea7n Header  Root Component : Khung bao c\u00e1c ph\u1ea7n Sitebar,Content  SideBar Component : Gi\u00fap x\u1eed l\u00fd hi\u1ec3n th\u1ecb ph\u1ea7n thanh b\u00ean  Item Component : Hi\u1ec3n th\u1ecb ph\u1ea7n n\u1ed9i dung",
+            "title": "Component"
+        },
+        {
+            "location": "/programming/angular/3_kientruc/#template",
+            "text": "Gi\u00fap cho \u1ee9ng d\u1ee5ng hi\u1ec3n th\u1ecb ra m\u00e3 HTML, t\u1ee9c l\u00e0 \u1edf ph\u1ea7n hi\u1ec3n th\u1ecb View ta c\u00f3 th\u1ec3 vi\u1ebft c\u00e1c bi\u1ebfn, c\u00e1c x\u1eed l\u00fd logic Template s\u1ebd render nh\u1eefng c\u00e2u l\u1ec7nh \u0111\u00f3 ra m\u00e3 HTML \u0111\u1ec3 hi\u1ec3n th\u1ecb. Tham kh\u1ea3o: n\u1eb1m trong t\u00e0i li\u1ec7u c\u1ee7a Component",
+            "title": "Template"
+        },
+        {
+            "location": "/programming/angular/3_kientruc/#metadata",
+            "text": "S\u1ebd gi\u00fap cho Angular bi\u1ebft v\u00e0 x\u1eed l\u00fd Component n\u00e0y x\u1eed l\u00fd th\u1ebf n\u00e0o, hi\u1ec3n tr\u1ecb ph\u1ea7n trong view",
+            "title": "Metadata"
+        },
+        {
+            "location": "/programming/angular/3_kientruc/#data-biding",
+            "text": "L\u00e0 m\u1ed9t t\u00ednh n\u0103ng gi\u00fap Anguar x\u1eed l\u00fd, \u0111\u1ed3ng b\u1ed9 d\u1eef li\u1ec7u, c\u00e1c s\u1ef1 ki\u1ec7n tr\u00ean form gi\u1eefa Template v\u00e0 Component. Tham kh\u1ea3o:  https://angular.io/guide/template-syntax",
+            "title": "Data Biding"
+        },
+        {
+            "location": "/programming/angular/3_kientruc/#service",
+            "text": "Directives Gi\u00fap Angular x\u1eed l\u00fd d\u1eef li\u1ec7u, l\u1ea5y d\u1eef li\u1ec7u t\u1eeb c\u00e1c Api, Share d\u1eef li\u1ec7u gi\u1eefa c\u00e1c Component..vv. Tham kh\u1ea3o:  https://angular.io/tutorial/toh-pt4",
+            "title": "Service"
+        },
+        {
+            "location": "/programming/angular/3_kientruc/#directives",
+            "text": "L\u00e0 m\u1ed9t ph\u1ea7n m\u1edf r\u1ed9ng trong teamplate, gi\u00fap cho ng\u01b0\u1eddi l\u1eadp tr\u00ecnh c\u00f3 th\u1ec3 t\u1ea1o th\u00e0nh c\u00e1c tag m\u00e0 trong HTML kh\u00f4ng c\u00f3 v\u00e0 \u0111\u1ecbnh ngh\u0129a giao di\u1ec7n cho tag \u0111\u00f3 nh\u01b0 n\u00e0o. vd   N\u00f3i t\u00f3m l\u1ea1i: Ki\u1ebfm th\u1ee9c tr\u1ecdng Angular r\u1ea5t nhi\u1ec1u, v\u00e0 \u0111\u00e2y ch\u1ec9 li\u1ec7t k\u00ea nh\u1eefng g\u00ec quan tr\u1ecdng nh\u1ea5t. N\u00ean n\u1eafm ch\u1eafc ki\u1ebfn th\u1ee9c ph\u1ea7n b\u00f4i \u0111\u1ecf v\u00ec s\u1ebd s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong d\u1ef1 \u00e1n.",
+            "title": "Directives"
+        },
+        {
+            "location": "/programming/angular/3_kientruc/#cau-truc-thu-muc-trong-angular",
+            "text": "",
+            "title": "C\u1ea5u tr\u00fac th\u01b0 m\u1ee5c trong Angular"
+        },
+        {
+            "location": "/programming/angular/3_kientruc/#mo-hinh-phat-trien-du-an-su-dung-angular",
+            "text": "",
+            "title": "M\u00f4 h\u00ecnh ph\u00e1t tri\u1ec3n d\u1ef1 \u00e1n s\u1eed d\u1ee5ng Angular"
+        },
+        {
+            "location": "/programming/angular/4_caulenh/",
+            "text": "Ch\u1ea1y \u1ee9ng d\u1ee5ng\n#\n\n\n1\nng server -o\n\n\n\n\n\n\nBuild \u1ee9ng d\u1ee5ng ra b\u1ea3n product\n#\n\n\n1\nng build \u2013prod\n\n\n\n\n\n\nT\u1ea1o module\n#\n\n\n1\n2\n3\nng g module [ten_module]\n\nng g module [ten_module] --routing    // \u0110\u1ec3 t\u1ea1o router trong module\n\n\n\n\n\n\nT\u1ea1o component\n#\n\n\n1\nng g component [ten_component]\n\n\n\n\n\n\nT\u1ea1o service\n#\n\n\n1\nng g service [ten_service]\n\n\n\n\n\n\nT\u1ea1o class\n#\n\n\n1\nng g class [ten_class]",
+            "title": "C\u00e2u l\u1ec7nh th\u01b0\u1eddng d\u00f9ng"
+        },
+        {
+            "location": "/programming/angular/4_caulenh/#chay-ung-dung",
+            "text": "1 ng server -o",
+            "title": "Ch\u1ea1y \u1ee9ng d\u1ee5ng"
+        },
+        {
+            "location": "/programming/angular/4_caulenh/#build-ung-dung-ra-ban-product",
+            "text": "1 ng build \u2013prod",
+            "title": "Build \u1ee9ng d\u1ee5ng ra b\u1ea3n product"
+        },
+        {
+            "location": "/programming/angular/4_caulenh/#tao-module",
+            "text": "1\n2\n3 ng g module [ten_module]\n\nng g module [ten_module] --routing    // \u0110\u1ec3 t\u1ea1o router trong module",
+            "title": "T\u1ea1o module"
+        },
+        {
+            "location": "/programming/angular/4_caulenh/#tao-component",
+            "text": "1 ng g component [ten_component]",
+            "title": "T\u1ea1o component"
+        },
+        {
+            "location": "/programming/angular/4_caulenh/#tao-service",
+            "text": "1 ng g service [ten_service]",
+            "title": "T\u1ea1o service"
+        },
+        {
+            "location": "/programming/angular/4_caulenh/#tao-class",
+            "text": "1 ng g class [ten_class]",
+            "title": "T\u1ea1o class"
+        },
+        {
             "location": "/programming/markdown/basics/",
             "text": "What is Markdown?\n#\n\n\nMarkdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like \n#\n or \n*\n.\n\n\nSyntax guide\n#\n\n\nHeaders\n#\n\n\n1\n2\n3\n# This is an <h1> tag\n## This is an <h2> tag\n###### This is an <h6> tag\n\n\n\n\n\n\nEmphasis\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n*This text will be italic*\n_This will also be italic_\n\n**This text will be bold**\n__This will also be bold__\n\n_You **can** combine them_\n\n\n\n\n\n\nLists\n#\n\n\nUnordered\n#\n\n\n1\n2\n3\n4\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\n\n\nOrdered\n#\n\n\n1\n2\n3\n4\n5\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\n\nImages\n#\n\n\n1\n![Not found Images](../../img/index/win-py-install.png)\n\n\n\n\n\n\nLinks\n#\n\n\n1\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\n\n\nTables\n#\n\n\n1\n2\n3\n4\n5\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\n\n\nBlockquotes\n#\n\n\n1\n> Blockquotes write here\n\n\n\n\n\n\nInline code\n#\n\n\n1\n`Inline code write here`\n\n\n\n\n\n\nBlock code\n#\n\n\n1\n2\n3\n```\nBlock code write here\n```\n\n\n\n\n\n\nTask Lists\n#\n\n\n1\n2\n3\n4\n- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported\n- [x] list syntax required (any unordered or ordered list supported)\n- [x] this is a complete item\n- [ ] this is an incomplete item",
             "title": "Basics"
@@ -484,336 +779,6 @@
             "location": "/programming/markdown/pymdown/#tilde",
             "text": "Tilde  provides an easy way to  strike through  cross out\u00a0text.\nThe portion of text that should be erased must be enclosed in two tildes ~~...~~  and the extension will take care of the rest.",
             "title": "Tilde"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/",
-            "text": "Ti\u00eau chu\u1ea9n v\u1ec1 tr\u00ecnh b\u00e0y\n#\n\n\nEncoding\n#\n\n\n\n\nCh\u1ec9 s\u1eed d\u1ee5ng UTF-8 \u0111\u1ec3 Encode cho file ch\u1ee9a PHP\n\n\n\n\nTag Php\n#\n\n\n\n\nB\u1eaft \u0111\u1ea7u \u0111o\u1ea1n script PHP ch\u1ec9 d\u00f9ng th\u1ebb <?php kh\u00f4ng \u0111\u01b0\u1ee3c vi\u1ebft t\u1eaft <?\u2026 \n\n\n\n\nKho\u1ea3ng c\u00e1ch tr\u00ecnh b\u00e0y.\n#\n\n\n\n\nC\u00e1c namespace, class, function c\u00e1ch nhau b\u1eb1ng 1 l\u1ea7n enter xu\u1ed1ng d\u00f2ng.\n\n\n\n\nGhi ch\u00fa trong class:\n#\n\n\n\n\nB\u1eaft \u0111\u1ea7u 1 class ph\u1ea3i vi\u1ebft c\u00e1c ch\u00fa th\u00edch v\u1ec1 class \u0111\u00f3, t\u00ean v\u00e0 th\u00f4ng tin ng\u01b0\u1eddi th\u1ef1c hi\u1ec7n\n\n\nVi\u1ebft ghi ch\u00fa cho 1 class, 1 thu\u1ed9c t\u00ednh, 1 ph\u01b0\u01a1ng th\u1ee9c cho class \u0111\u00f3 s\u1eed d\u1ee5ng: \n/** */\n, ghi ch\u00fa cho 1 ph\u01b0\u01a1ng th\u1ee9c ph\u1ea3i note l\u1ea1i \u0111\u01b0\u1ee3c \u0111\u1ea7u v\u00e0o c\u1ee7a ph\u01b0\u01a1ng th\u1ee9c \u0111\u00f3 g\u1ed3m nh\u1eefng g\u00ec, \u0111\u1ea7u ra l\u00e0 g\u00ec (string, array, object, view\u2026)\n\n\nVi\u1ebft ghi ch\u00fa trong m\u1ed9t ph\u01b0\u01a1ng th\u1ee9c th\u00ec s\u1eed d\u1ee5ng \n//\n\n\n\n\nV\u00ed d\u1ee5 cho c\u00e1c quy \u01b0\u1edbc tr\u00ean:\n\n\n\n\nTi\u00eau chu\u1ea9n v\u1ec1 c\u00e1ch \u0111\u1eb7t t\u00ean\n#\n\n\nClass (l\u1edbp)\n#\n\n\n\n\nT\u00ean 1 class ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a ng\u1eafn g\u1ecdn c\u1ee7a class \u0111\u00f3, t\u00ean class s\u1eed d\u1ee5ng ch\u1eef c\u00e1i, ch\u1eef c\u00e1i \u0111\u1ea7u ti\u00ean ph\u1ea3i vi\u1ebft hoa. v\u00ed d\u1ee5 nh\u01b0 ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu th\u00ec s\u1ebd c\u1ea7n nh\u1eefng class sau :\n\n\n\n\n1\n2\n3\n4\n5\nMenuControler: Class x\u1eed l\u00fd controler\n\nMenuModel: Class x\u1eed l\u00fd v\u1ec1Model\n\nMenuHelper: Class h\u1ed7 tr\u1ee3 x\u1eed l\u00fd c\u00e1c nghi\u1ec7p v\u1ee5 ph\u1ee9c t\u1ea1p\n\n\n\n\n\n\nMethod (ph\u01b0\u01a1ng th\u1ee9c)\n#\n\n\n\n\nT\u00ean 1 ph\u01b0\u01a1ng th\u1ee9c s\u1ebd th\u1ec3 hi\u1ec7n m\u1ed9t h\u00e0nh h\u00e0nh \u0111\u1ed9ng c\u1ee5 th\u1ec3 c\u1ee7a class, ph\u01b0\u01a1ng th\u1ee9c s\u1eed d\u1ee5ng ch\u1eef c\u00e1i th\u01b0\u1eddng \u0111\u1ec3 bi\u1ec3u di\u1ec5n. v\u00ed d\u1ee5 trong ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu s\u1ebd c\u1ea7n c\u00f3 nh\u1eefng ph\u01b0\u01a1ng th\u1ee9c sau:\n\n\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\nindex: Kh\u1edfi t\u1ea1o d\u1eef li\u1ec7u m\u1eabu, load c\u00e1c file js,css li\u00ean quan\n\nloadlist: Load m\u00e0n h\u00ecnh danh s\u00e1ch c\u00e1c menu\n\nadd: Th\u00eam m\u1edbi m\u1ed9t menu\n\nedit: S\u1eeda m\u1ed9t menu\n\ndelete: X\u00f3a m\u1ed9t menu\n\nupdate: C\u1eadp nh\u1eadt m\u1ed9t menu\n\n\n\n\n\n\nProperties (Thu\u1ed9c t\u00ednh)\n#\n\n\n\n\nH\u1eb1ng s\u1ed1: H\u1eb1ng s\u1ed1 s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft hoa \u0111\u1ec3 th\u1ec3 hi\u1ec7n. vd: const VERSION = '1.0';\n\n\nBi\u1ebfn: s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng \u0111\u1ec3 th\u1ec3 hi\u1ec7n, g\u1eafn gi\u00e1 tr\u1ecb cho bi\u1ebft s\u1eed d\u1ee5ng k\u00fd t\u1ef1 ngo\u1eb7c \u0111\u01a1n '', n\u1ebfu bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb c\u1ee7a m\u1ed9t array ho\u1eb7c 1 object th\u00ec th\u00eam ch\u1eef 's' \u1edf cu\u1ed1i, bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb 1 string th\u00ec kh\u00f4ng. v\u00ed d\u1ee5: \n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\nuser = 'user1,uer2' // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb chu\u1ed7i vi\u1ebft th\u01b0\u1eddng\n\nusers = array( // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb m\u1ea3ng ho\u1eb7c object th\u00eam ch\u1eef s \u1edf cu\u1ed1i\n\n                 0 => array('name'=>'user1'),\n\n                1 => array('name'=>'user2')\n\n);\n\n\n\n\n\n\nJavascript\n#\n\n\n\n\nDo d\u1ef1 \u00e1n vi\u1ebft JS theo h\u01b0\u1edbng \u0111\u1ed1i t\u01b0\u1ee3ng n\u00ean \u00e1p d\u1ee5ng c\u00e1ch \u0111\u1eb7t t\u00ean tr\u00ean cho JS\n\n\n\n\nCSS\n#\n\n\n\n\nCss s\u1ebd vi\u1ebft theo chu\u1ea9n c\u1ee7a bootstrap: t\u00ean class, id vi\u1ebft th\u01b0\u1eddng, n\u1ebfu class id nhi\u1ec1u h\u01a1n 1 t\u1eeb th\u00ec ph\u00e2n c\u00e1ch v\u1edbi nhau b\u1eb1ng d\u1ea5u \"-\". v\u00ed d\u1ee5: content-wrapper, sidebar-menu, dropdown-menu ..vv\n\n\n\n\nSQL\n#\n\n\nTable (b\u1ea3ng):\n#\n\n\n\n\nT\u00ean b\u1ea3ng ph\u1ea3i ng\u1eafn g\u1ecdn th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a c\u1ee7a b\u1ea3ng \u0111\u00f3, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho b\u1ea3ng\n\n\n\u0110\u1eb7t t\u00ean theo quy t\u1eafc: [module-prefix]_[ten-bang]. (l\u01b0u \u00fd: ch\u1ec9 \u0111\u1eb7t module-prefix cho nh\u1eefng b\u1ea3ng thu\u1ed9c c\u00e1c lo\u1ea1i sau: b\u1ea3ng li\u00ean quan \u0111\u1ebfn h\u1ec7 th\u1ed1ng, b\u1ea3ng li\u00ean quan \u0111\u1ebfn d\u1ecbch v\u1ee5 ivan, ihoadon, cks) M\u1ed9t s\u1ed1 v\u00ed d\u1ee5\n\n\n\n\nv\u00ed d\u1ee5:\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\nuser : b\u1ea3ng ng\u01b0\u1eddi d\u00f9ng\n\ncompany : b\u1ea3ng l\u01b0u th\u00f4ng tin c\u00e1c c\u00f4ng ty\n\nsystem_list: b\u1ea3ng l\u01b0u danh m\u1ee5c (system l\u00e0 [module-prefix]; list l\u00e0 t\u00ean b\u1ea3ng) \n\nivan_customer: b\u1ea3ng l\u01b0u kh\u00e1ch h\u00e0ng trong d\u1ecbch v\u1ee5 ivan ( ivan l\u00e0 [module-prefix]; customer l\u00e0 t\u00ean b\u1ea3ng) \n\nL\u01b0u \u00fd: \u0111\u1eb7t t\u00ean b\u1ea3ng s\u1ebd kh\u1edfi t\u1ea1o trong migration c\u1ee7a laravel n\u00ean n\u00f3 s\u1ebd c\u1ed9ng v\u1edbi db_prefix m\u00ecnh khai  b\u00e1o do \u0111\u00f3 c\u00f3 th\u1ec3 trong database t\u00ean b\u1ea3ng s\u1ebd kh\u00e1c nh\u01b0: t_user, abc_user, xyz_user, abcxyz_user t\u00f9y thu\u1ed9c v\u00e0o ng\u01b0\u1eddi qu\u1ea3n tr\u1ecb \u0111\u1eb7t db-prefix\n\n\n\n\n\n\nColumn (c\u1ed9t)\n#\n\n\n\n\nT\u00ean c\u1ed9t ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c c\u00e1c thu\u1ed9c t\u00ednh c\u1ee7a \u0111\u1ed5i t\u01b0\u1ee3ng b\u1ea3ng, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho c\u1ed9t.\n\n\n\u0110\u1ed1i v\u1edbi kh\u00f3a ch\u00ednh (primary key) c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh ph\u1ea3i \u0111\u1eb7t l\u00e0 id \n\n\n\u0110\u1ed1i v\u1edbi kh\u00f3a ngo\u1ea1i (foreign key) th\u00ec \u0111\u1eb7t theo quy t\u1eafc sau: [ten-bang-lien-ket]_id\nV\u00ed d\u1ee5 v\u1ec1 c\u00e1c c\u1ed9t trong b\u1ea3ng user:\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\nid                                     // kh\u00f3a ch\u00ednh c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh \u0111\u1eb7t l\u00e0 id\n\ncompany_id                // l\u00e0 kh\u00f3a ngo\u1ea1i c\u1ee7a b\u1ea3ng company\n\nname                             // T\u00ean ng\u01b0\u1eddi dung\n\nage                                 // Tu\u1ed5i ng\u01b0\u1eddi d\u00f9ng\n\nsex                                // Gi\u1edbi t\u00ednh\n\n\n\n\n\n\nStoreprocedure:\n#\n\n\nT\u00ean store \u0111\u1eb7t theo quy t\u1eafc: [ten_module]_[ten_controller][hanh_dong]. v\u00ed d\u1ee5:\n\n\n1\nCategory_ConfigGetAll (nh\u01b0 v\u1eady strore thu\u1ed9c module: Category, thu\u1ed9c controller: Config v\u1edbi h\u00e0nh \u0111\u1ed9ng l\u1ea5y t\u1ea5t c\u1ea3 chuy\u00ean m\u1ee5c getall)\n\n\n\n\n\n\nTi\u00eau chu\u1ea9n c\u00e1c c\u00e2u l\u1ec7nh \u0111i\u1ec1u khi\u1ec3n\n#\n\n\nForeach\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n// v\u00ed d\u1ee5 1 l\u1ec7nh foreach v\u1ec1 c\u00e1c \u0111\u1ed1i t\u01b0\u1ee3ng ng\u01b0\u1eddi d\u00f9ng\n\nforeach(users as user){\n\n       $name = user->name;\n\n       $age = user->age\n\n}\n\n\n\n\n\n\nIf else\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n1- L\u1ec7nh if 1 \u0111i\u1ec1u ki\u1ec7n\n\nif ($a != 2) {\n\n      $a = 2;\n\n}\n\n2- L\u1ec7nh if else\n\nif ($a != 2) {\n    $a = 2;\n} else {\n    $a = 7;\n}\n\n3- L\u1ec7nh if else if\n\nif ($a != 2) {\n    $a = 2;\n} elseif ($a == 3) {\n    $a = 4;\n} else {\n    $a = 7;\n}\n\n\n\n\n\n\nSwith\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\nswitch ($numPeople) {\n    case 1:\n        break;\n\n    case 2:\n        break;\n\n    default:\n        break;\n}",
-            "title": "Ti\u00eau chu\u1ea9n code"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#tieu-chuan-ve-trinh-bay",
-            "text": "",
-            "title": "Ti\u00eau chu\u1ea9n v\u1ec1 tr\u00ecnh b\u00e0y"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#encoding",
-            "text": "Ch\u1ec9 s\u1eed d\u1ee5ng UTF-8 \u0111\u1ec3 Encode cho file ch\u1ee9a PHP",
-            "title": "Encoding"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#tag-php",
-            "text": "B\u1eaft \u0111\u1ea7u \u0111o\u1ea1n script PHP ch\u1ec9 d\u00f9ng th\u1ebb <?php kh\u00f4ng \u0111\u01b0\u1ee3c vi\u1ebft t\u1eaft <?\u2026",
-            "title": "Tag Php"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#khoang-cach-trinh-bay",
-            "text": "C\u00e1c namespace, class, function c\u00e1ch nhau b\u1eb1ng 1 l\u1ea7n enter xu\u1ed1ng d\u00f2ng.",
-            "title": "Kho\u1ea3ng c\u00e1ch tr\u00ecnh b\u00e0y."
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#ghi-chu-trong-class",
-            "text": "B\u1eaft \u0111\u1ea7u 1 class ph\u1ea3i vi\u1ebft c\u00e1c ch\u00fa th\u00edch v\u1ec1 class \u0111\u00f3, t\u00ean v\u00e0 th\u00f4ng tin ng\u01b0\u1eddi th\u1ef1c hi\u1ec7n  Vi\u1ebft ghi ch\u00fa cho 1 class, 1 thu\u1ed9c t\u00ednh, 1 ph\u01b0\u01a1ng th\u1ee9c cho class \u0111\u00f3 s\u1eed d\u1ee5ng:  /** */ , ghi ch\u00fa cho 1 ph\u01b0\u01a1ng th\u1ee9c ph\u1ea3i note l\u1ea1i \u0111\u01b0\u1ee3c \u0111\u1ea7u v\u00e0o c\u1ee7a ph\u01b0\u01a1ng th\u1ee9c \u0111\u00f3 g\u1ed3m nh\u1eefng g\u00ec, \u0111\u1ea7u ra l\u00e0 g\u00ec (string, array, object, view\u2026)  Vi\u1ebft ghi ch\u00fa trong m\u1ed9t ph\u01b0\u01a1ng th\u1ee9c th\u00ec s\u1eed d\u1ee5ng  //   V\u00ed d\u1ee5 cho c\u00e1c quy \u01b0\u1edbc tr\u00ean:",
-            "title": "Ghi ch\u00fa trong class:"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#tieu-chuan-ve-cach-at-ten",
-            "text": "",
-            "title": "Ti\u00eau chu\u1ea9n v\u1ec1 c\u00e1ch \u0111\u1eb7t t\u00ean"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#class-lop",
-            "text": "T\u00ean 1 class ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a ng\u1eafn g\u1ecdn c\u1ee7a class \u0111\u00f3, t\u00ean class s\u1eed d\u1ee5ng ch\u1eef c\u00e1i, ch\u1eef c\u00e1i \u0111\u1ea7u ti\u00ean ph\u1ea3i vi\u1ebft hoa. v\u00ed d\u1ee5 nh\u01b0 ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu th\u00ec s\u1ebd c\u1ea7n nh\u1eefng class sau :   1\n2\n3\n4\n5 MenuControler: Class x\u1eed l\u00fd controler\n\nMenuModel: Class x\u1eed l\u00fd v\u1ec1Model\n\nMenuHelper: Class h\u1ed7 tr\u1ee3 x\u1eed l\u00fd c\u00e1c nghi\u1ec7p v\u1ee5 ph\u1ee9c t\u1ea1p",
-            "title": "Class (l\u1edbp)"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#method-phuong-thuc",
-            "text": "T\u00ean 1 ph\u01b0\u01a1ng th\u1ee9c s\u1ebd th\u1ec3 hi\u1ec7n m\u1ed9t h\u00e0nh h\u00e0nh \u0111\u1ed9ng c\u1ee5 th\u1ec3 c\u1ee7a class, ph\u01b0\u01a1ng th\u1ee9c s\u1eed d\u1ee5ng ch\u1eef c\u00e1i th\u01b0\u1eddng \u0111\u1ec3 bi\u1ec3u di\u1ec5n. v\u00ed d\u1ee5 trong ch\u1ee9c n\u0103ng qu\u1ea3n l\u00fd Menu s\u1ebd c\u1ea7n c\u00f3 nh\u1eefng ph\u01b0\u01a1ng th\u1ee9c sau:    1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11 index: Kh\u1edfi t\u1ea1o d\u1eef li\u1ec7u m\u1eabu, load c\u00e1c file js,css li\u00ean quan\n\nloadlist: Load m\u00e0n h\u00ecnh danh s\u00e1ch c\u00e1c menu\n\nadd: Th\u00eam m\u1edbi m\u1ed9t menu\n\nedit: S\u1eeda m\u1ed9t menu\n\ndelete: X\u00f3a m\u1ed9t menu\n\nupdate: C\u1eadp nh\u1eadt m\u1ed9t menu",
-            "title": "Method (ph\u01b0\u01a1ng th\u1ee9c)"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#properties-thuoc-tinh",
-            "text": "H\u1eb1ng s\u1ed1: H\u1eb1ng s\u1ed1 s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft hoa \u0111\u1ec3 th\u1ec3 hi\u1ec7n. vd: const VERSION = '1.0';  Bi\u1ebfn: s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng \u0111\u1ec3 th\u1ec3 hi\u1ec7n, g\u1eafn gi\u00e1 tr\u1ecb cho bi\u1ebft s\u1eed d\u1ee5ng k\u00fd t\u1ef1 ngo\u1eb7c \u0111\u01a1n '', n\u1ebfu bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb c\u1ee7a m\u1ed9t array ho\u1eb7c 1 object th\u00ec th\u00eam ch\u1eef 's' \u1edf cu\u1ed1i, bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb 1 string th\u00ec kh\u00f4ng. v\u00ed d\u1ee5:    1\n2\n3\n4\n5\n6\n7\n8\n9 user = 'user1,uer2' // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb chu\u1ed7i vi\u1ebft th\u01b0\u1eddng\n\nusers = array( // bi\u1ebfn l\u01b0u gi\u00e1 tr\u1ecb m\u1ea3ng ho\u1eb7c object th\u00eam ch\u1eef s \u1edf cu\u1ed1i\n\n                 0 => array('name'=>'user1'),\n\n                1 => array('name'=>'user2')\n\n);",
-            "title": "Properties (Thu\u1ed9c t\u00ednh)"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#javascript",
-            "text": "Do d\u1ef1 \u00e1n vi\u1ebft JS theo h\u01b0\u1edbng \u0111\u1ed1i t\u01b0\u1ee3ng n\u00ean \u00e1p d\u1ee5ng c\u00e1ch \u0111\u1eb7t t\u00ean tr\u00ean cho JS",
-            "title": "Javascript"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#css",
-            "text": "Css s\u1ebd vi\u1ebft theo chu\u1ea9n c\u1ee7a bootstrap: t\u00ean class, id vi\u1ebft th\u01b0\u1eddng, n\u1ebfu class id nhi\u1ec1u h\u01a1n 1 t\u1eeb th\u00ec ph\u00e2n c\u00e1ch v\u1edbi nhau b\u1eb1ng d\u1ea5u \"-\". v\u00ed d\u1ee5: content-wrapper, sidebar-menu, dropdown-menu ..vv",
-            "title": "CSS"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#sql",
-            "text": "",
-            "title": "SQL"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#table-bang",
-            "text": "T\u00ean b\u1ea3ng ph\u1ea3i ng\u1eafn g\u1ecdn th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c \u00fd ngh\u0129a c\u1ee7a b\u1ea3ng \u0111\u00f3, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho b\u1ea3ng  \u0110\u1eb7t t\u00ean theo quy t\u1eafc: [module-prefix]_[ten-bang]. (l\u01b0u \u00fd: ch\u1ec9 \u0111\u1eb7t module-prefix cho nh\u1eefng b\u1ea3ng thu\u1ed9c c\u00e1c lo\u1ea1i sau: b\u1ea3ng li\u00ean quan \u0111\u1ebfn h\u1ec7 th\u1ed1ng, b\u1ea3ng li\u00ean quan \u0111\u1ebfn d\u1ecbch v\u1ee5 ivan, ihoadon, cks) M\u1ed9t s\u1ed1 v\u00ed d\u1ee5   v\u00ed d\u1ee5:  1\n2\n3\n4\n5\n6\n7\n8\n9 user : b\u1ea3ng ng\u01b0\u1eddi d\u00f9ng\n\ncompany : b\u1ea3ng l\u01b0u th\u00f4ng tin c\u00e1c c\u00f4ng ty\n\nsystem_list: b\u1ea3ng l\u01b0u danh m\u1ee5c (system l\u00e0 [module-prefix]; list l\u00e0 t\u00ean b\u1ea3ng) \n\nivan_customer: b\u1ea3ng l\u01b0u kh\u00e1ch h\u00e0ng trong d\u1ecbch v\u1ee5 ivan ( ivan l\u00e0 [module-prefix]; customer l\u00e0 t\u00ean b\u1ea3ng) \n\nL\u01b0u \u00fd: \u0111\u1eb7t t\u00ean b\u1ea3ng s\u1ebd kh\u1edfi t\u1ea1o trong migration c\u1ee7a laravel n\u00ean n\u00f3 s\u1ebd c\u1ed9ng v\u1edbi db_prefix m\u00ecnh khai  b\u00e1o do \u0111\u00f3 c\u00f3 th\u1ec3 trong database t\u00ean b\u1ea3ng s\u1ebd kh\u00e1c nh\u01b0: t_user, abc_user, xyz_user, abcxyz_user t\u00f9y thu\u1ed9c v\u00e0o ng\u01b0\u1eddi qu\u1ea3n tr\u1ecb \u0111\u1eb7t db-prefix",
-            "title": "Table (b\u1ea3ng):"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#column-cot",
-            "text": "T\u00ean c\u1ed9t ph\u1ea3i th\u1ec3 hi\u1ec7n \u0111\u01b0\u1ee3c c\u00e1c thu\u1ed9c t\u00ednh c\u1ee7a \u0111\u1ed5i t\u01b0\u1ee3ng b\u1ea3ng, s\u1eed d\u1ee5ng ch\u1eef c\u00e1i vi\u1ebft th\u01b0\u1eddng v\u00e0 k\u00fd t\u1ef1 \"_\" \u0111\u1ec3 \u0111\u1eb7t t\u00ean cho c\u1ed9t.  \u0110\u1ed1i v\u1edbi kh\u00f3a ch\u00ednh (primary key) c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh ph\u1ea3i \u0111\u1eb7t l\u00e0 id   \u0110\u1ed1i v\u1edbi kh\u00f3a ngo\u1ea1i (foreign key) th\u00ec \u0111\u1eb7t theo quy t\u1eafc sau: [ten-bang-lien-ket]_id\nV\u00ed d\u1ee5 v\u1ec1 c\u00e1c c\u1ed9t trong b\u1ea3ng user:   1\n2\n3\n4\n5\n6\n7\n8\n9 id                                     // kh\u00f3a ch\u00ednh c\u1ee7a b\u1ea3ng m\u1eb7c \u0111\u1ecbnh \u0111\u1eb7t l\u00e0 id\n\ncompany_id                // l\u00e0 kh\u00f3a ngo\u1ea1i c\u1ee7a b\u1ea3ng company\n\nname                             // T\u00ean ng\u01b0\u1eddi dung\n\nage                                 // Tu\u1ed5i ng\u01b0\u1eddi d\u00f9ng\n\nsex                                // Gi\u1edbi t\u00ednh",
-            "title": "Column (c\u1ed9t)"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#storeprocedure",
-            "text": "T\u00ean store \u0111\u1eb7t theo quy t\u1eafc: [ten_module]_[ten_controller][hanh_dong]. v\u00ed d\u1ee5:  1 Category_ConfigGetAll (nh\u01b0 v\u1eady strore thu\u1ed9c module: Category, thu\u1ed9c controller: Config v\u1edbi h\u00e0nh \u0111\u1ed9ng l\u1ea5y t\u1ea5t c\u1ea3 chuy\u00ean m\u1ee5c getall)",
-            "title": "Storeprocedure:"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#tieu-chuan-cac-cau-lenh-ieu-khien",
-            "text": "",
-            "title": "Ti\u00eau chu\u1ea9n c\u00e1c c\u00e2u l\u1ec7nh \u0111i\u1ec1u khi\u1ec3n"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#foreach",
-            "text": "1\n2\n3\n4\n5\n6\n7\n8\n9 // v\u00ed d\u1ee5 1 l\u1ec7nh foreach v\u1ec1 c\u00e1c \u0111\u1ed1i t\u01b0\u1ee3ng ng\u01b0\u1eddi d\u00f9ng\n\nforeach(users as user){\n\n       $name = user->name;\n\n       $age = user->age\n\n}",
-            "title": "Foreach"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#if-else",
-            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25 1- L\u1ec7nh if 1 \u0111i\u1ec1u ki\u1ec7n\n\nif ($a != 2) {\n\n      $a = 2;\n\n}\n\n2- L\u1ec7nh if else\n\nif ($a != 2) {\n    $a = 2;\n} else {\n    $a = 7;\n}\n\n3- L\u1ec7nh if else if\n\nif ($a != 2) {\n    $a = 2;\n} elseif ($a == 3) {\n    $a = 4;\n} else {\n    $a = 7;\n}",
-            "title": "If else"
-        },
-        {
-            "location": "/programming/tieu_chuan_code/#swith",
-            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10 switch ($numPeople) {\n    case 1:\n        break;\n\n    case 2:\n        break;\n\n    default:\n        break;\n}",
-            "title": "Swith"
-        },
-        {
-            "location": "/programming/angular/1_started/",
-            "text": "Set up the Development Environment\n#\n\n\nNodejs\n#\n\n\nInstall \nNode.js\u00ae and npm\n  if they are not already on your machine.\n\n\n\n\nWarning\n\n\nVerify that you are running at least node 6.9.x and npm 3.x.x by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine..\n\n\n\n\nAngular CLI\n#\n\n\nThe Angular CLI is a command line interface tool that can create a project, add files, and perform a variety of ongoing development tasks such as testing, bundling, and deployment.\n\n\nInstall:\n\n\n1\nnpm install -g @angular/cli\n\n\n\n\n\n\nCreate a new project\n#\n\n\n1\nng new my-app\n\n\n\n\n\n\nServe the application\n#\n\n\n1\n2\ncd my-app\nng serve --open\n\n\n\n\n\n\n\n\nNote\n\n\nUsing the \n--open\n (or just \n-o\n) option will automatically open your browser on \nhttp://localhost:4200/\n\n\n\n\nProject file review\n#\n\n\nThe src folder\n#\n\n\nYour app lives in the src folder. All Angular components, templates, styles, images, and anything else your app needs go here. Any files outside of this folder are meant to support building your app. \nLink\n\n\nThe root folder\n#\n\n\nThe \nsrc/\n folder is just one of the items inside the project's root folder. Other files help you build, test, maintain, document, and deploy the app. These files go in the root folder next to \nsrc/\n. \nLink",
-            "title": "Getting Started"
-        },
-        {
-            "location": "/programming/angular/1_started/#set-up-the-development-environment",
-            "text": "",
-            "title": "Set up the Development Environment"
-        },
-        {
-            "location": "/programming/angular/1_started/#nodejs",
-            "text": "Install  Node.js\u00ae and npm   if they are not already on your machine.   Warning  Verify that you are running at least node 6.9.x and npm 3.x.x by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine..",
-            "title": "Nodejs"
-        },
-        {
-            "location": "/programming/angular/1_started/#angular-cli",
-            "text": "The Angular CLI is a command line interface tool that can create a project, add files, and perform a variety of ongoing development tasks such as testing, bundling, and deployment.  Install:  1 npm install -g @angular/cli",
-            "title": "Angular CLI"
-        },
-        {
-            "location": "/programming/angular/1_started/#create-a-new-project",
-            "text": "1 ng new my-app",
-            "title": "Create a new project"
-        },
-        {
-            "location": "/programming/angular/1_started/#serve-the-application",
-            "text": "1\n2 cd my-app\nng serve --open    Note  Using the  --open  (or just  -o ) option will automatically open your browser on  http://localhost:4200/",
-            "title": "Serve the application"
-        },
-        {
-            "location": "/programming/angular/1_started/#project-file-review",
-            "text": "",
-            "title": "Project file review"
-        },
-        {
-            "location": "/programming/angular/1_started/#the-src-folder",
-            "text": "Your app lives in the src folder. All Angular components, templates, styles, images, and anything else your app needs go here. Any files outside of this folder are meant to support building your app.  Link",
-            "title": "The src folder"
-        },
-        {
-            "location": "/programming/angular/1_started/#the-root-folder",
-            "text": "The  src/  folder is just one of the items inside the project's root folder. Other files help you build, test, maintain, document, and deploy the app. These files go in the root folder next to  src/ .  Link",
-            "title": "The root folder"
-        },
-        {
-            "location": "/programming/angular/2_architecture/",
-            "text": "Modules\n#\n\n\nAngular apps are modular and Angular has its own modularity system called NgModules\n\n\nComponents\n#\n\n\nA component controls a patch of screen called a view\n\n\nTemplates\n#\n\n\nYou define a component's view with its companion template. A template is a form of HTML that tells Angular how to render the component\n\n\nMetadata\n#\n\n\nMetadata tells Angular how to process a class.\n\n\nData binding\n#\n\n\nWithout a framework, you would be responsible for pushing data values into the HTML controls and turning user responses into actions and value updates. Writing such push/pull logic by hand is tedious, error-prone, and a nightmare to read as any experienced jQuery programmer can attest.",
-            "title": "Architecture"
-        },
-        {
-            "location": "/programming/angular/2_architecture/#modules",
-            "text": "Angular apps are modular and Angular has its own modularity system called NgModules",
-            "title": "Modules"
-        },
-        {
-            "location": "/programming/angular/2_architecture/#components",
-            "text": "A component controls a patch of screen called a view",
-            "title": "Components"
-        },
-        {
-            "location": "/programming/angular/2_architecture/#templates",
-            "text": "You define a component's view with its companion template. A template is a form of HTML that tells Angular how to render the component",
-            "title": "Templates"
-        },
-        {
-            "location": "/programming/angular/2_architecture/#metadata",
-            "text": "Metadata tells Angular how to process a class.",
-            "title": "Metadata"
-        },
-        {
-            "location": "/programming/angular/2_architecture/#data-binding",
-            "text": "Without a framework, you would be responsible for pushing data values into the HTML controls and turning user responses into actions and value updates. Writing such push/pull logic by hand is tedious, error-prone, and a nightmare to read as any experienced jQuery programmer can attest.",
-            "title": "Data binding"
-        },
-        {
-            "location": "/programming/angular/3_kientruc/",
-            "text": "Ki\u1ebfn tr\u00fac Angular\n#\n\n\nC\u00f9ng xem x\u00e9t h\u00ecnh sau:\n\n\n\n\nModule\n#\n\n\nHi\u1ec3u 1 c\u00e1ch \u0111\u01a1n gi\u1ea3n Module s\u1ebd nh\u00f3m nh\u1eefng c\u00f4ng vi\u1ec7c gi\u1ed1ng nhau v\u00e0o th\u00e0nh 1 kh\u1ed1i \u0111\u1ec3 qu\u1ea3n l\u00fd, khi g\u1ecdi ch\u1ee9c n\u0103ng n\u00e0o trong kh\u1ed1i \u0111\u00f3 th\u00ec ta Import Module ch\u1ee9a ch\u1ee9c n\u0103ng \u0111\u00f3, Th\u01b0 vi\u1ec7n trong Angular c\u0169ng chia th\u00e0nh c\u00e1c Module, c\u00e1c th\u01b0 vi\u1ec7n b\u00ean ngo\u00e0i nh\u01b0 Devexpress.. c\u0169ng \u0111\u01b0\u1ee3c g\u1ecdi l\u00e0 c\u00e1c kh\u1ed1i Module ri\u00eang l\u1ebb. Tham kh\u1ea3o c\u00e1ch d\u00f9ng: \nhttps://angular.io/guide/ngmodule\n \n\n\nComponent\n#\n\n\nTrong m\u00f4 h\u00ecnh MVC th\u00ec Component s\u1ebd g\u1ea7n gi\u1ed1ng nh\u01b0 Controler, gi\u00fap x\u1eed l\u00fd logic v\u00e0 \u0111i\u1ec1u khi\u1ec3n ph\u1ea7n view. Trong d\u1ef1 \u00e1n c\u1ee5 th\u1ec3 Component gi\u00fap chia \u1ee9ng d\u1ee5ng th\u00e0nh c\u00e1c ph\u1ea7n \u0111\u1ec3 hi\u1ec3n th\u1ecb giao di\u1ec7n. Tham kh\u1ea3o: \nhttps://angular.io/guide/displaying-data\n\n\n\n\nVD: 1 Website th\u01b0\u1eddng bao g\u1ed3m c\u00e1c Component sau:\n\n\n\n\n\n\n\n\nHeader Component\n: Gi\u00fap x\u1eed l\u00fd hi\u1ec3n th\u1ecb ph\u1ea7n Header\n\n\nRoot Component\n: Khung bao c\u00e1c ph\u1ea7n Sitebar,Content\n\n\nSideBar Component\n: Gi\u00fap x\u1eed l\u00fd hi\u1ec3n th\u1ecb ph\u1ea7n thanh b\u00ean\n\n\nItem Component\n: Hi\u1ec3n th\u1ecb ph\u1ea7n n\u1ed9i dung\n\n\n\n\nTemplate\n#\n\n\nGi\u00fap cho \u1ee9ng d\u1ee5ng hi\u1ec3n th\u1ecb ra m\u00e3 HTML, t\u1ee9c l\u00e0 \u1edf ph\u1ea7n hi\u1ec3n th\u1ecb View ta c\u00f3 th\u1ec3 vi\u1ebft c\u00e1c bi\u1ebfn, c\u00e1c x\u1eed l\u00fd logic Template s\u1ebd render nh\u1eefng c\u00e2u l\u1ec7nh \u0111\u00f3 ra m\u00e3 HTML \u0111\u1ec3 hi\u1ec3n th\u1ecb. Tham kh\u1ea3o: n\u1eb1m trong t\u00e0i li\u1ec7u c\u1ee7a Component\n\n\nMetadata\n#\n\n\nS\u1ebd gi\u00fap cho Angular bi\u1ebft v\u00e0 x\u1eed l\u00fd Component n\u00e0y x\u1eed l\u00fd th\u1ebf n\u00e0o, hi\u1ec3n tr\u1ecb ph\u1ea7n trong view\n\n\nData Biding\n#\n\n\nL\u00e0 m\u1ed9t t\u00ednh n\u0103ng gi\u00fap Anguar x\u1eed l\u00fd, \u0111\u1ed3ng b\u1ed9 d\u1eef li\u1ec7u, c\u00e1c s\u1ef1 ki\u1ec7n tr\u00ean form gi\u1eefa Template v\u00e0 Component. Tham kh\u1ea3o: \nhttps://angular.io/guide/template-syntax\n\n\nService\n#\n\n\nDirectives Gi\u00fap Angular x\u1eed l\u00fd d\u1eef li\u1ec7u, l\u1ea5y d\u1eef li\u1ec7u t\u1eeb c\u00e1c Api, Share d\u1eef li\u1ec7u gi\u1eefa c\u00e1c Component..vv. Tham kh\u1ea3o: \nhttps://angular.io/tutorial/toh-pt4\n\n\nDirectives\n#\n\n\nL\u00e0 m\u1ed9t ph\u1ea7n m\u1edf r\u1ed9ng trong teamplate, gi\u00fap cho ng\u01b0\u1eddi l\u1eadp tr\u00ecnh c\u00f3 th\u1ec3 t\u1ea1o th\u00e0nh c\u00e1c tag m\u00e0 trong HTML kh\u00f4ng c\u00f3 v\u00e0 \u0111\u1ecbnh ngh\u0129a giao di\u1ec7n cho tag \u0111\u00f3 nh\u01b0 n\u00e0o. vd \n\n\nN\u00f3i t\u00f3m l\u1ea1i: Ki\u1ebfm th\u1ee9c tr\u1ecdng Angular r\u1ea5t nhi\u1ec1u, v\u00e0 \u0111\u00e2y ch\u1ec9 li\u1ec7t k\u00ea nh\u1eefng g\u00ec quan tr\u1ecdng nh\u1ea5t. N\u00ean n\u1eafm ch\u1eafc ki\u1ebfn th\u1ee9c ph\u1ea7n b\u00f4i \u0111\u1ecf v\u00ec s\u1ebd s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong d\u1ef1 \u00e1n.\n\n\nC\u1ea5u tr\u00fac th\u01b0 m\u1ee5c trong Angular\n#\n\n\n\n\nM\u00f4 h\u00ecnh ph\u00e1t tri\u1ec3n d\u1ef1 \u00e1n s\u1eed d\u1ee5ng Angular\n#",
-            "title": "Ki\u1ebfn tr\u00fac"
-        },
-        {
-            "location": "/programming/angular/3_kientruc/#kien-truc-angular",
-            "text": "C\u00f9ng xem x\u00e9t h\u00ecnh sau:",
-            "title": "Ki\u1ebfn tr\u00fac Angular"
-        },
-        {
-            "location": "/programming/angular/3_kientruc/#module",
-            "text": "Hi\u1ec3u 1 c\u00e1ch \u0111\u01a1n gi\u1ea3n Module s\u1ebd nh\u00f3m nh\u1eefng c\u00f4ng vi\u1ec7c gi\u1ed1ng nhau v\u00e0o th\u00e0nh 1 kh\u1ed1i \u0111\u1ec3 qu\u1ea3n l\u00fd, khi g\u1ecdi ch\u1ee9c n\u0103ng n\u00e0o trong kh\u1ed1i \u0111\u00f3 th\u00ec ta Import Module ch\u1ee9a ch\u1ee9c n\u0103ng \u0111\u00f3, Th\u01b0 vi\u1ec7n trong Angular c\u0169ng chia th\u00e0nh c\u00e1c Module, c\u00e1c th\u01b0 vi\u1ec7n b\u00ean ngo\u00e0i nh\u01b0 Devexpress.. c\u0169ng \u0111\u01b0\u1ee3c g\u1ecdi l\u00e0 c\u00e1c kh\u1ed1i Module ri\u00eang l\u1ebb. Tham kh\u1ea3o c\u00e1ch d\u00f9ng:  https://angular.io/guide/ngmodule",
-            "title": "Module"
-        },
-        {
-            "location": "/programming/angular/3_kientruc/#component",
-            "text": "Trong m\u00f4 h\u00ecnh MVC th\u00ec Component s\u1ebd g\u1ea7n gi\u1ed1ng nh\u01b0 Controler, gi\u00fap x\u1eed l\u00fd logic v\u00e0 \u0111i\u1ec1u khi\u1ec3n ph\u1ea7n view. Trong d\u1ef1 \u00e1n c\u1ee5 th\u1ec3 Component gi\u00fap chia \u1ee9ng d\u1ee5ng th\u00e0nh c\u00e1c ph\u1ea7n \u0111\u1ec3 hi\u1ec3n th\u1ecb giao di\u1ec7n. Tham kh\u1ea3o:  https://angular.io/guide/displaying-data   VD: 1 Website th\u01b0\u1eddng bao g\u1ed3m c\u00e1c Component sau:     Header Component : Gi\u00fap x\u1eed l\u00fd hi\u1ec3n th\u1ecb ph\u1ea7n Header  Root Component : Khung bao c\u00e1c ph\u1ea7n Sitebar,Content  SideBar Component : Gi\u00fap x\u1eed l\u00fd hi\u1ec3n th\u1ecb ph\u1ea7n thanh b\u00ean  Item Component : Hi\u1ec3n th\u1ecb ph\u1ea7n n\u1ed9i dung",
-            "title": "Component"
-        },
-        {
-            "location": "/programming/angular/3_kientruc/#template",
-            "text": "Gi\u00fap cho \u1ee9ng d\u1ee5ng hi\u1ec3n th\u1ecb ra m\u00e3 HTML, t\u1ee9c l\u00e0 \u1edf ph\u1ea7n hi\u1ec3n th\u1ecb View ta c\u00f3 th\u1ec3 vi\u1ebft c\u00e1c bi\u1ebfn, c\u00e1c x\u1eed l\u00fd logic Template s\u1ebd render nh\u1eefng c\u00e2u l\u1ec7nh \u0111\u00f3 ra m\u00e3 HTML \u0111\u1ec3 hi\u1ec3n th\u1ecb. Tham kh\u1ea3o: n\u1eb1m trong t\u00e0i li\u1ec7u c\u1ee7a Component",
-            "title": "Template"
-        },
-        {
-            "location": "/programming/angular/3_kientruc/#metadata",
-            "text": "S\u1ebd gi\u00fap cho Angular bi\u1ebft v\u00e0 x\u1eed l\u00fd Component n\u00e0y x\u1eed l\u00fd th\u1ebf n\u00e0o, hi\u1ec3n tr\u1ecb ph\u1ea7n trong view",
-            "title": "Metadata"
-        },
-        {
-            "location": "/programming/angular/3_kientruc/#data-biding",
-            "text": "L\u00e0 m\u1ed9t t\u00ednh n\u0103ng gi\u00fap Anguar x\u1eed l\u00fd, \u0111\u1ed3ng b\u1ed9 d\u1eef li\u1ec7u, c\u00e1c s\u1ef1 ki\u1ec7n tr\u00ean form gi\u1eefa Template v\u00e0 Component. Tham kh\u1ea3o:  https://angular.io/guide/template-syntax",
-            "title": "Data Biding"
-        },
-        {
-            "location": "/programming/angular/3_kientruc/#service",
-            "text": "Directives Gi\u00fap Angular x\u1eed l\u00fd d\u1eef li\u1ec7u, l\u1ea5y d\u1eef li\u1ec7u t\u1eeb c\u00e1c Api, Share d\u1eef li\u1ec7u gi\u1eefa c\u00e1c Component..vv. Tham kh\u1ea3o:  https://angular.io/tutorial/toh-pt4",
-            "title": "Service"
-        },
-        {
-            "location": "/programming/angular/3_kientruc/#directives",
-            "text": "L\u00e0 m\u1ed9t ph\u1ea7n m\u1edf r\u1ed9ng trong teamplate, gi\u00fap cho ng\u01b0\u1eddi l\u1eadp tr\u00ecnh c\u00f3 th\u1ec3 t\u1ea1o th\u00e0nh c\u00e1c tag m\u00e0 trong HTML kh\u00f4ng c\u00f3 v\u00e0 \u0111\u1ecbnh ngh\u0129a giao di\u1ec7n cho tag \u0111\u00f3 nh\u01b0 n\u00e0o. vd   N\u00f3i t\u00f3m l\u1ea1i: Ki\u1ebfm th\u1ee9c tr\u1ecdng Angular r\u1ea5t nhi\u1ec1u, v\u00e0 \u0111\u00e2y ch\u1ec9 li\u1ec7t k\u00ea nh\u1eefng g\u00ec quan tr\u1ecdng nh\u1ea5t. N\u00ean n\u1eafm ch\u1eafc ki\u1ebfn th\u1ee9c ph\u1ea7n b\u00f4i \u0111\u1ecf v\u00ec s\u1ebd s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong d\u1ef1 \u00e1n.",
-            "title": "Directives"
-        },
-        {
-            "location": "/programming/angular/3_kientruc/#cau-truc-thu-muc-trong-angular",
-            "text": "",
-            "title": "C\u1ea5u tr\u00fac th\u01b0 m\u1ee5c trong Angular"
-        },
-        {
-            "location": "/programming/angular/3_kientruc/#mo-hinh-phat-trien-du-an-su-dung-angular",
-            "text": "",
-            "title": "M\u00f4 h\u00ecnh ph\u00e1t tri\u1ec3n d\u1ef1 \u00e1n s\u1eed d\u1ee5ng Angular"
-        },
-        {
-            "location": "/programming/angular/4_caulenh/",
-            "text": "Ch\u1ea1y \u1ee9ng d\u1ee5ng\n#\n\n\n1\nng server -o\n\n\n\n\n\n\nBuild \u1ee9ng d\u1ee5ng ra b\u1ea3n product\n#\n\n\n1\nng build \u2013prod\n\n\n\n\n\n\nT\u1ea1o module\n#\n\n\n1\n2\n3\nng g module [ten_module]\n\nng g module [ten_module] --routing    // \u0110\u1ec3 t\u1ea1o router trong module\n\n\n\n\n\n\nT\u1ea1o component\n#\n\n\n1\nng g component [ten_component]\n\n\n\n\n\n\nT\u1ea1o service\n#\n\n\n1\nng g service [ten_service]\n\n\n\n\n\n\nT\u1ea1o class\n#\n\n\n1\nng g class [ten_class]",
-            "title": "C\u00e2u l\u1ec7nh th\u01b0\u1eddng d\u00f9ng"
-        },
-        {
-            "location": "/programming/angular/4_caulenh/#chay-ung-dung",
-            "text": "1 ng server -o",
-            "title": "Ch\u1ea1y \u1ee9ng d\u1ee5ng"
-        },
-        {
-            "location": "/programming/angular/4_caulenh/#build-ung-dung-ra-ban-product",
-            "text": "1 ng build \u2013prod",
-            "title": "Build \u1ee9ng d\u1ee5ng ra b\u1ea3n product"
-        },
-        {
-            "location": "/programming/angular/4_caulenh/#tao-module",
-            "text": "1\n2\n3 ng g module [ten_module]\n\nng g module [ten_module] --routing    // \u0110\u1ec3 t\u1ea1o router trong module",
-            "title": "T\u1ea1o module"
-        },
-        {
-            "location": "/programming/angular/4_caulenh/#tao-component",
-            "text": "1 ng g component [ten_component]",
-            "title": "T\u1ea1o component"
-        },
-        {
-            "location": "/programming/angular/4_caulenh/#tao-service",
-            "text": "1 ng g service [ten_service]",
-            "title": "T\u1ea1o service"
-        },
-        {
-            "location": "/programming/angular/4_caulenh/#tao-class",
-            "text": "1 ng g class [ten_class]",
-            "title": "T\u1ea1o class"
-        },
-        {
-            "location": "/programming/laravel/1_gioithieu/",
-            "text": "Gi\u1edbi thi\u1ec7u\n#\n\n\nLaravel l\u00e0 1 framework PHP \u0111\u01b0\u1ee3c thi\u1ebft k\u1ebf d\u00e0nh cho vi\u1ec7c ph\u00e1t tri\u1ec3n c\u00e1c \u1ee9ng d\u1ee5ng web theo m\u00f4 h\u00ecnh MVC, v\u1edbi s\u1ef1 \u0111on gi\u1ea3n nh\u01b0ng v\u00f4 c\u00f9ng m\u1ea1nh m\u1ebd laravel \u0111\u00e3 tr\u1edf th\u00e0nh framework \u0111\u01b0\u1ee3c s\u1ef1 d\u1ee5ng r\u1ed9ng r\u00e3i nh\u1ea5t \u1edf th\u1eddi \u0111i\u1ec3m hi\u1ec7n t\u1ea1i, lo\u1ea1t b\u00e0i vi\u1ebft n\u00e0y s\u1ebd h\u01b0\u1edbng d\u1eabn c\u00e1ch s\u1eed d\u1ee5ng laravel cho ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u.\n\n\nY\u00eau c\u1ea7u h\u1ec7 th\u1ed1ng\n#\n\n\nTr\u01b0\u1edbc khi c\u00e0i \u0111\u1eb7t l\u01b0u \u00fd xem tr\u01b0\u1edbc phi\u00ean b\u1ea3n laravel s\u1eed d\u1ee5ng v\u00ec m\u1ed7i phi\u00ean b\u1ea3n c\u00f3 th\u1ec3 c\u00f3 1 y\u00eau c\u1ea7u t\u1ed1i thi\u1ec3u kh\u00e1c nhau, nh\u01b0 trong b\u00e0i vi\u1ebft n\u00e0y \u0111ang s\u1eed d\u1ee5ng laravel 5.3 n\u00ean c\u00f3 y\u00eau c\u1ea7u h\u1ec7 th\u1ed1ng:\n\n\n1\n2\n3\n4\n5\n6\nPHP >= 5.6.4\nOpenSSL PHP Extension\nPDO PHP Extension\nMbstring PHP Extension\nTokenizer PHP Extension\nXML PHP Extension\n\n\n\n\n\n\nC\u00e0i \u0111\u1eb7t\n#\n\n\nC\u00f3 nhi\u1ec1u c\u00e1ch \u0111\u1ec3 c\u00f3 th\u1ec3 c\u00e0i \u0111\u1eb7t laravel nh\u01b0ng \u0111\u1ec3 \u0111\u01a1n gi\u1ea3n ta s\u1ebd s\u1eed d\u1ee5ng composer (tham kh\u1ea3o lo\u1ea1t b\u00e0i h\u01b0\u1edbng d\u1eabn v\u1ec1 composer).\n\n\n\n\nB1: M\u1edf c\u1eeda s\u1ed1 cmd g\u00f5 l\u1ec7nh\n\n\n\n\n1\ncomposer create-project --prefer-dist laravel/laravel [ten_project_se_tao]\n\n\n\n\n\n\n\n\nB2: Sau khi \u0111\u1ee3i composer k\u00e9o project v\u1ec1 l\u00e0 xong, l\u00fac \u0111\u00f3 ta c\u00f3 th\u1ec3 ch\u1ea1y lu\u00f4n \u0111\u01b0\u1ee3c \u1ee9ng d\u1ee5ng tr\u00ean thanh \u0111\u1ecba ch\u1ec9 v\u00ed d\u1ee5:\n\n\n\n\n1\nlocalhost:8080/[ten_project_se_tao]/public/",
-            "title": "Gi\u1edbi thi\u1ec7u, c\u00e0i \u0111\u1eb7t"
-        },
-        {
-            "location": "/programming/laravel/1_gioithieu/#gioi-thieu",
-            "text": "Laravel l\u00e0 1 framework PHP \u0111\u01b0\u1ee3c thi\u1ebft k\u1ebf d\u00e0nh cho vi\u1ec7c ph\u00e1t tri\u1ec3n c\u00e1c \u1ee9ng d\u1ee5ng web theo m\u00f4 h\u00ecnh MVC, v\u1edbi s\u1ef1 \u0111on gi\u1ea3n nh\u01b0ng v\u00f4 c\u00f9ng m\u1ea1nh m\u1ebd laravel \u0111\u00e3 tr\u1edf th\u00e0nh framework \u0111\u01b0\u1ee3c s\u1ef1 d\u1ee5ng r\u1ed9ng r\u00e3i nh\u1ea5t \u1edf th\u1eddi \u0111i\u1ec3m hi\u1ec7n t\u1ea1i, lo\u1ea1t b\u00e0i vi\u1ebft n\u00e0y s\u1ebd h\u01b0\u1edbng d\u1eabn c\u00e1ch s\u1eed d\u1ee5ng laravel cho ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u.",
-            "title": "Gi\u1edbi thi\u1ec7u"
-        },
-        {
-            "location": "/programming/laravel/1_gioithieu/#yeu-cau-he-thong",
-            "text": "Tr\u01b0\u1edbc khi c\u00e0i \u0111\u1eb7t l\u01b0u \u00fd xem tr\u01b0\u1edbc phi\u00ean b\u1ea3n laravel s\u1eed d\u1ee5ng v\u00ec m\u1ed7i phi\u00ean b\u1ea3n c\u00f3 th\u1ec3 c\u00f3 1 y\u00eau c\u1ea7u t\u1ed1i thi\u1ec3u kh\u00e1c nhau, nh\u01b0 trong b\u00e0i vi\u1ebft n\u00e0y \u0111ang s\u1eed d\u1ee5ng laravel 5.3 n\u00ean c\u00f3 y\u00eau c\u1ea7u h\u1ec7 th\u1ed1ng:  1\n2\n3\n4\n5\n6 PHP >= 5.6.4\nOpenSSL PHP Extension\nPDO PHP Extension\nMbstring PHP Extension\nTokenizer PHP Extension\nXML PHP Extension",
-            "title": "Y\u00eau c\u1ea7u h\u1ec7 th\u1ed1ng"
-        },
-        {
-            "location": "/programming/laravel/1_gioithieu/#cai-at",
-            "text": "C\u00f3 nhi\u1ec1u c\u00e1ch \u0111\u1ec3 c\u00f3 th\u1ec3 c\u00e0i \u0111\u1eb7t laravel nh\u01b0ng \u0111\u1ec3 \u0111\u01a1n gi\u1ea3n ta s\u1ebd s\u1eed d\u1ee5ng composer (tham kh\u1ea3o lo\u1ea1t b\u00e0i h\u01b0\u1edbng d\u1eabn v\u1ec1 composer).   B1: M\u1edf c\u1eeda s\u1ed1 cmd g\u00f5 l\u1ec7nh   1 composer create-project --prefer-dist laravel/laravel [ten_project_se_tao]    B2: Sau khi \u0111\u1ee3i composer k\u00e9o project v\u1ec1 l\u00e0 xong, l\u00fac \u0111\u00f3 ta c\u00f3 th\u1ec3 ch\u1ea1y lu\u00f4n \u0111\u01b0\u1ee3c \u1ee9ng d\u1ee5ng tr\u00ean thanh \u0111\u1ecba ch\u1ec9 v\u00ed d\u1ee5:   1 localhost:8080/[ten_project_se_tao]/public/",
-            "title": "C\u00e0i \u0111\u1eb7t"
-        },
-        {
-            "location": "/programming/laravel/2_batdau/",
-            "text": "Ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u n\u00ean chu\u1ea9n b\u1ecb nh\u1eefng ki\u1ebfn th\u1ee9c g\u00ec tr\u01b0\u1edbc khi h\u1ecdc laravel:\n#\n\n\n\n\nKi\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n Php\n\n\nL\u1eadp tr\u00ecnh h\u01b0\u1edbng \u0111\u1ed1i t\u01b0\u1ee3ng\n\n\nM\u00f4 h\u00ecnh MVC\n\n\nComposer: (tham kh\u1ea3o)\n\n\n\n\nH\u1ecdc laravel nh\u01b0 th\u1ebf n\u00e0o:\n#\n\n\n\n\nL\u00ean google th\u00ec c\u00f3 r\u1ea5t nhi\u1ec1u t\u00e0i li\u1ec7u \u0111\u1ec3 h\u1ecdc laravel nh\u01b0ng chu\u1ea9n nh\u1ea5t l\u00e0 v\u00e0o trang ch\u1ee7 c\u1ee7a laravel \u0111\u1ec3 h\u1ecdc \nhttps://laravel.com/docs/master\n\n\nNgo\u00e0i ra b\u00e0i vi\u1ebft n\u00e0y s\u1ebd cung c\u1ea5p tr\u00ecnh t\u1ef1 c\u00e1c ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n nh\u1ea5t c\u1ea7n c\u00f3 c\u1ee7a laravel \u0111\u1ec3 c\u00f3 th\u1ec3 l\u00e0m \u0111\u01b0\u1ee3c ngay trong d\u1ef1 \u00e1n\n\n\n\n\nC\u1ea5u tr\u00fac th\u01b0 m\u1ee5c c\u1ee7a m\u1ed9t project\n#\n\n\nProject s\u1eed d\u1ee5ng laravel s\u1ebd c\u1ea7n quan t\u00e2m \u0111\u1ebfn nh\u1eefng th\u01b0 m\u1ee5c sau \u0111\u00e2y:\n\n\n\n\nL\u01b0u \u00fd: c\u1ea5u tr\u00fac th\u01b0 m\u1ee5c h\u00ecnh tr\u00ean l\u00e0 m\u1eb7c \u0111\u1ecbnh c\u1ee7a laravel nh\u01b0ng do t\u00ednh ch\u1ea5t c\u1ee7a d\u1ef1 \u00e1n n\u00ean ta s\u1ebd s\u1eeda l\u1ea1i \u0111\u1ec3 vi\u1ec7c ph\u00e1t tri\u1ec3n m\u1ed9t modul tr\u1edf n\u00ean \u0111\u01a1n gi\u1ea3n h\u01a1n.\n\n\n\n\nChi ti\u1ebft c\u1ea5u tr\u00fac c\u1ee7a m\u1ed9t Modul \n\n\n\n\n\u1ede \u0111\u00e2y v\u00ed d\u1ee5 v\u1ec1 modul qu\u1ea3n tr\u1ecb \u0111\u1ed1i t\u01b0\u1ee3ng danh m\u1ee5c (list, listtype) l\u00e0m v\u00ed d\u1ee5\n\n\n\n\nmodul qu\u1ea3n tr\u1ecb danh m\u1ee5c (listtype) s\u1ebd n\u1eb1m trong ph\u1ea7n backend (ph\u00eda qu\u1ea3n tr\u1ecb ng\u01b0\u1eddi d\u00f9ng)\n\n\nTrong modul listtype s\u1ebd bao g\u1ed3m c\u00e1c th\u00e0nh ph\u1ea7n:\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n- Assets: th\u01b0 m\u1ee5c l\u01b0u ngu\u1ed3n js, css, xml c\u1ee7a \u1ee9ng d\u1ee5ng\n- Controllers\n- Middleware\n- Models\n- Requests\n- Views\nrouter.php: file \u0111i\u1ec1u h\u01b0\u1edbng t\u1eeb url \u0111\u1ebfn c\u00e1c Controllers\n\n// C\u00e1c ph\u1ea7n controllers, middleware...: tham kh\u1ea3o ph\u00eda tr\u00ean",
-            "title": "D\u00e0nh cho ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u"
-        },
-        {
-            "location": "/programming/laravel/2_batdau/#nguoi-moi-bat-au-nen-chuan-bi-nhung-kien-thuc-gi-truoc-khi-hoc-laravel",
-            "text": "Ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n Php  L\u1eadp tr\u00ecnh h\u01b0\u1edbng \u0111\u1ed1i t\u01b0\u1ee3ng  M\u00f4 h\u00ecnh MVC  Composer: (tham kh\u1ea3o)",
-            "title": "Ng\u01b0\u1eddi m\u1edbi b\u1eaft \u0111\u1ea7u n\u00ean chu\u1ea9n b\u1ecb nh\u1eefng ki\u1ebfn th\u1ee9c g\u00ec tr\u01b0\u1edbc khi h\u1ecdc laravel:"
-        },
-        {
-            "location": "/programming/laravel/2_batdau/#hoc-laravel-nhu-the-nao",
-            "text": "L\u00ean google th\u00ec c\u00f3 r\u1ea5t nhi\u1ec1u t\u00e0i li\u1ec7u \u0111\u1ec3 h\u1ecdc laravel nh\u01b0ng chu\u1ea9n nh\u1ea5t l\u00e0 v\u00e0o trang ch\u1ee7 c\u1ee7a laravel \u0111\u1ec3 h\u1ecdc  https://laravel.com/docs/master  Ngo\u00e0i ra b\u00e0i vi\u1ebft n\u00e0y s\u1ebd cung c\u1ea5p tr\u00ecnh t\u1ef1 c\u00e1c ki\u1ebfn th\u1ee9c c\u01a1 b\u1ea3n nh\u1ea5t c\u1ea7n c\u00f3 c\u1ee7a laravel \u0111\u1ec3 c\u00f3 th\u1ec3 l\u00e0m \u0111\u01b0\u1ee3c ngay trong d\u1ef1 \u00e1n",
-            "title": "H\u1ecdc laravel nh\u01b0 th\u1ebf n\u00e0o:"
-        },
-        {
-            "location": "/programming/laravel/2_batdau/#cau-truc-thu-muc-cua-mot-project",
-            "text": "Project s\u1eed d\u1ee5ng laravel s\u1ebd c\u1ea7n quan t\u00e2m \u0111\u1ebfn nh\u1eefng th\u01b0 m\u1ee5c sau \u0111\u00e2y:   L\u01b0u \u00fd: c\u1ea5u tr\u00fac th\u01b0 m\u1ee5c h\u00ecnh tr\u00ean l\u00e0 m\u1eb7c \u0111\u1ecbnh c\u1ee7a laravel nh\u01b0ng do t\u00ednh ch\u1ea5t c\u1ee7a d\u1ef1 \u00e1n n\u00ean ta s\u1ebd s\u1eeda l\u1ea1i \u0111\u1ec3 vi\u1ec7c ph\u00e1t tri\u1ec3n m\u1ed9t modul tr\u1edf n\u00ean \u0111\u01a1n gi\u1ea3n h\u01a1n.   Chi ti\u1ebft c\u1ea5u tr\u00fac c\u1ee7a m\u1ed9t Modul    \u1ede \u0111\u00e2y v\u00ed d\u1ee5 v\u1ec1 modul qu\u1ea3n tr\u1ecb \u0111\u1ed1i t\u01b0\u1ee3ng danh m\u1ee5c (list, listtype) l\u00e0m v\u00ed d\u1ee5   modul qu\u1ea3n tr\u1ecb danh m\u1ee5c (listtype) s\u1ebd n\u1eb1m trong ph\u1ea7n backend (ph\u00eda qu\u1ea3n tr\u1ecb ng\u01b0\u1eddi d\u00f9ng)  Trong modul listtype s\u1ebd bao g\u1ed3m c\u00e1c th\u00e0nh ph\u1ea7n:  1\n2\n3\n4\n5\n6\n7\n8\n9 - Assets: th\u01b0 m\u1ee5c l\u01b0u ngu\u1ed3n js, css, xml c\u1ee7a \u1ee9ng d\u1ee5ng\n- Controllers\n- Middleware\n- Models\n- Requests\n- Views\nrouter.php: file \u0111i\u1ec1u h\u01b0\u1edbng t\u1eeb url \u0111\u1ebfn c\u00e1c Controllers\n\n// C\u00e1c ph\u1ea7n controllers, middleware...: tham kh\u1ea3o ph\u00eda tr\u00ean",
-            "title": "C\u1ea5u tr\u00fac th\u01b0 m\u1ee5c c\u1ee7a m\u1ed9t project"
-        },
-        {
-            "location": "/programming/laravel/3_composer/",
-            "text": "H\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t\n#\n\n\nGi\u1edbi thi\u1ec7u\n#\n\n\nComposer l\u00e0 m\u1ed9t c\u00f4ng c\u1ee5 qu\u1ea3n l\u00fd c\u00e1c th\u01b0 vi\u1ec7n trong PHP (Dependency Management), c\u00f4ng c\u1ee5 n\u00e0y gi\u00fap ta qu\u1ea3n l\u00fd \u0111\u01b0\u1ee3c c\u00e1c th\u01b0 vi\u1ec7n, framework kh\u00e1c d\u00f9ng trong project c\u1ee7a m\u00ecnh nh\u01b0: laravel, phpdocx\u2026 khi ta mu\u1ed1n th\u00eam m\u1edbi m\u1ed9t th\u01b0 vi\u1ec7n hay c\u1eadp nh\u1eadt phi\u00ean b\u1ea3n cho th\u01b0 vi\u1ec7n c\u0169 th\u00ec vi\u1ec7c s\u1eed d\u1ee5ng Composer s\u1ebd r\u1ea5t thu\u1eadn ti\u1ec7n v\u00e0 \u0111\u01a1n gi\u1ea3n. tham kh\u1ea3o th\u00eam Composer\n\n\n\n\nY\u00eau c\u1ea7u t\u1ed1i thi\u1ec3u h\u1ec7 th\u1ed1ng\n\n\n\n\n1\nPHP >= 5.3.2\n\n\n\n\n\n\nH\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t\n#\n\n\n\n\n\n\nclick v\u00e0o link sau \u0111\u1ec3 t\u1ea3i: t\u1ea3i composer ho\u1eb7c v\u00e0o trang ch\u1ee7 Composer \u0111\u1ec3 download b\u1ed9 c\u00e0i\n\n\n\n\n\n\nM\u1edf file t\u1ea3i v\u1ec1 v\u00e0 c\u00e0i \u0111\u1eb7t nh\u01b0 1 ph\u1ea7n m\u1ec1m b\u00ecnh th\u01b0\u1eddng, l\u01b0u \u00fd: n\u1ebfu hi\u1ec3n th\u1ecb h\u00ecnh b\u00ean d\u01b0\u1edbi th\u00ec ch\u1ecdn v\u00e0o \u0111\u01b0\u1eddng d\u1eabn ch\u01b0a file php.exe trong folder PHP c\u1ee7a m\u00ecnh.\n\n\n\n\n\n\n\n\n\n\nsau khi c\u00e0i \u0111\u1eb7t xong, \u0111\u1ec3 ki\u1ec3m tra xem composer \u0111\u00e3 c\u00e0i \u0111\u1eb7t th\u00e0nh c\u00f4ng ch\u01b0a th\u00ec g\u00f5 l\u1ec7nh\n\n\n\n\n1\ncomposer -V\n\n\n\n\n\n\nN\u1ebfu k\u1ebft qu\u1ea3 tr\u1ea3 v\u1ec1 phi\u00ean b\u1ea3n c\u1ee7a composer c\u00f3 ngh\u0129a l\u00e0 \u0111\u00e3 c\u00e0i \u0111\u1eb7t th\u00e0nh c\u00f4ng\n\n\nH\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng\n#\n\n\nTrong ph\u1ea7n n\u00e0y s\u1ebd h\u01b0\u1edbng c\u00e1ch s\u1eed d\u1ee5ng composer theo t\u1eebng h\u00e0nh \u0111\u1ed9ng c\u1ee5 th\u1ec3:\n\n\n\n\nS\u1eed d\u1ee5ng composer \u0111\u1ec3 c\u00e0i \u0111\u1eb7t trong l\u1ea7n \u0111\u1ea7u kh\u1edfi t\u1ea1o m\u1ed9t project.\n\n\n\n\n1\ncomposer install\n\n\n\n\n\n\n\n\nS\u1eed d\u1ee5ng composer \u0111\u1ec3 th\u00eam m\u1edbi 1 th\u01b0 vi\u1ec7n v\u00e0o project c\u1ee7a m\u00ecnh:\n\n\n\n\n1\ncomposer require [ten_thu_vien_can_add]\n\n\n\n\n\n\n\n\nS\u1eed d\u1ee5ng composer \u0111\u1ec3 c\u1eadp nh\u1eadt phi\u00ean b\u1ea3n c\u00e1c th\u01b0 vi\u1ec7n c\u0169:\n\n\n\n\n1\ncomposer update\n\n\n\n\n\n\nL\u01b0u \u00fd:\n\n\n\n\n\n\nC\u00e1c l\u1ec7nh composer s\u1ebd \u0111\u01b0\u1ee3c th\u1ef1c thi b\u1eb1ng l\u1ec7nh cmd, v\u00e0 \u0111\u01b0\u1eddng d\u1eabn n\u1eb1m trong th\u01b0 m\u1ee5c project m\u00e0 m\u00ecnh mu\u1ed1n th\u1ef1c hi\u1ec7n\n\n\n\n\n\n\nTrong 1 project s\u1eed d\u1ee5ng composer s\u1ebd c\u00f3 2 file: \n\n\n\n\n\n\ncomposer.json: \u0110\u00e2y l\u00e0 file gi\u00fap composer bi\u1ebft \u0111\u01b0\u1ee3c h\u1ec7 th\u1ed1ng \u0111ang s\u1eed d\u1ee5ng c\u00e1c th\u01b0 vi\u1ec7n n\u00e0o \u0111\u1ec3 c\u00e0i \u0111\u1eb7t\n\n\ncomposer.lock: L\u00e0 file c\u1ed1 \u0111\u1ecbnh c\u00e1c phi\u00ean b\u1ea3n. gi\u00fap cho to\u00e0n b\u1ed9 team tr\u00e1nh \u0111\u01b0\u1ee3c tr\u01b0\u1eddng h\u1ee3p anh A s\u1eed d\u1ee5ng version 1 anh B l\u1ea1i s\u1eed d\u1ee5ng version 2 c\u1ee7a th\u01b0 vi\u1ec7n \u0111\u00f3.\n\n\n\n\nC\u00e1c th\u01b0 vi\u1ec7n \u0111\u01b0\u1ee3c compser qu\u1ea3n l\u00fd s\u1ebd \u0111\u01b0\u1ee3c n\u1eb1m trong th\u01b0 m\u1ee5c vendor",
-            "title": "Composer"
-        },
-        {
-            "location": "/programming/laravel/3_composer/#huong-dan-cai-at",
-            "text": "",
-            "title": "H\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t"
-        },
-        {
-            "location": "/programming/laravel/3_composer/#gioi-thieu",
-            "text": "Composer l\u00e0 m\u1ed9t c\u00f4ng c\u1ee5 qu\u1ea3n l\u00fd c\u00e1c th\u01b0 vi\u1ec7n trong PHP (Dependency Management), c\u00f4ng c\u1ee5 n\u00e0y gi\u00fap ta qu\u1ea3n l\u00fd \u0111\u01b0\u1ee3c c\u00e1c th\u01b0 vi\u1ec7n, framework kh\u00e1c d\u00f9ng trong project c\u1ee7a m\u00ecnh nh\u01b0: laravel, phpdocx\u2026 khi ta mu\u1ed1n th\u00eam m\u1edbi m\u1ed9t th\u01b0 vi\u1ec7n hay c\u1eadp nh\u1eadt phi\u00ean b\u1ea3n cho th\u01b0 vi\u1ec7n c\u0169 th\u00ec vi\u1ec7c s\u1eed d\u1ee5ng Composer s\u1ebd r\u1ea5t thu\u1eadn ti\u1ec7n v\u00e0 \u0111\u01a1n gi\u1ea3n. tham kh\u1ea3o th\u00eam Composer   Y\u00eau c\u1ea7u t\u1ed1i thi\u1ec3u h\u1ec7 th\u1ed1ng   1 PHP >= 5.3.2",
-            "title": "Gi\u1edbi thi\u1ec7u"
-        },
-        {
-            "location": "/programming/laravel/3_composer/#huong-dan-cai-at_1",
-            "text": "click v\u00e0o link sau \u0111\u1ec3 t\u1ea3i: t\u1ea3i composer ho\u1eb7c v\u00e0o trang ch\u1ee7 Composer \u0111\u1ec3 download b\u1ed9 c\u00e0i    M\u1edf file t\u1ea3i v\u1ec1 v\u00e0 c\u00e0i \u0111\u1eb7t nh\u01b0 1 ph\u1ea7n m\u1ec1m b\u00ecnh th\u01b0\u1eddng, l\u01b0u \u00fd: n\u1ebfu hi\u1ec3n th\u1ecb h\u00ecnh b\u00ean d\u01b0\u1edbi th\u00ec ch\u1ecdn v\u00e0o \u0111\u01b0\u1eddng d\u1eabn ch\u01b0a file php.exe trong folder PHP c\u1ee7a m\u00ecnh.      sau khi c\u00e0i \u0111\u1eb7t xong, \u0111\u1ec3 ki\u1ec3m tra xem composer \u0111\u00e3 c\u00e0i \u0111\u1eb7t th\u00e0nh c\u00f4ng ch\u01b0a th\u00ec g\u00f5 l\u1ec7nh   1 composer -V   N\u1ebfu k\u1ebft qu\u1ea3 tr\u1ea3 v\u1ec1 phi\u00ean b\u1ea3n c\u1ee7a composer c\u00f3 ngh\u0129a l\u00e0 \u0111\u00e3 c\u00e0i \u0111\u1eb7t th\u00e0nh c\u00f4ng",
-            "title": "H\u01b0\u1edbng d\u1eabn c\u00e0i \u0111\u1eb7t"
-        },
-        {
-            "location": "/programming/laravel/3_composer/#huong-dan-su-dung",
-            "text": "Trong ph\u1ea7n n\u00e0y s\u1ebd h\u01b0\u1edbng c\u00e1ch s\u1eed d\u1ee5ng composer theo t\u1eebng h\u00e0nh \u0111\u1ed9ng c\u1ee5 th\u1ec3:   S\u1eed d\u1ee5ng composer \u0111\u1ec3 c\u00e0i \u0111\u1eb7t trong l\u1ea7n \u0111\u1ea7u kh\u1edfi t\u1ea1o m\u1ed9t project.   1 composer install    S\u1eed d\u1ee5ng composer \u0111\u1ec3 th\u00eam m\u1edbi 1 th\u01b0 vi\u1ec7n v\u00e0o project c\u1ee7a m\u00ecnh:   1 composer require [ten_thu_vien_can_add]    S\u1eed d\u1ee5ng composer \u0111\u1ec3 c\u1eadp nh\u1eadt phi\u00ean b\u1ea3n c\u00e1c th\u01b0 vi\u1ec7n c\u0169:   1 composer update   L\u01b0u \u00fd:    C\u00e1c l\u1ec7nh composer s\u1ebd \u0111\u01b0\u1ee3c th\u1ef1c thi b\u1eb1ng l\u1ec7nh cmd, v\u00e0 \u0111\u01b0\u1eddng d\u1eabn n\u1eb1m trong th\u01b0 m\u1ee5c project m\u00e0 m\u00ecnh mu\u1ed1n th\u1ef1c hi\u1ec7n    Trong 1 project s\u1eed d\u1ee5ng composer s\u1ebd c\u00f3 2 file:     composer.json: \u0110\u00e2y l\u00e0 file gi\u00fap composer bi\u1ebft \u0111\u01b0\u1ee3c h\u1ec7 th\u1ed1ng \u0111ang s\u1eed d\u1ee5ng c\u00e1c th\u01b0 vi\u1ec7n n\u00e0o \u0111\u1ec3 c\u00e0i \u0111\u1eb7t  composer.lock: L\u00e0 file c\u1ed1 \u0111\u1ecbnh c\u00e1c phi\u00ean b\u1ea3n. gi\u00fap cho to\u00e0n b\u1ed9 team tr\u00e1nh \u0111\u01b0\u1ee3c tr\u01b0\u1eddng h\u1ee3p anh A s\u1eed d\u1ee5ng version 1 anh B l\u1ea1i s\u1eed d\u1ee5ng version 2 c\u1ee7a th\u01b0 vi\u1ec7n \u0111\u00f3.   C\u00e1c th\u01b0 vi\u1ec7n \u0111\u01b0\u1ee3c compser qu\u1ea3n l\u00fd s\u1ebd \u0111\u01b0\u1ee3c n\u1eb1m trong th\u01b0 m\u1ee5c vendor",
-            "title": "H\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng"
         },
         {
             "location": "/software_dev/trello/",

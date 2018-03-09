@@ -173,7 +173,7 @@ code,kbd,pre {
 }
 
 .md-typeset h1,.md-typeset h2 {
-    font-weight: 300;
+    font-weight: 450;
     letter-spacing: -.01em
 }
 
@@ -185,7 +185,7 @@ code,kbd,pre {
 .md-typeset h3 {
     margin: 3.2rem 0 1.6rem;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: -.01em;
     line-height: 1.5
 }
@@ -415,7 +415,7 @@ code,kbd,pre {
     display: inline-block;
     max-width: 100%;
     border-radius: .2rem;
-    font-size: 1.28rem;
+    font-size: 15px;
     overflow: auto;
     -webkit-overflow-scrolling: touch
 }
