@@ -76,6 +76,86 @@
             "title": "Packets explained"
         },
         {
+            "location": "/background/oop/",
+            "text": "Object Oriented Concepts\n#\n\n\nBefore we go in detail, lets define important terms related to Object Oriented Programming.\n\n\n\n\n\n\nClass\n \u2212 This is a programmer-defined data type, which includes local functions as well as local data. You can think of a class as a template for making many instances of the same kind (or class) of object.\n\n\n\n\n\n\nObject\n \u2212 An individual instance of the data structure defined by a class. You define a class once and then make many objects that belong to it. Objects are also known as instance.\n\n\n\n\n\n\nMember Variable\n \u2212 These are the variables defined inside a class. This data will be invisible to the outside of the class and can be accessed via member functions. These variables are called attribute of the object once an object is created.\n\n\n\n\n\n\nMember function\n \u2212 These are the function defined inside a class and are used to access object data.\n\n\n\n\n\n\nInheritance\n \u2212 When a class is defined by inheriting existing function of a parent class then it is called inheritance. Here child class will inherit all or few member functions and variables of a parent class.\n\n\n\n\n\n\nParent class\n \u2212 A class that is inherited from by another class. This is also called a base class or super class.\n\n\n\n\n\n\nChild Class\n \u2212 A class that inherits from another class. This is also called a subclass or derived class.\n\n\n\n\n\n\nPolymorphism\n \u2212 This is an object oriented concept where same function can be used for different purposes. For example function name will remain same but it make take different number of arguments and can do different task.\n\n\n\n\n\n\nOverloading\n \u2212 a type of polymorphism in which some or all of operators have different implementations depending on the types of their arguments. Similarly functions can also be overloaded with different implementation.\n\n\n\n\n\n\nData Abstraction\n \u2212 Any representation of data in which the implementation details are hidden (abstracted).\n\n\n\n\n\n\nEncapsulation\n \u2212 refers to a concept where we encapsulate all the data and member functions together to form an object.\n\n\n\n\n\n\nConstructor\n \u2212 refers to a special type of function which will be called automatically whenever there is an object formation from a class.\n\n\n\n\n\n\nDestructor\n \u2212 refers to a special type of function which will be called automatically whenever an object is deleted or goes out of scope.\n\n\n\n\n\n\nConstructor Functions\n#\n\n\nConstructor Functions are special type of functions which are called automatically whenever an object is created. So we take full advantage of this behaviour, by initializing many things through constructor functions.\n\n\nPHP provides a special function called __construct() to define a constructor. You can pass as many as arguments you like into the constructor function.\n\n\nFollowing example will create one constructor for Books class and it will initialize price and title for the book at the time of object creation.\n\n\n1\n2\n3\n4\n5\n<?php\n\n\nfunction\n \n__construct\n(\n \n$par1\n,\n \n$par2\n \n)\n \n{\n\n   \n$this\n->\ntitle\n \n=\n \n$par1\n;\n\n   \n$this\n->\nprice\n \n=\n \n$par2\n;\n\n\n}\n\n\n\n\n\n\n\nDestructor\n#\n\n\nLike a constructor function you can define a destructor function using function __destruct(). You can release all the resources with-in a destructor.\n\n\nInheritance\n#\n\n\nPHP class definitions can optionally inherit from a parent class definition by using the extends clause. The syntax is as follows \u2212\n\n\n1\n2\n3\n4\n<?php\n\n\nclass\n \nChild\n \nextends\n \nParent\n \n{\n\n   \n<\ndefinition\n \nbody\n>\n\n\n}\n\n\n\n\n\n\n\nThe effect of inheritance is that the child class (or subclass or derived class) has the following characteristics \u2212\n\n\n\n\n\n\nAutomatically has all the member variable declarations of the parent class.\n\n\n\n\n\n\nAutomatically has all the same member functions as the parent, which (by default) will work the same way as those functions do in the parent.\n\n\n\n\n\n\nFollowing example inherit Books class and adds more functionality based on the requirement.\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n<?php\n\n\nclass\n \nNovel\n \nextends\n \nBooks\n \n{\n\n   \nvar\n \n$publisher\n;\n\n\n   \nfunction\n \nsetPublisher\n(\n$par\n){\n\n      \n$this\n->\npublisher\n \n=\n \n$par\n;\n\n   \n}\n\n\n   \nfunction\n \ngetPublisher\n(){\n\n      \necho\n \n$this\n->\npublisher\n.\n \n\"<br />\"\n;\n\n   \n}\n\n\n}\n\n\n\n\n\n\n\nNow apart from inherited functions, class Novel keeps two additional member functions.\n\n\nFunction Overriding\n#\n\n\nFunction definitions in child classes override definitions with the same name in parent classes. In a child class, we can modify the definition of a function inherited from parent class.\n\n\nIn the following example getPrice and getTitle functions are overridden to return some values.\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n<?php\n\n\nfunction\n \ngetPrice\n()\n \n{\n\n   \necho\n \n$this\n->\nprice\n \n.\n \n\"<br/>\"\n;\n\n   \nreturn\n \n$this\n->\nprice\n;\n\n\n}\n\n\n\nfunction\n \ngetTitle\n(){\n\n   \necho\n \n$this\n->\ntitle\n \n.\n \n\"<br/>\"\n;\n\n   \nreturn\n \n$this\n->\ntitle\n;\n\n\n}\n\n\n\n\n\n\n\nAccess Modifier\n#\n\n\nPublic Members\n#\n\n\nUnless you specify otherwise, properties and methods of a class are public. That is to say, they may be accessed in three possible situations \u2212\n\n\n\n\n\n\nFrom outside the class in which it is declared\n\n\n\n\n\n\nFrom within the class in which it is declared\n\n\n\n\n\n\nFrom within another class that implements the class in which it is declared\n\n\n\n\n\n\nTill now we have seen all members as public members. If you wish to limit the accessibility of the members of a class then you define class members as private or protected.\n\n\nPrivate members\n#\n\n\nBy designating a member private, you limit its accessibility to the class in which it is declared. The private member cannot be referred to from classes that inherit the class in which it is declared and cannot be accessed from outside the class.\n\n\nA class member can be made private by using private keyword infront of the member.\n\n\nProtected members\n#\n\n\nA protected property or method is accessible in the class in which it is declared, as well as in classes that extend that class. Protected members are not available outside of those two kinds of classes. A class member can be made protected by using protected keyword in front of the member.\n\n\nInterfaces\n#\n\n\nInterfaces are defined to provide a common function names to the implementers. Different implementors can implement those interfaces according to their requirements. You can say, interfaces are skeletons which are implemented by developers.\n\n\nAs of PHP5, it is possible to define an interface, like this \u2212\n\n\n1\n2\n3\n4\n<?php\n\n\ninterface\n \nMail\n \n{\n\n   \npublic\n \nfunction\n \nsendMail\n();\n\n\n}\n\n\n\n\n\n\n\nThen, if another class implemented that interface, like this \u2212\n\n\n1\n2\n3\n4\n<?php\n\n\nclass\n \nReport\n \nimplements\n \nMail\n \n{\n\n   \n// sendMail() Definition goes here\n\n\n}\n\n\n\n\n\n\n\nConstants\n#\n\n\nA constant is somewhat like a variable, in that it holds a value, but is really more like a function because a constant is immutable. Once you declare a constant, it does not change.\n\n\nDeclaring one constant is easy, as is done in this version of MyClass \u2212\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\nclass MyClass {\n   const requiredMargin = 1.7;\n\n   function __construct($incomingValue) {\n      // Statements here run every time\n      // an instance of the class\n      // is created.\n   }\n}\n\n\n\n\n\n\nIn this class, requiredMargin is a constant. It is declared with the keyword const, and under no circumstances can it be changed to anything other than 1.7. Note that the constant's name does not have a leading $, as variable names do.\n\n\nAbstract Classes\n#\n\n\nAn abstract class is one that cannot be instantiated, only inherited. You declare an abstract class with the keyword abstract, like this \u2212\n\n\nWhen inheriting from an abstract class, all methods marked abstract in the parent's class declaration must be defined by the child; additionally, these methods must be defined with the same visibility.\n\n\n1\n2\n3\n4\nabstract class MyAbstractClass {\n   abstract function myAbstractFunction() {\n   }\n}\n\n\n\n\n\n\nNote that function definitions inside an abstract class must also be preceded by the keyword abstract. It is not legal to have abstract function definitions inside a non-abstract class.\n\n\nStatic Keyword\n#\n\n\nDeclaring class members or methods as static makes them accessible without needing an instantiation of the class. A member declared as static can not be accessed with an instantiated class object (though a static method can).\n\n\nTry out following example\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n<?php\n\n   \nclass\n \nFoo\n \n{\n\n      \npublic\n \nstatic\n \n$my_static\n \n=\n \n'foo'\n;\n\n\n      \npublic\n \nfunction\n \nstaticValue\n()\n \n{\n\n         \nreturn\n \nself\n::\n$my_static\n;\n\n      \n}\n\n   \n}\n\n\n   \nprint\n \nFoo\n::\n$my_static\n \n.\n \n\"\n\\n\n\"\n;\n\n   \n$foo\n \n=\n \nnew\n \nFoo\n();\n\n\n   \nprint\n \n$foo\n->\nstaticValue\n()\n \n.\n \n\"\n\\n\n\"\n;\n\n\n?>\n  \n\n\n\n\n\n\n\nFinal Keyword\n#\n\n\nPHP 5 introduces the final keyword, which prevents child classes from overriding a method by prefixing the definition with final. If the class itself is being defined final then it cannot be extended.\n\n\nFollowing example results in Fatal error: Cannot override final method BaseClass::moreTesting()\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n<?php\n\n\n   \nclass\n \nBaseClass\n \n{\n\n      \npublic\n \nfunction\n \ntest\n()\n \n{\n\n         \necho\n \n\"BaseClass::test() called<br>\"\n;\n\n      \n}\n\n\n      \nfinal\n \npublic\n \nfunction\n \nmoreTesting\n()\n \n{\n\n         \necho\n \n\"BaseClass::moreTesting() called<br>\"\n;\n\n      \n}\n\n   \n}\n\n\n   \nclass\n \nChildClass\n \nextends\n \nBaseClass\n \n{\n\n      \npublic\n \nfunction\n \nmoreTesting\n()\n \n{\n\n         \necho\n \n\"ChildClass::moreTesting() called<br>\"\n;\n\n      \n}\n\n   \n}\n\n\n?>\n\n\n\n\n\n\n\nCalling parent constructors\n#\n\n\nInstead of writing an entirely new constructor for the subclass, let's write it by calling the parent's constructor explicitly and then doing whatever is necessary in addition for instantiation of the subclass. Here's a simple example\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n<?php\n\n\nclass\n \nName\n \n{\n\n   \nvar\n \n$_firstName\n;\n\n   \nvar\n \n$_lastName\n;\n\n\n   \nfunction\n \nName\n(\n$first_name\n,\n \n$last_name\n)\n \n{\n\n      \n$this\n->\n_firstName\n \n=\n \n$first_name\n;\n\n      \n$this\n->\n_lastName\n \n=\n \n$last_name\n;\n\n   \n}\n\n\n   \nfunction\n \ntoString\n()\n \n{\n\n      \nreturn\n(\n$this\n->\n_lastName\n \n.\n\", \"\n \n.\n$this\n->\n_firstName\n);\n\n   \n}\n\n\n}\n\n\nclass\n \nNameSub1\n \nextends\n \nName\n \n{\n\n   \nvar\n \n$_middleInitial\n;\n\n\n   \nfunction\n \nNameSub1\n(\n$first_name\n,\n \n$middle_initial\n,\n \n$last_name\n)\n \n{\n\n      \nName\n::\nName\n(\n$first_name\n,\n \n$last_name\n);\n\n      \n$this\n->\n_middleInitial\n \n=\n \n$middle_initial\n;\n\n   \n}\n\n\n   \nfunction\n \ntoString\n()\n \n{\n\n      \nreturn\n(\nName\n::\ntoString\n()\n \n.\n \n\" \"\n \n.\n \n$this\n->\n_middleInitial\n);\n\n   \n}\n\n\n}\n\n\n\n\n\n\n\nIn this example, we have a parent class (Name), which has a two-argument constructor, and a subclass (NameSub1), which has a three-argument constructor. The constructor of NameSub1 functions by calling its parent constructor explicitly using the :: syntax (passing two of its arguments along) and then setting an additional field. Similarly, NameSub1 defines its non constructor toString() function in terms of the parent function that it overrides.\n\n\nNOTE\n \u2212 A constructor can be defined with the same name as the name of a class. It is defined in above example.",
+            "title": "Object Oriented"
+        },
+        {
+            "location": "/background/oop/#object-oriented-concepts",
+            "text": "Before we go in detail, lets define important terms related to Object Oriented Programming.    Class  \u2212 This is a programmer-defined data type, which includes local functions as well as local data. You can think of a class as a template for making many instances of the same kind (or class) of object.    Object  \u2212 An individual instance of the data structure defined by a class. You define a class once and then make many objects that belong to it. Objects are also known as instance.    Member Variable  \u2212 These are the variables defined inside a class. This data will be invisible to the outside of the class and can be accessed via member functions. These variables are called attribute of the object once an object is created.    Member function  \u2212 These are the function defined inside a class and are used to access object data.    Inheritance  \u2212 When a class is defined by inheriting existing function of a parent class then it is called inheritance. Here child class will inherit all or few member functions and variables of a parent class.    Parent class  \u2212 A class that is inherited from by another class. This is also called a base class or super class.    Child Class  \u2212 A class that inherits from another class. This is also called a subclass or derived class.    Polymorphism  \u2212 This is an object oriented concept where same function can be used for different purposes. For example function name will remain same but it make take different number of arguments and can do different task.    Overloading  \u2212 a type of polymorphism in which some or all of operators have different implementations depending on the types of their arguments. Similarly functions can also be overloaded with different implementation.    Data Abstraction  \u2212 Any representation of data in which the implementation details are hidden (abstracted).    Encapsulation  \u2212 refers to a concept where we encapsulate all the data and member functions together to form an object.    Constructor  \u2212 refers to a special type of function which will be called automatically whenever there is an object formation from a class.    Destructor  \u2212 refers to a special type of function which will be called automatically whenever an object is deleted or goes out of scope.",
+            "title": "Object Oriented Concepts"
+        },
+        {
+            "location": "/background/oop/#constructor-functions",
+            "text": "Constructor Functions are special type of functions which are called automatically whenever an object is created. So we take full advantage of this behaviour, by initializing many things through constructor functions.  PHP provides a special function called __construct() to define a constructor. You can pass as many as arguments you like into the constructor function.  Following example will create one constructor for Books class and it will initialize price and title for the book at the time of object creation.  1\n2\n3\n4\n5 <?php  function   __construct (   $par1 ,   $par2   )   { \n    $this -> title   =   $par1 ; \n    $this -> price   =   $par2 ;  }",
+            "title": "Constructor Functions"
+        },
+        {
+            "location": "/background/oop/#destructor",
+            "text": "Like a constructor function you can define a destructor function using function __destruct(). You can release all the resources with-in a destructor.",
+            "title": "Destructor"
+        },
+        {
+            "location": "/background/oop/#inheritance",
+            "text": "PHP class definitions can optionally inherit from a parent class definition by using the extends clause. The syntax is as follows \u2212  1\n2\n3\n4 <?php  class   Child   extends   Parent   { \n    < definition   body >  }    The effect of inheritance is that the child class (or subclass or derived class) has the following characteristics \u2212    Automatically has all the member variable declarations of the parent class.    Automatically has all the same member functions as the parent, which (by default) will work the same way as those functions do in the parent.    Following example inherit Books class and adds more functionality based on the requirement.   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12 <?php  class   Novel   extends   Books   { \n    var   $publisher ; \n\n    function   setPublisher ( $par ){ \n       $this -> publisher   =   $par ; \n    } \n\n    function   getPublisher (){ \n       echo   $this -> publisher .   \"<br />\" ; \n    }  }    Now apart from inherited functions, class Novel keeps two additional member functions.",
+            "title": "Inheritance"
+        },
+        {
+            "location": "/background/oop/#function-overriding",
+            "text": "Function definitions in child classes override definitions with the same name in parent classes. In a child class, we can modify the definition of a function inherited from parent class.  In the following example getPrice and getTitle functions are overridden to return some values.   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10 <?php  function   getPrice ()   { \n    echo   $this -> price   .   \"<br/>\" ; \n    return   $this -> price ;  }  function   getTitle (){ \n    echo   $this -> title   .   \"<br/>\" ; \n    return   $this -> title ;  }",
+            "title": "Function Overriding"
+        },
+        {
+            "location": "/background/oop/#access-modifier",
+            "text": "",
+            "title": "Access Modifier"
+        },
+        {
+            "location": "/background/oop/#public-members",
+            "text": "Unless you specify otherwise, properties and methods of a class are public. That is to say, they may be accessed in three possible situations \u2212    From outside the class in which it is declared    From within the class in which it is declared    From within another class that implements the class in which it is declared    Till now we have seen all members as public members. If you wish to limit the accessibility of the members of a class then you define class members as private or protected.",
+            "title": "Public Members"
+        },
+        {
+            "location": "/background/oop/#private-members",
+            "text": "By designating a member private, you limit its accessibility to the class in which it is declared. The private member cannot be referred to from classes that inherit the class in which it is declared and cannot be accessed from outside the class.  A class member can be made private by using private keyword infront of the member.",
+            "title": "Private members"
+        },
+        {
+            "location": "/background/oop/#protected-members",
+            "text": "A protected property or method is accessible in the class in which it is declared, as well as in classes that extend that class. Protected members are not available outside of those two kinds of classes. A class member can be made protected by using protected keyword in front of the member.",
+            "title": "Protected members"
+        },
+        {
+            "location": "/background/oop/#interfaces",
+            "text": "Interfaces are defined to provide a common function names to the implementers. Different implementors can implement those interfaces according to their requirements. You can say, interfaces are skeletons which are implemented by developers.  As of PHP5, it is possible to define an interface, like this \u2212  1\n2\n3\n4 <?php  interface   Mail   { \n    public   function   sendMail ();  }    Then, if another class implemented that interface, like this \u2212  1\n2\n3\n4 <?php  class   Report   implements   Mail   { \n    // sendMail() Definition goes here  }",
+            "title": "Interfaces"
+        },
+        {
+            "location": "/background/oop/#constants",
+            "text": "A constant is somewhat like a variable, in that it holds a value, but is really more like a function because a constant is immutable. Once you declare a constant, it does not change.  Declaring one constant is easy, as is done in this version of MyClass \u2212  1\n2\n3\n4\n5\n6\n7\n8\n9 class MyClass {\n   const requiredMargin = 1.7;\n\n   function __construct($incomingValue) {\n      // Statements here run every time\n      // an instance of the class\n      // is created.\n   }\n}   In this class, requiredMargin is a constant. It is declared with the keyword const, and under no circumstances can it be changed to anything other than 1.7. Note that the constant's name does not have a leading $, as variable names do.",
+            "title": "Constants"
+        },
+        {
+            "location": "/background/oop/#abstract-classes",
+            "text": "An abstract class is one that cannot be instantiated, only inherited. You declare an abstract class with the keyword abstract, like this \u2212  When inheriting from an abstract class, all methods marked abstract in the parent's class declaration must be defined by the child; additionally, these methods must be defined with the same visibility.  1\n2\n3\n4 abstract class MyAbstractClass {\n   abstract function myAbstractFunction() {\n   }\n}   Note that function definitions inside an abstract class must also be preceded by the keyword abstract. It is not legal to have abstract function definitions inside a non-abstract class.",
+            "title": "Abstract Classes"
+        },
+        {
+            "location": "/background/oop/#static-keyword",
+            "text": "Declaring class members or methods as static makes them accessible without needing an instantiation of the class. A member declared as static can not be accessed with an instantiated class object (though a static method can).  Try out following example   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14 <?php \n    class   Foo   { \n       public   static   $my_static   =   'foo' ; \n\n       public   function   staticValue ()   { \n          return   self :: $my_static ; \n       } \n    } \n\n    print   Foo :: $my_static   .   \" \\n \" ; \n    $foo   =   new   Foo (); \n\n    print   $foo -> staticValue ()   .   \" \\n \" ;  ?>",
+            "title": "Static Keyword"
+        },
+        {
+            "location": "/background/oop/#final-keyword",
+            "text": "PHP 5 introduces the final keyword, which prevents child classes from overriding a method by prefixing the definition with final. If the class itself is being defined final then it cannot be extended.  Following example results in Fatal error: Cannot override final method BaseClass::moreTesting()   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18 <?php \n\n    class   BaseClass   { \n       public   function   test ()   { \n          echo   \"BaseClass::test() called<br>\" ; \n       } \n\n       final   public   function   moreTesting ()   { \n          echo   \"BaseClass::moreTesting() called<br>\" ; \n       } \n    } \n\n    class   ChildClass   extends   BaseClass   { \n       public   function   moreTesting ()   { \n          echo   \"ChildClass::moreTesting() called<br>\" ; \n       } \n    }  ?>",
+            "title": "Final Keyword"
+        },
+        {
+            "location": "/background/oop/#calling-parent-constructors",
+            "text": "Instead of writing an entirely new constructor for the subclass, let's write it by calling the parent's constructor explicitly and then doing whatever is necessary in addition for instantiation of the subclass. Here's a simple example   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26 <?php  class   Name   { \n    var   $_firstName ; \n    var   $_lastName ; \n\n    function   Name ( $first_name ,   $last_name )   { \n       $this -> _firstName   =   $first_name ; \n       $this -> _lastName   =   $last_name ; \n    } \n\n    function   toString ()   { \n       return ( $this -> _lastName   . \", \"   . $this -> _firstName ); \n    }  }  class   NameSub1   extends   Name   { \n    var   $_middleInitial ; \n\n    function   NameSub1 ( $first_name ,   $middle_initial ,   $last_name )   { \n       Name :: Name ( $first_name ,   $last_name ); \n       $this -> _middleInitial   =   $middle_initial ; \n    } \n\n    function   toString ()   { \n       return ( Name :: toString ()   .   \" \"   .   $this -> _middleInitial ); \n    }  }    In this example, we have a parent class (Name), which has a two-argument constructor, and a subclass (NameSub1), which has a three-argument constructor. The constructor of NameSub1 functions by calling its parent constructor explicitly using the :: syntax (passing two of its arguments along) and then setting an additional field. Similarly, NameSub1 defines its non constructor toString() function in terms of the parent function that it overrides.  NOTE  \u2212 A constructor can be defined with the same name as the name of a class. It is defined in above example.",
+            "title": "Calling parent constructors"
+        },
+        {
             "location": "/background/design_pattern/creational/1_abstract_fatory/",
             "text": "Purpose\n#\n\n\nTo create series of related or dependent objects without specifying their concrete classes. Usually the created classes all implement the same interface. The client of the abstract factory does not care about how these objects are created, he just knows how they go together.\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nAbstractFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\n/**\n\n\n * In this case, the abstract factory is a contract for creating some components\n\n\n * for the web. There are two ways of rendering text: HTML and JSON\n\n\n */\n\n\nabstract\n \nclass\n \nAbstractFactory\n\n\n{\n\n    \nabstract\n \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n;\n\n\n}\n\n\n\n\n\n\n\nJsonFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nJsonFactory\n \nextends\n \nAbstractFactory\n\n\n{\n\n    \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n\n    \n{\n\n        \nreturn\n \nnew\n \nJsonText\n(\n$content\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nHtmlFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nHtmlFactory\n \nextends\n \nAbstractFactory\n\n\n{\n\n    \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n\n    \n{\n\n        \nreturn\n \nnew\n \nHtmlText\n(\n$content\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nText.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nabstract\n \nclass\n \nText\n\n\n{\n\n    \n/**\n\n\n     * @var string\n\n\n     */\n\n    \nprivate\n \n$text\n;\n\n\n    \npublic\n \nfunction\n \n__construct\n(\nstring\n \n$text\n)\n\n    \n{\n\n        \n$this\n->\ntext\n \n=\n \n$text\n;\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nJsonText.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nJsonText\n \nextends\n \nText\n\n\n{\n\n    \n// do something here\n\n\n}\n\n\n\n\n\n\n\nHtmlText.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nHtmlText\n \nextends\n \nText\n\n\n{\n\n    \n// do something here\n\n\n}\n\n\n\n\n\n\n\nTest\n#\n\n\nTests/AbstractFactoryTest.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\\Tests\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\HtmlFactory\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\HtmlText\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\JsonFactory\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\JsonText\n;\n\n\nuse\n \nPHPUnit\\Framework\\TestCase\n;\n\n\n\nclass\n \nAbstractFactoryTest\n \nextends\n \nTestCase\n\n\n{\n\n    \npublic\n \nfunction\n \ntestCanCreateHtmlText\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nHtmlFactory\n();\n\n        \n$text\n \n=\n \n$factory\n->\ncreateText\n(\n'foobar'\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nHtmlText\n::\nclass\n,\n \n$text\n);\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ntestCanCreateJsonText\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nJsonFactory\n();\n\n        \n$text\n \n=\n \n$factory\n->\ncreateText\n(\n'foobar'\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nJsonText\n::\nclass\n,\n \n$text\n);\n\n    \n}\n\n\n}",
             "title": "Abstract Factory"
@@ -551,264 +631,119 @@
             "title": "Tests/StaticFactoryTest.php"
         },
         {
-            "location": "/programming/markdown/",
-            "text": "Markdown l\u00e0 g\u00ec?\n#\n\n\nMarkdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.\n\n\nC\u00fa ph\u00e1p\n#\n\n\nTi\u00eau \u0111\u1ec1\n#\n\n\nC\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.\n\n\n1\n2\n3\n4\n# \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>\n\n\n\n\n\n\nB\u00f4i \u0111\u1eadm, in nghi\u00eang\n#\n\n\nS\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm\n\n\n1\n2\n3\n4\n5\n*\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***\n\n\n\n\n\n\nDanh s\u00e1ch\n#\n\n\nKh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1\n2\n3\n4\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\n\n\nC\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1\n2\n3\n4\n5\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\n\n\u1ea2nh\n#\n\n\n1\n![python install](../../img/index/win-py-install.png)\n\n\n\n\n\n\n\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft\n#\n\n\n1\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\n\n\nT\u1ea1o b\u1ea3ng\n#\n\n\n1\n2\n3\n4\n5\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\n\n\nCh\u00fa th\u00edch\n#\n\n\n1\n> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y\n\n\n\n\n\n\nKhung bao code\n#\n\n\n1\n```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
-            "title": "Html"
+            "location": "/programming/markdown/basics/",
+            "text": "What is Markdown?\n#\n\n\nMarkdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like \n#\n or \n*\n.\n\n\nSyntax guide\n#\n\n\nHeaders\n#\n\n\n1\n2\n3\n# This is an <h1> tag\n## This is an <h2> tag\n###### This is an <h6> tag\n\n\n\n\n\n\nEmphasis\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n*This text will be italic*\n_This will also be italic_\n\n**This text will be bold**\n__This will also be bold__\n\n_You **can** combine them_\n\n\n\n\n\n\nLists\n#\n\n\nUnordered\n#\n\n\n1\n2\n3\n4\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\n\n\nOrdered\n#\n\n\n1\n2\n3\n4\n5\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\n\nImages\n#\n\n\n1\n![Not found Images](../../img/index/win-py-install.png)\n\n\n\n\n\n\nLinks\n#\n\n\n1\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\n\n\nTables\n#\n\n\n1\n2\n3\n4\n5\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\n\n\nBlockquotes\n#\n\n\n1\n> Blockquotes write here\n\n\n\n\n\n\nInline code\n#\n\n\n1\n`Inline code write here`\n\n\n\n\n\n\nBlock code\n#\n\n\n1\n2\n3\n```\nBlock code write here\n```\n\n\n\n\n\n\nTask Lists\n#\n\n\n1\n2\n3\n4\n- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported\n- [x] list syntax required (any unordered or ordered list supported)\n- [x] this is a complete item\n- [ ] this is an incomplete item",
+            "title": "Basics"
         },
         {
-            "location": "/programming/markdown/#markdown-la-gi",
-            "text": "Markdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.",
-            "title": "Markdown l\u00e0 g\u00ec?"
+            "location": "/programming/markdown/basics/#what-is-markdown",
+            "text": "Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like  #  or  * .",
+            "title": "What is Markdown?"
         },
         {
-            "location": "/programming/markdown/#cu-phap",
+            "location": "/programming/markdown/basics/#syntax-guide",
             "text": "",
-            "title": "C\u00fa ph\u00e1p"
+            "title": "Syntax guide"
         },
         {
-            "location": "/programming/markdown/#tieu-e",
-            "text": "C\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.  1\n2\n3\n4 # \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>",
-            "title": "Ti\u00eau \u0111\u1ec1"
+            "location": "/programming/markdown/basics/#headers",
+            "text": "1\n2\n3 # This is an <h1> tag\n## This is an <h2> tag\n###### This is an <h6> tag",
+            "title": "Headers"
         },
         {
-            "location": "/programming/markdown/#boi-am-in-nghieng",
-            "text": "S\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm  1\n2\n3\n4\n5 *\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***",
-            "title": "B\u00f4i \u0111\u1eadm, in nghi\u00eang"
+            "location": "/programming/markdown/basics/#emphasis",
+            "text": "1\n2\n3\n4\n5\n6\n7 *This text will be italic*\n_This will also be italic_\n\n**This text will be bold**\n__This will also be bold__\n\n_You **can** combine them_",
+            "title": "Emphasis"
         },
         {
-            "location": "/programming/markdown/#danh-sach",
+            "location": "/programming/markdown/basics/#lists",
             "text": "",
-            "title": "Danh s\u00e1ch"
+            "title": "Lists"
         },
         {
-            "location": "/programming/markdown/#khong-co-thu-tu",
+            "location": "/programming/markdown/basics/#unordered",
             "text": "1\n2\n3\n4 * Item 1\n* Item 2\n  * Item 2a\n  * Item 2b",
-            "title": "Kh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1"
+            "title": "Unordered"
         },
         {
-            "location": "/programming/markdown/#co-thu-tu",
+            "location": "/programming/markdown/basics/#ordered",
             "text": "1\n2\n3\n4\n5 1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b",
-            "title": "C\u00f3 th\u1ee9 t\u1ef1"
+            "title": "Ordered"
         },
         {
-            "location": "/programming/markdown/#anh",
-            "text": "1 ![python install](../../img/index/win-py-install.png)",
-            "title": "\u1ea2nh"
+            "location": "/programming/markdown/basics/#images",
+            "text": "1 ![Not found Images](../../img/index/win-py-install.png)",
+            "title": "Images"
         },
         {
-            "location": "/programming/markdown/#uong-dan-lien-ket",
+            "location": "/programming/markdown/basics/#links",
             "text": "1 [Link](../project/document_tutorial/main/#huong-dan-cai-at)",
-            "title": "\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft"
+            "title": "Links"
         },
         {
-            "location": "/programming/markdown/#tao-bang",
+            "location": "/programming/markdown/basics/#tables",
             "text": "1\n2\n3\n4\n5 | Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |",
-            "title": "T\u1ea1o b\u1ea3ng"
+            "title": "Tables"
         },
         {
-            "location": "/programming/markdown/#chu-thich",
-            "text": "1 > Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y",
-            "title": "Ch\u00fa th\u00edch"
+            "location": "/programming/markdown/basics/#blockquotes",
+            "text": "1 > Blockquotes write here",
+            "title": "Blockquotes"
         },
         {
-            "location": "/programming/markdown/#khung-bao-code",
-            "text": "1 ```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
-            "title": "Khung bao code"
+            "location": "/programming/markdown/basics/#inline-code",
+            "text": "1 `Inline code write here`",
+            "title": "Inline code"
         },
         {
-            "location": "/programming/markdown/",
-            "text": "Markdown l\u00e0 g\u00ec?\n#\n\n\nMarkdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.\n\n\nC\u00fa ph\u00e1p\n#\n\n\nTi\u00eau \u0111\u1ec1\n#\n\n\nC\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.\n\n\n1\n2\n3\n4\n# \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>\n\n\n\n\n\n\nB\u00f4i \u0111\u1eadm, in nghi\u00eang\n#\n\n\nS\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm\n\n\n1\n2\n3\n4\n5\n*\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***\n\n\n\n\n\n\nDanh s\u00e1ch\n#\n\n\nKh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1\n2\n3\n4\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\n\n\nC\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1\n2\n3\n4\n5\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\n\n\u1ea2nh\n#\n\n\n1\n![python install](../../img/index/win-py-install.png)\n\n\n\n\n\n\n\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft\n#\n\n\n1\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\n\n\nT\u1ea1o b\u1ea3ng\n#\n\n\n1\n2\n3\n4\n5\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\n\n\nCh\u00fa th\u00edch\n#\n\n\n1\n> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y\n\n\n\n\n\n\nKhung bao code\n#\n\n\n1\n```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
-            "title": "Css"
+            "location": "/programming/markdown/basics/#block-code",
+            "text": "1\n2\n3 ```\nBlock code write here\n```",
+            "title": "Block code"
         },
         {
-            "location": "/programming/markdown/#markdown-la-gi",
-            "text": "Markdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.",
-            "title": "Markdown l\u00e0 g\u00ec?"
+            "location": "/programming/markdown/basics/#task-lists",
+            "text": "1\n2\n3\n4 - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported\n- [x] list syntax required (any unordered or ordered list supported)\n- [x] this is a complete item\n- [ ] this is an incomplete item",
+            "title": "Task Lists"
         },
         {
-            "location": "/programming/markdown/#cu-phap",
-            "text": "",
-            "title": "C\u00fa ph\u00e1p"
+            "location": "/programming/markdown/advance/",
+            "text": "Note Div\n#\n\n\nExample:\n\n1\n2\n3\n4\n!!! note \"Phasellus posuere in sem ut cursus\"\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n\nResult:\n\n\n\n\nPhasellus posuere in sem ut cursus\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\nType:\n\n\n\n\n\n\n\n\nnote\n\n\nSuccess\n\n\nWarning\n\n\n\n\n\n\n\n\n\n\nnote\n\n\nsuccess\n\n\nwarning\n\n\n\n\n\n\nseealso\n\n\ncheck\n\n\ncaution\n\n\n\n\n\n\nabstract\n\n\ndone\n\n\nattention\n\n\n\n\n\n\ninfo\n\n\nquestion\n\n\ndanger\n\n\n\n\n\n\ntodo\n\n\nhelp\n\n\nbug\n\n\n\n\n\n\n\n\nCodeHilite\n#\n\n\nExample:\n\n\n1\n2\n3\n``` python\nimport tensorflow as tf\n```\n\n\n\n\n\n\nResult:\n\n\n1\nimport\n \ntensorflow\n \nas\n \ntf\n\n\n\n\n\n\n\nHighlighting specific lines\n#\n\n\nExample:\n\n1\n2\n3\n4\n5\n6\n7\n8\n``` python hl_lines=\"3 4\"\n\"\"\" Bubble sort \"\"\"\ndef bubble_sort(items):\n    for i in range(len(items)):\n        for j in range(len(items) - 1 - i):\n            if items[j] > items[j + 1]:\n                items[j], items[j + 1] = items[j + 1], items[j]\n```\n\n\n\n\n\nResult:\n\n\n1\n2\n3\n4\n5\n6\n\"\"\" Bubble sort \"\"\"\n\n\ndef\n \nbubble_sort\n(\nitems\n):\n\n\n    \nfor\n \ni\n \nin\n \nrange\n(\nlen\n(\nitems\n)):\n\n\n        \nfor\n \nj\n \nin\n \nrange\n(\nlen\n(\nitems\n)\n \n-\n \n1\n \n-\n \ni\n):\n\n\n            \nif\n \nitems\n[\nj\n]\n \n>\n \nitems\n[\nj\n \n+\n \n1\n]:\n\n                \nitems\n[\nj\n],\n \nitems\n[\nj\n \n+\n \n1\n]\n \n=\n \nitems\n[\nj\n \n+\n \n1\n],\n \nitems\n[\nj\n]\n\n\n\n\n\n\n\nPHP\n#\n\n\nExample:\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n``` php\n<?php\n\n// src/AppBundle/Controller/LuckyController.php\nnamespace AppBundle\\Controller;\n\nuse Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Route;\nuse Symfony\\Component\\HttpFoundation\\Response;\n\nclass LuckyController {\n\n  /**\n   * @Route(\"/lucky/number\")\n   */\n  public function numberAction() {\n    $number = mt_rand(0, 100);\n\n    return new Response(\n      '<html><body>Lucky number: '.$number.'</body></html>'\n    );\n  }\n}\n```\n\n\n\n\n\nResult:\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n<?php\n\n\n\n// src/AppBundle/Controller/LuckyController.php\n\n\nnamespace\n \nAppBundle\\Controller\n;\n\n\n\nuse\n \nSensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Route\n;\n\n\nuse\n \nSymfony\\Component\\HttpFoundation\\Response\n;\n\n\n\nclass\n \nLuckyController\n \n{\n\n\n  \n/**\n\n\n   * @Route(\"/lucky/number\")\n\n\n   */\n\n  \npublic\n \nfunction\n \nnumberAction\n()\n \n{\n\n    \n$number\n \n=\n \nmt_rand\n(\n0\n,\n \n100\n);\n\n\n    \nreturn\n \nnew\n \nResponse\n(\n\n      \n'<html><body>Lucky number: '\n.\n$number\n.\n'</body></html>'\n\n    \n);\n\n  \n}\n\n\n}\n\n\n\n\n\n\n\nJavaScript\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\nvar\n \nMath\n \n=\n \nrequire\n(\n'lib/math'\n);\n\n\n\nvar\n \n_extends\n \n=\n \nfunction\n \n(\ntarget\n)\n \n{\n\n  \nfor\n \n(\nvar\n \ni\n \n=\n \n1\n;\n \ni\n \n<\n \narguments\n.\nlength\n;\n \ni\n++\n)\n \n{\n\n    \nvar\n \nsource\n \n=\n \narguments\n[\ni\n];\n\n    \nfor\n \n(\nvar\n \nkey\n \nin\n \nsource\n)\n \n{\n\n      \ntarget\n[\nkey\n]\n \n=\n \nsource\n[\nkey\n];\n\n    \n}\n\n  \n}\n\n\n  \nreturn\n \ntarget\n;\n\n\n};\n\n\n\nvar\n \ne\n \n=\n \nexports\n.\ne\n \n=\n \n2.71828182846\n;\n\n\nexports\n[\n'default'\n]\n \n=\n \nfunction\n \n(\nx\n)\n \n{\n\n  \nreturn\n \nMath\n.\nexp\n(\nx\n);\n\n\n};\n\n\n\nmodule\n.\nexports\n \n=\n \n_extends\n(\nexports\n[\n'default'\n],\n \nexports\n);\n\n\n\n\n\n\n\nJSON\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n{\n\n  \n\"name\"\n:\n \n\"mkdocs-material\"\n,\n\n  \n\"version\"\n:\n \n\"0.2.4\"\n,\n\n  \n\"description\"\n:\n \n\"A Material Design theme for MkDocs\"\n,\n\n  \n\"homepage\"\n:\n \n\"http://squidfunk.github.io/mkdocs-material/\"\n,\n\n  \n\"authors\"\n:\n \n[\n\n    \n\"squidfunk <martin.donath@squidfunk.com>\"\n\n  \n],\n\n  \n\"license\"\n:\n \n\"MIT\"\n,\n\n  \n\"main\"\n:\n \n\"Gulpfile.js\"\n,\n\n  \n\"scripts\"\n:\n \n{\n\n    \n\"start\"\n:\n \n\"./node_modules/.bin/gulp watch --mkdocs\"\n,\n\n    \n\"build\"\n:\n \n\"./node_modules/.bin/gulp build --production\"\n\n  \n}\n\n  \n...\n\n\n}\n\n\n\n\n\n\n\nHTML\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n<!doctype html>\n\n\n<\nhtml\n \nclass\n=\n\"no-js\"\n \nlang\n=\n\"\"\n>\n\n  \n<\nhead\n>\n\n    \n<\nmeta\n \ncharset\n=\n\"utf-8\"\n>\n\n    \n<\nmeta\n \nhttp-equiv\n=\n\"x-ua-compatible\"\n \ncontent\n=\n\"ie=edge\"\n>\n\n    \n<\ntitle\n>\nHTML5 Boilerplate\n</\ntitle\n>\n\n    \n<\nmeta\n \nname\n=\n\"description\"\n \ncontent\n=\n\"\"\n>\n\n    \n<\nmeta\n \nname\n=\n\"viewport\"\n \ncontent\n=\n\"width=device-width, initial-scale=1\"\n>\n\n\n    \n<\nlink\n \nrel\n=\n\"apple-touch-icon\"\n \nhref\n=\n\"apple-touch-icon.png\"\n>\n\n    \n<\nlink\n \nrel\n=\n\"stylesheet\"\n \nhref\n=\n\"css/normalize.css\"\n>\n\n    \n<\nlink\n \nrel\n=\n\"stylesheet\"\n \nhref\n=\n\"css/main.css\"\n>\n\n    \n<\nscript\n \nsrc\n=\n\"js/vendor/modernizr-2.8.3.min.js\"\n></\nscript\n>\n\n  \n</\nhead\n>\n\n  \n<\nbody\n>\n\n    \n<\np\n>\nHello world! This is HTML5 Boilerplate.\n</\np\n>\n\n  \n</\nbody\n>\n\n\n</\nhtml\n>",
+            "title": "Advance"
         },
         {
-            "location": "/programming/markdown/#tieu-e",
-            "text": "C\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.  1\n2\n3\n4 # \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>",
-            "title": "Ti\u00eau \u0111\u1ec1"
+            "location": "/programming/markdown/advance/#note-div",
+            "text": "Example: 1\n2\n3\n4 !!! note \"Phasellus posuere in sem ut cursus\"\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.   Result:   Phasellus posuere in sem ut cursus  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.   Type:     note  Success  Warning      note  success  warning    seealso  check  caution    abstract  done  attention    info  question  danger    todo  help  bug",
+            "title": "Note Div"
         },
         {
-            "location": "/programming/markdown/#boi-am-in-nghieng",
-            "text": "S\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm  1\n2\n3\n4\n5 *\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***",
-            "title": "B\u00f4i \u0111\u1eadm, in nghi\u00eang"
+            "location": "/programming/markdown/advance/#codehilite",
+            "text": "Example:  1\n2\n3 ``` python\nimport tensorflow as tf\n```   Result:  1 import   tensorflow   as   tf",
+            "title": "CodeHilite"
         },
         {
-            "location": "/programming/markdown/#danh-sach",
-            "text": "",
-            "title": "Danh s\u00e1ch"
+            "location": "/programming/markdown/advance/#highlighting-specific-lines",
+            "text": "Example: 1\n2\n3\n4\n5\n6\n7\n8 ``` python hl_lines=\"3 4\"\n\"\"\" Bubble sort \"\"\"\ndef bubble_sort(items):\n    for i in range(len(items)):\n        for j in range(len(items) - 1 - i):\n            if items[j] > items[j + 1]:\n                items[j], items[j + 1] = items[j + 1], items[j]\n```   Result:  1\n2\n3\n4\n5\n6 \"\"\" Bubble sort \"\"\"  def   bubble_sort ( items ):       for   i   in   range ( len ( items )):           for   j   in   range ( len ( items )   -   1   -   i ):               if   items [ j ]   >   items [ j   +   1 ]: \n                 items [ j ],   items [ j   +   1 ]   =   items [ j   +   1 ],   items [ j ]",
+            "title": "Highlighting specific lines"
         },
         {
-            "location": "/programming/markdown/#khong-co-thu-tu",
-            "text": "1\n2\n3\n4 * Item 1\n* Item 2\n  * Item 2a\n  * Item 2b",
-            "title": "Kh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1"
+            "location": "/programming/markdown/advance/#php",
+            "text": "Example:  1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23 ``` php\n<?php\n\n// src/AppBundle/Controller/LuckyController.php\nnamespace AppBundle\\Controller;\n\nuse Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Route;\nuse Symfony\\Component\\HttpFoundation\\Response;\n\nclass LuckyController {\n\n  /**\n   * @Route(\"/lucky/number\")\n   */\n  public function numberAction() {\n    $number = mt_rand(0, 100);\n\n    return new Response(\n      '<html><body>Lucky number: '.$number.'</body></html>'\n    );\n  }\n}\n```   Result:   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21 <?php  // src/AppBundle/Controller/LuckyController.php  namespace   AppBundle\\Controller ;  use   Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Route ;  use   Symfony\\Component\\HttpFoundation\\Response ;  class   LuckyController   { \n\n   /**     * @Route(\"/lucky/number\")     */ \n   public   function   numberAction ()   { \n     $number   =   mt_rand ( 0 ,   100 ); \n\n     return   new   Response ( \n       '<html><body>Lucky number: ' . $number . '</body></html>' \n     ); \n   }  }",
+            "title": "PHP"
         },
         {
-            "location": "/programming/markdown/#co-thu-tu",
-            "text": "1\n2\n3\n4\n5 1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b",
-            "title": "C\u00f3 th\u1ee9 t\u1ef1"
+            "location": "/programming/markdown/advance/#javascript",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19 var   Math   =   require ( 'lib/math' );  var   _extends   =   function   ( target )   { \n   for   ( var   i   =   1 ;   i   <   arguments . length ;   i ++ )   { \n     var   source   =   arguments [ i ]; \n     for   ( var   key   in   source )   { \n       target [ key ]   =   source [ key ]; \n     } \n   } \n\n   return   target ;  };  var   e   =   exports . e   =   2.71828182846 ;  exports [ 'default' ]   =   function   ( x )   { \n   return   Math . exp ( x );  };  module . exports   =   _extends ( exports [ 'default' ],   exports );",
+            "title": "JavaScript"
         },
         {
-            "location": "/programming/markdown/#anh",
-            "text": "1 ![python install](../../img/index/win-py-install.png)",
-            "title": "\u1ea2nh"
+            "location": "/programming/markdown/advance/#json",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16 { \n   \"name\" :   \"mkdocs-material\" , \n   \"version\" :   \"0.2.4\" , \n   \"description\" :   \"A Material Design theme for MkDocs\" , \n   \"homepage\" :   \"http://squidfunk.github.io/mkdocs-material/\" , \n   \"authors\" :   [ \n     \"squidfunk <martin.donath@squidfunk.com>\" \n   ], \n   \"license\" :   \"MIT\" , \n   \"main\" :   \"Gulpfile.js\" , \n   \"scripts\" :   { \n     \"start\" :   \"./node_modules/.bin/gulp watch --mkdocs\" , \n     \"build\" :   \"./node_modules/.bin/gulp build --production\" \n   } \n   ...  }",
+            "title": "JSON"
         },
         {
-            "location": "/programming/markdown/#uong-dan-lien-ket",
-            "text": "1 [Link](../project/document_tutorial/main/#huong-dan-cai-at)",
-            "title": "\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft"
-        },
-        {
-            "location": "/programming/markdown/#tao-bang",
-            "text": "1\n2\n3\n4\n5 | Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |",
-            "title": "T\u1ea1o b\u1ea3ng"
-        },
-        {
-            "location": "/programming/markdown/#chu-thich",
-            "text": "1 > Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y",
-            "title": "Ch\u00fa th\u00edch"
-        },
-        {
-            "location": "/programming/markdown/#khung-bao-code",
-            "text": "1 ```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
-            "title": "Khung bao code"
-        },
-        {
-            "location": "/programming/markdown/",
-            "text": "Markdown l\u00e0 g\u00ec?\n#\n\n\nMarkdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.\n\n\nC\u00fa ph\u00e1p\n#\n\n\nTi\u00eau \u0111\u1ec1\n#\n\n\nC\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.\n\n\n1\n2\n3\n4\n# \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>\n\n\n\n\n\n\nB\u00f4i \u0111\u1eadm, in nghi\u00eang\n#\n\n\nS\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm\n\n\n1\n2\n3\n4\n5\n*\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***\n\n\n\n\n\n\nDanh s\u00e1ch\n#\n\n\nKh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1\n2\n3\n4\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\n\n\nC\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1\n2\n3\n4\n5\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\n\n\u1ea2nh\n#\n\n\n1\n![python install](../../img/index/win-py-install.png)\n\n\n\n\n\n\n\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft\n#\n\n\n1\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\n\n\nT\u1ea1o b\u1ea3ng\n#\n\n\n1\n2\n3\n4\n5\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\n\n\nCh\u00fa th\u00edch\n#\n\n\n1\n> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y\n\n\n\n\n\n\nKhung bao code\n#\n\n\n1\n```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
-            "title": "Javascript"
-        },
-        {
-            "location": "/programming/markdown/#markdown-la-gi",
-            "text": "Markdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.",
-            "title": "Markdown l\u00e0 g\u00ec?"
-        },
-        {
-            "location": "/programming/markdown/#cu-phap",
-            "text": "",
-            "title": "C\u00fa ph\u00e1p"
-        },
-        {
-            "location": "/programming/markdown/#tieu-e",
-            "text": "C\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.  1\n2\n3\n4 # \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>",
-            "title": "Ti\u00eau \u0111\u1ec1"
-        },
-        {
-            "location": "/programming/markdown/#boi-am-in-nghieng",
-            "text": "S\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm  1\n2\n3\n4\n5 *\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***",
-            "title": "B\u00f4i \u0111\u1eadm, in nghi\u00eang"
-        },
-        {
-            "location": "/programming/markdown/#danh-sach",
-            "text": "",
-            "title": "Danh s\u00e1ch"
-        },
-        {
-            "location": "/programming/markdown/#khong-co-thu-tu",
-            "text": "1\n2\n3\n4 * Item 1\n* Item 2\n  * Item 2a\n  * Item 2b",
-            "title": "Kh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1"
-        },
-        {
-            "location": "/programming/markdown/#co-thu-tu",
-            "text": "1\n2\n3\n4\n5 1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b",
-            "title": "C\u00f3 th\u1ee9 t\u1ef1"
-        },
-        {
-            "location": "/programming/markdown/#anh",
-            "text": "1 ![python install](../../img/index/win-py-install.png)",
-            "title": "\u1ea2nh"
-        },
-        {
-            "location": "/programming/markdown/#uong-dan-lien-ket",
-            "text": "1 [Link](../project/document_tutorial/main/#huong-dan-cai-at)",
-            "title": "\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft"
-        },
-        {
-            "location": "/programming/markdown/#tao-bang",
-            "text": "1\n2\n3\n4\n5 | Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |",
-            "title": "T\u1ea1o b\u1ea3ng"
-        },
-        {
-            "location": "/programming/markdown/#chu-thich",
-            "text": "1 > Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y",
-            "title": "Ch\u00fa th\u00edch"
-        },
-        {
-            "location": "/programming/markdown/#khung-bao-code",
-            "text": "1 ```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
-            "title": "Khung bao code"
-        },
-        {
-            "location": "/programming/markdown/",
-            "text": "Markdown l\u00e0 g\u00ec?\n#\n\n\nMarkdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.\n\n\nC\u00fa ph\u00e1p\n#\n\n\nTi\u00eau \u0111\u1ec1\n#\n\n\nC\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.\n\n\n1\n2\n3\n4\n# \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>\n\n\n\n\n\n\nB\u00f4i \u0111\u1eadm, in nghi\u00eang\n#\n\n\nS\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm\n\n\n1\n2\n3\n4\n5\n*\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***\n\n\n\n\n\n\nDanh s\u00e1ch\n#\n\n\nKh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1\n2\n3\n4\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\n\n\nC\u00f3 th\u1ee9 t\u1ef1\n#\n\n\n1\n2\n3\n4\n5\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\n\n\u1ea2nh\n#\n\n\n1\n![python install](../../img/index/win-py-install.png)\n\n\n\n\n\n\n\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft\n#\n\n\n1\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\n\n\nT\u1ea1o b\u1ea3ng\n#\n\n\n1\n2\n3\n4\n5\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\n\n\nCh\u00fa th\u00edch\n#\n\n\n1\n> Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y\n\n\n\n\n\n\nKhung bao code\n#\n\n\n1\n```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
-            "title": "Php"
-        },
-        {
-            "location": "/programming/markdown/#markdown-la-gi",
-            "text": "Markdown c\u0169ng gi\u1ed1ng nh\u01b0 HTML \u0111\u1ec1u l\u00e0 nh\u1eefng ng\u00f4n ng\u1eef tr\u00ecnh b\u00e0y tr\u00ean n\u1ec1n web, hi\u1ec7n nay ng\u00f4n ng\u1eef n\u00e0y \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng r\u1ea5t nhi\u1ec1u trong vi\u1ec7c m\u00f4 t\u1ea3 c\u00e1c t\u00e0i li\u1ec7u k\u1ef9 thu\u1eadt, t\u00e0i li\u1ec7u h\u01b0\u1edbng d\u1eabn s\u1eed d\u1ee5ng. R\u1ea5t nhi\u1ec1u c\u00f4ng ty, trang web s\u1eed d\u1ee5ng markdown trong \u0111\u00f3 c\u00f3 c\u1ea3 google, github... v\u00e0 trang web n\u00e0y c\u0169ng v\u1eady ^^.",
-            "title": "Markdown l\u00e0 g\u00ec?"
-        },
-        {
-            "location": "/programming/markdown/#cu-phap",
-            "text": "",
-            "title": "C\u00fa ph\u00e1p"
-        },
-        {
-            "location": "/programming/markdown/#tieu-e",
-            "text": "C\u00e1c th\u1ebb h1,h2,h3...h6 trong HTML th\u00ec trong markdown s\u1eed d\u1ee5ng k\u00fd t\u1ef1 # \u0111\u1ec3 vi\u1ebft.  1\n2\n3\n4 # \u0111\u00e2y l\u00e0 th\u1ebb <h1>\n## \u0111\u00e2y l\u00e0 th\u1ebb <h2>\n...\n###### \u0111\u00e2y l\u00e0 th\u1ebb <h6>",
-            "title": "Ti\u00eau \u0111\u1ec1"
-        },
-        {
-            "location": "/programming/markdown/#boi-am-in-nghieng",
-            "text": "S\u1eed d\u1ee5ng 1 k\u00fd t\u1ef1 * s\u1ebd in nghi\u00eang, 2 k\u00fd t\u1ef1 * s\u1ebd b\u00f4i \u0111\u1eadm, 3 k\u00fd t\u1ef1 *  s\u1ebd v\u1eeba in nghi\u00eang v\u1eeba b\u00f4i \u0111\u1eadm  1\n2\n3\n4\n5 *\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c in nghi\u00eang*\n\n**\u0110o\u1ea1n v\u0103n n\u00e0y s\u1ebd \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm**\n\n***\u0110o\u1ea1n v\u0103n n\u00e0y v\u1eeba \u0111\u01b0\u1ee3c in nghi\u00eang v\u1eeba \u0111\u01b0\u1ee3c b\u00f4i \u0111\u1eadm***",
-            "title": "B\u00f4i \u0111\u1eadm, in nghi\u00eang"
-        },
-        {
-            "location": "/programming/markdown/#danh-sach",
-            "text": "",
-            "title": "Danh s\u00e1ch"
-        },
-        {
-            "location": "/programming/markdown/#khong-co-thu-tu",
-            "text": "1\n2\n3\n4 * Item 1\n* Item 2\n  * Item 2a\n  * Item 2b",
-            "title": "Kh\u00f4ng c\u00f3 th\u1ee9 t\u1ef1"
-        },
-        {
-            "location": "/programming/markdown/#co-thu-tu",
-            "text": "1\n2\n3\n4\n5 1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b",
-            "title": "C\u00f3 th\u1ee9 t\u1ef1"
-        },
-        {
-            "location": "/programming/markdown/#anh",
-            "text": "1 ![python install](../../img/index/win-py-install.png)",
-            "title": "\u1ea2nh"
-        },
-        {
-            "location": "/programming/markdown/#uong-dan-lien-ket",
-            "text": "1 [Link](../project/document_tutorial/main/#huong-dan-cai-at)",
-            "title": "\u0110\u01b0\u1eddng d\u1eabn, li\u00ean k\u1ebft"
-        },
-        {
-            "location": "/programming/markdown/#tao-bang",
-            "text": "1\n2\n3\n4\n5 | Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |",
-            "title": "T\u1ea1o b\u1ea3ng"
-        },
-        {
-            "location": "/programming/markdown/#chu-thich",
-            "text": "1 > Ghi ch\u00fa th\u00edch \u1edf \u0111\u00e2y",
-            "title": "Ch\u00fa th\u00edch"
-        },
-        {
-            "location": "/programming/markdown/#khung-bao-code",
-            "text": "1 ```<Code s\u1ebd vi\u1ebft \u1edf \u0111\u00e2y>``` .",
-            "title": "Khung bao code"
+            "location": "/programming/markdown/advance/#html",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18 <!doctype html>  < html   class = \"no-js\"   lang = \"\" > \n   < head > \n     < meta   charset = \"utf-8\" > \n     < meta   http-equiv = \"x-ua-compatible\"   content = \"ie=edge\" > \n     < title > HTML5 Boilerplate </ title > \n     < meta   name = \"description\"   content = \"\" > \n     < meta   name = \"viewport\"   content = \"width=device-width, initial-scale=1\" > \n\n     < link   rel = \"apple-touch-icon\"   href = \"apple-touch-icon.png\" > \n     < link   rel = \"stylesheet\"   href = \"css/normalize.css\" > \n     < link   rel = \"stylesheet\"   href = \"css/main.css\" > \n     < script   src = \"js/vendor/modernizr-2.8.3.min.js\" ></ script > \n   </ head > \n   < body > \n     < p > Hello world! This is HTML5 Boilerplate. </ p > \n   </ body >  </ html >",
+            "title": "HTML"
         },
         {
             "location": "/programming/laravel/1_gioithieu/",
@@ -1039,216 +974,6 @@
             "location": "/programming/angular/4_caulenh/#tao-class",
             "text": "1 ng g class [ten_class]",
             "title": "T\u1ea1o class"
-        },
-        {
-            "location": "/programming/markdown/basics/",
-            "text": "What is Markdown?\n#\n\n\nMarkdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like \n#\n or \n*\n.\n\n\nSyntax guide\n#\n\n\nHeaders\n#\n\n\n1\n2\n3\n# This is an <h1> tag\n## This is an <h2> tag\n###### This is an <h6> tag\n\n\n\n\n\n\nEmphasis\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n*This text will be italic*\n_This will also be italic_\n\n**This text will be bold**\n__This will also be bold__\n\n_You **can** combine them_\n\n\n\n\n\n\nLists\n#\n\n\nUnordered\n#\n\n\n1\n2\n3\n4\n* Item 1\n* Item 2\n  * Item 2a\n  * Item 2b\n\n\n\n\n\n\nOrdered\n#\n\n\n1\n2\n3\n4\n5\n1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b\n\n\n\n\n\n\nImages\n#\n\n\n1\n![Not found Images](../../img/index/win-py-install.png)\n\n\n\n\n\n\nLinks\n#\n\n\n1\n[Link](../project/document_tutorial/main/#huong-dan-cai-at)\n\n\n\n\n\n\nTables\n#\n\n\n1\n2\n3\n4\n5\n| Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |\n\n\n\n\n\n\nBlockquotes\n#\n\n\n1\n> Blockquotes write here\n\n\n\n\n\n\nInline code\n#\n\n\n1\n`Inline code write here`\n\n\n\n\n\n\nBlock code\n#\n\n\n1\n2\n3\n```\nBlock code write here\n```\n\n\n\n\n\n\nTask Lists\n#\n\n\n1\n2\n3\n4\n- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported\n- [x] list syntax required (any unordered or ordered list supported)\n- [x] this is a complete item\n- [ ] this is an incomplete item",
-            "title": "Basics"
-        },
-        {
-            "location": "/programming/markdown/basics/#what-is-markdown",
-            "text": "Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like  #  or  * .",
-            "title": "What is Markdown?"
-        },
-        {
-            "location": "/programming/markdown/basics/#syntax-guide",
-            "text": "",
-            "title": "Syntax guide"
-        },
-        {
-            "location": "/programming/markdown/basics/#headers",
-            "text": "1\n2\n3 # This is an <h1> tag\n## This is an <h2> tag\n###### This is an <h6> tag",
-            "title": "Headers"
-        },
-        {
-            "location": "/programming/markdown/basics/#emphasis",
-            "text": "1\n2\n3\n4\n5\n6\n7 *This text will be italic*\n_This will also be italic_\n\n**This text will be bold**\n__This will also be bold__\n\n_You **can** combine them_",
-            "title": "Emphasis"
-        },
-        {
-            "location": "/programming/markdown/basics/#lists",
-            "text": "",
-            "title": "Lists"
-        },
-        {
-            "location": "/programming/markdown/basics/#unordered",
-            "text": "1\n2\n3\n4 * Item 1\n* Item 2\n  * Item 2a\n  * Item 2b",
-            "title": "Unordered"
-        },
-        {
-            "location": "/programming/markdown/basics/#ordered",
-            "text": "1\n2\n3\n4\n5 1. Item 1\n1. Item 2\n1. Item 3\n   1. Item 3a\n   1. Item 3b",
-            "title": "Ordered"
-        },
-        {
-            "location": "/programming/markdown/basics/#images",
-            "text": "1 ![Not found Images](../../img/index/win-py-install.png)",
-            "title": "Images"
-        },
-        {
-            "location": "/programming/markdown/basics/#links",
-            "text": "1 [Link](../project/document_tutorial/main/#huong-dan-cai-at)",
-            "title": "Links"
-        },
-        {
-            "location": "/programming/markdown/basics/#tables",
-            "text": "1\n2\n3\n4\n5 | Ti\u00eau \u0111\u1ec1 1     | Ti\u00eau \u0111\u1ec1 2     | Ti\u00eau \u0111\u1ec1 3  |\n| ------------- |:-------------:| ----------:|\n| D\u00f2ng 1.1      | D\u00f2ng 2.1      | D\u00f2ng 3.1   |\n| D\u00f2ng 1.2      | D\u00f2ng 2.2      | D\u00f2ng 3.2   |\n| D\u00f2ng 1.3      | D\u00f2ng 2.3      | D\u00f2ng 3.3   |",
-            "title": "Tables"
-        },
-        {
-            "location": "/programming/markdown/basics/#blockquotes",
-            "text": "1 > Blockquotes write here",
-            "title": "Blockquotes"
-        },
-        {
-            "location": "/programming/markdown/basics/#inline-code",
-            "text": "1 `Inline code write here`",
-            "title": "Inline code"
-        },
-        {
-            "location": "/programming/markdown/basics/#block-code",
-            "text": "1\n2\n3 ```\nBlock code write here\n```",
-            "title": "Block code"
-        },
-        {
-            "location": "/programming/markdown/basics/#task-lists",
-            "text": "1\n2\n3\n4 - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported\n- [x] list syntax required (any unordered or ordered list supported)\n- [x] this is a complete item\n- [ ] this is an incomplete item",
-            "title": "Task Lists"
-        },
-        {
-            "location": "/programming/markdown/advance/",
-            "text": "Note Div\n#\n\n\nExample:\n\n1\n2\n3\n4\n!!! note \"Phasellus posuere in sem ut cursus\"\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.\n\n\n\n\n\nResult:\n\n\n\n\nPhasellus posuere in sem ut cursus\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\nType:\n\n\n\n\n\n\n\n\nnote\n\n\nSuccess\n\n\nWarning\n\n\n\n\n\n\n\n\n\n\nnote\n\n\nsuccess\n\n\nwarning\n\n\n\n\n\n\nseealso\n\n\ncheck\n\n\ncaution\n\n\n\n\n\n\nabstract\n\n\ndone\n\n\nattention\n\n\n\n\n\n\ninfo\n\n\nquestion\n\n\ndanger\n\n\n\n\n\n\ntodo\n\n\nhelp\n\n\nbug\n\n\n\n\n\n\n\n\nCodeHilite\n#\n\n\nExample:\n\n\n1\n2\n3\n``` python\nimport tensorflow as tf\n```\n\n\n\n\n\n\nResult:\n\n\n1\nimport\n \ntensorflow\n \nas\n \ntf\n\n\n\n\n\n\n\nHighlighting specific lines\n#\n\n\nExample:\n\n1\n2\n3\n4\n5\n6\n7\n8\n``` python hl_lines=\"3 4\"\n\"\"\" Bubble sort \"\"\"\ndef bubble_sort(items):\n    for i in range(len(items)):\n        for j in range(len(items) - 1 - i):\n            if items[j] > items[j + 1]:\n                items[j], items[j + 1] = items[j + 1], items[j]\n```\n\n\n\n\n\nResult:\n\n\n1\n2\n3\n4\n5\n6\n\"\"\" Bubble sort \"\"\"\n\n\ndef\n \nbubble_sort\n(\nitems\n):\n\n\n    \nfor\n \ni\n \nin\n \nrange\n(\nlen\n(\nitems\n)):\n\n\n        \nfor\n \nj\n \nin\n \nrange\n(\nlen\n(\nitems\n)\n \n-\n \n1\n \n-\n \ni\n):\n\n\n            \nif\n \nitems\n[\nj\n]\n \n>\n \nitems\n[\nj\n \n+\n \n1\n]:\n\n                \nitems\n[\nj\n],\n \nitems\n[\nj\n \n+\n \n1\n]\n \n=\n \nitems\n[\nj\n \n+\n \n1\n],\n \nitems\n[\nj\n]\n\n\n\n\n\n\n\nPHP\n#\n\n\nExample:\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n``` php\n<?php\n\n// src/AppBundle/Controller/LuckyController.php\nnamespace AppBundle\\Controller;\n\nuse Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Route;\nuse Symfony\\Component\\HttpFoundation\\Response;\n\nclass LuckyController {\n\n  /**\n   * @Route(\"/lucky/number\")\n   */\n  public function numberAction() {\n    $number = mt_rand(0, 100);\n\n    return new Response(\n      '<html><body>Lucky number: '.$number.'</body></html>'\n    );\n  }\n}\n```\n\n\n\n\n\nResult:\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n<?php\n\n\n\n// src/AppBundle/Controller/LuckyController.php\n\n\nnamespace\n \nAppBundle\\Controller\n;\n\n\n\nuse\n \nSensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Route\n;\n\n\nuse\n \nSymfony\\Component\\HttpFoundation\\Response\n;\n\n\n\nclass\n \nLuckyController\n \n{\n\n\n  \n/**\n\n\n   * @Route(\"/lucky/number\")\n\n\n   */\n\n  \npublic\n \nfunction\n \nnumberAction\n()\n \n{\n\n    \n$number\n \n=\n \nmt_rand\n(\n0\n,\n \n100\n);\n\n\n    \nreturn\n \nnew\n \nResponse\n(\n\n      \n'<html><body>Lucky number: '\n.\n$number\n.\n'</body></html>'\n\n    \n);\n\n  \n}\n\n\n}\n\n\n\n\n\n\n\nJavaScript\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\nvar\n \nMath\n \n=\n \nrequire\n(\n'lib/math'\n);\n\n\n\nvar\n \n_extends\n \n=\n \nfunction\n \n(\ntarget\n)\n \n{\n\n  \nfor\n \n(\nvar\n \ni\n \n=\n \n1\n;\n \ni\n \n<\n \narguments\n.\nlength\n;\n \ni\n++\n)\n \n{\n\n    \nvar\n \nsource\n \n=\n \narguments\n[\ni\n];\n\n    \nfor\n \n(\nvar\n \nkey\n \nin\n \nsource\n)\n \n{\n\n      \ntarget\n[\nkey\n]\n \n=\n \nsource\n[\nkey\n];\n\n    \n}\n\n  \n}\n\n\n  \nreturn\n \ntarget\n;\n\n\n};\n\n\n\nvar\n \ne\n \n=\n \nexports\n.\ne\n \n=\n \n2.71828182846\n;\n\n\nexports\n[\n'default'\n]\n \n=\n \nfunction\n \n(\nx\n)\n \n{\n\n  \nreturn\n \nMath\n.\nexp\n(\nx\n);\n\n\n};\n\n\n\nmodule\n.\nexports\n \n=\n \n_extends\n(\nexports\n[\n'default'\n],\n \nexports\n);\n\n\n\n\n\n\n\nJSON\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n{\n\n  \n\"name\"\n:\n \n\"mkdocs-material\"\n,\n\n  \n\"version\"\n:\n \n\"0.2.4\"\n,\n\n  \n\"description\"\n:\n \n\"A Material Design theme for MkDocs\"\n,\n\n  \n\"homepage\"\n:\n \n\"http://squidfunk.github.io/mkdocs-material/\"\n,\n\n  \n\"authors\"\n:\n \n[\n\n    \n\"squidfunk <martin.donath@squidfunk.com>\"\n\n  \n],\n\n  \n\"license\"\n:\n \n\"MIT\"\n,\n\n  \n\"main\"\n:\n \n\"Gulpfile.js\"\n,\n\n  \n\"scripts\"\n:\n \n{\n\n    \n\"start\"\n:\n \n\"./node_modules/.bin/gulp watch --mkdocs\"\n,\n\n    \n\"build\"\n:\n \n\"./node_modules/.bin/gulp build --production\"\n\n  \n}\n\n  \n...\n\n\n}\n\n\n\n\n\n\n\nHTML\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n<!doctype html>\n\n\n<\nhtml\n \nclass\n=\n\"no-js\"\n \nlang\n=\n\"\"\n>\n\n  \n<\nhead\n>\n\n    \n<\nmeta\n \ncharset\n=\n\"utf-8\"\n>\n\n    \n<\nmeta\n \nhttp-equiv\n=\n\"x-ua-compatible\"\n \ncontent\n=\n\"ie=edge\"\n>\n\n    \n<\ntitle\n>\nHTML5 Boilerplate\n</\ntitle\n>\n\n    \n<\nmeta\n \nname\n=\n\"description\"\n \ncontent\n=\n\"\"\n>\n\n    \n<\nmeta\n \nname\n=\n\"viewport\"\n \ncontent\n=\n\"width=device-width, initial-scale=1\"\n>\n\n\n    \n<\nlink\n \nrel\n=\n\"apple-touch-icon\"\n \nhref\n=\n\"apple-touch-icon.png\"\n>\n\n    \n<\nlink\n \nrel\n=\n\"stylesheet\"\n \nhref\n=\n\"css/normalize.css\"\n>\n\n    \n<\nlink\n \nrel\n=\n\"stylesheet\"\n \nhref\n=\n\"css/main.css\"\n>\n\n    \n<\nscript\n \nsrc\n=\n\"js/vendor/modernizr-2.8.3.min.js\"\n></\nscript\n>\n\n  \n</\nhead\n>\n\n  \n<\nbody\n>\n\n    \n<\np\n>\nHello world! This is HTML5 Boilerplate.\n</\np\n>\n\n  \n</\nbody\n>\n\n\n</\nhtml\n>",
-            "title": "Advance"
-        },
-        {
-            "location": "/programming/markdown/advance/#note-div",
-            "text": "Example: 1\n2\n3\n4 !!! note \"Phasellus posuere in sem ut cursus\"\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\n    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\n    massa, nec semper lorem quam in massa.   Result:   Phasellus posuere in sem ut cursus  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.   Type:     note  Success  Warning      note  success  warning    seealso  check  caution    abstract  done  attention    info  question  danger    todo  help  bug",
-            "title": "Note Div"
-        },
-        {
-            "location": "/programming/markdown/advance/#codehilite",
-            "text": "Example:  1\n2\n3 ``` python\nimport tensorflow as tf\n```   Result:  1 import   tensorflow   as   tf",
-            "title": "CodeHilite"
-        },
-        {
-            "location": "/programming/markdown/advance/#highlighting-specific-lines",
-            "text": "Example: 1\n2\n3\n4\n5\n6\n7\n8 ``` python hl_lines=\"3 4\"\n\"\"\" Bubble sort \"\"\"\ndef bubble_sort(items):\n    for i in range(len(items)):\n        for j in range(len(items) - 1 - i):\n            if items[j] > items[j + 1]:\n                items[j], items[j + 1] = items[j + 1], items[j]\n```   Result:  1\n2\n3\n4\n5\n6 \"\"\" Bubble sort \"\"\"  def   bubble_sort ( items ):       for   i   in   range ( len ( items )):           for   j   in   range ( len ( items )   -   1   -   i ):               if   items [ j ]   >   items [ j   +   1 ]: \n                 items [ j ],   items [ j   +   1 ]   =   items [ j   +   1 ],   items [ j ]",
-            "title": "Highlighting specific lines"
-        },
-        {
-            "location": "/programming/markdown/advance/#php",
-            "text": "Example:  1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23 ``` php\n<?php\n\n// src/AppBundle/Controller/LuckyController.php\nnamespace AppBundle\\Controller;\n\nuse Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Route;\nuse Symfony\\Component\\HttpFoundation\\Response;\n\nclass LuckyController {\n\n  /**\n   * @Route(\"/lucky/number\")\n   */\n  public function numberAction() {\n    $number = mt_rand(0, 100);\n\n    return new Response(\n      '<html><body>Lucky number: '.$number.'</body></html>'\n    );\n  }\n}\n```   Result:   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21 <?php  // src/AppBundle/Controller/LuckyController.php  namespace   AppBundle\\Controller ;  use   Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Route ;  use   Symfony\\Component\\HttpFoundation\\Response ;  class   LuckyController   { \n\n   /**     * @Route(\"/lucky/number\")     */ \n   public   function   numberAction ()   { \n     $number   =   mt_rand ( 0 ,   100 ); \n\n     return   new   Response ( \n       '<html><body>Lucky number: ' . $number . '</body></html>' \n     ); \n   }  }",
-            "title": "PHP"
-        },
-        {
-            "location": "/programming/markdown/advance/#javascript",
-            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19 var   Math   =   require ( 'lib/math' );  var   _extends   =   function   ( target )   { \n   for   ( var   i   =   1 ;   i   <   arguments . length ;   i ++ )   { \n     var   source   =   arguments [ i ]; \n     for   ( var   key   in   source )   { \n       target [ key ]   =   source [ key ]; \n     } \n   } \n\n   return   target ;  };  var   e   =   exports . e   =   2.71828182846 ;  exports [ 'default' ]   =   function   ( x )   { \n   return   Math . exp ( x );  };  module . exports   =   _extends ( exports [ 'default' ],   exports );",
-            "title": "JavaScript"
-        },
-        {
-            "location": "/programming/markdown/advance/#json",
-            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16 { \n   \"name\" :   \"mkdocs-material\" , \n   \"version\" :   \"0.2.4\" , \n   \"description\" :   \"A Material Design theme for MkDocs\" , \n   \"homepage\" :   \"http://squidfunk.github.io/mkdocs-material/\" , \n   \"authors\" :   [ \n     \"squidfunk <martin.donath@squidfunk.com>\" \n   ], \n   \"license\" :   \"MIT\" , \n   \"main\" :   \"Gulpfile.js\" , \n   \"scripts\" :   { \n     \"start\" :   \"./node_modules/.bin/gulp watch --mkdocs\" , \n     \"build\" :   \"./node_modules/.bin/gulp build --production\" \n   } \n   ...  }",
-            "title": "JSON"
-        },
-        {
-            "location": "/programming/markdown/advance/#html",
-            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18 <!doctype html>  < html   class = \"no-js\"   lang = \"\" > \n   < head > \n     < meta   charset = \"utf-8\" > \n     < meta   http-equiv = \"x-ua-compatible\"   content = \"ie=edge\" > \n     < title > HTML5 Boilerplate </ title > \n     < meta   name = \"description\"   content = \"\" > \n     < meta   name = \"viewport\"   content = \"width=device-width, initial-scale=1\" > \n\n     < link   rel = \"apple-touch-icon\"   href = \"apple-touch-icon.png\" > \n     < link   rel = \"stylesheet\"   href = \"css/normalize.css\" > \n     < link   rel = \"stylesheet\"   href = \"css/main.css\" > \n     < script   src = \"js/vendor/modernizr-2.8.3.min.js\" ></ script > \n   </ head > \n   < body > \n     < p > Hello world! This is HTML5 Boilerplate. </ p > \n   </ body >  </ html >",
-            "title": "HTML"
-        },
-        {
-            "location": "/programming/markdown/pymdown/",
-            "text": "PyMdown Extensions\n#\n\n\nPyMdown Extensions\n is a collection of Markdown extensions that add some\ngreat features to the standard Markdown library. For this reason, the\n\ninstallation of this package is highly recommended\n as it's well-integrated\nwith the Material theme.\n\n\nInstallation\n#\n\n\nThe PyMdown Extensions package can be installed with the following command:\n\n\n1\npip install pymdown-extensions\n\n\n\n\n\n\nThe following list of extensions that are part of the PyMdown Extensions\npackage are recommended to be used together with the Material theme:\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\nmarkdown_extensions\n:\n\n  \n-\n \npymdownx.arithmatex\n\n  \n-\n \npymdownx.betterem\n:\n\n      \nsmart_enable\n:\n \nall\n\n  \n-\n \npymdownx.caret\n\n  \n-\n \npymdownx.critic\n\n  \n-\n \npymdownx.details\n\n  \n-\n \npymdownx.emoji\n:\n\n      \nemoji_generator\n:\n \n!!python/name:pymdownx.emoji.to_svg\n\n  \n-\n \npymdownx.inlinehilite\n\n  \n-\n \npymdownx.magiclink\n\n  \n-\n \npymdownx.mark\n\n  \n-\n \npymdownx.smartsymbols\n\n  \n-\n \npymdownx.superfences\n\n  \n-\n \npymdownx.tasklist\n:\n\n      \ncustom_checkbox\n:\n \ntrue\n\n  \n-\n \npymdownx.tilde\n\n\n\n\n\n\n\nUsage\n#\n\n\nArithmatex \nMathJax\n#\n\n\n\n\n\nArithmatex\n integrates Material with \nMathJax\n which parses\nblock-style and inline equations written in TeX markup and outputs them in\nmathematical notation. See \nthis thread\n for a short introduction and quick\nreference on how to write equations in TeX syntax.\n\n\nBesides activating the extension in the \nmkdocs.yml\n, the MathJax JavaScript\nruntime needs to be included. This must be done with\n\nadditional JavaScript\n:\n\n\n1\n2\nextra_javascript\n:\n\n  \n-\n \n'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'\n\n\n\n\n\n\n\nIf you want to override the default MathJax configuration, you can do this by\nadding another JavaScript file \nbefore\n the MathJax runtime in\n\nextra_javascript\n which contains your MathJax configuration, e.g.:\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\nwindow\n.\nMathJax\n \n=\n \n{\n\n  \ntex2jax\n:\n \n{\n\n    \ninlineMath\n:\n \n[\n \n[\n\"\\\\(\"\n,\n\"\\\\)\"\n]\n \n],\n\n    \ndisplayMath\n:\n \n[\n \n[\n\"\\\\[\"\n,\n\"\\\\]\"\n]\n \n]\n\n  \n},\n\n  \nTeX\n:\n \n{\n\n    \nTagSide\n:\n \n\"right\"\n,\n\n    \nTagIndent\n:\n \n\".8em\"\n,\n\n    \nMultLineWidth\n:\n \n\"85%\"\n,\n\n    \nequationNumbers\n:\n \n{\n\n      \nautoNumber\n:\n \n\"AMS\"\n,\n\n    \n},\n\n    \nunicode\n:\n \n{\n\n      \nfonts\n:\n \n\"STIXGeneral,'Arial Unicode MS'\"\n\n    \n}\n\n  \n},\n\n  \ndisplayAlign\n:\n \n\"left\"\n,\n\n  \nshowProcessingMessages\n:\n \nfalse\n,\n\n  \nmessageStyle\n:\n \n\"none\"\n\n\n};\n\n\n\n\n\n\n\nIn your \nmkdocs.yml\n, include it with:\n\n\n1\n2\n3\nextra_javascript\n:\n\n  \n-\n \n'javascripts/extra.js'\n\n  \n-\n \n'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'\n\n\n\n\n\n\n\nBlocks\n#\n\n\nBlocks are enclosed in \n$$\n...\n$$\n which are placed on separate lines.\n\n\nExample:\n\n\n1\n2\n3\n$$\n\n\n\\frac\n{n\n!\n}{k\n!(\nn\n-\nk\n)!\n} \n=\n \n\\binom\n{n}{k}\n\n\n$$\n\n\n\n\n\n\n\nResult:\n\n\n\n\n\n\\frac{n!}{k!(n-k)!} = \\binom{n}{k}\n\n\n\n\n\\frac{n!}{k!(n-k)!} = \\binom{n}{k}\n\n\n\n\n\nInline\n#\n\n\nInline equations need to be enclosed in \n$\n...\n$\n:\n\n\nExample:\n\n\n1\nLorem ipsum dolor sit amet: \n$\np\n(\nx|y\n)\n \n=\n \n\\frac\n{p\n(\ny|x\n)\np\n(\nx\n)\n}{p\n(\ny\n)\n}\n$\n\n\n\n\n\n\n\nResult:\n\n\nLorem ipsum dolor sit amet: \np(x|y) = \\frac{p(y|x)p(x)}{p(y)}\np(x|y) = \\frac{p(y|x)p(x)}{p(y)}\n\n\nBetterEm\n#\n\n\nBetterEm\n improves the handling of emphasis markup (\nbold\n and \nitalic\n)\nwithin Markdown by providing a more sophisticated parser for better detecting\nstart and end tokens. Read the documentation for \nusage notes\n.\n\n\nCaret\n#\n\n\nCaret\n makes it possible to highlight \ninserted text\n. The portion of\ntext that should be marked as added must be enclosed in two carets \n^^...^^\n.\n\n\nCritic\n#\n\n\nCritic\n implements \nCritic Markup\n, a Markdown extension that enables\nthe tracking of changes (additions, deletions and comments) on documents.\nDuring compilation of the Markdown document, changes can be rendered (default),\naccepted or rejected.\n\n\nText can be \ndeleted\n and replacement text \nadded\n. This can also be\ncombined into \none\na single\n operation. \nHighlighting\n is also\npossible \nand comments can be added inline\n.\n\n\n\n\nFormatting can also be applied to blocks, by putting the opening and closing\ntags on separate lines and adding new lines between the tags and the content.\n\n\n\n\nDetails\n#\n\n\nDetails\n adds collapsible \nAdmonition-style blocks\n which can contain\narbitrary content using the HTML5 \ndetails\n and \nsummary\n tags. Additionally,\nall Admonition qualifiers can be used, e.g. \nnote\n, \nquestion\n, \nwarning\n etc.:\n\n\nHow many Prolog programmers does it take to change a lightbulb?\nYes.\nEmoji\n#\n\n\nEmoji\n adds the ability to insert a :shit:-load of emojis that we use in\nour daily lives. See the \nEmojiOne demo\n for a list of all available\nemojis. Happy scrolling :tada:\n\n\n\n\nLegal disclaimer\n\n\nMaterial has no affiliation with \nEmojiOne\n which is released under\n\nCC BY 4.0\n. When including EmojiOne images or CSS, please read the\n\nEmojiOne license\n to ensure proper usage and attribution.\n\n\n\n\nInlineHilite\n#\n\n\nInlineHilite\n adds support for inline code highlighting. It's useful for\nshort snippets included within body copy, e.g. \nvar\n \ntest\n \n=\n \n0\n;\n and can be\nachived by prefixing inline code with a shebang and language identifier,\ne.g. \n#!js\n.\n\n\nMagicLink\n#\n\n\nMagicLink\n detects links in Markdown and auto-generates the necessary\nmarkup, so no special syntax is required. It auto-links \nhttp[s]://\n and\n\nftp://\n links, as well as references to email addresses.\n\n\nMark\n#\n\n\nMark\n adds the ability to \nhighlight text\n like it was marked with a\n\ntext marker\n. The portion of text that should be highlighted must be\nenclosed in two equal signs \n==...==\n.\n\n\nSmartSymbols\n#\n\n\nSmartSymbols\n converts markup for special characters into their\ncorresponding symbols, e.g. arrows (\u2190, \u2192, \u2194), trademark and copyright\nsymbols (\u00a9, \u2122, \u00ae) and fractions (\u00bd, \u00bc, ...).\n\n\nSuperFences\n#\n\n\nSuperFences\n provides the ability to nest code blocks under blockquotes,\nlists and other block elements, which the \nFenced Code Blocks\n extension\nfrom the standard Markdown library doesn't parse correctly.\n\n\nTasklist\n#\n\n\nTasklist\n adds support for styled checkbox lists. This is useful for\nkeeping track of tasks and showing what has been done and has yet to be done.\nCheckbox lists are like regular lists, but prefixed with \n[ ]\n for empty or\n\n[x]\n for filled checkboxes.\n\n\nExample:\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n* [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit\n* [x] Nulla lobortis egestas semper\n* [x] Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est\n* [ ] Vestibulum convallis sit amet nisi a tincidunt\n    * [x] In hac habitasse platea dictumst\n    * [x] In scelerisque nibh non dolor mollis congue sed et metus\n    * [x] Sed egestas felis quis elit dapibus, ac aliquet turpis mattis\n    * [ ] Praesent sed risus massa\n* [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque\n* [ ] Nulla vel eros venenatis, imperdiet enim id, faucibus nisi\n\n\n\n\n\n\nResult:\n\n\n\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit\n\n\n Nulla lobortis egestas semper\n\n\n Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est\n\n\n Vestibulum convallis sit amet nisi a tincidunt\n\n\n In hac habitasse platea dictumst\n\n\n In scelerisque nibh non dolor mollis congue sed et metus\n\n\n Sed egestas felis quis elit dapibus, ac aliquet turpis mattis\n\n\n Praesent sed risus massa\n\n\n\n\n\n\n Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque\n\n\n Nulla vel eros venenatis, imperdiet enim id, faucibus nisi\n\n\n\n\nTilde\n#\n\n\nTilde\n provides an easy way to \nstrike through\n cross out\u00a0text.\nThe portion of text that should be erased must be enclosed in two tildes\n\n~~...~~\n and the extension will take care of the rest.",
-            "title": "PyMdown"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#pymdown-extensions",
-            "text": "PyMdown Extensions  is a collection of Markdown extensions that add some\ngreat features to the standard Markdown library. For this reason, the installation of this package is highly recommended  as it's well-integrated\nwith the Material theme.",
-            "title": "PyMdown Extensions"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#installation",
-            "text": "The PyMdown Extensions package can be installed with the following command:  1 pip install pymdown-extensions   The following list of extensions that are part of the PyMdown Extensions\npackage are recommended to be used together with the Material theme:   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17 markdown_extensions : \n   -   pymdownx.arithmatex \n   -   pymdownx.betterem : \n       smart_enable :   all \n   -   pymdownx.caret \n   -   pymdownx.critic \n   -   pymdownx.details \n   -   pymdownx.emoji : \n       emoji_generator :   !!python/name:pymdownx.emoji.to_svg \n   -   pymdownx.inlinehilite \n   -   pymdownx.magiclink \n   -   pymdownx.mark \n   -   pymdownx.smartsymbols \n   -   pymdownx.superfences \n   -   pymdownx.tasklist : \n       custom_checkbox :   true \n   -   pymdownx.tilde",
-            "title": "Installation"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#usage",
-            "text": "",
-            "title": "Usage"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#arithmatex-mathjax",
-            "text": "Arithmatex  integrates Material with  MathJax  which parses\nblock-style and inline equations written in TeX markup and outputs them in\nmathematical notation. See  this thread  for a short introduction and quick\nreference on how to write equations in TeX syntax.  Besides activating the extension in the  mkdocs.yml , the MathJax JavaScript\nruntime needs to be included. This must be done with additional JavaScript :  1\n2 extra_javascript : \n   -   'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'    If you want to override the default MathJax configuration, you can do this by\nadding another JavaScript file  before  the MathJax runtime in extra_javascript  which contains your MathJax configuration, e.g.:   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20 window . MathJax   =   { \n   tex2jax :   { \n     inlineMath :   [   [ \"\\\\(\" , \"\\\\)\" ]   ], \n     displayMath :   [   [ \"\\\\[\" , \"\\\\]\" ]   ] \n   }, \n   TeX :   { \n     TagSide :   \"right\" , \n     TagIndent :   \".8em\" , \n     MultLineWidth :   \"85%\" , \n     equationNumbers :   { \n       autoNumber :   \"AMS\" , \n     }, \n     unicode :   { \n       fonts :   \"STIXGeneral,'Arial Unicode MS'\" \n     } \n   }, \n   displayAlign :   \"left\" , \n   showProcessingMessages :   false , \n   messageStyle :   \"none\"  };    In your  mkdocs.yml , include it with:  1\n2\n3 extra_javascript : \n   -   'javascripts/extra.js' \n   -   'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'",
-            "title": "Arithmatex MathJax"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#blocks",
-            "text": "Blocks are enclosed in  $$ ... $$  which are placed on separate lines.  Example:  1\n2\n3 $$  \\frac {n ! }{k !( n - k )! }  =   \\binom {n}{k}  $$    Result:   \n\\frac{n!}{k!(n-k)!} = \\binom{n}{k}  \n\\frac{n!}{k!(n-k)!} = \\binom{n}{k}",
-            "title": "Blocks"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#inline",
-            "text": "Inline equations need to be enclosed in  $ ... $ :  Example:  1 Lorem ipsum dolor sit amet:  $ p ( x|y )   =   \\frac {p ( y|x ) p ( x ) }{p ( y ) } $    Result:  Lorem ipsum dolor sit amet:  p(x|y) = \\frac{p(y|x)p(x)}{p(y)} p(x|y) = \\frac{p(y|x)p(x)}{p(y)}",
-            "title": "Inline"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#betterem",
-            "text": "BetterEm  improves the handling of emphasis markup ( bold  and  italic )\nwithin Markdown by providing a more sophisticated parser for better detecting\nstart and end tokens. Read the documentation for  usage notes .",
-            "title": "BetterEm"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#caret",
-            "text": "Caret  makes it possible to highlight  inserted text . The portion of\ntext that should be marked as added must be enclosed in two carets  ^^...^^ .",
-            "title": "Caret"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#critic",
-            "text": "Critic  implements  Critic Markup , a Markdown extension that enables\nthe tracking of changes (additions, deletions and comments) on documents.\nDuring compilation of the Markdown document, changes can be rendered (default),\naccepted or rejected.  Text can be  deleted  and replacement text  added . This can also be\ncombined into  one a single  operation.  Highlighting  is also\npossible  and comments can be added inline .   Formatting can also be applied to blocks, by putting the opening and closing\ntags on separate lines and adding new lines between the tags and the content.",
-            "title": "Critic"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#details",
-            "text": "Details  adds collapsible  Admonition-style blocks  which can contain\narbitrary content using the HTML5  details  and  summary  tags. Additionally,\nall Admonition qualifiers can be used, e.g.  note ,  question ,  warning  etc.:  How many Prolog programmers does it take to change a lightbulb? Yes.",
-            "title": "Details"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#emoji",
-            "text": "Emoji  adds the ability to insert a :shit:-load of emojis that we use in\nour daily lives. See the  EmojiOne demo  for a list of all available\nemojis. Happy scrolling :tada:   Legal disclaimer  Material has no affiliation with  EmojiOne  which is released under CC BY 4.0 . When including EmojiOne images or CSS, please read the EmojiOne license  to ensure proper usage and attribution.",
-            "title": "Emoji"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#inlinehilite",
-            "text": "InlineHilite  adds support for inline code highlighting. It's useful for\nshort snippets included within body copy, e.g.  var   test   =   0 ;  and can be\nachived by prefixing inline code with a shebang and language identifier,\ne.g.  #!js .",
-            "title": "InlineHilite"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#magiclink",
-            "text": "MagicLink  detects links in Markdown and auto-generates the necessary\nmarkup, so no special syntax is required. It auto-links  http[s]://  and ftp://  links, as well as references to email addresses.",
-            "title": "MagicLink"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#mark",
-            "text": "Mark  adds the ability to  highlight text  like it was marked with a text marker . The portion of text that should be highlighted must be\nenclosed in two equal signs  ==...== .",
-            "title": "Mark"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#smartsymbols",
-            "text": "SmartSymbols  converts markup for special characters into their\ncorresponding symbols, e.g. arrows (\u2190, \u2192, \u2194), trademark and copyright\nsymbols (\u00a9, \u2122, \u00ae) and fractions (\u00bd, \u00bc, ...).",
-            "title": "SmartSymbols"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#superfences",
-            "text": "SuperFences  provides the ability to nest code blocks under blockquotes,\nlists and other block elements, which the  Fenced Code Blocks  extension\nfrom the standard Markdown library doesn't parse correctly.",
-            "title": "SuperFences"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#tasklist",
-            "text": "Tasklist  adds support for styled checkbox lists. This is useful for\nkeeping track of tasks and showing what has been done and has yet to be done.\nCheckbox lists are like regular lists, but prefixed with  [ ]  for empty or [x]  for filled checkboxes.  Example:   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10 * [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit\n* [x] Nulla lobortis egestas semper\n* [x] Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est\n* [ ] Vestibulum convallis sit amet nisi a tincidunt\n    * [x] In hac habitasse platea dictumst\n    * [x] In scelerisque nibh non dolor mollis congue sed et metus\n    * [x] Sed egestas felis quis elit dapibus, ac aliquet turpis mattis\n    * [ ] Praesent sed risus massa\n* [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque\n* [ ] Nulla vel eros venenatis, imperdiet enim id, faucibus nisi   Result:    Lorem ipsum dolor sit amet, consectetur adipiscing elit   Nulla lobortis egestas semper   Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est   Vestibulum convallis sit amet nisi a tincidunt   In hac habitasse platea dictumst   In scelerisque nibh non dolor mollis congue sed et metus   Sed egestas felis quis elit dapibus, ac aliquet turpis mattis   Praesent sed risus massa     Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque   Nulla vel eros venenatis, imperdiet enim id, faucibus nisi",
-            "title": "Tasklist"
-        },
-        {
-            "location": "/programming/markdown/pymdown/#tilde",
-            "text": "Tilde  provides an easy way to  strike through  cross out\u00a0text.\nThe portion of text that should be erased must be enclosed in two tildes ~~...~~  and the extension will take care of the rest.",
-            "title": "Tilde"
         },
         {
             "location": "/software_dev/trello/",
