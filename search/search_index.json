@@ -2,18 +2,13 @@
     "docs": [
         {
             "location": "/",
-            "text": "Introductions\n#\n\n\nMy name is Matt Walker. I live in Hipperholme, Halifax, West Yorkshire, UK.\nI work at Farnell, Leeds as senior web designer in the digital marketing department.\nI have a beautiful wife, Claire and 3 boys Dylan, Finley and Marley. My passions are my family, HTML5 CSS3 and Javascript, football and music.\n\n\nTimeline Mylife\n#\n\n\n\n  \n\n    \n\n      \n2017\n\n      \nLorem ipsum\n\n    \n\n  \n\n  \n\n    \n\n      \n2016\n\n      \nLorem ipsum..\n\n    \n\n  \n\n  \n\n    \n\n      \n2017\n\n      \nLorem ipsum\n\n    \n\n  \n\n  \n\n    \n\n      \n2016\n\n      \nLorem ipsum..\n\n    \n\n  \n\n  \n\n    \n\n      \n2017\n\n      \nLorem ipsum\n\n    \n\n  \n\n  \n\n    \n\n      \n2016\n\n      \nLorem ipsum..",
+            "text": "Introductions\n#\n\n\nMy name is Pham Huu Toan. I live in Ha Noi, Viet Nam.\nI work for an IT company. I love football, music and share knowledge for everybody.",
             "title": "ABOUT ME"
         },
         {
             "location": "/#introductions",
-            "text": "My name is Matt Walker. I live in Hipperholme, Halifax, West Yorkshire, UK.\nI work at Farnell, Leeds as senior web designer in the digital marketing department.\nI have a beautiful wife, Claire and 3 boys Dylan, Finley and Marley. My passions are my family, HTML5 CSS3 and Javascript, football and music.",
+            "text": "My name is Pham Huu Toan. I live in Ha Noi, Viet Nam.\nI work for an IT company. I love football, music and share knowledge for everybody.",
             "title": "Introductions"
-        },
-        {
-            "location": "/#timeline-mylife",
-            "text": "",
-            "title": "Timeline Mylife"
         },
         {
             "location": "/background/tech_web/internet_work/",
@@ -79,6 +74,61 @@
             "location": "/background/tech_web/web_works/#packets-explained",
             "text": "Earlier we used the term \"packets\" to describe the format in which the data is sent from server to client. What do we mean here? Basically, when data is sent across the web, it is sent as thousands of small chunks, so that many different web users can download the same website at the same time. If web sites were sent as single big chunks, only one user could download one at a time, which obviously would make the web very inefficient and not much fun to use.",
             "title": "Packets explained"
+        },
+        {
+            "location": "/background/design_pattern/creational/abstract_fatory/",
+            "text": "Purpose\n#\n\n\nTo create series of related or dependent objects without specifying their concrete classes. Usually the created classes all implement the same interface. The client of the abstract factory does not care about how these objects are created, he just knows how they go together.\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nAbstractFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\n/**\n\n\n * In this case, the abstract factory is a contract for creating some components\n\n\n * for the web. There are two ways of rendering text: HTML and JSON\n\n\n */\n\n\nabstract\n \nclass\n \nAbstractFactory\n\n\n{\n\n    \nabstract\n \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n;\n\n\n}\n\n\n\n\n\n\n\nJsonFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nJsonFactory\n \nextends\n \nAbstractFactory\n\n\n{\n\n    \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n\n    \n{\n\n        \nreturn\n \nnew\n \nJsonText\n(\n$content\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nHtmlFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nHtmlFactory\n \nextends\n \nAbstractFactory\n\n\n{\n\n    \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n\n    \n{\n\n        \nreturn\n \nnew\n \nHtmlText\n(\n$content\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nText.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nabstract\n \nclass\n \nText\n\n\n{\n\n    \n/**\n\n\n     * @var string\n\n\n     */\n\n    \nprivate\n \n$text\n;\n\n\n    \npublic\n \nfunction\n \n__construct\n(\nstring\n \n$text\n)\n\n    \n{\n\n        \n$this\n->\ntext\n \n=\n \n$text\n;\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nJsonText.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nJsonText\n \nextends\n \nText\n\n\n{\n\n    \n// do something here\n\n\n}\n\n\n\n\n\n\n\nHtmlText.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nHtmlText\n \nextends\n \nText\n\n\n{\n\n    \n// do something here\n\n\n}\n\n\n\n\n\n\n\nTest\n#\n\n\nTests/AbstractFactoryTest.php\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\\Tests\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\HtmlFactory\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\HtmlText\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\JsonFactory\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\JsonText\n;\n\n\nuse\n \nPHPUnit\\Framework\\TestCase\n;\n\n\n\nclass\n \nAbstractFactoryTest\n \nextends\n \nTestCase\n\n\n{\n\n    \npublic\n \nfunction\n \ntestCanCreateHtmlText\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nHtmlFactory\n();\n\n        \n$text\n \n=\n \n$factory\n->\ncreateText\n(\n'foobar'\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nHtmlText\n::\nclass\n,\n \n$text\n);\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ntestCanCreateJsonText\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nJsonFactory\n();\n\n        \n$text\n \n=\n \n$factory\n->\ncreateText\n(\n'foobar'\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nJsonText\n::\nclass\n,\n \n$text\n);\n\n    \n}\n\n\n}",
+            "title": "Abstract Factory"
+        },
+        {
+            "location": "/background/design_pattern/creational/abstract_fatory/#purpose",
+            "text": "To create series of related or dependent objects without specifying their concrete classes. Usually the created classes all implement the same interface. The client of the abstract factory does not care about how these objects are created, he just knows how they go together.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/background/design_pattern/creational/abstract_fatory/#uml-diagram",
+            "text": "",
+            "title": "UML Diagram"
+        },
+        {
+            "location": "/background/design_pattern/creational/abstract_fatory/#code",
+            "text": "",
+            "title": "Code"
+        },
+        {
+            "location": "/background/design_pattern/creational/abstract_fatory/#abstractfactoryphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  /**   * In this case, the abstract factory is a contract for creating some components   * for the web. There are two ways of rendering text: HTML and JSON   */  abstract   class   AbstractFactory  { \n     abstract   public   function   createText ( string   $content ) :   Text ;  }",
+            "title": "AbstractFactory.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/abstract_fatory/#jsonfactoryphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  class   JsonFactory   extends   AbstractFactory  { \n     public   function   createText ( string   $content ) :   Text \n     { \n         return   new   JsonText ( $content ); \n     }  }",
+            "title": "JsonFactory.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/abstract_fatory/#htmlfactoryphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  class   HtmlFactory   extends   AbstractFactory  { \n     public   function   createText ( string   $content ) :   Text \n     { \n         return   new   HtmlText ( $content ); \n     }  }",
+            "title": "HtmlFactory.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/abstract_fatory/#textphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  abstract   class   Text  { \n     /**       * @var string       */ \n     private   $text ; \n\n     public   function   __construct ( string   $text ) \n     { \n         $this -> text   =   $text ; \n     }  }",
+            "title": "Text.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/abstract_fatory/#jsontextphp",
+            "text": "1\n2\n3\n4\n5\n6\n7\n8 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  class   JsonText   extends   Text  { \n     // do something here  }",
+            "title": "JsonText.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/abstract_fatory/#htmltextphp",
+            "text": "1\n2\n3\n4\n5\n6\n7\n8 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  class   HtmlText   extends   Text  { \n     // do something here  }",
+            "title": "HtmlText.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/abstract_fatory/#test",
+            "text": "Tests/AbstractFactoryTest.php   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory\\Tests ;  use   DesignPatterns\\Creational\\AbstractFactory\\HtmlFactory ;  use   DesignPatterns\\Creational\\AbstractFactory\\HtmlText ;  use   DesignPatterns\\Creational\\AbstractFactory\\JsonFactory ;  use   DesignPatterns\\Creational\\AbstractFactory\\JsonText ;  use   PHPUnit\\Framework\\TestCase ;  class   AbstractFactoryTest   extends   TestCase  { \n     public   function   testCanCreateHtmlText () \n     { \n         $factory   =   new   HtmlFactory (); \n         $text   =   $factory -> createText ( 'foobar' ); \n\n         $this -> assertInstanceOf ( HtmlText :: class ,   $text ); \n     } \n\n     public   function   testCanCreateJsonText () \n     { \n         $factory   =   new   JsonFactory (); \n         $text   =   $factory -> createText ( 'foobar' ); \n\n         $this -> assertInstanceOf ( JsonText :: class ,   $text ); \n     }  }",
+            "title": "Test"
         },
         {
             "location": "/programming/markdown/",

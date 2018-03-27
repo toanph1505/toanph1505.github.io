@@ -4,12 +4,18 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2018-03-09</lastmod>
+     <lastmod>2018-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
         
     <url>
      <loc></loc>
@@ -23,19 +29,19 @@
         
     <url>
      <loc>/programming/markdown/</loc>
-     <lastmod>2018-03-09</lastmod>
+     <lastmod>2018-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/programming/markdown/</loc>
-     <lastmod>2018-03-09</lastmod>
+     <lastmod>2018-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/programming/markdown/</loc>
-     <lastmod>2018-03-09</lastmod>
+     <lastmod>2018-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -45,7 +51,7 @@
         
     <url>
      <loc>/programming/markdown/</loc>
-     <lastmod>2018-03-09</lastmod>
+     <lastmod>2018-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -73,25 +79,25 @@
         
     <url>
      <loc>/software_dev/trello/</loc>
-     <lastmod>2018-03-09</lastmod>
+     <lastmod>2018-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/software_dev/svn/</loc>
-     <lastmod>2018-03-09</lastmod>
+     <lastmod>2018-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/software_dev/Outlook/</loc>
-     <lastmod>2018-03-09</lastmod>
+     <lastmod>2018-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/software_dev/office/</loc>
-     <lastmod>2018-03-09</lastmod>
+     <lastmod>2018-03-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

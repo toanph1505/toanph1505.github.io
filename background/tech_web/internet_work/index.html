@@ -407,6 +407,96 @@
 <!-- Currently active page -->
 
         
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item md-nav__item--nested">
+
+    <!-- Active checkbox expands items contained within nested section -->
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2"
+          type="checkbox" id="nav-2-2" />
+    
+
+    <!-- Expand active pages -->
+    <label class="md-nav__link" for="nav-2-2">
+      Design Pattern
+    </label>
+    <nav class="md-nav" data-md-component="collapsible"
+        data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Design Pattern
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+
+        <!-- Render nested item list -->
+        
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item md-nav__item--nested">
+
+    <!-- Active checkbox expands items contained within nested section -->
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-1"
+          type="checkbox" id="nav-2-2-1" />
+    
+
+    <!-- Expand active pages -->
+    <label class="md-nav__link" for="nav-2-2-1">
+      Creational
+    </label>
+    <nav class="md-nav" data-md-component="collapsible"
+        data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-1">
+        Creational
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+
+        <!-- Render nested item list -->
+        
+        
+          
+          
+          <!-- Determine class according to level -->
+
+
+
+<!-- Main navigation item with nested items -->
+
+  <li class="md-nav__item">
+    <a href="../../design_pattern/creational/abstract_fatory/" title="Abstract Factory"
+        class="md-nav__link">
+      Abstract Factory
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+<!-- Currently active page -->
+
+        
+      </ul>
+    </nav>
+  </li>
+
+<!-- Currently active page -->
+
+        
       </ul>
     </nav>
   </li>
@@ -1164,21 +1254,21 @@
 <p class="admonition-title">Note</p>
 <p>For the rest of this article, we will only talk about physical cables, but wireless networks work the same.</p>
 </div>
-<p><img alt="notfound" src="../../../../img/background/techweb/internet-schema-1.png" /></p>
+<p><img alt="notfound" src="../img/internet-schema-1.png" /></p>
 <p>Such a network is not limited to two computers. You can connect as many computers as you wish. But it gets complicated quickly. If you're trying to connect, say, ten computers, you need 45 cables, with nine plugs per computer!</p>
-<p><img alt="notfound" src="../../../../img/background/techweb/internet-schema-2.png" /></p>
+<p><img alt="notfound" src="../img/internet-schema-2.png" /></p>
 <p>To solve this problem, each computer on a network is connected to a special tiny computer called a router. This router has only one job: like a signaler at a railway station, it makes sure that a message sent from a given computer arrives at the right destination computer. To send a message to computer B, computer A must send the message to the router, which in turn forwards the message to computer B and makes sure the message is not delivered to computer C.</p>
 <p>Once we add a router to the system, our network of 10 computers only requires 10 cables: a single plug for each computer and a router with 10 plugs.</p>
-<p><img alt="notfound" src="../../../../img/background/techweb/internet-schema-3.png" /></p>
+<p><img alt="notfound" src="../img/internet-schema-3.png" /></p>
 <h3 id="a-network-of-networks">A network of networks<a class="headerlink" href="#a-network-of-networks" title="Permanent link">#</a></h3>
 <p>So far so good. But what about connecting hundreds, thousands, billions of computers? Of course a single router can't scale that far, but, if you read carefully, we said that a router is a computer like any other, so what keeps us from connecting two routers together? Nothing, so let's do that.</p>
-<p><img alt="notfound" src="../../../../img/background/techweb/internet-schema-4.png" /></p>
+<p><img alt="notfound" src="../img/internet-schema-4.png" /></p>
 <p>By connecting computers to routers, then routers to routers, we are able to scale infinitely.</p>
-<p><img alt="notfound" src="../../../../img/background/techweb/internet-schema-5.png" /></p>
+<p><img alt="notfound" src="../img/internet-schema-5.png" /></p>
 <p>Such a network comes very close to what we call the Internet, but we're missing something. We built that network for our own purposes. There are other networks out there: your friends, your neighbors, anyone can have their own network of computers. But it's not really possible to set cables up between your house and the rest of the world, so how can you handle this? Well, there are already cables linked to your house, for example, electric power and telephone. The telephone infrastructure already connects your house with anyone in the world so it is the perfect wire we need. To connect our network to the telephone infrastructure, we need a special piece of equipment called a modem. This modem turns the information from our network into information manageable by the telephone infrastructure and vice versa.</p>
-<p><img alt="notfound" src="../../../../img/background/techweb/internet-schema-6.png" /></p>
+<p><img alt="notfound" src="../img/internet-schema-6.png" /></p>
 <p>So we are connected to the telephone infrastructure. The next step is to send the messages from our network to the network we want to reach. To do that, we will connect our network to an Internet Service Provider (ISP). An ISP is a company that manages some special routers that link all together and can also access other ISPs' routers. So the message from our network is carried through the network of ISP networks to the destination network. The Internet consists of this whole infrastructure of networks.</p>
-<p><img alt="notfound" src="../../../../img/background/techweb/internet-schema-7.png" /></p>
+<p><img alt="notfound" src="../img/internet-schema-7.png" /></p>
 <h3 id="finding-computers">Finding computers<a class="headerlink" href="#finding-computers" title="Permanent link">#</a></h3>
 <p>If you want to send a message to a computer, you have to specify which one. Thus any computer linked to a network has a unique address to identify it, called an "IP address" (where IP stands for Internet Protocol). It's an address made of a series of four numbers separated by dots, for example: <code>192.168.2.10</code>.</p>
 <p>That's perfectly fine for computers, but we human beings have a hard time remembering that sort of address. To make things easier, we can alias an IP address with a human readable name called a domain name. For example, <code>google.com</code> is the domain name used on top of the IP address <code>173.194.121.32</code>. So using the domain name is the easiest way for us to reach a computer over the Internet.</p>
