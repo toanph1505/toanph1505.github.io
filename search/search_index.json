@@ -76,59 +76,479 @@
             "title": "Packets explained"
         },
         {
-            "location": "/background/design_pattern/creational/abstract_fatory/",
-            "text": "Purpose\n#\n\n\nTo create series of related or dependent objects without specifying their concrete classes. Usually the created classes all implement the same interface. The client of the abstract factory does not care about how these objects are created, he just knows how they go together.\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nAbstractFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\n/**\n\n\n * In this case, the abstract factory is a contract for creating some components\n\n\n * for the web. There are two ways of rendering text: HTML and JSON\n\n\n */\n\n\nabstract\n \nclass\n \nAbstractFactory\n\n\n{\n\n    \nabstract\n \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n;\n\n\n}\n\n\n\n\n\n\n\nJsonFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nJsonFactory\n \nextends\n \nAbstractFactory\n\n\n{\n\n    \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n\n    \n{\n\n        \nreturn\n \nnew\n \nJsonText\n(\n$content\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nHtmlFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nHtmlFactory\n \nextends\n \nAbstractFactory\n\n\n{\n\n    \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n\n    \n{\n\n        \nreturn\n \nnew\n \nHtmlText\n(\n$content\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nText.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nabstract\n \nclass\n \nText\n\n\n{\n\n    \n/**\n\n\n     * @var string\n\n\n     */\n\n    \nprivate\n \n$text\n;\n\n\n    \npublic\n \nfunction\n \n__construct\n(\nstring\n \n$text\n)\n\n    \n{\n\n        \n$this\n->\ntext\n \n=\n \n$text\n;\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nJsonText.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nJsonText\n \nextends\n \nText\n\n\n{\n\n    \n// do something here\n\n\n}\n\n\n\n\n\n\n\nHtmlText.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nHtmlText\n \nextends\n \nText\n\n\n{\n\n    \n// do something here\n\n\n}\n\n\n\n\n\n\n\nTest\n#\n\n\nTests/AbstractFactoryTest.php\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\\Tests\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\HtmlFactory\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\HtmlText\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\JsonFactory\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\JsonText\n;\n\n\nuse\n \nPHPUnit\\Framework\\TestCase\n;\n\n\n\nclass\n \nAbstractFactoryTest\n \nextends\n \nTestCase\n\n\n{\n\n    \npublic\n \nfunction\n \ntestCanCreateHtmlText\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nHtmlFactory\n();\n\n        \n$text\n \n=\n \n$factory\n->\ncreateText\n(\n'foobar'\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nHtmlText\n::\nclass\n,\n \n$text\n);\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ntestCanCreateJsonText\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nJsonFactory\n();\n\n        \n$text\n \n=\n \n$factory\n->\ncreateText\n(\n'foobar'\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nJsonText\n::\nclass\n,\n \n$text\n);\n\n    \n}\n\n\n}",
+            "location": "/background/design_pattern/creational/1_abstract_fatory/",
+            "text": "Purpose\n#\n\n\nTo create series of related or dependent objects without specifying their concrete classes. Usually the created classes all implement the same interface. The client of the abstract factory does not care about how these objects are created, he just knows how they go together.\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nAbstractFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\n/**\n\n\n * In this case, the abstract factory is a contract for creating some components\n\n\n * for the web. There are two ways of rendering text: HTML and JSON\n\n\n */\n\n\nabstract\n \nclass\n \nAbstractFactory\n\n\n{\n\n    \nabstract\n \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n;\n\n\n}\n\n\n\n\n\n\n\nJsonFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nJsonFactory\n \nextends\n \nAbstractFactory\n\n\n{\n\n    \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n\n    \n{\n\n        \nreturn\n \nnew\n \nJsonText\n(\n$content\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nHtmlFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nHtmlFactory\n \nextends\n \nAbstractFactory\n\n\n{\n\n    \npublic\n \nfunction\n \ncreateText\n(\nstring\n \n$content\n)\n:\n \nText\n\n    \n{\n\n        \nreturn\n \nnew\n \nHtmlText\n(\n$content\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nText.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nabstract\n \nclass\n \nText\n\n\n{\n\n    \n/**\n\n\n     * @var string\n\n\n     */\n\n    \nprivate\n \n$text\n;\n\n\n    \npublic\n \nfunction\n \n__construct\n(\nstring\n \n$text\n)\n\n    \n{\n\n        \n$this\n->\ntext\n \n=\n \n$text\n;\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nJsonText.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nJsonText\n \nextends\n \nText\n\n\n{\n\n    \n// do something here\n\n\n}\n\n\n\n\n\n\n\nHtmlText.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\n;\n\n\n\nclass\n \nHtmlText\n \nextends\n \nText\n\n\n{\n\n    \n// do something here\n\n\n}\n\n\n\n\n\n\n\nTest\n#\n\n\nTests/AbstractFactoryTest.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\AbstractFactory\\Tests\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\HtmlFactory\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\HtmlText\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\JsonFactory\n;\n\n\nuse\n \nDesignPatterns\\Creational\\AbstractFactory\\JsonText\n;\n\n\nuse\n \nPHPUnit\\Framework\\TestCase\n;\n\n\n\nclass\n \nAbstractFactoryTest\n \nextends\n \nTestCase\n\n\n{\n\n    \npublic\n \nfunction\n \ntestCanCreateHtmlText\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nHtmlFactory\n();\n\n        \n$text\n \n=\n \n$factory\n->\ncreateText\n(\n'foobar'\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nHtmlText\n::\nclass\n,\n \n$text\n);\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ntestCanCreateJsonText\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nJsonFactory\n();\n\n        \n$text\n \n=\n \n$factory\n->\ncreateText\n(\n'foobar'\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nJsonText\n::\nclass\n,\n \n$text\n);\n\n    \n}\n\n\n}",
             "title": "Abstract Factory"
         },
         {
-            "location": "/background/design_pattern/creational/abstract_fatory/#purpose",
+            "location": "/background/design_pattern/creational/1_abstract_fatory/#purpose",
             "text": "To create series of related or dependent objects without specifying their concrete classes. Usually the created classes all implement the same interface. The client of the abstract factory does not care about how these objects are created, he just knows how they go together.",
             "title": "Purpose"
         },
         {
-            "location": "/background/design_pattern/creational/abstract_fatory/#uml-diagram",
+            "location": "/background/design_pattern/creational/1_abstract_fatory/#uml-diagram",
             "text": "",
             "title": "UML Diagram"
         },
         {
-            "location": "/background/design_pattern/creational/abstract_fatory/#code",
+            "location": "/background/design_pattern/creational/1_abstract_fatory/#code",
             "text": "",
             "title": "Code"
         },
         {
-            "location": "/background/design_pattern/creational/abstract_fatory/#abstractfactoryphp",
+            "location": "/background/design_pattern/creational/1_abstract_fatory/#abstractfactoryphp",
             "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  /**   * In this case, the abstract factory is a contract for creating some components   * for the web. There are two ways of rendering text: HTML and JSON   */  abstract   class   AbstractFactory  { \n     abstract   public   function   createText ( string   $content ) :   Text ;  }",
             "title": "AbstractFactory.php"
         },
         {
-            "location": "/background/design_pattern/creational/abstract_fatory/#jsonfactoryphp",
+            "location": "/background/design_pattern/creational/1_abstract_fatory/#jsonfactoryphp",
             "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  class   JsonFactory   extends   AbstractFactory  { \n     public   function   createText ( string   $content ) :   Text \n     { \n         return   new   JsonText ( $content ); \n     }  }",
             "title": "JsonFactory.php"
         },
         {
-            "location": "/background/design_pattern/creational/abstract_fatory/#htmlfactoryphp",
+            "location": "/background/design_pattern/creational/1_abstract_fatory/#htmlfactoryphp",
             "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  class   HtmlFactory   extends   AbstractFactory  { \n     public   function   createText ( string   $content ) :   Text \n     { \n         return   new   HtmlText ( $content ); \n     }  }",
             "title": "HtmlFactory.php"
         },
         {
-            "location": "/background/design_pattern/creational/abstract_fatory/#textphp",
+            "location": "/background/design_pattern/creational/1_abstract_fatory/#textphp",
             "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  abstract   class   Text  { \n     /**       * @var string       */ \n     private   $text ; \n\n     public   function   __construct ( string   $text ) \n     { \n         $this -> text   =   $text ; \n     }  }",
             "title": "Text.php"
         },
         {
-            "location": "/background/design_pattern/creational/abstract_fatory/#jsontextphp",
+            "location": "/background/design_pattern/creational/1_abstract_fatory/#jsontextphp",
             "text": "1\n2\n3\n4\n5\n6\n7\n8 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  class   JsonText   extends   Text  { \n     // do something here  }",
             "title": "JsonText.php"
         },
         {
-            "location": "/background/design_pattern/creational/abstract_fatory/#htmltextphp",
+            "location": "/background/design_pattern/creational/1_abstract_fatory/#htmltextphp",
             "text": "1\n2\n3\n4\n5\n6\n7\n8 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory ;  class   HtmlText   extends   Text  { \n     // do something here  }",
             "title": "HtmlText.php"
         },
         {
-            "location": "/background/design_pattern/creational/abstract_fatory/#test",
-            "text": "Tests/AbstractFactoryTest.php   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory\\Tests ;  use   DesignPatterns\\Creational\\AbstractFactory\\HtmlFactory ;  use   DesignPatterns\\Creational\\AbstractFactory\\HtmlText ;  use   DesignPatterns\\Creational\\AbstractFactory\\JsonFactory ;  use   DesignPatterns\\Creational\\AbstractFactory\\JsonText ;  use   PHPUnit\\Framework\\TestCase ;  class   AbstractFactoryTest   extends   TestCase  { \n     public   function   testCanCreateHtmlText () \n     { \n         $factory   =   new   HtmlFactory (); \n         $text   =   $factory -> createText ( 'foobar' ); \n\n         $this -> assertInstanceOf ( HtmlText :: class ,   $text ); \n     } \n\n     public   function   testCanCreateJsonText () \n     { \n         $factory   =   new   JsonFactory (); \n         $text   =   $factory -> createText ( 'foobar' ); \n\n         $this -> assertInstanceOf ( JsonText :: class ,   $text ); \n     }  }",
+            "location": "/background/design_pattern/creational/1_abstract_fatory/#test",
+            "text": "",
             "title": "Test"
+        },
+        {
+            "location": "/background/design_pattern/creational/1_abstract_fatory/#testsabstractfactorytestphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28 <?php  namespace   DesignPatterns\\Creational\\AbstractFactory\\Tests ;  use   DesignPatterns\\Creational\\AbstractFactory\\HtmlFactory ;  use   DesignPatterns\\Creational\\AbstractFactory\\HtmlText ;  use   DesignPatterns\\Creational\\AbstractFactory\\JsonFactory ;  use   DesignPatterns\\Creational\\AbstractFactory\\JsonText ;  use   PHPUnit\\Framework\\TestCase ;  class   AbstractFactoryTest   extends   TestCase  { \n     public   function   testCanCreateHtmlText () \n     { \n         $factory   =   new   HtmlFactory (); \n         $text   =   $factory -> createText ( 'foobar' ); \n\n         $this -> assertInstanceOf ( HtmlText :: class ,   $text ); \n     } \n\n     public   function   testCanCreateJsonText () \n     { \n         $factory   =   new   JsonFactory (); \n         $text   =   $factory -> createText ( 'foobar' ); \n\n         $this -> assertInstanceOf ( JsonText :: class ,   $text ); \n     }  }",
+            "title": "Tests/AbstractFactoryTest.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/",
+            "text": "Purpose\n#\n\n\nThe good point over the SimpleFactory is you can subclass it to implement different ways to create objects\n\n\nFor simple case, this abstract class could be just an interface\n\n\nThis pattern is a \u201creal\u201d Design Pattern because it achieves the \u201cDependency Inversion Principle\u201d a.k.a the \u201cD\u201d in S.O.L.I.D principles.\n\n\nIt means the FactoryMethod class depends on abstractions, not concrete classes. This is the real trick compared to SimpleFactory or StaticFactory.\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nFactoryMethod.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\FactoryMethod\n;\n\n\n\nabstract\n \nclass\n \nFactoryMethod\n\n\n{\n\n    \nconst\n \nCHEAP\n \n=\n \n'cheap'\n;\n\n    \nconst\n \nFAST\n \n=\n \n'fast'\n;\n\n\n    \nabstract\n \nprotected\n \nfunction\n \ncreateVehicle\n(\nstring\n \n$type\n)\n:\n \nVehicleInterface\n;\n\n\n    \npublic\n \nfunction\n \ncreate\n(\nstring\n \n$type\n)\n:\n \nVehicleInterface\n\n    \n{\n\n        \n$obj\n \n=\n \n$this\n->\ncreateVehicle\n(\n$type\n);\n\n        \n$obj\n->\nsetColor\n(\n'black'\n);\n\n\n        \nreturn\n \n$obj\n;\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nItalianFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\FactoryMethod\n;\n\n\n\nclass\n \nItalianFactory\n \nextends\n \nFactoryMethod\n\n\n{\n\n    \nprotected\n \nfunction\n \ncreateVehicle\n(\nstring\n \n$type\n)\n:\n \nVehicleInterface\n\n    \n{\n\n        \nswitch\n \n(\n$type\n)\n \n{\n\n            \ncase\n \nparent\n::\nCHEAP\n:\n\n                \nreturn\n \nnew\n \nBicycle\n();\n\n            \ncase\n \nparent\n::\nFAST\n:\n\n                \nreturn\n \nnew\n \nCarFerrari\n();\n\n            \ndefault\n:\n\n                \nthrow\n \nnew\n \n\\InvalidArgumentException\n(\n\"\n$type\n is not a valid vehicle\"\n);\n\n        \n}\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nGermanFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\FactoryMethod\n;\n\n\n\nclass\n \nGermanFactory\n \nextends\n \nFactoryMethod\n\n\n{\n\n    \nprotected\n \nfunction\n \ncreateVehicle\n(\nstring\n \n$type\n)\n:\n \nVehicleInterface\n\n    \n{\n\n        \nswitch\n \n(\n$type\n)\n \n{\n\n            \ncase\n \nparent\n::\nCHEAP\n:\n\n                \nreturn\n \nnew\n \nBicycle\n();\n\n            \ncase\n \nparent\n::\nFAST\n:\n\n                \n$carMercedes\n \n=\n \nnew\n \nCarMercedes\n();\n\n                \n// we can specialize the way we want some concrete Vehicle since we know the class\n\n                \n$carMercedes\n->\naddAMGTuning\n();\n\n\n                \nreturn\n \n$carMercedes\n;\n\n            \ndefault\n:\n\n                \nthrow\n \nnew\n \n\\InvalidArgumentException\n(\n\"\n$type\n is not a valid vehicle\"\n);\n\n        \n}\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nVehicleInterface.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\FactoryMethod\n;\n\n\n\ninterface\n \nVehicleInterface\n\n\n{\n\n    \npublic\n \nfunction\n \nsetColor\n(\nstring\n \n$rgb\n);\n\n\n}\n\n\n\n\n\n\n\nCarMercedes.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\FactoryMethod\n;\n\n\n\nclass\n \nCarMercedes\n \nimplements\n \nVehicleInterface\n\n\n{\n\n    \n/**\n\n\n     * @var string\n\n\n     */\n\n    \nprivate\n \n$color\n;\n\n\n    \npublic\n \nfunction\n \nsetColor\n(\nstring\n \n$rgb\n)\n\n    \n{\n\n        \n$this\n->\ncolor\n \n=\n \n$rgb\n;\n\n    \n}\n\n\n    \npublic\n \nfunction\n \naddAMGTuning\n()\n\n    \n{\n\n        \n// do additional tuning here\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nCarFerrari.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\FactoryMethod\n;\n\n\n\nclass\n \nCarFerrari\n \nimplements\n \nVehicleInterface\n\n\n{\n\n    \n/**\n\n\n     * @var string\n\n\n     */\n\n    \nprivate\n \n$color\n;\n\n\n    \npublic\n \nfunction\n \nsetColor\n(\nstring\n \n$rgb\n)\n\n    \n{\n\n        \n$this\n->\ncolor\n \n=\n \n$rgb\n;\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nBicycle.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\FactoryMethod\n;\n\n\n\nclass\n \nBicycle\n \nimplements\n \nVehicleInterface\n\n\n{\n\n    \n/**\n\n\n     * @var string\n\n\n     */\n\n    \nprivate\n \n$color\n;\n\n\n    \npublic\n \nfunction\n \nsetColor\n(\nstring\n \n$rgb\n)\n\n    \n{\n\n        \n$this\n->\ncolor\n \n=\n \n$rgb\n;\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nTest\n#\n\n\nTests/FactoryMethodTest.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\FactoryMethod\\Tests\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\FactoryMethod\\Bicycle\n;\n\n\nuse\n \nDesignPatterns\\Creational\\FactoryMethod\\CarFerrari\n;\n\n\nuse\n \nDesignPatterns\\Creational\\FactoryMethod\\CarMercedes\n;\n\n\nuse\n \nDesignPatterns\\Creational\\FactoryMethod\\FactoryMethod\n;\n\n\nuse\n \nDesignPatterns\\Creational\\FactoryMethod\\GermanFactory\n;\n\n\nuse\n \nDesignPatterns\\Creational\\FactoryMethod\\ItalianFactory\n;\n\n\nuse\n \nPHPUnit\\Framework\\TestCase\n;\n\n\n\nclass\n \nFactoryMethodTest\n \nextends\n \nTestCase\n\n\n{\n\n    \npublic\n \nfunction\n \ntestCanCreateCheapVehicleInGermany\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nGermanFactory\n();\n\n        \n$result\n \n=\n \n$factory\n->\ncreate\n(\nFactoryMethod\n::\nCHEAP\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nBicycle\n::\nclass\n,\n \n$result\n);\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ntestCanCreateFastVehicleInGermany\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nGermanFactory\n();\n\n        \n$result\n \n=\n \n$factory\n->\ncreate\n(\nFactoryMethod\n::\nFAST\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nCarMercedes\n::\nclass\n,\n \n$result\n);\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ntestCanCreateCheapVehicleInItaly\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nItalianFactory\n();\n\n        \n$result\n \n=\n \n$factory\n->\ncreate\n(\nFactoryMethod\n::\nCHEAP\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nBicycle\n::\nclass\n,\n \n$result\n);\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ntestCanCreateFastVehicleInItaly\n()\n\n    \n{\n\n        \n$factory\n \n=\n \nnew\n \nItalianFactory\n();\n\n        \n$result\n \n=\n \n$factory\n->\ncreate\n(\nFactoryMethod\n::\nFAST\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nCarFerrari\n::\nclass\n,\n \n$result\n);\n\n    \n}\n\n\n    \n/**\n\n\n     * @expectedException \\InvalidArgumentException\n\n\n     * @expectedExceptionMessage spaceship is not a valid vehicle\n\n\n     */\n\n    \npublic\n \nfunction\n \ntestUnknownType\n()\n\n    \n{\n\n        \n(\nnew\n \nItalianFactory\n())\n->\ncreate\n(\n'spaceship'\n);\n\n    \n}\n\n\n}",
+            "title": "Factory Method"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#purpose",
+            "text": "The good point over the SimpleFactory is you can subclass it to implement different ways to create objects  For simple case, this abstract class could be just an interface  This pattern is a \u201creal\u201d Design Pattern because it achieves the \u201cDependency Inversion Principle\u201d a.k.a the \u201cD\u201d in S.O.L.I.D principles.  It means the FactoryMethod class depends on abstractions, not concrete classes. This is the real trick compared to SimpleFactory or StaticFactory.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#uml-diagram",
+            "text": "",
+            "title": "UML Diagram"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#code",
+            "text": "",
+            "title": "Code"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#factorymethodphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19 <?php  namespace   DesignPatterns\\Creational\\FactoryMethod ;  abstract   class   FactoryMethod  { \n     const   CHEAP   =   'cheap' ; \n     const   FAST   =   'fast' ; \n\n     abstract   protected   function   createVehicle ( string   $type ) :   VehicleInterface ; \n\n     public   function   create ( string   $type ) :   VehicleInterface \n     { \n         $obj   =   $this -> createVehicle ( $type ); \n         $obj -> setColor ( 'black' ); \n\n         return   $obj ; \n     }  }",
+            "title": "FactoryMethod.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#italianfactoryphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18 <?php  namespace   DesignPatterns\\Creational\\FactoryMethod ;  class   ItalianFactory   extends   FactoryMethod  { \n     protected   function   createVehicle ( string   $type ) :   VehicleInterface \n     { \n         switch   ( $type )   { \n             case   parent :: CHEAP : \n                 return   new   Bicycle (); \n             case   parent :: FAST : \n                 return   new   CarFerrari (); \n             default : \n                 throw   new   \\InvalidArgumentException ( \" $type  is not a valid vehicle\" ); \n         } \n     }  }",
+            "title": "ItalianFactory.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#germanfactoryphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22 <?php  namespace   DesignPatterns\\Creational\\FactoryMethod ;  class   GermanFactory   extends   FactoryMethod  { \n     protected   function   createVehicle ( string   $type ) :   VehicleInterface \n     { \n         switch   ( $type )   { \n             case   parent :: CHEAP : \n                 return   new   Bicycle (); \n             case   parent :: FAST : \n                 $carMercedes   =   new   CarMercedes (); \n                 // we can specialize the way we want some concrete Vehicle since we know the class \n                 $carMercedes -> addAMGTuning (); \n\n                 return   $carMercedes ; \n             default : \n                 throw   new   \\InvalidArgumentException ( \" $type  is not a valid vehicle\" ); \n         } \n     }  }",
+            "title": "GermanFactory.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#vehicleinterfacephp",
+            "text": "1\n2\n3\n4\n5\n6\n7\n8 <?php  namespace   DesignPatterns\\Creational\\FactoryMethod ;  interface   VehicleInterface  { \n     public   function   setColor ( string   $rgb );  }",
+            "title": "VehicleInterface.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#carmercedesphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21 <?php  namespace   DesignPatterns\\Creational\\FactoryMethod ;  class   CarMercedes   implements   VehicleInterface  { \n     /**       * @var string       */ \n     private   $color ; \n\n     public   function   setColor ( string   $rgb ) \n     { \n         $this -> color   =   $rgb ; \n     } \n\n     public   function   addAMGTuning () \n     { \n         // do additional tuning here \n     }  }",
+            "title": "CarMercedes.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#carferrariphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16 <?php  namespace   DesignPatterns\\Creational\\FactoryMethod ;  class   CarFerrari   implements   VehicleInterface  { \n     /**       * @var string       */ \n     private   $color ; \n\n     public   function   setColor ( string   $rgb ) \n     { \n         $this -> color   =   $rgb ; \n     }  }",
+            "title": "CarFerrari.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#bicyclephp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16 <?php  namespace   DesignPatterns\\Creational\\FactoryMethod ;  class   Bicycle   implements   VehicleInterface  { \n     /**       * @var string       */ \n     private   $color ; \n\n     public   function   setColor ( string   $rgb ) \n     { \n         $this -> color   =   $rgb ; \n     }  }",
+            "title": "Bicycle.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#test",
+            "text": "",
+            "title": "Test"
+        },
+        {
+            "location": "/background/design_pattern/creational/2_factory_method/#testsfactorymethodtestphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55 <?php  namespace   DesignPatterns\\Creational\\FactoryMethod\\Tests ;  use   DesignPatterns\\Creational\\FactoryMethod\\Bicycle ;  use   DesignPatterns\\Creational\\FactoryMethod\\CarFerrari ;  use   DesignPatterns\\Creational\\FactoryMethod\\CarMercedes ;  use   DesignPatterns\\Creational\\FactoryMethod\\FactoryMethod ;  use   DesignPatterns\\Creational\\FactoryMethod\\GermanFactory ;  use   DesignPatterns\\Creational\\FactoryMethod\\ItalianFactory ;  use   PHPUnit\\Framework\\TestCase ;  class   FactoryMethodTest   extends   TestCase  { \n     public   function   testCanCreateCheapVehicleInGermany () \n     { \n         $factory   =   new   GermanFactory (); \n         $result   =   $factory -> create ( FactoryMethod :: CHEAP ); \n\n         $this -> assertInstanceOf ( Bicycle :: class ,   $result ); \n     } \n\n     public   function   testCanCreateFastVehicleInGermany () \n     { \n         $factory   =   new   GermanFactory (); \n         $result   =   $factory -> create ( FactoryMethod :: FAST ); \n\n         $this -> assertInstanceOf ( CarMercedes :: class ,   $result ); \n     } \n\n     public   function   testCanCreateCheapVehicleInItaly () \n     { \n         $factory   =   new   ItalianFactory (); \n         $result   =   $factory -> create ( FactoryMethod :: CHEAP ); \n\n         $this -> assertInstanceOf ( Bicycle :: class ,   $result ); \n     } \n\n     public   function   testCanCreateFastVehicleInItaly () \n     { \n         $factory   =   new   ItalianFactory (); \n         $result   =   $factory -> create ( FactoryMethod :: FAST ); \n\n         $this -> assertInstanceOf ( CarFerrari :: class ,   $result ); \n     } \n\n     /**       * @expectedException \\InvalidArgumentException       * @expectedExceptionMessage spaceship is not a valid vehicle       */ \n     public   function   testUnknownType () \n     { \n         ( new   ItalianFactory ()) -> create ( 'spaceship' ); \n     }  }",
+            "title": "Tests/FactoryMethodTest.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/3_singleton/",
+            "text": "THIS IS CONSIDERED TO BE AN ANTI-PATTERN! FOR BETTER TESTABILITY AND MAINTAINABILITY USE DEPENDENCY INJECTION!\n\n\nPurpose\n#\n\n\nTo have only one instance of this object in the application that will handle all calls.\n\n\nExamples\n#\n\n\n\n\nDB Connector\n\n\nLogger (may also be a Multiton if there are many log files for several purposes)\n\n\nLock file for the application (there is only one in the filesystem ...)\n\n\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nSingleton.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Singleton\n;\n\n\n\nfinal\n \nclass\n \nSingleton\n\n\n{\n\n    \n/**\n\n\n     * @var Singleton\n\n\n     */\n\n    \nprivate\n \nstatic\n \n$instance\n;\n\n\n    \n/**\n\n\n     * gets the instance via lazy initialization (created on first usage)\n\n\n     */\n\n    \npublic\n \nstatic\n \nfunction\n \ngetInstance\n()\n:\n \nSingleton\n\n    \n{\n\n        \nif\n \n(\nnull\n \n===\n \nstatic\n::\n$instance\n)\n \n{\n\n            \nstatic\n::\n$instance\n \n=\n \nnew\n \nstatic\n();\n\n        \n}\n\n\n        \nreturn\n \nstatic\n::\n$instance\n;\n\n    \n}\n\n\n    \n/**\n\n\n     * is not allowed to call from outside to prevent from creating multiple instances,\n\n\n     * to use the singleton, you have to obtain the instance from Singleton::getInstance() instead\n\n\n     */\n\n    \nprivate\n \nfunction\n \n__construct\n()\n\n    \n{\n\n    \n}\n\n\n    \n/**\n\n\n     * prevent the instance from being cloned (which would create a second instance of it)\n\n\n     */\n\n    \nprivate\n \nfunction\n \n__clone\n()\n\n    \n{\n\n    \n}\n\n\n    \n/**\n\n\n     * prevent from being unserialized (which would create a second instance of it)\n\n\n     */\n\n    \nprivate\n \nfunction\n \n__wakeup\n()\n\n    \n{\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nTest\n#\n\n\nTests/SingletonTest.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Singleton\\Tests\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\Singleton\\Singleton\n;\n\n\nuse\n \nPHPUnit\\Framework\\TestCase\n;\n\n\n\nclass\n \nSingletonTest\n \nextends\n \nTestCase\n\n\n{\n\n    \npublic\n \nfunction\n \ntestUniqueness\n()\n\n    \n{\n\n        \n$firstCall\n \n=\n \nSingleton\n::\ngetInstance\n();\n\n        \n$secondCall\n \n=\n \nSingleton\n::\ngetInstance\n();\n\n\n        \n$this\n->\nassertInstanceOf\n(\nSingleton\n::\nclass\n,\n \n$firstCall\n);\n\n        \n$this\n->\nassertSame\n(\n$firstCall\n,\n \n$secondCall\n);\n\n    \n}\n\n\n}",
+            "title": "Singleton"
+        },
+        {
+            "location": "/background/design_pattern/creational/3_singleton/#purpose",
+            "text": "To have only one instance of this object in the application that will handle all calls.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/background/design_pattern/creational/3_singleton/#examples",
+            "text": "DB Connector  Logger (may also be a Multiton if there are many log files for several purposes)  Lock file for the application (there is only one in the filesystem ...)",
+            "title": "Examples"
+        },
+        {
+            "location": "/background/design_pattern/creational/3_singleton/#uml-diagram",
+            "text": "",
+            "title": "UML Diagram"
+        },
+        {
+            "location": "/background/design_pattern/creational/3_singleton/#code",
+            "text": "",
+            "title": "Code"
+        },
+        {
+            "location": "/background/design_pattern/creational/3_singleton/#singletonphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45 <?php  namespace   DesignPatterns\\Creational\\Singleton ;  final   class   Singleton  { \n     /**       * @var Singleton       */ \n     private   static   $instance ; \n\n     /**       * gets the instance via lazy initialization (created on first usage)       */ \n     public   static   function   getInstance () :   Singleton \n     { \n         if   ( null   ===   static :: $instance )   { \n             static :: $instance   =   new   static (); \n         } \n\n         return   static :: $instance ; \n     } \n\n     /**       * is not allowed to call from outside to prevent from creating multiple instances,       * to use the singleton, you have to obtain the instance from Singleton::getInstance() instead       */ \n     private   function   __construct () \n     { \n     } \n\n     /**       * prevent the instance from being cloned (which would create a second instance of it)       */ \n     private   function   __clone () \n     { \n     } \n\n     /**       * prevent from being unserialized (which would create a second instance of it)       */ \n     private   function   __wakeup () \n     { \n     }  }",
+            "title": "Singleton.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/3_singleton/#test",
+            "text": "",
+            "title": "Test"
+        },
+        {
+            "location": "/background/design_pattern/creational/3_singleton/#testssingletontestphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18 <?php  namespace   DesignPatterns\\Creational\\Singleton\\Tests ;  use   DesignPatterns\\Creational\\Singleton\\Singleton ;  use   PHPUnit\\Framework\\TestCase ;  class   SingletonTest   extends   TestCase  { \n     public   function   testUniqueness () \n     { \n         $firstCall   =   Singleton :: getInstance (); \n         $secondCall   =   Singleton :: getInstance (); \n\n         $this -> assertInstanceOf ( Singleton :: class ,   $firstCall ); \n         $this -> assertSame ( $firstCall ,   $secondCall ); \n     }  }",
+            "title": "Tests/SingletonTest.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/",
+            "text": "Purpose\n#\n\n\nBuilder is an interface that build parts of a complex object.\n\n\nSometimes, if the builder has a better knowledge of what it builds, this interface could be an abstract class with default methods (aka adapter).\n\n\nIf you have a complex inheritance tree for objects, it is logical to have a complex inheritance tree for builders too.\n\n\nNote: Builders have often a fluent interface, see the mock builder of PHPUnit for example.\n\n\nExamples\n#\n\n\n\n\nPHPUnit: Mock Builder\n\n\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nDirector.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Builder\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\Builder\\Parts\\Vehicle\n;\n\n\n\n/**\n\n\n * Director is part of the builder pattern. It knows the interface of the builder\n\n\n * and builds a complex object with the help of the builder\n\n\n *\n\n\n * You can also inject many builders instead of one to build more complex objects\n\n\n */\n\n\nclass\n \nDirector\n\n\n{\n\n    \npublic\n \nfunction\n \nbuild\n(\nBuilderInterface\n \n$builder\n)\n:\n \nVehicle\n\n    \n{\n\n        \n$builder\n->\ncreateVehicle\n();\n\n        \n$builder\n->\naddDoors\n();\n\n        \n$builder\n->\naddEngine\n();\n\n        \n$builder\n->\naddWheel\n();\n\n\n        \nreturn\n \n$builder\n->\ngetVehicle\n();\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nBuilderInterface.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Builder\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\Builder\\Parts\\Vehicle\n;\n\n\n\ninterface\n \nBuilderInterface\n\n\n{\n\n    \npublic\n \nfunction\n \ncreateVehicle\n();\n\n\n    \npublic\n \nfunction\n \naddWheel\n();\n\n\n    \npublic\n \nfunction\n \naddEngine\n();\n\n\n    \npublic\n \nfunction\n \naddDoors\n();\n\n\n    \npublic\n \nfunction\n \ngetVehicle\n()\n:\n \nVehicle\n;\n\n\n}\n\n\n\n\n\n\n\nTruckBuilder.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Builder\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\Builder\\Parts\\Vehicle\n;\n\n\n\nclass\n \nTruckBuilder\n \nimplements\n \nBuilderInterface\n\n\n{\n\n    \n/**\n\n\n     * @var Parts\\Truck\n\n\n     */\n\n    \nprivate\n \n$truck\n;\n\n\n    \npublic\n \nfunction\n \naddDoors\n()\n\n    \n{\n\n        \n$this\n->\ntruck\n->\nsetPart\n(\n'rightDoor'\n,\n \nnew\n \nParts\\Door\n());\n\n        \n$this\n->\ntruck\n->\nsetPart\n(\n'leftDoor'\n,\n \nnew\n \nParts\\Door\n());\n\n    \n}\n\n\n    \npublic\n \nfunction\n \naddEngine\n()\n\n    \n{\n\n        \n$this\n->\ntruck\n->\nsetPart\n(\n'truckEngine'\n,\n \nnew\n \nParts\\Engine\n());\n\n    \n}\n\n\n    \npublic\n \nfunction\n \naddWheel\n()\n\n    \n{\n\n        \n$this\n->\ntruck\n->\nsetPart\n(\n'wheel1'\n,\n \nnew\n \nParts\\Wheel\n());\n\n        \n$this\n->\ntruck\n->\nsetPart\n(\n'wheel2'\n,\n \nnew\n \nParts\\Wheel\n());\n\n        \n$this\n->\ntruck\n->\nsetPart\n(\n'wheel3'\n,\n \nnew\n \nParts\\Wheel\n());\n\n        \n$this\n->\ntruck\n->\nsetPart\n(\n'wheel4'\n,\n \nnew\n \nParts\\Wheel\n());\n\n        \n$this\n->\ntruck\n->\nsetPart\n(\n'wheel5'\n,\n \nnew\n \nParts\\Wheel\n());\n\n        \n$this\n->\ntruck\n->\nsetPart\n(\n'wheel6'\n,\n \nnew\n \nParts\\Wheel\n());\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ncreateVehicle\n()\n\n    \n{\n\n        \n$this\n->\ntruck\n \n=\n \nnew\n \nParts\\Truck\n();\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ngetVehicle\n()\n:\n \nVehicle\n\n    \n{\n\n        \nreturn\n \n$this\n->\ntruck\n;\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nCarBuilder.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Builder\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\Builder\\Parts\\Vehicle\n;\n\n\n\nclass\n \nCarBuilder\n \nimplements\n \nBuilderInterface\n\n\n{\n\n    \n/**\n\n\n     * @var Parts\\Car\n\n\n     */\n\n    \nprivate\n \n$car\n;\n\n\n    \npublic\n \nfunction\n \naddDoors\n()\n\n    \n{\n\n        \n$this\n->\ncar\n->\nsetPart\n(\n'rightDoor'\n,\n \nnew\n \nParts\\Door\n());\n\n        \n$this\n->\ncar\n->\nsetPart\n(\n'leftDoor'\n,\n \nnew\n \nParts\\Door\n());\n\n        \n$this\n->\ncar\n->\nsetPart\n(\n'trunkLid'\n,\n \nnew\n \nParts\\Door\n());\n\n    \n}\n\n\n    \npublic\n \nfunction\n \naddEngine\n()\n\n    \n{\n\n        \n$this\n->\ncar\n->\nsetPart\n(\n'engine'\n,\n \nnew\n \nParts\\Engine\n());\n\n    \n}\n\n\n    \npublic\n \nfunction\n \naddWheel\n()\n\n    \n{\n\n        \n$this\n->\ncar\n->\nsetPart\n(\n'wheelLF'\n,\n \nnew\n \nParts\\Wheel\n());\n\n        \n$this\n->\ncar\n->\nsetPart\n(\n'wheelRF'\n,\n \nnew\n \nParts\\Wheel\n());\n\n        \n$this\n->\ncar\n->\nsetPart\n(\n'wheelLR'\n,\n \nnew\n \nParts\\Wheel\n());\n\n        \n$this\n->\ncar\n->\nsetPart\n(\n'wheelRR'\n,\n \nnew\n \nParts\\Wheel\n());\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ncreateVehicle\n()\n\n    \n{\n\n        \n$this\n->\ncar\n \n=\n \nnew\n \nParts\\Car\n();\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ngetVehicle\n()\n:\n \nVehicle\n\n    \n{\n\n        \nreturn\n \n$this\n->\ncar\n;\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nParts/Vehicle.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Builder\\Parts\n;\n\n\n\nabstract\n \nclass\n \nVehicle\n\n\n{\n\n    \n/**\n\n\n     * @var object[]\n\n\n     */\n\n    \nprivate\n \n$data\n \n=\n \n[];\n\n\n    \n/**\n\n\n     * @param string $key\n\n\n     * @param object $value\n\n\n     */\n\n    \npublic\n \nfunction\n \nsetPart\n(\n$key\n,\n \n$value\n)\n\n    \n{\n\n        \n$this\n->\ndata\n[\n$key\n]\n \n=\n \n$value\n;\n\n    \n}\n\n\n}\n    \n\n\n\n\n\n\nParts/Truck.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Builder\\Parts\n;\n\n\n\nclass\n \nTruck\n \nextends\n \nVehicle\n\n\n{\n\n\n}\n    \n\n\n\n\n\n\nParts/Car.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Builder\\Parts\n;\n\n\n\nclass\n \nCar\n \nextends\n \nVehicle\n\n\n{\n\n\n}\n   \n\n\n\n\n\n\nParts/Engine.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Builder\\Parts\n;\n\n\n\nclass\n \nEngine\n\n\n{\n\n\n}\n   \n\n\n\n\n\n\nParts/Wheel.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Builder\\Parts\n;\n\n\n\nclass\n \nWheel\n\n\n{\n\n\n}\n \n\n\n\n\n\n\nParts/Door.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Builder\\Parts\n;\n\n\n\nclass\n \nDoor\n\n\n{\n\n\n}\n \n\n\n\n\n\n\nTest\n#\n\n\nTests/DirectorTest.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Builder\\Tests\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\Builder\\Parts\\Car\n;\n\n\nuse\n \nDesignPatterns\\Creational\\Builder\\Parts\\Truck\n;\n\n\nuse\n \nDesignPatterns\\Creational\\Builder\\TruckBuilder\n;\n\n\nuse\n \nDesignPatterns\\Creational\\Builder\\CarBuilder\n;\n\n\nuse\n \nDesignPatterns\\Creational\\Builder\\Director\n;\n\n\nuse\n \nPHPUnit\\Framework\\TestCase\n;\n\n\n\nclass\n \nDirectorTest\n \nextends\n \nTestCase\n\n\n{\n\n    \npublic\n \nfunction\n \ntestCanBuildTruck\n()\n\n    \n{\n\n        \n$truckBuilder\n \n=\n \nnew\n \nTruckBuilder\n();\n\n        \n$newVehicle\n \n=\n \n(\nnew\n \nDirector\n())\n->\nbuild\n(\n$truckBuilder\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nTruck\n::\nclass\n,\n \n$newVehicle\n);\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ntestCanBuildCar\n()\n\n    \n{\n\n        \n$carBuilder\n \n=\n \nnew\n \nCarBuilder\n();\n\n        \n$newVehicle\n \n=\n \n(\nnew\n \nDirector\n())\n->\nbuild\n(\n$carBuilder\n);\n\n\n        \n$this\n->\nassertInstanceOf\n(\nCar\n::\nclass\n,\n \n$newVehicle\n);\n\n    \n}\n\n\n}",
+            "title": "Builder"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#purpose",
+            "text": "Builder is an interface that build parts of a complex object.  Sometimes, if the builder has a better knowledge of what it builds, this interface could be an abstract class with default methods (aka adapter).  If you have a complex inheritance tree for objects, it is logical to have a complex inheritance tree for builders too.  Note: Builders have often a fluent interface, see the mock builder of PHPUnit for example.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#examples",
+            "text": "PHPUnit: Mock Builder",
+            "title": "Examples"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#uml-diagram",
+            "text": "",
+            "title": "UML Diagram"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#code",
+            "text": "",
+            "title": "Code"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#directorphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24 <?php  namespace   DesignPatterns\\Creational\\Builder ;  use   DesignPatterns\\Creational\\Builder\\Parts\\Vehicle ;  /**   * Director is part of the builder pattern. It knows the interface of the builder   * and builds a complex object with the help of the builder   *   * You can also inject many builders instead of one to build more complex objects   */  class   Director  { \n     public   function   build ( BuilderInterface   $builder ) :   Vehicle \n     { \n         $builder -> createVehicle (); \n         $builder -> addDoors (); \n         $builder -> addEngine (); \n         $builder -> addWheel (); \n\n         return   $builder -> getVehicle (); \n     }  }",
+            "title": "Director.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#builderinterfacephp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18 <?php  namespace   DesignPatterns\\Creational\\Builder ;  use   DesignPatterns\\Creational\\Builder\\Parts\\Vehicle ;  interface   BuilderInterface  { \n     public   function   createVehicle (); \n\n     public   function   addWheel (); \n\n     public   function   addEngine (); \n\n     public   function   addDoors (); \n\n     public   function   getVehicle () :   Vehicle ;  }",
+            "title": "BuilderInterface.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#truckbuilderphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44 <?php  namespace   DesignPatterns\\Creational\\Builder ;  use   DesignPatterns\\Creational\\Builder\\Parts\\Vehicle ;  class   TruckBuilder   implements   BuilderInterface  { \n     /**       * @var Parts\\Truck       */ \n     private   $truck ; \n\n     public   function   addDoors () \n     { \n         $this -> truck -> setPart ( 'rightDoor' ,   new   Parts\\Door ()); \n         $this -> truck -> setPart ( 'leftDoor' ,   new   Parts\\Door ()); \n     } \n\n     public   function   addEngine () \n     { \n         $this -> truck -> setPart ( 'truckEngine' ,   new   Parts\\Engine ()); \n     } \n\n     public   function   addWheel () \n     { \n         $this -> truck -> setPart ( 'wheel1' ,   new   Parts\\Wheel ()); \n         $this -> truck -> setPart ( 'wheel2' ,   new   Parts\\Wheel ()); \n         $this -> truck -> setPart ( 'wheel3' ,   new   Parts\\Wheel ()); \n         $this -> truck -> setPart ( 'wheel4' ,   new   Parts\\Wheel ()); \n         $this -> truck -> setPart ( 'wheel5' ,   new   Parts\\Wheel ()); \n         $this -> truck -> setPart ( 'wheel6' ,   new   Parts\\Wheel ()); \n     } \n\n     public   function   createVehicle () \n     { \n         $this -> truck   =   new   Parts\\Truck (); \n     } \n\n     public   function   getVehicle () :   Vehicle \n     { \n         return   $this -> truck ; \n     }  }",
+            "title": "TruckBuilder.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#carbuilderphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43 <?php  namespace   DesignPatterns\\Creational\\Builder ;  use   DesignPatterns\\Creational\\Builder\\Parts\\Vehicle ;  class   CarBuilder   implements   BuilderInterface  { \n     /**       * @var Parts\\Car       */ \n     private   $car ; \n\n     public   function   addDoors () \n     { \n         $this -> car -> setPart ( 'rightDoor' ,   new   Parts\\Door ()); \n         $this -> car -> setPart ( 'leftDoor' ,   new   Parts\\Door ()); \n         $this -> car -> setPart ( 'trunkLid' ,   new   Parts\\Door ()); \n     } \n\n     public   function   addEngine () \n     { \n         $this -> car -> setPart ( 'engine' ,   new   Parts\\Engine ()); \n     } \n\n     public   function   addWheel () \n     { \n         $this -> car -> setPart ( 'wheelLF' ,   new   Parts\\Wheel ()); \n         $this -> car -> setPart ( 'wheelRF' ,   new   Parts\\Wheel ()); \n         $this -> car -> setPart ( 'wheelLR' ,   new   Parts\\Wheel ()); \n         $this -> car -> setPart ( 'wheelRR' ,   new   Parts\\Wheel ()); \n     } \n\n     public   function   createVehicle () \n     { \n         $this -> car   =   new   Parts\\Car (); \n     } \n\n     public   function   getVehicle () :   Vehicle \n     { \n         return   $this -> car ; \n     }  }",
+            "title": "CarBuilder.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#partsvehiclephp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20 <?php  namespace   DesignPatterns\\Creational\\Builder\\Parts ;  abstract   class   Vehicle  { \n     /**       * @var object[]       */ \n     private   $data   =   []; \n\n     /**       * @param string $key       * @param object $value       */ \n     public   function   setPart ( $key ,   $value ) \n     { \n         $this -> data [ $key ]   =   $value ; \n     }  }",
+            "title": "Parts/Vehicle.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#partstruckphp",
+            "text": "1\n2\n3\n4\n5\n6\n7 <?php  namespace   DesignPatterns\\Creational\\Builder\\Parts ;  class   Truck   extends   Vehicle  {  }",
+            "title": "Parts/Truck.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#partscarphp",
+            "text": "1\n2\n3\n4\n5\n6\n7 <?php  namespace   DesignPatterns\\Creational\\Builder\\Parts ;  class   Car   extends   Vehicle  {  }",
+            "title": "Parts/Car.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#partsenginephp",
+            "text": "1\n2\n3\n4\n5\n6\n7 <?php  namespace   DesignPatterns\\Creational\\Builder\\Parts ;  class   Engine  {  }",
+            "title": "Parts/Engine.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#partswheelphp",
+            "text": "1\n2\n3\n4\n5\n6\n7 <?php  namespace   DesignPatterns\\Creational\\Builder\\Parts ;  class   Wheel  {  }",
+            "title": "Parts/Wheel.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#partsdoorphp",
+            "text": "1\n2\n3\n4\n5\n6\n7 <?php  namespace   DesignPatterns\\Creational\\Builder\\Parts ;  class   Door  {  }",
+            "title": "Parts/Door.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#test",
+            "text": "",
+            "title": "Test"
+        },
+        {
+            "location": "/background/design_pattern/creational/4_builder/#testsdirectortestphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29 <?php  namespace   DesignPatterns\\Creational\\Builder\\Tests ;  use   DesignPatterns\\Creational\\Builder\\Parts\\Car ;  use   DesignPatterns\\Creational\\Builder\\Parts\\Truck ;  use   DesignPatterns\\Creational\\Builder\\TruckBuilder ;  use   DesignPatterns\\Creational\\Builder\\CarBuilder ;  use   DesignPatterns\\Creational\\Builder\\Director ;  use   PHPUnit\\Framework\\TestCase ;  class   DirectorTest   extends   TestCase  { \n     public   function   testCanBuildTruck () \n     { \n         $truckBuilder   =   new   TruckBuilder (); \n         $newVehicle   =   ( new   Director ()) -> build ( $truckBuilder ); \n\n         $this -> assertInstanceOf ( Truck :: class ,   $newVehicle ); \n     } \n\n     public   function   testCanBuildCar () \n     { \n         $carBuilder   =   new   CarBuilder (); \n         $newVehicle   =   ( new   Director ()) -> build ( $carBuilder ); \n\n         $this -> assertInstanceOf ( Car :: class ,   $newVehicle ); \n     }  }",
+            "title": "Tests/DirectorTest.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/5_multion/",
+            "text": "THIS IS CONSIDERED TO BE AN ANTI-PATTERN! FOR BETTER TESTABILITY AND MAINTAINABILITY USE DEPENDENCY INJECTION!\n\n\nPurpose\n#\n\n\nTo have only a list of named instances that are used, like a singleton but with n instances.\n\n\nExamples\n#\n\n\n\n\n2 DB Connectors, e.g. one for MySQL, the other for SQLite\n\n\nmultiple Loggers (one for debug messages, one for errors)\n\n\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nMultiton.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Multiton\n;\n\n\n\nfinal\n \nclass\n \nMultiton\n\n\n{\n\n    \nconst\n \nINSTANCE_1\n \n=\n \n'1'\n;\n\n    \nconst\n \nINSTANCE_2\n \n=\n \n'2'\n;\n\n\n    \n/**\n\n\n     * @var Multiton[]\n\n\n     */\n\n    \nprivate\n \nstatic\n \n$instances\n \n=\n \n[];\n\n\n    \n/**\n\n\n     * this is private to prevent from creating arbitrary instances\n\n\n     */\n\n    \nprivate\n \nfunction\n \n__construct\n()\n\n    \n{\n\n    \n}\n\n\n    \npublic\n \nstatic\n \nfunction\n \ngetInstance\n(\nstring\n \n$instanceName\n)\n:\n \nMultiton\n\n    \n{\n\n        \nif\n \n(\n!\nisset\n(\nself\n::\n$instances\n[\n$instanceName\n]))\n \n{\n\n            \nself\n::\n$instances\n[\n$instanceName\n]\n \n=\n \nnew\n \nself\n();\n\n        \n}\n\n\n        \nreturn\n \nself\n::\n$instances\n[\n$instanceName\n];\n\n    \n}\n\n\n    \n/**\n\n\n     * prevent instance from being cloned\n\n\n     */\n\n    \nprivate\n \nfunction\n \n__clone\n()\n\n    \n{\n\n    \n}\n\n\n    \n/**\n\n\n     * prevent instance from being unserialized\n\n\n     */\n\n    \nprivate\n \nfunction\n \n__wakeup\n()\n\n    \n{\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nTest\n#",
+            "title": "Multiton"
+        },
+        {
+            "location": "/background/design_pattern/creational/5_multion/#purpose",
+            "text": "To have only a list of named instances that are used, like a singleton but with n instances.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/background/design_pattern/creational/5_multion/#examples",
+            "text": "2 DB Connectors, e.g. one for MySQL, the other for SQLite  multiple Loggers (one for debug messages, one for errors)",
+            "title": "Examples"
+        },
+        {
+            "location": "/background/design_pattern/creational/5_multion/#uml-diagram",
+            "text": "",
+            "title": "UML Diagram"
+        },
+        {
+            "location": "/background/design_pattern/creational/5_multion/#code",
+            "text": "",
+            "title": "Code"
+        },
+        {
+            "location": "/background/design_pattern/creational/5_multion/#multitonphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44 <?php  namespace   DesignPatterns\\Creational\\Multiton ;  final   class   Multiton  { \n     const   INSTANCE_1   =   '1' ; \n     const   INSTANCE_2   =   '2' ; \n\n     /**       * @var Multiton[]       */ \n     private   static   $instances   =   []; \n\n     /**       * this is private to prevent from creating arbitrary instances       */ \n     private   function   __construct () \n     { \n     } \n\n     public   static   function   getInstance ( string   $instanceName ) :   Multiton \n     { \n         if   ( ! isset ( self :: $instances [ $instanceName ]))   { \n             self :: $instances [ $instanceName ]   =   new   self (); \n         } \n\n         return   self :: $instances [ $instanceName ]; \n     } \n\n     /**       * prevent instance from being cloned       */ \n     private   function   __clone () \n     { \n     } \n\n     /**       * prevent instance from being unserialized       */ \n     private   function   __wakeup () \n     { \n     }  }",
+            "title": "Multiton.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/5_multion/#test",
+            "text": "",
+            "title": "Test"
+        },
+        {
+            "location": "/background/design_pattern/creational/6_pool/",
+            "text": "Purpose\n#\n\n\nThe object pool pattern is a software creational design pattern that uses a set of initialized objects kept ready to use \u2013 a \u201cpool\u201d \u2013 rather than allocating and destroying them on demand. A client of the pool will request an object from the pool and perform operations on the returned object. When the client has finished, it returns the object, which is a specific type of factory object, to the pool rather than destroying it.\n\n\nObject pooling can offer a significant performance boost in situations where the cost of initializing a class instance is high, the rate of instantiation of a class is high, and the number of instances in use at any one time is low. The pooled object is obtained in predictable time when creation of the new objects (especially over network) may take variable time.\n\n\nHowever these benefits are mostly true for objects that are expensive with respect to time, such as database connections, socket connections, threads and large graphic objects like fonts or bitmaps. In certain situations, simple object pooling (that hold no external resources, but only occupy memory) may not be efficient and could decrease performance.\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nWorkerPool.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Pool\n;\n\n\n\nclass\n \nWorkerPool\n \nimplements\n \n\\Countable\n\n\n{\n\n    \n/**\n\n\n     * @var StringReverseWorker[]\n\n\n     */\n\n    \nprivate\n \n$occupiedWorkers\n \n=\n \n[];\n\n\n    \n/**\n\n\n     * @var StringReverseWorker[]\n\n\n     */\n\n    \nprivate\n \n$freeWorkers\n \n=\n \n[];\n\n\n    \npublic\n \nfunction\n \nget\n()\n:\n \nStringReverseWorker\n\n    \n{\n\n        \nif\n \n(\ncount\n(\n$this\n->\nfreeWorkers\n)\n \n==\n \n0\n)\n \n{\n\n            \n$worker\n \n=\n \nnew\n \nStringReverseWorker\n();\n\n        \n}\n \nelse\n \n{\n\n            \n$worker\n \n=\n \narray_pop\n(\n$this\n->\nfreeWorkers\n);\n\n        \n}\n\n\n        \n$this\n->\noccupiedWorkers\n[\nspl_object_hash\n(\n$worker\n)]\n \n=\n \n$worker\n;\n\n\n        \nreturn\n \n$worker\n;\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ndispose\n(\nStringReverseWorker\n \n$worker\n)\n\n    \n{\n\n        \n$key\n \n=\n \nspl_object_hash\n(\n$worker\n);\n\n\n        \nif\n \n(\nisset\n(\n$this\n->\noccupiedWorkers\n[\n$key\n]))\n \n{\n\n            \nunset\n(\n$this\n->\noccupiedWorkers\n[\n$key\n]);\n\n            \n$this\n->\nfreeWorkers\n[\n$key\n]\n \n=\n \n$worker\n;\n\n        \n}\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ncount\n()\n:\n \nint\n\n    \n{\n\n        \nreturn\n \ncount\n(\n$this\n->\noccupiedWorkers\n)\n \n+\n \ncount\n(\n$this\n->\nfreeWorkers\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nStringReverseWorker.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Pool\n;\n\n\n\nclass\n \nStringReverseWorker\n\n\n{\n\n    \n/**\n\n\n     * @var \\DateTime\n\n\n     */\n\n    \nprivate\n \n$createdAt\n;\n\n\n    \npublic\n \nfunction\n \n__construct\n()\n\n    \n{\n\n        \n$this\n->\ncreatedAt\n \n=\n \nnew\n \n\\DateTime\n();\n\n    \n}\n\n\n    \npublic\n \nfunction\n \nrun\n(\nstring\n \n$text\n)\n\n    \n{\n\n        \nreturn\n \nstrrev\n(\n$text\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nTest\n#\n\n\nTests/PoolTest.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Pool\\Tests\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\Pool\\WorkerPool\n;\n\n\nuse\n \nPHPUnit\\Framework\\TestCase\n;\n\n\n\nclass\n \nPoolTest\n \nextends\n \nTestCase\n\n\n{\n\n    \npublic\n \nfunction\n \ntestCanGetNewInstancesWithGet\n()\n\n    \n{\n\n        \n$pool\n \n=\n \nnew\n \nWorkerPool\n();\n\n        \n$worker1\n \n=\n \n$pool\n->\nget\n();\n\n        \n$worker2\n \n=\n \n$pool\n->\nget\n();\n\n\n        \n$this\n->\nassertCount\n(\n2\n,\n \n$pool\n);\n\n        \n$this\n->\nassertNotSame\n(\n$worker1\n,\n \n$worker2\n);\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ntestCanGetSameInstanceTwiceWhenDisposingItFirst\n()\n\n    \n{\n\n        \n$pool\n \n=\n \nnew\n \nWorkerPool\n();\n\n        \n$worker1\n \n=\n \n$pool\n->\nget\n();\n\n        \n$pool\n->\ndispose\n(\n$worker1\n);\n\n        \n$worker2\n \n=\n \n$pool\n->\nget\n();\n\n\n        \n$this\n->\nassertCount\n(\n1\n,\n \n$pool\n);\n\n        \n$this\n->\nassertSame\n(\n$worker1\n,\n \n$worker2\n);\n\n    \n}\n\n\n}",
+            "title": "Pool"
+        },
+        {
+            "location": "/background/design_pattern/creational/6_pool/#purpose",
+            "text": "The object pool pattern is a software creational design pattern that uses a set of initialized objects kept ready to use \u2013 a \u201cpool\u201d \u2013 rather than allocating and destroying them on demand. A client of the pool will request an object from the pool and perform operations on the returned object. When the client has finished, it returns the object, which is a specific type of factory object, to the pool rather than destroying it.  Object pooling can offer a significant performance boost in situations where the cost of initializing a class instance is high, the rate of instantiation of a class is high, and the number of instances in use at any one time is low. The pooled object is obtained in predictable time when creation of the new objects (especially over network) may take variable time.  However these benefits are mostly true for objects that are expensive with respect to time, such as database connections, socket connections, threads and large graphic objects like fonts or bitmaps. In certain situations, simple object pooling (that hold no external resources, but only occupy memory) may not be efficient and could decrease performance.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/background/design_pattern/creational/6_pool/#uml-diagram",
+            "text": "",
+            "title": "UML Diagram"
+        },
+        {
+            "location": "/background/design_pattern/creational/6_pool/#code",
+            "text": "",
+            "title": "Code"
+        },
+        {
+            "location": "/background/design_pattern/creational/6_pool/#workerpoolphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44 <?php  namespace   DesignPatterns\\Creational\\Pool ;  class   WorkerPool   implements   \\Countable  { \n     /**       * @var StringReverseWorker[]       */ \n     private   $occupiedWorkers   =   []; \n\n     /**       * @var StringReverseWorker[]       */ \n     private   $freeWorkers   =   []; \n\n     public   function   get () :   StringReverseWorker \n     { \n         if   ( count ( $this -> freeWorkers )   ==   0 )   { \n             $worker   =   new   StringReverseWorker (); \n         }   else   { \n             $worker   =   array_pop ( $this -> freeWorkers ); \n         } \n\n         $this -> occupiedWorkers [ spl_object_hash ( $worker )]   =   $worker ; \n\n         return   $worker ; \n     } \n\n     public   function   dispose ( StringReverseWorker   $worker ) \n     { \n         $key   =   spl_object_hash ( $worker ); \n\n         if   ( isset ( $this -> occupiedWorkers [ $key ]))   { \n             unset ( $this -> occupiedWorkers [ $key ]); \n             $this -> freeWorkers [ $key ]   =   $worker ; \n         } \n     } \n\n     public   function   count () :   int \n     { \n         return   count ( $this -> occupiedWorkers )   +   count ( $this -> freeWorkers ); \n     }  }",
+            "title": "WorkerPool.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/6_pool/#stringreverseworkerphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21 <?php  namespace   DesignPatterns\\Creational\\Pool ;  class   StringReverseWorker  { \n     /**       * @var \\DateTime       */ \n     private   $createdAt ; \n\n     public   function   __construct () \n     { \n         $this -> createdAt   =   new   \\DateTime (); \n     } \n\n     public   function   run ( string   $text ) \n     { \n         return   strrev ( $text ); \n     }  }",
+            "title": "StringReverseWorker.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/6_pool/#test",
+            "text": "",
+            "title": "Test"
+        },
+        {
+            "location": "/background/design_pattern/creational/6_pool/#testspooltestphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30 <?php  namespace   DesignPatterns\\Creational\\Pool\\Tests ;  use   DesignPatterns\\Creational\\Pool\\WorkerPool ;  use   PHPUnit\\Framework\\TestCase ;  class   PoolTest   extends   TestCase  { \n     public   function   testCanGetNewInstancesWithGet () \n     { \n         $pool   =   new   WorkerPool (); \n         $worker1   =   $pool -> get (); \n         $worker2   =   $pool -> get (); \n\n         $this -> assertCount ( 2 ,   $pool ); \n         $this -> assertNotSame ( $worker1 ,   $worker2 ); \n     } \n\n     public   function   testCanGetSameInstanceTwiceWhenDisposingItFirst () \n     { \n         $pool   =   new   WorkerPool (); \n         $worker1   =   $pool -> get (); \n         $pool -> dispose ( $worker1 ); \n         $worker2   =   $pool -> get (); \n\n         $this -> assertCount ( 1 ,   $pool ); \n         $this -> assertSame ( $worker1 ,   $worker2 ); \n     }  }",
+            "title": "Tests/PoolTest.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/7_prototype/",
+            "text": "Purpose\n#\n\n\nTo avoid the cost of creating objects the standard way (new Foo()) and instead create a prototype and clone it.\n\n\nExamples\n#\n\n\n\n\nLarge amounts of data (e.g. create 1,000,000 rows in a database at once via a ORM).\n\n\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nBookPrototype.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Prototype\n;\n\n\n\nabstract\n \nclass\n \nBookPrototype\n\n\n{\n\n    \n/**\n\n\n     * @var string\n\n\n     */\n\n    \nprotected\n \n$title\n;\n\n\n    \n/**\n\n\n     * @var string\n\n\n     */\n\n    \nprotected\n \n$category\n;\n\n\n    \nabstract\n \npublic\n \nfunction\n \n__clone\n();\n\n\n    \npublic\n \nfunction\n \ngetTitle\n()\n:\n \nstring\n\n    \n{\n\n        \nreturn\n \n$this\n->\ntitle\n;\n\n    \n}\n\n\n    \npublic\n \nfunction\n \nsetTitle\n(\n$title\n)\n\n    \n{\n\n        \n$this\n->\ntitle\n \n=\n \n$title\n;\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nBarBookPrototype.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Prototype\n;\n\n\n\nclass\n \nBarBookPrototype\n \nextends\n \nBookPrototype\n\n\n{\n\n    \n/**\n\n\n     * @var string\n\n\n     */\n\n    \nprotected\n \n$category\n \n=\n \n'Bar'\n;\n\n\n    \npublic\n \nfunction\n \n__clone\n()\n\n    \n{\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nFooBookPrototype.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Prototype\n;\n\n\n\nclass\n \nFooBookPrototype\n \nextends\n \nBookPrototype\n\n\n{\n\n    \n/**\n\n\n     * @var string\n\n\n     */\n\n    \nprotected\n \n$category\n \n=\n \n'Foo'\n;\n\n\n    \npublic\n \nfunction\n \n__clone\n()\n\n    \n{\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nTest\n#\n\n\nTests/PrototypeTest.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\Prototype\\Tests\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\Prototype\\BarBookPrototype\n;\n\n\nuse\n \nDesignPatterns\\Creational\\Prototype\\FooBookPrototype\n;\n\n\nuse\n \nPHPUnit\\Framework\\TestCase\n;\n\n\n\nclass\n \nPrototypeTest\n \nextends\n \nTestCase\n\n\n{\n\n    \npublic\n \nfunction\n \ntestCanGetFooBook\n()\n\n    \n{\n\n        \n$fooPrototype\n \n=\n \nnew\n \nFooBookPrototype\n();\n\n        \n$barPrototype\n \n=\n \nnew\n \nBarBookPrototype\n();\n\n\n        \nfor\n \n(\n$i\n \n=\n \n0\n;\n \n$i\n \n<\n \n10\n;\n \n$i\n++\n)\n \n{\n\n            \n$book\n \n=\n \nclone\n \n$fooPrototype\n;\n\n            \n$book\n->\nsetTitle\n(\n'Foo Book No '\n \n.\n \n$i\n);\n\n            \n$this\n->\nassertInstanceOf\n(\nFooBookPrototype\n::\nclass\n,\n \n$book\n);\n\n        \n}\n\n\n        \nfor\n \n(\n$i\n \n=\n \n0\n;\n \n$i\n \n<\n \n5\n;\n \n$i\n++\n)\n \n{\n\n            \n$book\n \n=\n \nclone\n \n$barPrototype\n;\n\n            \n$book\n->\nsetTitle\n(\n'Bar Book No '\n \n.\n \n$i\n);\n\n            \n$this\n->\nassertInstanceOf\n(\nBarBookPrototype\n::\nclass\n,\n \n$book\n);\n\n        \n}\n\n    \n}\n\n\n}",
+            "title": "Prototype"
+        },
+        {
+            "location": "/background/design_pattern/creational/7_prototype/#purpose",
+            "text": "To avoid the cost of creating objects the standard way (new Foo()) and instead create a prototype and clone it.",
+            "title": "Purpose"
+        },
+        {
+            "location": "/background/design_pattern/creational/7_prototype/#examples",
+            "text": "Large amounts of data (e.g. create 1,000,000 rows in a database at once via a ORM).",
+            "title": "Examples"
+        },
+        {
+            "location": "/background/design_pattern/creational/7_prototype/#uml-diagram",
+            "text": "",
+            "title": "UML Diagram"
+        },
+        {
+            "location": "/background/design_pattern/creational/7_prototype/#code",
+            "text": "",
+            "title": "Code"
+        },
+        {
+            "location": "/background/design_pattern/creational/7_prototype/#bookprototypephp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28 <?php  namespace   DesignPatterns\\Creational\\Prototype ;  abstract   class   BookPrototype  { \n     /**       * @var string       */ \n     protected   $title ; \n\n     /**       * @var string       */ \n     protected   $category ; \n\n     abstract   public   function   __clone (); \n\n     public   function   getTitle () :   string \n     { \n         return   $this -> title ; \n     } \n\n     public   function   setTitle ( $title ) \n     { \n         $this -> title   =   $title ; \n     }  }",
+            "title": "BookPrototype.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/7_prototype/#barbookprototypephp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15 <?php  namespace   DesignPatterns\\Creational\\Prototype ;  class   BarBookPrototype   extends   BookPrototype  { \n     /**       * @var string       */ \n     protected   $category   =   'Bar' ; \n\n     public   function   __clone () \n     { \n     }  }",
+            "title": "BarBookPrototype.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/7_prototype/#foobookprototypephp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15 <?php  namespace   DesignPatterns\\Creational\\Prototype ;  class   FooBookPrototype   extends   BookPrototype  { \n     /**       * @var string       */ \n     protected   $category   =   'Foo' ; \n\n     public   function   __clone () \n     { \n     }  }",
+            "title": "FooBookPrototype.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/7_prototype/#test",
+            "text": "",
+            "title": "Test"
+        },
+        {
+            "location": "/background/design_pattern/creational/7_prototype/#testsprototypetestphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28 <?php  namespace   DesignPatterns\\Creational\\Prototype\\Tests ;  use   DesignPatterns\\Creational\\Prototype\\BarBookPrototype ;  use   DesignPatterns\\Creational\\Prototype\\FooBookPrototype ;  use   PHPUnit\\Framework\\TestCase ;  class   PrototypeTest   extends   TestCase  { \n     public   function   testCanGetFooBook () \n     { \n         $fooPrototype   =   new   FooBookPrototype (); \n         $barPrototype   =   new   BarBookPrototype (); \n\n         for   ( $i   =   0 ;   $i   <   10 ;   $i ++ )   { \n             $book   =   clone   $fooPrototype ; \n             $book -> setTitle ( 'Foo Book No '   .   $i ); \n             $this -> assertInstanceOf ( FooBookPrototype :: class ,   $book ); \n         } \n\n         for   ( $i   =   0 ;   $i   <   5 ;   $i ++ )   { \n             $book   =   clone   $barPrototype ; \n             $book -> setTitle ( 'Bar Book No '   .   $i ); \n             $this -> assertInstanceOf ( BarBookPrototype :: class ,   $book ); \n         } \n     }  }",
+            "title": "Tests/PrototypeTest.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/8_simple_factory/",
+            "text": "Purpose\n#\n\n\nSimpleFactory is a simple factory pattern.\n\n\nIt differs from the static factory because it is not static. Therefore, you can have multiple factories, differently parametrized, you can subclass it and you can mock it. It always should be preferred over a static factory!\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nSimpleFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\SimpleFactory\n;\n\n\n\nclass\n \nSimpleFactory\n\n\n{\n\n    \npublic\n \nfunction\n \ncreateBicycle\n()\n:\n \nBicycle\n\n    \n{\n\n        \nreturn\n \nnew\n \nBicycle\n();\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nBicycle.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\SimpleFactory\n;\n\n\n\nclass\n \nBicycle\n\n\n{\n\n    \npublic\n \nfunction\n \ndriveTo\n(\nstring\n \n$destination\n)\n\n    \n{\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nUsage\n#\n\n\n1\n2\n3\n $factory = new SimpleFactory();\n\n\n $bicycle = $factory->createBicycle();\n\n\n $bicycle->driveTo('Paris');\n\n\n\n\n\n\n\nTest\n#\n\n\nTests/SimpleFactoryTest.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\SimpleFactory\\Tests\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\SimpleFactory\\Bicycle\n;\n\n\nuse\n \nDesignPatterns\\Creational\\SimpleFactory\\SimpleFactory\n;\n\n\nuse\n \nPHPUnit\\Framework\\TestCase\n;\n\n\n\nclass\n \nSimpleFactoryTest\n \nextends\n \nTestCase\n\n\n{\n\n    \npublic\n \nfunction\n \ntestCanCreateBicycle\n()\n\n    \n{\n\n        \n$bicycle\n \n=\n \n(\nnew\n \nSimpleFactory\n())\n->\ncreateBicycle\n();\n\n        \n$this\n->\nassertInstanceOf\n(\nBicycle\n::\nclass\n,\n \n$bicycle\n);\n\n    \n}\n\n\n}",
+            "title": "Simple Factory"
+        },
+        {
+            "location": "/background/design_pattern/creational/8_simple_factory/#purpose",
+            "text": "SimpleFactory is a simple factory pattern.  It differs from the static factory because it is not static. Therefore, you can have multiple factories, differently parametrized, you can subclass it and you can mock it. It always should be preferred over a static factory!",
+            "title": "Purpose"
+        },
+        {
+            "location": "/background/design_pattern/creational/8_simple_factory/#uml-diagram",
+            "text": "",
+            "title": "UML Diagram"
+        },
+        {
+            "location": "/background/design_pattern/creational/8_simple_factory/#code",
+            "text": "",
+            "title": "Code"
+        },
+        {
+            "location": "/background/design_pattern/creational/8_simple_factory/#simplefactoryphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11 <?php  namespace   DesignPatterns\\Creational\\SimpleFactory ;  class   SimpleFactory  { \n     public   function   createBicycle () :   Bicycle \n     { \n         return   new   Bicycle (); \n     }  }",
+            "title": "SimpleFactory.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/8_simple_factory/#bicyclephp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10 <?php  namespace   DesignPatterns\\Creational\\SimpleFactory ;  class   Bicycle  { \n     public   function   driveTo ( string   $destination ) \n     { \n     }  }",
+            "title": "Bicycle.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/8_simple_factory/#usage",
+            "text": "1\n2\n3  $factory = new SimpleFactory();   $bicycle = $factory->createBicycle();   $bicycle->driveTo('Paris');",
+            "title": "Usage"
+        },
+        {
+            "location": "/background/design_pattern/creational/8_simple_factory/#test",
+            "text": "",
+            "title": "Test"
+        },
+        {
+            "location": "/background/design_pattern/creational/8_simple_factory/#testssimplefactorytestphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16 <?php  namespace   DesignPatterns\\Creational\\SimpleFactory\\Tests ;  use   DesignPatterns\\Creational\\SimpleFactory\\Bicycle ;  use   DesignPatterns\\Creational\\SimpleFactory\\SimpleFactory ;  use   PHPUnit\\Framework\\TestCase ;  class   SimpleFactoryTest   extends   TestCase  { \n     public   function   testCanCreateBicycle () \n     { \n         $bicycle   =   ( new   SimpleFactory ()) -> createBicycle (); \n         $this -> assertInstanceOf ( Bicycle :: class ,   $bicycle ); \n     }  }",
+            "title": "Tests/SimpleFactoryTest.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/9_static_factory/",
+            "text": "Purpose\n#\n\n\nSimilar to the AbstractFactory, this pattern is used to create series of related or dependent objects. \n\n\nThe difference between this and the abstract factory pattern is that the static factory pattern uses just one static method to create all types of objects it can create. It is usually named \nfactory\n or \nbuild\n.\n\n\nExamples\n#\n\n\n\n\nZend Framework: Zend_Cache_Backend or _Frontend use a factory method create cache backends or frontends\n\n\n\n\nUML Diagram\n#\n\n\n\n\nCode\n#\n\n\nStaticFactory.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\StaticFactory\n;\n\n\n\n/**\n\n\n * Note1: Remember, static means global state which is evil because it can't be mocked for tests\n\n\n * Note2: Cannot be subclassed or mock-upped or have multiple different instances.\n\n\n */\n\n\nfinal\n \nclass\n \nStaticFactory\n\n\n{\n\n    \n/**\n\n\n     * @param string $type\n\n\n     *\n\n\n     * @return FormatterInterface\n\n\n     */\n\n    \npublic\n \nstatic\n \nfunction\n \nfactory\n(\nstring\n \n$type\n)\n:\n \nFormatterInterface\n\n    \n{\n\n        \nif\n \n(\n$type\n \n==\n \n'number'\n)\n \n{\n\n            \nreturn\n \nnew\n \nFormatNumber\n();\n\n        \n}\n\n\n        \nif\n \n(\n$type\n \n==\n \n'string'\n)\n \n{\n\n            \nreturn\n \nnew\n \nFormatString\n();\n\n        \n}\n\n\n        \nthrow\n \nnew\n \n\\InvalidArgumentException\n(\n'Unknown format given'\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nFormatterInterface.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\StaticFactory\n;\n\n\n\ninterface\n \nFormatterInterface\n\n\n{\n\n\n}\n\n\n\n\n\n\n\nFormatString.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n \n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\StaticFactory\n;\n\n\n\nclass\n \nFormatString\n \nimplements\n \nFormatterInterface\n\n\n{\n\n\n}\n\n\n\n\n\n\n\nFormatNumber.php\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\StaticFactory\n;\n\n\n\nclass\n \nFormatNumber\n \nimplements\n \nFormatterInterface\n\n\n{\n\n\n}\n\n\n\n\n\n\n\nTest\n#\n\n\nTests/StaticFactoryTest.php\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n<?php\n\n\n\nnamespace\n \nDesignPatterns\\Creational\\StaticFactory\\Tests\n;\n\n\n\nuse\n \nDesignPatterns\\Creational\\StaticFactory\\StaticFactory\n;\n\n\nuse\n \nPHPUnit\\Framework\\TestCase\n;\n\n\n\nclass\n \nStaticFactoryTest\n \nextends\n \nTestCase\n\n\n{\n\n    \npublic\n \nfunction\n \ntestCanCreateNumberFormatter\n()\n\n    \n{\n\n        \n$this\n->\nassertInstanceOf\n(\n\n            \n'DesignPatterns\\Creational\\StaticFactory\\FormatNumber'\n,\n\n            \nStaticFactory\n::\nfactory\n(\n'number'\n)\n\n        \n);\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ntestCanCreateStringFormatter\n()\n\n    \n{\n\n        \n$this\n->\nassertInstanceOf\n(\n\n            \n'DesignPatterns\\Creational\\StaticFactory\\FormatString'\n,\n\n            \nStaticFactory\n::\nfactory\n(\n'string'\n)\n\n        \n);\n\n    \n}\n\n\n    \n/**\n\n\n     * @expectedException \\InvalidArgumentException\n\n\n     */\n\n    \npublic\n \nfunction\n \ntestException\n()\n\n    \n{\n\n        \nStaticFactory\n::\nfactory\n(\n'object'\n);\n\n    \n}\n\n\n}",
+            "title": "Static Factory"
+        },
+        {
+            "location": "/background/design_pattern/creational/9_static_factory/#purpose",
+            "text": "Similar to the AbstractFactory, this pattern is used to create series of related or dependent objects.   The difference between this and the abstract factory pattern is that the static factory pattern uses just one static method to create all types of objects it can create. It is usually named  factory  or  build .",
+            "title": "Purpose"
+        },
+        {
+            "location": "/background/design_pattern/creational/9_static_factory/#examples",
+            "text": "Zend Framework: Zend_Cache_Backend or _Frontend use a factory method create cache backends or frontends",
+            "title": "Examples"
+        },
+        {
+            "location": "/background/design_pattern/creational/9_static_factory/#uml-diagram",
+            "text": "",
+            "title": "UML Diagram"
+        },
+        {
+            "location": "/background/design_pattern/creational/9_static_factory/#code",
+            "text": "",
+            "title": "Code"
+        },
+        {
+            "location": "/background/design_pattern/creational/9_static_factory/#staticfactoryphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28 <?php  namespace   DesignPatterns\\Creational\\StaticFactory ;  /**   * Note1: Remember, static means global state which is evil because it can't be mocked for tests   * Note2: Cannot be subclassed or mock-upped or have multiple different instances.   */  final   class   StaticFactory  { \n     /**       * @param string $type       *       * @return FormatterInterface       */ \n     public   static   function   factory ( string   $type ) :   FormatterInterface \n     { \n         if   ( $type   ==   'number' )   { \n             return   new   FormatNumber (); \n         } \n\n         if   ( $type   ==   'string' )   { \n             return   new   FormatString (); \n         } \n\n         throw   new   \\InvalidArgumentException ( 'Unknown format given' ); \n     }  }",
+            "title": "StaticFactory.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/9_static_factory/#formatterinterfacephp",
+            "text": "1\n2\n3\n4\n5\n6\n7 <?php  namespace   DesignPatterns\\Creational\\StaticFactory ;  interface   FormatterInterface  {  }",
+            "title": "FormatterInterface.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/9_static_factory/#formatstringphp",
+            "text": "1\n2\n3\n4\n5\n6\n7   <?php  namespace   DesignPatterns\\Creational\\StaticFactory ;  class   FormatString   implements   FormatterInterface  {  }",
+            "title": "FormatString.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/9_static_factory/#formatnumberphp",
+            "text": "1\n2\n3\n4\n5\n6\n7 <?php  namespace   DesignPatterns\\Creational\\StaticFactory ;  class   FormatNumber   implements   FormatterInterface  {  }",
+            "title": "FormatNumber.php"
+        },
+        {
+            "location": "/background/design_pattern/creational/9_static_factory/#test",
+            "text": "",
+            "title": "Test"
+        },
+        {
+            "location": "/background/design_pattern/creational/9_static_factory/#testsstaticfactorytestphp",
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33 <?php  namespace   DesignPatterns\\Creational\\StaticFactory\\Tests ;  use   DesignPatterns\\Creational\\StaticFactory\\StaticFactory ;  use   PHPUnit\\Framework\\TestCase ;  class   StaticFactoryTest   extends   TestCase  { \n     public   function   testCanCreateNumberFormatter () \n     { \n         $this -> assertInstanceOf ( \n             'DesignPatterns\\Creational\\StaticFactory\\FormatNumber' , \n             StaticFactory :: factory ( 'number' ) \n         ); \n     } \n\n     public   function   testCanCreateStringFormatter () \n     { \n         $this -> assertInstanceOf ( \n             'DesignPatterns\\Creational\\StaticFactory\\FormatString' , \n             StaticFactory :: factory ( 'string' ) \n         ); \n     } \n\n     /**       * @expectedException \\InvalidArgumentException       */ \n     public   function   testException () \n     { \n         StaticFactory :: factory ( 'object' ); \n     }  }",
+            "title": "Tests/StaticFactoryTest.php"
         },
         {
             "location": "/programming/markdown/",
